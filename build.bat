@@ -1,1 +1,0 @@
-jekyll build --destination "F:\Git Projects\aliasblack.github.io"
