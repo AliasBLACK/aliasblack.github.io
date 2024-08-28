@@ -2706,7 +2706,7 @@ color: #ffffff;
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-background-color: #333333;
+background-color: #808080;
 color: #ffffff;
 }
 
