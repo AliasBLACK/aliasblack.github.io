@@ -1,0 +1,1946 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Do not edit block start */
+/* ======================= */
+#imml a.portal:not(.inline) {
+	display: block;
+}
+
+#imml .pages>.page:target~.page:last-child,
+#imml .pages>.page {
+	display: none;
+}
+
+#imml .pages> :last-child,
+#imml .pages>.page:target {
+	display: block;
+}
+
+#imml .pages> :last-child .breadcrumbs {
+	visibility: hidden;
+}
+/* ===================== */
+/* Do not edit block end */
+
+:root {
+	--imml-text-light: #333333;
+	--imml-text-dark: #eeeeee;
+	--imml-background-light: #ffffff;
+	--imml-background-dark: #121212;
+	--imml-accent-light: dodgerblue;
+	--imml-accent-dark: dodgerblue;
+}
+
+:root {
+	--imml-background: var(--imml-background-light);
+	--imml-text: var(--imml-text-light);
+	--imml-text-inverse: var(--imml-text-dark);
+	--imml-accent: var(--imml-accent-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--imml-background: var(--imml-background-dark);
+		--imml-text: var(--imml-text-dark);
+		--imml-text-inverse: var(--imml-text-light);
+		--imml-accent: var(--imml-accent-dark);
+	}
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100%;
+	color: var(--imml-text);
+	background: var(--imml-background);
+}
+
+.pages {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.pages .page {
+	padding-top: 2em;
+	padding-bottom: 10em;
+}
+
+.page .breadcrumbs {
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: small;
+}
+
+p {
+	line-height: 22px;
+}
+
+a {
+	width: fit-content;
+	color: var(--imml-accent);
+	border-bottom: 1px dotted var(--imml-accent);
+	text-decoration: none;
+}
+
+hr {
+	border-style: solid;
+	border-bottom: 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	border-left: 0.5em solid var(--imml-text-inverse);
+	padding: 0 1em;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+code {
+	background: var(--imml-text-inverse);
+	border-radius: 0.25em;
+	padding: 0em 0.25em;
+	font-family: monospace;
+	display: inline-block;
+}
+
+pre code {
+	padding: 0.5em 0.5em;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	margin-top: 0.25em;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	text-align: left;
+	font-weight: bold;
+}
+
+thead tr {
+	border-bottom: 1px solid;
+}
+
+tr {
+	border-bottom: 1px dashed;
+}
+
+td,
+th {
+	padding: 4px;
+}
+</style>
+</head>
+<body>
+<div id="imml"><div class="pages"><div id="main_weapons" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Main Weapons</span></div><h1>Main Weapons</h1>
+<p>Main weapons are the starting weapons in <em>Glyphica</em> and play a central role in gameplay. When you type a word displayed above an enemy, the main weapon locks onto that enemy as its target. Each main weapon has unique effects and mechanics, requiring different strategies to use effectively.</p>
+<p>While some main weapons emphasize typing speed (WPM), others demand a more tactical approach. Like other weapons in the game, main weapons can be upgraded and evolved, enhancing their abilities and effectiveness as you progress.</p>
+<h2>List of Main Weapons</h2>
+<a href="#repeater" class="portal">Ripetitore</a><a href="#heatray" class="portal">Raggio di Calore</a><a href="#barrage" class="portal">Barriera</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Ripetitore</span></div><h1>Ripetitore</h1>
+<p>Tags: Cinetico, Principale<br>Arma devastante che spara una serie di proiettili in brevi raffiche.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Zanna di Gelo</td>
+<td>Effetti:<br>  Danno da Calore: +10<br>  Chance di Congelamento: 3%<br><br>Ha effetto sul danno base ed è influenzato da modificatori di Danno da Freddo.</td>
+</tr>
+<tr>
+<td>Zanna di Gelo II</td>
+<td>Effetti:<br>  Danno da Calore: +20<br>  Danno Cinetico: -10<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Rimbalzo</td>
+<td>Effetti:<br>  Catena di Proiettili: 3<br><br>I proiettili del Ripetitore rimbalzano verso un bersaglio nelle vicinanze infliggendo 50% danni dopo il primo colpito.</td>
+</tr>
+<tr>
+<td>Rimbalzo II</td>
+<td>Effetti:<br>  Catena di Proiettili: +2</td>
+</tr>
+<tr>
+<td>Fucile</td>
+<td>Effetti:<br> Conteggio Proiettili: +5<br> Diffusione Proiettili: +400%<br> Danno Cinetico: -10<br><br>Il Ripetitore ora spara un gruppo di proiettili più deboli con un&#39;ampia diffusione. Il modificatore del danno influisce sul danno base.</td>
+</tr>
+<tr>
+<td>Fucile II</td>
+<td>Effetti:<br> Conteggio Proiettili: +5<br> Diffusione Proiettili: +100%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apprendimento Amplificato</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Dati di Battaglia</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Tutela degli Esperti</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Giacca di Metallo</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Miglioramento Perforante</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Potenziamento Penetratore</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Targeting Avanzato</td>
+<td>Chance Critico: +1%<br>  Danno Critico: +50%</td>
+</tr>
+<tr>
+<td>Sistema di Guida di Precisione</td>
+<td>Chance Critico: +2%<br>  Danno Critico: +100%</td>
+</tr>
+<tr>
+<td>Integrazione Occhio d&#39;Aquila</td>
+<td>Chance Critico: +3%<br>  Danno Critico: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Raggio di Calore</span></div><h1>Raggio di Calore</h1>
+<p>Tags: Calore, Principale, D.N.T.<br>Spara un raggio costante di luce concentrata incredibilmente precisa che infligge danno nel tempo.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Raggio di Ghiaccio</td>
+<td>Effetti:<br>  Danno da Calore: -25<br>  Danno da Freddo: +25<br>  Chance di Congelamento: 8%<br><br>Influisce sul danno base. Il danno da Raggio di Calore diventerà Freddo e ha una possibilità aggiuntiva di infliggere Congelamento.</td>
+</tr>
+<tr>
+<td>Raggio di Ghiaccio II</td>
+<td>Effetti:<br>  Danno da Freddo: +20<br><br>Influisce sul danno base.</td>
+</tr>
+<tr>
+<td>Riflesso</td>
+<td>Il Raggio di Calore ora passa attraverso i nemici e si riflette 2x sul bordo dello schermo.</td>
+</tr>
+<tr>
+<td>Riflesso II</td>
+<td>Il Raggio di Calore ora si riflette 4x sul bordo dello schermo.</td>
+</tr>
+<tr>
+<td>Doppia Lama</td>
+<td>Un altro raggio spara in direzione opposta. Tutte le evoluzioni e potenziamenti si applicano su entrambi i raggi.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nucleo di Fusione</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Fiamma Primordiale</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Inferno Apocalittico</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Fiamma Feroce</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Caldo Intenso</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Scoppio Cataclismico</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Convergenza</td>
+<td>Spessore del Raggio: +20%<br>  (Raggio)</td>
+</tr>
+<tr>
+<td>Splendore</td>
+<td>Spessore del Raggio: +40%<br>  (Raggio)</td>
+</tr>
+<tr>
+<td>Raggio Forgiato</td>
+<td>Spessore del Raggio: +60%<br>  (Raggio)</td>
+</tr>
+<tr>
+<td>Ustione Rapida</td>
+<td>Velocità di Sparo: +10%</td>
+</tr>
+<tr>
+<td>Velocità Fiammeggiante</td>
+<td>Velocità di Sparo: +20%</td>
+</tr>
+<tr>
+<td>Ondata Infernale</td>
+<td>Velocità di Sparo: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Barriera</span></div><h1>Barriera</h1>
+<p>Tags: Esplosivo, Principale<br>Spara una raffica di razzi esplosivi a un bersaglio e nei suoi dintorni. Si ricarica nel tempo.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gruppo di Razzi</td>
+<td>Lo Sbarramento ora sparerà 3 - 6 missili per barra munizione invece di 2 - 5.</td>
+</tr>
+<tr>
+<td>Gruppo di Razzi II</td>
+<td>Lo Sbarramento ora sparerà 4 - 7 missili per barra munizione invece di 3 - 6.</td>
+</tr>
+<tr>
+<td>Munizioni Sismiche</td>
+<td>Invece di esplodere, i missili si conficcano nel terreno e generano impulsi esplosivi per i successivi secondi.</td>
+</tr>
+<tr>
+<td>Munizioni Sismiche II</td>
+<td>Effetti:<br>  Raggio: 25%<br>  Durata: 25%</td>
+</tr>
+<tr>
+<td>Rifornimento</td>
+<td>Ora verranno generate risorse di rifornimento. Attivando queste risorse ricaricherai completamente la tua arma principale e darai 30% di danno in più al colpo successivo.</td>
+</tr>
+<tr>
+<td>Rifornimento II</td>
+<td>Ora le risorse di rifornimento incrementano di 30% il raggio dell&#39;esplosione al colpo successivo.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sbarramento Supremo</td>
+<td>Evoluzione: +10</td>
+</tr>
+<tr>
+<td>Assedio Definitivo</td>
+<td>Evoluzione: +20</td>
+</tr>
+<tr>
+<td>Raffica Apocalittica</td>
+<td>Evoluzione: +30</td>
+</tr>
+<tr>
+<td>Scoppio d&#39;Impatto</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Colpo di Devastazione</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Esplosione Cataclismica</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Portata Estesa</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Carico a Lungo Raggio</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Assalto Grandangolare</td>
+<td>Raggio: +30%</td>
+</tr>
+<tr>
+<td>Ricarica Veloce</td>
+<td>Velocità di Ricarica: +10%</td>
+</tr>
+<tr>
+<td>Rifornimento Rapido</td>
+<td>Velocità di Ricarica: +20%</td>
+</tr>
+<tr>
+<td>Ricarica Rapida</td>
+<td>Velocità di Ricarica: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="weapons" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Level-Up Weapons</span></div><h1>Level-Up Weapons</h1>
+<p>Level-up weapons are obtained during a run as you level up. Once selected, the weapon is added to your arsenal. Each weapon has a unique activation method, but most can be triggered through typing and targeting with the main weapon.</p>
+<p>A maximum of four weapons can be obtained this way. Once a weapon is added to your arsenal, its upgrades become available in the level-up upgrade pool, allowing you to enhance its abilities as you progress.</p>
+<h2>List of Level-Up Weapons</h2>
+<a href="#spectre" class="portal">Spettro</a><a href="#sentry" class="portal">Sentinella</a><a href="#tesla" class="portal">Mina Tesla</a><a href="#oscillator" class="portal">Oscillatore</a><a href="#meteor" class="portal">Meteora</a><a href="#hunter" class="portal">Cacciatore</a><a href="#chopper" class="portal">Tritatutto</a><a href="#minefield" class="portal">Campo Minato</a><a href="#blade" class="portal">Trappola di Lame</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Spettro</span></div><h1>Spettro</h1>
+<p>Tags: Cinetico, Drone<br>Completa parole che contengono i glifi a, e, o genera droni veloci in numero equivalente a quello sopra indicato.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sovralimentato</td>
+<td>Ogni 20° Spettro generato c&#39;è un SUPER Spettro.<br><br>Super Spettri:<br> +100% Danno<br> +50% Durata<br> +50% Velocità</td>
+</tr>
+<tr>
+<td>Autodistruzione</td>
+<td>Effetti:<br>  Danno Esplosivo: +50<br><br>Quando uno Spettro scade, si autodistrugge infliggendo Danno Esplosivo. Ha effetto sul danno base ed è influenzato dai modificatori di Danno Esplosivo.</td>
+</tr>
+<tr>
+<td>Autodistruzione II</td>
+<td>Effetti:<br>  Danno Esplosivo: +50<br>  Raggio: +30%<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Carburante Volatile</td>
+<td>Effetti:<br>  Velocità: +50%</td>
+</tr>
+<tr>
+<td>Carburante Volatile II</td>
+<td>Effetti:<br>  Velocità: 50%<br>  Durata: -25%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apprendimenti Spettrali</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Esperienza Spettrale</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Fantasmagoria</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Tattiche di Sciame</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Assalto Coordinato</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Strategia Mentale Collettiva</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Batterie al Ricodio</td>
+<td>Durata: +10%</td>
+</tr>
+<tr>
+<td>Celle Energetiche</td>
+<td>Durata: +20%</td>
+</tr>
+<tr>
+<td>Sovraccarico del Nucleo Energetico</td>
+<td>Durata: +30%</td>
+</tr>
+<tr>
+<td>Auto-Assemblaggio</td>
+<td>Completare una parola lunga più di 7 glifi genera uno Spettro aggiuntivo.</td>
+</tr>
+</tbody></table>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Sentinella</span></div><h1>Sentinella</h1>
+<p>Tags: Calore, Torretta<br>Schiera una torretta automatizzata che spara a qualsiasi nemico che si trova nel suo raggio d&#39;azione.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Griglia di Difesa</td>
+<td>Effetti:<br>  Torretta: +1</td>
+</tr>
+<tr>
+<td>Nucleo Solido</td>
+<td>Effetti:<br> Danno Cinetico: +10<br> Chance di Sanguinamento: 3%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di danno Cinetico.</td>
+</tr>
+<tr>
+<td>Nucleo Solido II</td>
+<td>Effetti:<br>  Danno Cinetico: +20<br>  Danno da Calore: -10<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Protocollo di Emergenza</td>
+<td>Ogni volta che uno Scudo viene distrutto, la Sentinella entrerà nella modalità Protocollo di Emergenza per 10 secondi.<br><br>Durante Protocollo di Emergenza:<br>  Raggio: +50%<br>  Velocità di Sparo: +100%</td>
+</tr>
+<tr>
+<td>Protocollo di Emergenza</td>
+<td>Durante Protocollo di Emergenza:<br>  Danno: +50%<br>  Velocità di Rotazione: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Osservatore Acuto</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Sentinella Vigile</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Sorveglianza Eterna</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Grilletto Sensibile</td>
+<td>Velocità di Sparo: +10%</td>
+</tr>
+<tr>
+<td>Acceleratore di Fuoco Rapido</td>
+<td>Velocità di Sparo: +20%</td>
+</tr>
+<tr>
+<td>Protocollo di Bombardamento</td>
+<td>Velocità di Sparo: +30%</td>
+</tr>
+<tr>
+<td>Proiettili Perforanti</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Distruttori di Armature Tattici</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Munizioni Eso-Penetranti</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Ottica Ingrandita</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Mirini Potenziati</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Sistemi di Mira di Precisione</td>
+<td>Raggio: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Mina Tesla</span></div><h1>Mina Tesla</h1>
+<p>Tags: Elettrico, Torretta, D.N.T.<br>Completa parole che iniziano con i glifi b, c, d, e schiera una torretta elettrica che infligge danno nel tempo.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bobine Abbondanti</td>
+<td>genererà una Mina Tesla in aggiunta ai glifi esistenti.</td>
+</tr>
+<tr>
+<td>Bruciatura Elettrica</td>
+<td>Effetti:<br>  Danno da Calore: +4<br>  Chance di Ustione: 3%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di Danno da Calore.</td>
+</tr>
+<tr>
+<td>Bruciatura Elettrica II</td>
+<td>Effetti:<br>  Danno da Calore: +8<br>  Danno Elettrico: -4<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Area Riservata</td>
+<td>I nemici nel raggio di una Mina Tesla hanno 20% chance in più di ottenere lo stato Statico dalle fonti di danno Elettrico.</td>
+</tr>
+<tr>
+<td>Area Riservata II</td>
+<td>Il danno Satico aumenta di 5 e il raggio aumenta di 30%. Questo si applica allo Statico inflitto da tutte le fonti e influisce sul danno base.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Padronanza conduttiva</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Esperienza di Tensione</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Amplificatorio</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Bobine Rinforzate</td>
+<td>Durata: +10%</td>
+</tr>
+<tr>
+<td>Conduttori Resilienti</td>
+<td>Durata: +20%</td>
+</tr>
+<tr>
+<td>Induzione Ipercarica</td>
+<td>Durata: +30%</td>
+</tr>
+<tr>
+<td>Sovraccarico</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Sovratensione</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Amplificazione di Tempesta</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Campo Amplificato</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Portata dell&#39;Orizzonte</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Infinito</td>
+<td>Raggio: +30%</td>
+</tr>
+<tr>
+<td>Ondata Statica</td>
+<td>Chance Statica. +1%</td>
+</tr>
+<tr>
+<td>Conduzione Oscura</td>
+<td>Chance Statica. +3%</td>
+</tr>
+<tr>
+<td>Sovraccarico Elettrico</td>
+<td>Chance Statica. +5%</td>
+</tr>
+</tbody></table>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Oscillatore</span></div><h1>Oscillatore</h1>
+<p>Tags: Calore, A Distanza<br>Spara un flusso oscillante di paricelle nella direzione del tuo bersaglio più recente.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Due Teste</td>
+<td>Un flusso aggiuntivo di proiettili dell&#39;Oscillatore viene sparato nella direzione opposta.</td>
+</tr>
+<tr>
+<td>Sfera di Fulmini</td>
+<td>Effetti:<br>  Danno Elettrico: +3<br>  Chance Statica: 3%<br><br>Influisce sul danno base e è affetto dai modificatori di Danno Elettrico.</td>
+</tr>
+<tr>
+<td>Sfera di Fulmini II</td>
+<td>Effetti:<br>  Danno Elettrico: +6<br>  Danno da Calore: -3<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Plasma Stabilizzato</td>
+<td>I proiettili dell&#39;Oscillatore ora penetrano i nemici. I nemici colpiti dopo il primo subiscono 50% di danno.</td>
+</tr>
+<tr>
+<td>Plasma Stabilizzato II</td>
+<td>I danni da Ustione aumentano di 5. Questo si applica all&#39;Ustione inflitta da tutte le fonti e influisce sul danno base.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armoniche di Precisione</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Risonatore Adattivo</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Forma d&#39;Onda</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Accensione al Plasma</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Scarica Quantistica</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Eruzione di Nova</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Bombardamento a Tappeto</td>
+<td>Diffusione: +10%</td>
+</tr>
+<tr>
+<td>Portata Orbica</td>
+<td>Diffusione: +20%</td>
+</tr>
+<tr>
+<td>Espansione Quantistica</td>
+<td>Diffusione: +30%</td>
+</tr>
+<tr>
+<td>Focus Critico</td>
+<td>Chance Critico: +1%<br>  Moltiplicatore Crit.: +50%</td>
+</tr>
+<tr>
+<td>Onda di Precisione</td>
+<td>Chance Critico: +2%<br>  Moltiplicatore Crit.: +100%</td>
+</tr>
+<tr>
+<td>Ondata Quantistica</td>
+<td>Chance Critico: +3%<br>  Moltiplicatore Crit.: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Meteora</span></div><h1>Meteora</h1>
+<p>Tags: Esplosivo, A Distanza<br>Genera periodicamente bersagli in posizioni casuali che possono essere attivati ​​per avviare un bombardamento orbitale.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sorveglianza</td>
+<td>La meteora ora ha due opzioni bersaglio invece di una.</td>
+</tr>
+<tr>
+<td>Sorveglianza II</td>
+<td>La meteora ora ha tre opzioni bersaglio invece di due.</td>
+</tr>
+<tr>
+<td>Pioggia di Ghiaccio</td>
+<td>Effetti:<br>  Danno Esplosivo: -60<br>  Danno da Freddo: +20<br>  Chance di Congelamento: 20%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di Danno da Freddo.</td>
+</tr>
+<tr>
+<td>Pioggia di Ghiaccio II</td>
+<td>Effetti:<br>  Danno da Calore: +20<br>  Chance di Congelamento: +20%</td>
+</tr>
+<tr>
+<td>Inflessibile</td>
+<td>Effetti:<br> Raggio: -50%<br>  Velocità di Sparo: -50%<br><br>Le Meteore ora venogno sparate continuamente, muovendosi verso la posizione dell&#39;ultimo bersaglio.</td>
+</tr>
+<tr>
+<td>Inflessibile II</td>
+<td>Effetti: <br>  Velocità: +50%<br>  Chance Critico: +10%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Equipaggio Impaziente</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Intuizione Orbitale</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Mirino Veterano</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Bombardamento di Precisione</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Potenziatore d&#39;Impatto</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Apocalisse</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Acceleratore di Trasmissione</td>
+<td>Tasso di Generazione: +10%</td>
+</tr>
+<tr>
+<td>Sequenziatore di Lancio</td>
+<td>Tasso di Generazione: +20%</td>
+</tr>
+<tr>
+<td>Pioggia di Morte</td>
+<td>Tasso di Generazione: +30%</td>
+</tr>
+<tr>
+<td>Modulo a Lungo Raggio</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Matrice di Amplificazione</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Portata Cataclismica</td>
+<td>Raggio: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Cacciatore</span></div><h1>Cacciatore</h1>
+<p>Tags: Elettrico, Drone, D.N.T.<br>Completa parole che contengono i glifi i, o, u genera droni che sparano raggi elettrici in numero equivalente a quello sopra indicato.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cacciatore d&#39;Elite</td>
+<td>Ogni 12° Cacciatore generato c&#39;è un Cacciatore d&#39;Elite.<br><br>Cacciatori d&#39;Elite:<br> +100% Danno<br> +50% Durata<br> +50% Velocità<br> +50% Raggio</td>
+</tr>
+<tr>
+<td>Bulloni Elettrificati</td>
+<td>Effetti:<br> Danno Cinetico: +5<br> Chance di Sanguinamento: 3%<br><br>I Cacciatori ora sparano proiettili invece di scariche elettriche. Ha effetto sul danno base ed è influenzato dai modificatori di Danno Cinetico.</td>
+</tr>
+<tr>
+<td>Bulloni Elettrificati II</td>
+<td>Effetti:<br> Danno Cinetico: +10<br> Danno Elettrico: -5<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Fulmine a Catena</td>
+<td>Gli attacchi del Cacciatore ora si concatenano a 1 nemico aggiuntivo nelle vicinanze.</td>
+</tr>
+<tr>
+<td>Fulmine a Catena II</td>
+<td>Gli attacchi del Cacciatore ora si concatenano a 2 nemici aggiuntivi nelle vicinanze.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Focus Affilato</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Precisione d&#39;Urto</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Predatore</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Ondata Elettrica</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Intensificatore di Burrasca</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Sovraccarico Quantistico</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Raggio Concentrato</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Scarico Diretto</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Cascata di Fulmini</td>
+<td>Raggio: +30%</td>
+</tr>
+<tr>
+<td>Efficienza Energetica</td>
+<td>Durata: +10%</td>
+</tr>
+<tr>
+<td>Distruzione Ottimizzata</td>
+<td>Durata: +20%</td>
+</tr>
+<tr>
+<td>Matrice Perpetua</td>
+<td>Durata: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Tritatutto</span></div><h1>Tritatutto</h1>
+<p>Tags: Cinetico, A Distanza<br>Genera un&#39;enorme lama rotante quando spari con l&#39;arma principale, che si sposta fino al bordo dello schermo, danneggiando tutti i nemici sul suo cammino.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ambidestria</td>
+<td>Effetti:<br>  +1 Tritatutto</td>
+</tr>
+<tr>
+<td>Lame Fiammeggianti</td>
+<td>Effetti:<br>  Danno da Calore: +7<br>  Chance di Ustione: +3%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di Danno da Calore.</td>
+</tr>
+<tr>
+<td>Lame Fiammeggianti II</td>
+<td>Effetti:<br>  Danno da Calore: +14<br>  Danno Cinetico: -7<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Boomerang</td>
+<td>Il Tritatutto ora torna all&#39;Arma Principale dopo aver raggiunto il bordo dello schermo.</td>
+</tr>
+<tr>
+<td>Boomerang II</td>
+<td>Effetti:<br>  Velocità: +75%<br>  Velocità di Sparo: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Affilatore</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Esperienza d&#39;Incisione</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Ghigliottina</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Lame Affilate</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Lame Temperate</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Filo del Rasoio</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Miglioramenti dell&#39;Elica</td>
+<td>Velocità di Rotazione: +10%</td>
+</tr>
+<tr>
+<td>Rotazione Turbo</td>
+<td>Velocità di Rotazione: +20%</td>
+</tr>
+<tr>
+<td>Rotori dell&#39;Iperpropulsione</td>
+<td>Velocità di Rotazione: +30%</td>
+</tr>
+<tr>
+<td>Lame Allungate</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Portata Estesa</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Maestri a Lungo Raggio</td>
+<td>Raggio: +30%</td>
+</tr>
+<tr>
+<td>Tagliente</td>
+<td>Chance di Sanguinamento: +1%</td>
+</tr>
+<tr>
+<td>Sanguinario</td>
+<td>Chance di Sanguinamento: +3%</td>
+</tr>
+<tr>
+<td>Seghettatura</td>
+<td>Chance di Sanguinamento: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Campo Minato</span></div><h1>Campo Minato</h1>
+<p>Tags: Esplosivo, Drone<br>Completa parole che iniziano con i glifi f, g, h, i genera mine che si muovono lentamente ed esplodono al contatto con i nemici.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Posamine</td>
+<td>genererà una Mina in aggiunta ai glifi esistenti.</td>
+</tr>
+<tr>
+<td>Infusione</td>
+<td>Effetti:<br>  Danno Chimico: +20<br>  Chance di Degrado: 10%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di danno Chimico.</td>
+</tr>
+<tr>
+<td>Infusione II</td>
+<td>Effetti:<br>  Chance di Degrado: +10%<br>  Danno Esplosivo: -50<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Cercatore di Cacciatori</td>
+<td>Effetti:<br>  Velocità: +200%<br>  Raggio: -50%<br><br>Le mine si muovono verso bersagli casuali.</td>
+</tr>
+<tr>
+<td>Cercatore di Cacciatori II</td>
+<td>Effetti:<br>  Mine Generate: +1<br>  Velocità: +100%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Detonatore IA</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Balistica di Precisione</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Devastatore</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Potenziatore del Carico Utile</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Artiglieria Pesante</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Amplificazione della Testata</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Espansione della Portata</td>
+<td>Raggio: +10%</td>
+</tr>
+<tr>
+<td>Copertura del Campo di Battaglia</td>
+<td>Raggio: +20%</td>
+</tr>
+<tr>
+<td>Raggio Illimitato</td>
+<td>Raggio: +30%</td>
+</tr>
+<tr>
+<td>Fabbricatore Rapido</td>
+<td>+1 Mina Generata</td>
+</tr>
+</tbody></table>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Trappola di Lame</span></div><h1>Trappola di Lame</h1>
+<p>Tags: Cinetico, Torretta<br>Completa parole che iniziano con i glifi p, k, l, m genera una trappola di quattro lame rotanti.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Deposito di Lame</td>
+<td>genererà una Trappola di Lame in aggiunta ai glifi esistenti.</td>
+</tr>
+<tr>
+<td>Rivestimento di Veleno</td>
+<td>Effetti:<br>  Danno Chimico: +5<br>  Chance di Degrado: 10%<br><br>Ha effetto sul danno base ed è influenzato dai modificatori di Danno Chimico.</td>
+</tr>
+<tr>
+<td>Rivestimento di Veleno II</td>
+<td>Effetti:<br>  Danno Chimico: 5+<br>  Chance di Degrado: +5%<br><br>Ha effetto sul danno base.</td>
+</tr>
+<tr>
+<td>Lame Seghettate</td>
+<td>Le Trappole di Lame aggiungono la loro Chance Critico alla possibilità di infliggere Sanguinamento.</td>
+</tr>
+<tr>
+<td>Lame Seghettate II</td>
+<td>Il Danno da Sanguinamento aumenta di 5. Questo si applica al Sanguinamento inflitto da tutte le fonti e influisce sul danno base.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Trappola Raffinata</td>
+<td>Evoluzione: +10 Uccisioni</td>
+</tr>
+<tr>
+<td>Vortice Reattivo</td>
+<td>Evoluzione: +20 Uccisioni</td>
+</tr>
+<tr>
+<td>Laceratore</td>
+<td>Evoluzione: +30 Uccisioni</td>
+</tr>
+<tr>
+<td>Tagliatori Induriti</td>
+<td>Danno: +10%</td>
+</tr>
+<tr>
+<td>Tagliatori in Titanio</td>
+<td>Danno: +20%</td>
+</tr>
+<tr>
+<td>Tagliatori di Diamanti</td>
+<td>Danno: +30%</td>
+</tr>
+<tr>
+<td>Ingranaggi Lubrificati</td>
+<td>Velocità di Rotazione: +10%</td>
+</tr>
+<tr>
+<td>Ingranaggi di Precisione</td>
+<td>Velocità di Rotazione: +20%</td>
+</tr>
+<tr>
+<td>Cambio Quantistico</td>
+<td>Velocità di Rotazione: +30%</td>
+</tr>
+<tr>
+<td>Meccanismo Migliorato</td>
+<td>Durata: +10%</td>
+</tr>
+<tr>
+<td>Meccanismo Impeccabile</td>
+<td>Durata: +20%</td>
+</tr>
+<tr>
+<td>Caricatori di Ricodio</td>
+<td>Durata: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="enemies" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Enemies</span></div><h1>Enemies</h1>
+<p>Enemies in <em>Glyphica</em> are procedurally spawned based on an internal metric called <strong>threat</strong>, which increases as the run progresses. In Trial Mode, the threat is multiplied by the current Trial Level, making each level progressively harder. In Endless Mode, the threat is compared to an adaptive scaling system based on the player&#39;s level, with the higher value determining the spawn difficulty.</p>
+<p>Enemies are also categorized into <strong>specials</strong> and <strong>elites</strong>, each with its own class cap that limits their spawn rate within the overall threat level.</p>
+<h2>List of Enemies</h2>
+<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Shield Drone</a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Shooter</a><a href="#splitter" class="portal">Splitter</a><a href="#warder" class="portal">Warder</a><a href="#swarmer" class="portal">Swarmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Drone</span></div><h1>Drone</h1>
+<p>Drones are enemies that relentlessly move toward your main weapon. They can occasionally appear in two enhanced forms:<br>Enlarged: Triples their health, making them harder to defeat.<br>Hastened: Doubles their movement speed, increasing the urgency to eliminate them.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/drone.png"></td>
+<td>Vita: 80<br>Danno: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/drone2.png"></td>
+<td>Vita: 200<br>Danno: 60<br></td>
+</tr>
+<tr>
+<td><img src="img/drone3.png"></td>
+<td>Vita: 1500<br>Danno: 90<br></td>
+</tr>
+<tr>
+<td><img src="img/drone4.png"></td>
+<td>Vita: 1000<br>Danno: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/drone5.png"></td>
+<td>Vita: 1600<br>Danno: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/drone6.png"></td>
+<td>Vita: 2600<br>Danno: 180<br></td>
+</tr>
+<tr>
+<td><img src="img/drone7.png"></td>
+<td>Vita: 4000<br>Danno: 210<br></td>
+</tr>
+</tbody></table>
+</div><div id="shielddrone" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Shield Drone</span></div><h1>Shield Drone</h1>
+<p>The Shield Drone is a variant of the Drone enemy that features a regenerating shield. It has two health bars: the top one represents the shield, which begins to regenerate if it does not take damage for a certain period.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/shielddrone.png"></td>
+<td>Vita: 100<br>Scudo: 200<br>Danno: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone2.png"></td>
+<td>Vita: 200<br>Scudo: 400<br>Danno: 100<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone3.png"></td>
+<td>Vita: 400<br>Scudo: 800<br>Danno: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone4.png"></td>
+<td>Vita: 800<br>Scudo: 1600<br>Danno: 200<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone5.png"></td>
+<td>Vita: 1600<br>Scudo: 3200<br>Danno: 250<br></td>
+</tr>
+</tbody></table>
+</div><div id="stalker" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Stalker</span></div><h1>Stalker</h1>
+<p>The Stalker is a variant of the Drone enemy that initially appears with most of its word hidden. As you type, the word gradually reveals itself, requiring careful attention and quick typing to eliminate.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/stalker.png"></td>
+<td>Vita: 400<br>Danno: 80<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker2.png"></td>
+<td>Vita: 800<br>Danno: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker3.png"></td>
+<td>Vita: 1600<br>Danno: 160<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker4.png"></td>
+<td>Vita: 3200<br>Danno: 200<br></td>
+</tr>
+</tbody></table>
+</div><div id="shooter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Shooter</span></div><h1>Shooter</h1>
+<p>The Shooter is an enemy that halts at the edge of the level and continuously fires durable projectiles toward your main weapon until it is destroyed.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/shooter.png"></td>
+<td>Vita: 300<br>Danno: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/shooter2.png"></td>
+<td>Vita: 600<br>Danno: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/shooter3.png"></td>
+<td>Vita: 1200<br>Danno: 25<br></td>
+</tr>
+</tbody></table>
+</div><div id="splitter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Splitter</span></div><h1>Splitter</h1>
+<p>The Splitter initially appears as a single enemy but is actually composed of multiple parts. When one part is destroyed, the Splitter loses its integrity, causing its components to break apart and become individual enemies.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/splitter.png"></td>
+<td>Shard Count: 4<br>Shard Health: 350<br>Shard Damage: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/splitter2.png"></td>
+<td>Shard Count: 5<br>Shard Health: 500<br>Shard Damage: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/splitter3.png"></td>
+<td>Shard Count: 6<br>Shard Health: 650<br>Shard Damage: 40<br></td>
+</tr>
+</tbody></table>
+</div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Warder</span></div><h1>Warder</h1>
+<p>The Warder is an elite enemy that appears in the late game. It features a revolving shield that blocks damage from the direction the shield is currently facing. Additionally, while the Warder is alive, it provides a protective aura to nearby enemies, making them invulnerable until the Warder is defeated.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/warder.png"></td>
+<td>Vita: 300<br></td>
+</tr>
+</tbody></table>
+</div><div id="swarmer" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Swarmer</span></div><h1>Swarmer</h1>
+<p>The Swarmer is an elite enemy that periodically launches groups of smaller enemies toward the main weapon. It continues to do so until it is destroyed.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/swarmer.png"></td>
+<td>Vita: 2000<br></td>
+</tr>
+</tbody></table>
+</div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Loot Items</span></div><h1>Loot Items</h1>
+<p>Loot items are obtained during a run by activating a treasure chest pickup. A randomized selection of loot items will be displayed, and choosing one grants a passive bonus that remains active for the rest of the run.</p>
+<p>Loot items are categorized as <strong>common</strong>, <strong>uncommon</strong>, and <strong>rare</strong>, which determine their likelihood of appearing in loot selections. Defeating a boss in Trial Mode rewards a treasure chest containing only rare items.</p>
+<h2>List of Rare Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Truccato</td>
+<td>Drone Generati: +1<br><br>Tutte le Armi Drone:<br>  Durata: -75%</td>
+</tr>
+<tr>
+<td>Saccheggio</td>
+<td>+1 Opzione Bottino</td>
+</tr>
+<tr>
+<td>Multi-Targeting</td>
+<td>Tutte le Armi a Distanza ottengono +1% Chance Critico per ogni Arma che possiedi.</td>
+</tr>
+<tr>
+<td>Magnete Gigante</td>
+<td>Ottieni automaticamente le risorse quando scadono.</td>
+</tr>
+<tr>
+<td>Congelamento</td>
+<td>Effetto globale: non conta come un&#39;arma.<br><br>I nemici subiscono danni nel tempo quando sono Congelati.</td>
+</tr>
+<tr>
+<td>Necrobomba</td>
+<td>Quando distruggi un nemico con danno Critico Esplosivo, innesca una serie di esplosioni attorno alla posizione del nemico caduto.</td>
+</tr>
+<tr>
+<td>Premio</td>
+<td>Distruggendo un nemico con danno Critico, c&#39;è la chance del 30% di generare potenziamenti Rilancio, Scudo o Vita.</td>
+</tr>
+<tr>
+<td>Dopo lo Shock</td>
+<td>Il danno Critico infliggerà sempre effetti di stato.</td>
+</tr>
+<tr>
+<td>Vampirismo</td>
+<td>Guadagni vita equivalente a 5% di danno Critico Cinetico</td>
+</tr>
+<tr>
+<td>Saggezza</td>
+<td>Raccogliendo uno Scudo, ottieni 10 Uccisioni su tutte le Evoluzioni delle armi.</td>
+</tr>
+<tr>
+<td>Buffone</td>
+<td>Raccogliendo un Rilancio, infliggi una quantità casuale di danno tra 0 e 100 a tutti i nemici sullo schermo.</td>
+</tr>
+<tr>
+<td>Ultimo Atto</td>
+<td>Quando uno Scudo viene distrutto, c&#39;è una chance del 30% di ottenere Danno Doppio.</td>
+</tr>
+<tr>
+<td>Danno Triplo</td>
+<td>Durante il Doppio Danno, ogni risorsa Doppio Danno che sarebbe dovuta apparire diventa invece un Triplo Danno.</td>
+</tr>
+<tr>
+<td>Frattura</td>
+<td>Durante il Congelamento, ogni risorsa di Congelamento che sarebbe stata generata è una Frattura, che infligge danno a ogni nemico Congelato.</td>
+</tr>
+<tr>
+<td>Ascetico</td>
+<td>Quando esci dalla schermata Bottino, ottieni +10% di danno per ogni Rilancio non utilizzato per 20 secondi.</td>
+</tr>
+<tr>
+<td>Iniziazione</td>
+<td>Le nuove armi acquisite ottengono automaticamente un livello Evoluzione.</td>
+</tr>
+<tr>
+<td>Immortalità</td>
+<td>Se la tua Arma Principale sta per essere distrutta, verrà ridotta invece a 1 di vita. Questa abilità può essere usata solo una volta ogni 2 minuti.</td>
+</tr>
+<tr>
+<td>Illuminazione</td>
+<td>Distruggendo un nemico con danno Critico, ottieni +5 uccisioni all&#39;Evoluzione dell&#39;arma.</td>
+</tr>
+<tr>
+<td>Più Vicino</td>
+<td>Completare la parola di un nemico dopo che è stato distrutto dà +10% di danno per 10 secondi. Si accumula fino a 3 volte.</td>
+</tr>
+<tr>
+<td>Omicida</td>
+<td>Tutte le Armi Drone: +50% Danno</td>
+</tr>
+<tr>
+<td>Boia</td>
+<td>Tutte le Armi Torretta: +50% Danno</td>
+</tr>
+<tr>
+<td>Degenerazione</td>
+<td>Tutte le Armi a Distanza: +50% Danno</td>
+</tr>
+</tbody></table>
+<h2>List of Uncommon Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bruciapelo</td>
+<td>I nemici colpiti vicino all&#39;Arma Principale ricevono +20% di danno.</td>
+</tr>
+<tr>
+<td>Aggravamento</td>
+<td>Tutte le Armi:<br> Chance di Stato: +2%</td>
+</tr>
+<tr>
+<td>Criotecnica</td>
+<td>Risorse di Congelamento:<br> Chance di Rilascio: +3%<br><br>Risorse di Doppio Danno:<br> -100% Chance di Rilascio</td>
+</tr>
+<tr>
+<td>Guerriero</td>
+<td>Risorse di Danno Doppio:<br> Chance di Rilascio: +3%<br><br>Risorse di Congelamento:<br> -100% Chance di Rilascio</td>
+</tr>
+<tr>
+<td>Piñata</td>
+<td>Tutte le Armi:<br>  Chance di Bottini Bonus: +2%<br><br>Chance di:<br>  Parole più Lunghe: +20%</td>
+</tr>
+<tr>
+<td>Cannone di Vetro</td>
+<td>Tutte le Armi:<br>  Danno: +30%<br><br>Arma Principale:<br>  Vita Massima: -50%</td>
+</tr>
+<tr>
+<td>Rigenerazione</td>
+<td>Niente più risorse di Vita.<br><br>Invece, guarisci del 10% quando passi al livello successivo o raccogli un bottino.</td>
+</tr>
+<tr>
+<td>Afflizione</td>
+<td>Le armi D.N.T. possono infliggere Danno Critico.</td>
+</tr>
+<tr>
+<td>Frantumatore</td>
+<td>Tutte le Armi CInetiche guadagnano +5% Chance Critico contro i nemici Congelati.</td>
+</tr>
+<tr>
+<td>Veggente</td>
+<td>L&#39;attivazione delle risorse Rilancio aumenta il Raggio globale del 10% per 10 secondi. Si accumula fino a 3 volte.</td>
+</tr>
+<tr>
+<td>Resilienza</td>
+<td>L&#39;attivazione delle risorse Scudo aumenta la Durata globale del 10% per 10 secondi. Si accumula fino a 3 volte.</td>
+</tr>
+<tr>
+<td>Giocatore d&#39;Azzardo</td>
+<td>Aggiunge 1 al numero Massimo di Rilanci, fino a un totale di 6.</td>
+</tr>
+<tr>
+<td>Protettore</td>
+<td>Aggiunge 1 al numero Massimo di Rilanci, fino a un totale di 6.</td>
+</tr>
+<tr>
+<td>Impeccabile</td>
+<td>Ogni x17 Input Perfetto aumenta la tua Velocità di Sparo globale di 5%.</td>
+</tr>
+<tr>
+<td>Rilascio</td>
+<td>In caso di errore, infliggi 20 di danno Esplosivo a tutti i nemici per ogni x17 Input Perfetto.</td>
+</tr>
+<tr>
+<td>Spreco</td>
+<td>Tutte le Armi D.N.T.: +35% di Velocità di Sparo</td>
+</tr>
+<tr>
+<td>Appassito</td>
+<td>Tutti gli Effetti di Stato.: +35% di Velocità di Sparo</td>
+</tr>
+</tbody></table>
+<h2>List of Common Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Schizzo</td>
+<td>Tutte le Armi Esplosive:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Impatto</td>
+<td>Tutte le Armi Esplosive:<br>  Raggio: +20%</td>
+</tr>
+<tr>
+<td>Vaporizzazione</td>
+<td>Tutte le Armi Esplosive:<br> Moltiplicatore Crit.: +100%</td>
+</tr>
+<tr>
+<td>Goccia Mortale</td>
+<td>Tutte le Armi Esplosive:<br> Chance di Danno x2: +2%</td>
+</tr>
+<tr>
+<td>Punta Cava</td>
+<td>Tutte le Armi Cinetiche:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Scoppio</td>
+<td>Tutte le Armi Cinetiche:<br>  Velocità di Sparo: ++20%</td>
+</tr>
+<tr>
+<td>Penetrazione</td>
+<td>Tutte le Armi Cinetiche:<br> Chance Critico: +2%</td>
+</tr>
+<tr>
+<td>Mietitore</td>
+<td>Tutte le Armi Cinetiche:<br>  Chance di Sanguinamento: +3%</td>
+</tr>
+<tr>
+<td>Scottatura</td>
+<td>Tutte le Armi da Calore:<br> Danno: +20%</td>
+</tr>
+<tr>
+<td>Termosifone</td>
+<td>Tutte le Armi da Calore:<br> Raggio: +20%</td>
+</tr>
+<tr>
+<td>Rinascita</td>
+<td>Tutte le Armi da Calore:<br> Chance di Rilancio: +5%</td>
+</tr>
+<tr>
+<td>Infiammabile</td>
+<td>Tutte le Armi da Calore:<br> Chance di Ustione: +3%</td>
+</tr>
+<tr>
+<td>Ipotermia</td>
+<td>Tutte le Armi Congelanti:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Sottozero</td>
+<td>Tutte le Armi Congelanti:<br>  Chance di Effetto di Congelamento: +3%</td>
+</tr>
+<tr>
+<td>Esaurimento</td>
+<td>Tutte le Armi Congelanti:<br>  Chance di Scudo: +5%</td>
+</tr>
+<tr>
+<td>Refrigerante</td>
+<td>Tutte le Armi Congelanti:<br>  Durata: +20%</td>
+</tr>
+<tr>
+<td>Carica Latente</td>
+<td>Tutte le Armi Elettriche:<br>  Chance di Effetto Statico: +3%</td>
+</tr>
+<tr>
+<td>Canalizzatore</td>
+<td>Tutte le Armi Elettriche:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Modulatore</td>
+<td>Tutte le Armi Elettriche:<br>  Velocità di Sparo: ++20%</td>
+</tr>
+<tr>
+<td>Concentrato</td>
+<td>Tutte le Armi Elettriche:<br>  Durata: +20%</td>
+</tr>
+<tr>
+<td>Estensore</td>
+<td>Tutte le Armi Drone:<br>  Durata: +20%</td>
+</tr>
+<tr>
+<td>Propulsori</td>
+<td>Tutte le Armi Drone:<br>  Velocità: +20%</td>
+</tr>
+<tr>
+<td>Automata</td>
+<td>Tutte le Armi Drone:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Cuori di Ghiaccio</td>
+<td>Tutte le Armi Drone:<br>  Chance di Rilascio Congelamento: +2%</td>
+</tr>
+<tr>
+<td>Potenziatore di Segnale</td>
+<td>Tutte le Armi a Distanza:<br>  Raggio: +20%</td>
+</tr>
+<tr>
+<td>Zero Ritardi</td>
+<td>Tutte le Armi a Distanza:<br>  Velocità: +20%</td>
+</tr>
+<tr>
+<td>Controlli</td>
+<td>Tutte le Armi a Distanza:<br>  Danno: +20%</td>
+</tr>
+<tr>
+<td>Sostenitore</td>
+<td>Tutte le Armi Torretta:<br>  Durata: +20%</td>
+</tr>
+<tr>
+<td>Cannone Automatico</td>
+<td>Tutte le Armi Torretta:<br>  Velocità di Sparo: ++20%</td>
+</tr>
+<tr>
+<td>Calibrazione</td>
+<td>Tutte le Armi Torretta:<br> Danno: +20%</td>
+</tr>
+<tr>
+<td>Attrito</td>
+<td>Tutti gli Effetti di Stato:<br> Danno: +20%</td>
+</tr>
+<tr>
+<td>Sofferenza</td>
+<td>Tutti gli Effetti di Stato:<br> Durata: +20%</td>
+</tr>
+<tr>
+<td>Segreto</td>
+<td>Tutte le Armi Bottino:<br>  Chance Critico: +2%</td>
+</tr>
+<tr>
+<td>Armamenti</td>
+<td>Tutte le Armi:<br>  Danno: +10%</td>
+</tr>
+<tr>
+<td>Kit di Sopravvivenza</td>
+<td>Tutte le Armi:<br>  Durata: +10%</td>
+</tr>
+<tr>
+<td>Telescopio</td>
+<td>Tutte le Armi:<br>  Raggio: +10%</td>
+</tr>
+<tr>
+<td>Epicentro</td>
+<td>Le Armi da Calore infliggono +20% di danno quando il bersaglio è vicino all&#39;Arma Principale.</td>
+</tr>
+<tr>
+<td>Refrigerante</td>
+<td>Risorse di Congelamento:<br> Durata: +20%<br> Chance di Rilascio: +1%</td>
+</tr>
+<tr>
+<td>Vulnerabilità</td>
+<td>Risorse di Doppio Danno:<br>  Durata: +20%<br>  Chance di Rilascio: +1%</td>
+</tr>
+<tr>
+<td>Precisione</td>
+<td>Tutte le Armi:<br>  Chance Critico: +1%<br>  Moltiplicatore Crit.: +50%<br><br>Chance di:<br>  Parole più Lunghe: +10%</td>
+</tr>
+<tr>
+<td>Kit Medico</td>
+<td>Rigenera 100 di Vita</td>
+</tr>
+<tr>
+<td>Scudo</td>
+<td>Aggiungi 1 scudo.<br><br>Scudi attuali: 0 / 3</td>
+</tr>
+<tr>
+<td>Rilancio</td>
+<td>Aggiungi 1 Rilancio.<br><br>Rilanci Attuali: 0 / 5</td>
+</tr>
+<tr>
+<td>Afflictor</td>
+<td>Each Afflictor increases D.O.T. Damage by 3%. This bonus is doubled when close to Main Turret.</td>
+</tr>
+</tbody></table>
+</div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Augments</span></div><h1>Augments</h1>
+<p>Augments are permanent upgrades that can be unlocked using Coins (§), a currency earned during a run. At the start of each run, players have a limited number of slots to equip unlocked augments, with the number of available slots varying based on the selected Omen level.</p>
+<p>Each augment usually has specific conditions that determine its benefits. To get the most out of your augments, consider the synergies between them and align them with your preferred strategy.</p>
+<h2>Codice: Arma principale</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Corazzato</td>
+<td>Arma Principale:<br>  Vita: +50%</td>
+</tr>
+<tr>
+<td>Desideroso</td>
+<td>All&#39;inizio di ogni partita Prova o Infinita, ottieni un livello.</td>
+</tr>
+<tr>
+<td>Giocatore d&#39;Azzardo</td>
+<td>Ogni Rilancio che usi conferisce alla tua Arma Principale +20% di danni per 20 secondi.</td>
+</tr>
+<tr>
+<td>Immacolato</td>
+<td>L&#39;Input Perfetto conferisce invece +1,5% Chance di Critico per accumulo.</td>
+</tr>
+<tr>
+<td>Foschia</td>
+<td>Se hai meno del 50% di vita, ottieni +50% di bonus globale di Velocità di Fuoco.</td>
+</tr>
+<tr>
+<td>Devozione</td>
+<td>L&#39;Arma principale ottiene +25% di danni per ogni slot arma vuoto.</td>
+</tr>
+</tbody></table>
+<h2>Codice: Droni</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armata</td>
+<td>20% di probabilità di generare un drone aggiuntivo ogni volta che ne viene generato uno.</td>
+</tr>
+<tr>
+<td>Diversità</td>
+<td>Per ogni arma non drone equipaggiata, aumenta la durata di tutti i droni del 20%.</td>
+</tr>
+<tr>
+<td>Blitzkrieg</td>
+<td>Gli aggiornamenti della velocità dei droni si applicano anche ai danni dei droni.</td>
+</tr>
+<tr>
+<td>Retribuzione</td>
+<td>Ogni volta che uno Scudo viene distrutto, tutti i droni esistenti si autodistruggono infliggendo danni esplosivi.</td>
+</tr>
+<tr>
+<td>Capro Espiatorio</td>
+<td>Gli errori di digitazione distruggono casualmente un drone esistente anziché essere conteggiati come errori.</td>
+</tr>
+<tr>
+<td>Bottino</td>
+<td>I droni possono rilasciare risorse alla scadenza.</td>
+</tr>
+</tbody></table>
+<h2>Codice: Torretta</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fortezza</td>
+<td>Ogni Evoluzione della Torretta garantisce anche +50 vita massima dell&#39;Arma Principale.</td>
+</tr>
+<tr>
+<td>Networked</td>
+<td>Each other Turret grants +10% Rate of Fire to all Turrets, up to a maximum of +50%.</td>
+</tr>
+<tr>
+<td>Informazioni del Campo</td>
+<td>L&#39;attivazione di una risorsa garantisce +30% di Raggio a tutte le Torrette esistenti. Questo effetto non si accumula.</td>
+</tr>
+<tr>
+<td>Relè Oscuro</td>
+<td>Un proiettile rimbalza tra le torrette esistenti in modo casuale, infliggendo danni elettrici.</td>
+</tr>
+<tr>
+<td>Osservatore</td>
+<td>Se non hai attaccato per 3 secondi, ottieni +30% di Danni alla Torretta fino al tuo prossimo attacco.</td>
+</tr>
+<tr>
+<td>Debolezza</td>
+<td>I nemici entro il Raggio di una Torretta subiscono il 30% di danni in più da altre fonti.</td>
+</tr>
+</tbody></table>
+<h2>Codex: D.O.T.</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Corrosion</td>
+<td>D.O.T. Damage can now crit.</td>
+</tr>
+<tr>
+<td>Lamprey</td>
+<td>D.O.T. Damage dealt close to Main Weapon heals the Main Weapon by 1 Health.</td>
+</tr>
+<tr>
+<td>Tenacity</td>
+<td>Increase duration of all D.O.T. weapons by 35%.</td>
+</tr>
+<tr>
+<td>Afflictors</td>
+<td>Add Afflictors to Loot pool.<br>Each gives +3% D.O.T. Damage. Double effect near Main Weapon.</td>
+</tr>
+<tr>
+<td>Conviction</td>
+<td>D.O.T. weapons get +40% Rate of Fire as long as you have max Re-rolls.</td>
+</tr>
+<tr>
+<td>Infector</td>
+<td>D.O.T. weapons have +3% status effect chance.</td>
+</tr>
+</tbody></table>
+<h2>Codex: Remote</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Close Combat</td>
+<td>All Remote Damage is considered close to Main Weapon.</td>
+</tr>
+<tr>
+<td>Caltrops</td>
+<td>On a critical hit by remote weapons, spawn 12 Caltrops that damage passing enemies.</td>
+</tr>
+<tr>
+<td>Caustic Ammo</td>
+<td>Chance to drop Caustic Ammo - adds 10 base Chemical Damage to Remote Weapons for 20 seconds.</td>
+</tr>
+<tr>
+<td>Piracy</td>
+<td>For every Loot Weapon equipped, increase all Remote Damage by 15%.</td>
+</tr>
+<tr>
+<td>Deliverance</td>
+<td>All Remote weapons get +40% Range as long as you have max Shields.</td>
+</tr>
+<tr>
+<td>Sniper</td>
+<td>Remote Range upgrades also apply to Remote Damage.</td>
+</tr>
+</tbody></table>
+</div><div id="home" class="page"><div class="breadcrumbs"><span>Home</span></div><h1>Glyphica Official Wiki</h1>
+<h2>Welcome Typist</h2>
+<p>Welcome to the official wiki for Glyphica: Typing Survival! Test your typing skills in this horde survival game where speed and accuracy are your ultimate weapons. Equip powerful tools that transform your typing prowess into devastating attacks against relentless foes. Discover more and grab the game on Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
+<p>This wiki serves as a comprehensive guide to the features, mechanics, and content available in the Early Access version of Glyphica. Our goal is to keep the information up-to-date as we progress toward the full release, version 1.0. The wiki is organized into sections listed in the table of contents and will be updated regularly as the game evolves.</p>
+<h2>Table of Contents</h2>
+<a href="#main_weapons" class="portal">Main Weapons</a><a href="#weapons" class="portal">Level-Up Weapons</a><a href="#enemies" class="portal">Enemies</a><a href="#loot" class="portal">Loot Items</a><a href="#loot1" class="portal">Augments</a></div></div></div>
+</body>
+</html>

@@ -1,0 +1,1946 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Do not edit block start */
+/* ======================= */
+#imml a.portal:not(.inline) {
+	display: block;
+}
+
+#imml .pages>.page:target~.page:last-child,
+#imml .pages>.page {
+	display: none;
+}
+
+#imml .pages> :last-child,
+#imml .pages>.page:target {
+	display: block;
+}
+
+#imml .pages> :last-child .breadcrumbs {
+	visibility: hidden;
+}
+/* ===================== */
+/* Do not edit block end */
+
+:root {
+	--imml-text-light: #333333;
+	--imml-text-dark: #eeeeee;
+	--imml-background-light: #ffffff;
+	--imml-background-dark: #121212;
+	--imml-accent-light: dodgerblue;
+	--imml-accent-dark: dodgerblue;
+}
+
+:root {
+	--imml-background: var(--imml-background-light);
+	--imml-text: var(--imml-text-light);
+	--imml-text-inverse: var(--imml-text-dark);
+	--imml-accent: var(--imml-accent-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--imml-background: var(--imml-background-dark);
+		--imml-text: var(--imml-text-dark);
+		--imml-text-inverse: var(--imml-text-light);
+		--imml-accent: var(--imml-accent-dark);
+	}
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100%;
+	color: var(--imml-text);
+	background: var(--imml-background);
+}
+
+.pages {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.pages .page {
+	padding-top: 2em;
+	padding-bottom: 10em;
+}
+
+.page .breadcrumbs {
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: small;
+}
+
+p {
+	line-height: 22px;
+}
+
+a {
+	width: fit-content;
+	color: var(--imml-accent);
+	border-bottom: 1px dotted var(--imml-accent);
+	text-decoration: none;
+}
+
+hr {
+	border-style: solid;
+	border-bottom: 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	border-left: 0.5em solid var(--imml-text-inverse);
+	padding: 0 1em;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+code {
+	background: var(--imml-text-inverse);
+	border-radius: 0.25em;
+	padding: 0em 0.25em;
+	font-family: monospace;
+	display: inline-block;
+}
+
+pre code {
+	padding: 0.5em 0.5em;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	margin-top: 0.25em;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	text-align: left;
+	font-weight: bold;
+}
+
+thead tr {
+	border-bottom: 1px solid;
+}
+
+tr {
+	border-bottom: 1px dashed;
+}
+
+td,
+th {
+	padding: 4px;
+}
+</style>
+</head>
+<body>
+<div id="imml"><div class="pages"><div id="main_weapons" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Main Weapons</span></div><h1>Main Weapons</h1>
+<p>Main weapons are the starting weapons in <em>Glyphica</em> and play a central role in gameplay. When you type a word displayed above an enemy, the main weapon locks onto that enemy as its target. Each main weapon has unique effects and mechanics, requiring different strategies to use effectively.</p>
+<p>While some main weapons emphasize typing speed (WPM), others demand a more tactical approach. Like other weapons in the game, main weapons can be upgraded and evolved, enhancing their abilities and effectiveness as you progress.</p>
+<h2>List of Main Weapons</h2>
+<a href="#repeater" class="portal">Repeater</a><a href="#heatray" class="portal">Heat Ray</a><a href="#barrage" class="portal">Barrage</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Repeater</span></div><h1>Repeater</h1>
+<p>Tags: Kinetic, Main<br>Devastating weapon that fires a number of bullets in short bursts.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Frost Fang</td>
+<td>Effects:<br>  Cold Damage: +10<br>  Freeze Chance: 3%<br><br>Affects base damage and affected by Cold damage modifiers.</td>
+</tr>
+<tr>
+<td>Frost Fang II</td>
+<td>Effects:<br>  Cold Damage: +20<br>  Kinetic Damage: -10<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Ricochet</td>
+<td>Effects:<br>  Projectile Chain: 3<br><br>Repeater projectiles ricochet to random nearby targets, dealing 50% damage on hits after the first one.</td>
+</tr>
+<tr>
+<td>Ricochet II</td>
+<td>Effects:<br>  Projectile Chain: +2</td>
+</tr>
+<tr>
+<td>Shotgun</td>
+<td>Effects:<br>  Projectile Count: +5<br>  Projectile Spread: +400%<br>  Kinetic Damage: -10<br><br>Repeater now fires a cluster of weaker projectiles with a large spread. Damage modifier affects base damage.</td>
+</tr>
+<tr>
+<td>Shotgun II</td>
+<td>Effects:<br>  Projectile Count: +5<br>  Projectile Spread: +100%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Amplified Learning</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Battle Data</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Adept Tutelage</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Full Metal Jacket</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Armor-Piercing Upgrade</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Penetrator Enhancement</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Advanced Targeting</td>
+<td>Crit Chance: +1%<br>  Crit Damage: +50%</td>
+</tr>
+<tr>
+<td>Precision Guidance System</td>
+<td>Crit Chance: +2%<br>  Crit Damage: +100%</td>
+</tr>
+<tr>
+<td>Eagle Eye Integration</td>
+<td>Crit Chance: +3%<br>  Crit Damage: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Heat Ray</span></div><h1>Heat Ray</h1>
+<p>Tags: Heat, Main, D.O.T.<br>Fires a constant beam of incredibly accurate concentrated light that does damage over time.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ice Beam</td>
+<td>Effects:<br>  Heat Damage: -25<br>  Cold Damage: +25<br>  Freeze Chance: 8%<br><br>Affects base damage. Heat Ray damage type will become Cold and have a increased chance to inflict Freeze.</td>
+</tr>
+<tr>
+<td>Ice Beam II</td>
+<td>Effects:<br>  Cold Damage: +20<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Reflection</td>
+<td>Heat Ray now passes through enemies and reflects 2x off screen edge.</td>
+</tr>
+<tr>
+<td>Reflection II</td>
+<td>Heat Ray now reflects 4x off screen edge.</td>
+</tr>
+<tr>
+<td>Double-Bladed</td>
+<td>Another beam fires in the opposite direction. All evolutions and upgrades apply to both beams.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fusion Core</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Primordial Flame</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Apocalyptic Inferno</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Ferocious Flame</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Intense Heat</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Cataclysmic Burst</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Convergence</td>
+<td>Beam Thickness: +20%<br>  (Range)</td>
+</tr>
+<tr>
+<td>Radiance</td>
+<td>Beam Thickness: +40%<br>  (Range)</td>
+</tr>
+<tr>
+<td>Beamforge</td>
+<td>Beam Thickness: +60%<br>  (Range)</td>
+</tr>
+<tr>
+<td>Rapid Ignition</td>
+<td>Rate of Fire: +10%</td>
+</tr>
+<tr>
+<td>Blazing Speed</td>
+<td>Rate of Fire: +20%</td>
+</tr>
+<tr>
+<td>Infernal Surge</td>
+<td>Rate of Fire: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#main_weapons">Main Weapons</a> / <span>Barrage</span></div><h1>Barrage</h1>
+<p>Tags: Explosive, Main<br>Fires a volley of explosive rockets at a target and its surroundings. Recharges over time.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rocket Array</td>
+<td>Barrage will now fire 3 - 6 missiles per ammo bar instead of 2 - 5.</td>
+</tr>
+<tr>
+<td>Rocket Array II</td>
+<td>Barrage will now fire 4 - 7 missiles per ammo bar instead of 3 - 6.</td>
+</tr>
+<tr>
+<td>Seismic Munition</td>
+<td>Missiles embed themselves into the ground instead of detonating and generate explosive pulses for the next few seconds.</td>
+</tr>
+<tr>
+<td>Seismic Munition II</td>
+<td>Effects:<br>  Range: 25%<br>  Duration: 25%</td>
+</tr>
+<tr>
+<td>Resupply</td>
+<td>Supply pickups will now spawn. Activating these pickups will fully reload your main weapon and give a 30% damage boost to the next shot.</td>
+</tr>
+<tr>
+<td>Resupply II</td>
+<td>Supply pickups now also award 30% explosion range boost to the next shot.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Supreme Barrage</td>
+<td>Evolution: +10</td>
+</tr>
+<tr>
+<td>Ultimate Siege</td>
+<td>Evolution: +20</td>
+</tr>
+<tr>
+<td>Apocalyptic Volley</td>
+<td>Evolution: +30</td>
+</tr>
+<tr>
+<td>Impact Burst</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Devastation Strike</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Cataclysmic Blast</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Extended Reach</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Long-Range Payload</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Wide-Angle Assault</td>
+<td>Range: +30%</td>
+</tr>
+<tr>
+<td>Swift Reload</td>
+<td>Reload Speed: +10%<br>  (Rate of Fire)</td>
+</tr>
+<tr>
+<td>Rapid Resupply</td>
+<td>Reload Speed: +20%<br>  (Rate of Fire)</td>
+</tr>
+<tr>
+<td>Quick Recharge</td>
+<td>Reload Speed: +30%<br>  (Rate of Fire)</td>
+</tr>
+</tbody></table>
+</div><div id="weapons" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Level-Up Weapons</span></div><h1>Level-Up Weapons</h1>
+<p>Level-up weapons are obtained during a run as you level up. Once selected, the weapon is added to your arsenal. Each weapon has a unique activation method, but most can be triggered through typing and targeting with the main weapon.</p>
+<p>A maximum of four weapons can be obtained this way. Once a weapon is added to your arsenal, its upgrades become available in the level-up upgrade pool, allowing you to enhance its abilities as you progress.</p>
+<h2>List of Level-Up Weapons</h2>
+<a href="#spectre" class="portal">Spectre</a><a href="#sentry" class="portal">Sentry</a><a href="#tesla" class="portal">Tesla Mine</a><a href="#oscillator" class="portal">Oscillator</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Hunter</a><a href="#chopper" class="portal">Chopper</a><a href="#minefield" class="portal">Minefield</a><a href="#blade" class="portal">Blade Trap</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Spectre</span></div><h1>Spectre</h1>
+<p>Tags: Kinetic, Drone<br>Completing words containing the glyphs a, e, o spawns fast melee drones equivalent to number of the above matched.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Supercharged</td>
+<td>Every 20th Spectre spawned is a SUPER Spectre.<br><br>Super Spectres:<br>  +100% Damage<br>  +50% Duration<br>  +50% Speed</td>
+</tr>
+<tr>
+<td>Self Destruct</td>
+<td>Effects:<br>  Explosive Damage: +50<br><br>When Spectre expires, it self-destructs, dealing Explosive Damage. Affects base damage and affected by Explosive damage modifiers.</td>
+</tr>
+<tr>
+<td>Self Destruct II</td>
+<td>Effects:<br>  Explosive Damage: +50<br>  Range: +30%<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Volatile Fuel</td>
+<td>Effects:<br>  Speed: +50%</td>
+</tr>
+<tr>
+<td>Volatile Fuel II</td>
+<td>Effects:<br>  Speed: 50%<br>  Duration: -25%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ghostly Learnings</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Spectral Expertise</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Phantasmagoria</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Swarm Tactics</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Coordinated Assault</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Hive Mind Strategy</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Ricodium Batteries</td>
+<td>Duration: +10%</td>
+</tr>
+<tr>
+<td>Energized Cells</td>
+<td>Duration: +20%</td>
+</tr>
+<tr>
+<td>Power Core Overcharge</td>
+<td>Duration: +30%</td>
+</tr>
+<tr>
+<td>Self-Assembly</td>
+<td>Completing a word above 7 glyphs in length spawns an additional Spectre.</td>
+</tr>
+</tbody></table>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Sentry</span></div><h1>Sentry</h1>
+<p>Tags: Heat, Turret<br>Deploy an automated turret that fires at any enemy that comes within range.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Defense Grid</td>
+<td>Effects:<br>  Turret: +1</td>
+</tr>
+<tr>
+<td>Solid Core</td>
+<td>Effects:<br>  Kinetic Damage: +10<br>  Bleeding Chance: 3%<br><br>Affects base damage and affected by Kinetic damage modifiers.</td>
+</tr>
+<tr>
+<td>Solid Core II</td>
+<td>Effects:<br>  Kinetic Damage: +20<br>  Heat Damage: -10<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Emergency Protocol</td>
+<td>Whenever a Shield Powerup is destroyed, Sentry will enter Emergency Protocol mode for 10 seconds.<br><br>During Emergency Protocol:<br>  Range: +50%<br>  Rate of Fire: +100%</td>
+</tr>
+<tr>
+<td>Emergency Protocol</td>
+<td>During Emergency Protocol:<br>  Damage: +50%<br>  Rotation Speed: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Keen Observer</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Vigilant Sentinel</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Eternal Overwatch</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Hair Trigger</td>
+<td>Rate of Fire: +10%</td>
+</tr>
+<tr>
+<td>Rapid Fire Accelerator</td>
+<td>Rate of Fire: +20%</td>
+</tr>
+<tr>
+<td>Blitz Protocol</td>
+<td>Rate of Fire: +30%</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Tactical Armor Shredders</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Exo-Penetrating Munitions</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Magnified Optics</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Enhanced Scopes</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Precision Sight Systems</td>
+<td>Range: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Tesla Mine</span></div><h1>Tesla Mine</h1>
+<p>Tags: Electric, Turret, D.O.T.<br>Completing words starting with glyphs b, c, d, e deploys an electrical turret that deals damage over time.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Abundant Coils</td>
+<td>will also spawn a Tesla Mine in addition to existing glyphs.</td>
+</tr>
+<tr>
+<td>Electrical Burn</td>
+<td>Effects:<br>  Heat Damage: +4<br>  Ignite Chance: 3%<br><br>Affects base damage and affected by Heat damage modifiers.</td>
+</tr>
+<tr>
+<td>Electrical Burn II</td>
+<td>Effects:<br>  Heat Damage: +8<br>  Electric Damage: -4<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Restricted Area</td>
+<td>Enemies in Tesla Mine range have 20% increased chance to get Static status from Electric damage sources.</td>
+</tr>
+<tr>
+<td>Restricted Area II</td>
+<td>Static damage is increased by 5 and range is increased by 30%. This applies to Static inflicted by all sources and affects base damage.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conductive Mastery</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Voltage Expertise</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Amplificatorium</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Reinforced Coils</td>
+<td>Duration: +10%</td>
+</tr>
+<tr>
+<td>Resilient Conductors</td>
+<td>Duration: +20%</td>
+</tr>
+<tr>
+<td>Hypercharged Induction</td>
+<td>Duration: +30%</td>
+</tr>
+<tr>
+<td>Overcharge</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Voltage Surge</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Tempest Amplification</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Amplified Field</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Horizon Reach</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Infinitum</td>
+<td>Range: +30%</td>
+</tr>
+<tr>
+<td>Static Surge</td>
+<td>Static Chance: +1%</td>
+</tr>
+<tr>
+<td>Dark Conduction</td>
+<td>Static Chance: +3%</td>
+</tr>
+<tr>
+<td>Voltaic Overload</td>
+<td>Static Chance: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Oscillator</span></div><h1>Oscillator</h1>
+<p>Tags: Heat, Remote<br>Fire an oscillating stream of particles in the direction of your most recent target.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Twin-Headed</td>
+<td>An additional stream of Oscillator projectiles fires in the opposite direction.</td>
+</tr>
+<tr>
+<td>Ball Lightning</td>
+<td>Effect:<br>  Electric Damage: +3<br>  Static Chance: 3%<br><br>Affects base damage and affected by Electric damage modifiers.</td>
+</tr>
+<tr>
+<td>Ball Lightning II</td>
+<td>Effect:<br>  Electric Damage: +6<br>  Heat Damage: -3<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Stabilized Plasma</td>
+<td>Oscillator projectiles now penetrate enemies. Enemies hit after the first take 50% damage.</td>
+</tr>
+<tr>
+<td>Stabilized Plasma II</td>
+<td>Ignite damage is increased by 5. This applies to Ignite inflicted by all sources and affects base damage.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precision Harmonics</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Adaptive Resonator</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Waveforma</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Plasma Ignition</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Quantum Discharge</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Nova Eruption</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Carpet Bombing</td>
+<td>Spread: +10%</td>
+</tr>
+<tr>
+<td>Orbic Reach</td>
+<td>Spread: +20%</td>
+</tr>
+<tr>
+<td>Quantum Expansion</td>
+<td>Spread: +30%</td>
+</tr>
+<tr>
+<td>Critical Focus</td>
+<td>Crit Chance: +1%<br>  Crit Mult: +50%</td>
+</tr>
+<tr>
+<td>Precision Wave</td>
+<td>Crit Chance: +2%<br>  Crit Mult: +100%</td>
+</tr>
+<tr>
+<td>Quantum Surge</td>
+<td>Crit Chance: +3%<br>  Crit Mult: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Meteor</span></div><h1>Meteor</h1>
+<p>Tags: Explosive, Remote<br>Periodically spawns target markers in random locations that can be activated to start an orbital bombardment.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Surveillance</td>
+<td>Meteor now gets two target options instead of one.</td>
+</tr>
+<tr>
+<td>Surveillance II</td>
+<td>Meteor gets three target options instead of two.</td>
+</tr>
+<tr>
+<td>Ice Rain</td>
+<td>Effects:<br>  Explosive Damage: -60<br>  Cold Damage: +20<br>  Freeze Chance: 20%<br><br>Affects base damage and affected by Cold damage modifiers.</td>
+</tr>
+<tr>
+<td>Ice Rain II</td>
+<td>Effects:<br>  Cold Damage: +20<br>  Freeze Chance: +20%</td>
+</tr>
+<tr>
+<td>Relentless</td>
+<td>Effects:<br>  Range: -50%<br>  Rate of Fire: -50%<br><br>Meteors now fire continuously, moving towards the location of your last target.</td>
+</tr>
+<tr>
+<td>Relentless II</td>
+<td>Effects: <br>  Speed: +50%<br>  Crit Chance: +10%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Eager Crew</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Orbital Insight</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Veteran Sightfinder</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Precision Bombardment</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Impact Enhancer</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Apocalypse</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Relay Accelerator</td>
+<td>Spawn Rate: +10%</td>
+</tr>
+<tr>
+<td>Launch Sequencer</td>
+<td>Spawn Rate: +20%</td>
+</tr>
+<tr>
+<td>Rain of Death</td>
+<td>Spawn Rate: +30%</td>
+</tr>
+<tr>
+<td>Longshot Module</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Amplification Array</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Cataclysmic Reach</td>
+<td>Range: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Hunter</span></div><h1>Hunter</h1>
+<p>Tags: Electric, Drone, D.O.T.<br>Completing words containing the glyphs i, o, u spawns electrical beam firing drones equivalent to number of the above matched.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hunter Elite</td>
+<td>Every 12th Hunter spawned is a Hunter Elite.<br><br>Hunter Elites:<br>  +100% Damage<br>  +50% Duration<br>  +50% Speed<br>  +50% Range</td>
+</tr>
+<tr>
+<td>Electrified Bolts</td>
+<td>Effects:<br>  Kinetic Damage: +5<br>  Bleeding Chance: 3%<br><br>Hunters now fire projectiles instead of electrical streams. Affects base damage and affected by Kinetic damage modifiers.</td>
+</tr>
+<tr>
+<td>Electrified Bolts II</td>
+<td>Effects:<br>  Kinetic Damage: +10<br>  Electric Damage: -5<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Chain Lightning</td>
+<td>Hunter attacks now chain to 1 additional nearby enemy.</td>
+</tr>
+<tr>
+<td>Chain Lightning II</td>
+<td>Hunter attacks now chain to 2 additional nearby enemies.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sharpened Focus</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Shock Precision</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Predator</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Electric Surge</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Squall Intensifier</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Quantum Overcharge</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Focused Beam</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Directed Discharge</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Lightning Cascade</td>
+<td>Range: +30%</td>
+</tr>
+<tr>
+<td>Energy-Efficiency</td>
+<td>Duration: +10%</td>
+</tr>
+<tr>
+<td>Optimized Destruction</td>
+<td>Duration: +20%</td>
+</tr>
+<tr>
+<td>Perpetual Matrix</td>
+<td>Duration: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Chopper</span></div><h1>Chopper</h1>
+<p>Tags: Kinetic, Remote<br>Spawns a massive spinning blade on main weapon fire that travels to the screen edge, damaging all enemies in its path.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dual Wield</td>
+<td>Effect:<br>  +1 Chopper</td>
+</tr>
+<tr>
+<td>Flaming Blades</td>
+<td>Effect:<br>  Heat Damage: +7<br>  Ignite Chance: +3%<br><br>Affects base damage and affected by Heat damage modifiers.</td>
+</tr>
+<tr>
+<td>Flaming Blades II</td>
+<td>Effect:<br>  Heat Damage: +14<br>  Kinetic Damage: -7<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Boomerang</td>
+<td>Chopper now travels back to the Main Weapon after reaching the screen edge.</td>
+</tr>
+<tr>
+<td>Boomerang II</td>
+<td>Effects:<br>  Speed: +75%<br>  Rate of Fire: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sharpener</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Incision Expertise</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Guillotine</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Sharpened Edges</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Tempered Blade</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Razor&#39;s Edge</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Rotor Enhancements</td>
+<td>Spin Rate: +10%</td>
+</tr>
+<tr>
+<td>Turbo Rotation</td>
+<td>Spin Rate: +20%</td>
+</tr>
+<tr>
+<td>Hyperdrive Rotors</td>
+<td>Spin Rate: +30%</td>
+</tr>
+<tr>
+<td>Lengthened Blades</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Extended Reach</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Longreach Masters</td>
+<td>Range: +30%</td>
+</tr>
+<tr>
+<td>Razor-Edged</td>
+<td>Bleeding Chance: +1%</td>
+</tr>
+<tr>
+<td>Bloodletter</td>
+<td>Bleeding Chance: +3%</td>
+</tr>
+<tr>
+<td>Seration</td>
+<td>Bleeding Chance: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Minefield</span></div><h1>Minefield</h1>
+<p>Tags: Explosive, Drone<br>Completing words starting with glyphs f, g, h, i spawns slow-moving mines that explode on contact with enemies.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Minelayer</td>
+<td>will also spawn Mines in addition to existing glyphs.</td>
+</tr>
+<tr>
+<td>Infusion</td>
+<td>Effects:<br>  Chemical Damage: +20<br>  Blight Chance: 10%<br><br>Affects base damage and affected by Chemical damage modifiers.</td>
+</tr>
+<tr>
+<td>Infusion II</td>
+<td>Effects: <br>  Blight Chance: +10%<br>  Explosive Damage: -50<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Hunter Seeker</td>
+<td>Effects:<br>  Speed: +200%<br>  Range: -50%<br><br>Mines gain homing movement towards random targets.</td>
+</tr>
+<tr>
+<td>Hunter Seeker II</td>
+<td>Effects:<br>  Mines Spawned: +1<br>  Speed: +100%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI Detonator</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Precision Ballistics</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Devastator</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Payload Booster</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Heavy Ordnance</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Warhead Amplification</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Reach Expansion</td>
+<td>Range: +10%</td>
+</tr>
+<tr>
+<td>Battlefield Coverage</td>
+<td>Range: +20%</td>
+</tr>
+<tr>
+<td>Boundless Radius</td>
+<td>Range: +30%</td>
+</tr>
+<tr>
+<td>Rapid Fabricator</td>
+<td>+1 Mine Spawned</td>
+</tr>
+</tbody></table>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#weapons">Level-Up Weapons</a> / <span>Blade Trap</span></div><h1>Blade Trap</h1>
+<p>Tags: Kinetic, Turret<br>Completing words starting with glyphs p, k, l, m deploys a spinning four-spoked blade trap.</p>
+<h2>Evolutions</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Blade Repository</td>
+<td>will also spawn a Blade Trap in addition to existing glyphs.</td>
+</tr>
+<tr>
+<td>Poison Coating</td>
+<td>Effects:<br>  Chemical Damage: +5<br>  Blight Chance: 10%<br><br>Affects base damage and affected by Chemical damage modifiers.</td>
+</tr>
+<tr>
+<td>Poison Coating II</td>
+<td>Effects:<br>  Chemical Damage: 5+<br>  Blight Chance: +5%<br><br>Affects base damage.</td>
+</tr>
+<tr>
+<td>Sawtooth Blades</td>
+<td>Blade Traps add their Crit Chance to their chance of inflicting Bleeding.</td>
+</tr>
+<tr>
+<td>Sawtooth Blades II</td>
+<td>Bleeding Damage is increased by 5. This applies to Bleeding inflicted by all sources and affects base damage.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Refined Snare</td>
+<td>Evolution: +10 Kills</td>
+</tr>
+<tr>
+<td>Reactive Vortex</td>
+<td>Evolution: +20 Kills</td>
+</tr>
+<tr>
+<td>Lacerator</td>
+<td>Evolution: +30 Kills</td>
+</tr>
+<tr>
+<td>Hardened Cutters</td>
+<td>Damage: +10%</td>
+</tr>
+<tr>
+<td>Titanium Cutters</td>
+<td>Damage: +20%</td>
+</tr>
+<tr>
+<td>Diamond Cutters</td>
+<td>Damage: +30%</td>
+</tr>
+<tr>
+<td>Lubricated Gears</td>
+<td>Spin Rate: +10%</td>
+</tr>
+<tr>
+<td>Precision Gears</td>
+<td>Spin Rate: +20%</td>
+</tr>
+<tr>
+<td>Quantum Gearbox</td>
+<td>Spin Rate: +30%</td>
+</tr>
+<tr>
+<td>Improved Clockwork</td>
+<td>Duration: +10%</td>
+</tr>
+<tr>
+<td>Faultless Clockwork</td>
+<td>Duration: +20%</td>
+</tr>
+<tr>
+<td>Ricodium Chargers</td>
+<td>Duration: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="enemies" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Enemies</span></div><h1>Enemies</h1>
+<p>Enemies in <em>Glyphica</em> are procedurally spawned based on an internal metric called <strong>threat</strong>, which increases as the run progresses. In Trial Mode, the threat is multiplied by the current Trial Level, making each level progressively harder. In Endless Mode, the threat is compared to an adaptive scaling system based on the player&#39;s level, with the higher value determining the spawn difficulty.</p>
+<p>Enemies are also categorized into <strong>specials</strong> and <strong>elites</strong>, each with its own class cap that limits their spawn rate within the overall threat level.</p>
+<h2>List of Enemies</h2>
+<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Shield Drone</a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Shooter</a><a href="#splitter" class="portal">Splitter</a><a href="#warder" class="portal">Warder</a><a href="#swarmer" class="portal">Swarmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Drone</span></div><h1>Drone</h1>
+<p>Drones are enemies that relentlessly move toward your main weapon. They can occasionally appear in two enhanced forms:<br>Enlarged: Triples their health, making them harder to defeat.<br>Hastened: Doubles their movement speed, increasing the urgency to eliminate them.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/drone.png"></td>
+<td>Health: 80<br>Damage: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/drone2.png"></td>
+<td>Health: 200<br>Damage: 60<br></td>
+</tr>
+<tr>
+<td><img src="img/drone3.png"></td>
+<td>Health: 500<br>Damage: 90<br></td>
+</tr>
+<tr>
+<td><img src="img/drone4.png"></td>
+<td>Health: 1000<br>Damage: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/drone5.png"></td>
+<td>Health: 1600<br>Damage: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/drone6.png"></td>
+<td>Health: 2600<br>Damage: 180<br></td>
+</tr>
+<tr>
+<td><img src="img/drone7.png"></td>
+<td>Health: 12000<br>Damage: 210<br></td>
+</tr>
+</tbody></table>
+</div><div id="shielddrone" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Shield Drone</span></div><h1>Shield Drone</h1>
+<p>The Shield Drone is a variant of the Drone enemy that features a regenerating shield. It has two health bars: the top one represents the shield, which begins to regenerate if it does not take damage for a certain period.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/shielddrone.png"></td>
+<td>Health: 100<br>Shield: 200<br>Damage: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone2.png"></td>
+<td>Health: 200<br>Shield: 400<br>Damage: 100<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone3.png"></td>
+<td>Health: 400<br>Shield: 800<br>Damage: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone4.png"></td>
+<td>Health: 800<br>Shield: 1600<br>Damage: 200<br></td>
+</tr>
+<tr>
+<td><img src="img/shielddrone5.png"></td>
+<td>Health: 1600<br>Shield: 3200<br>Damage: 250<br></td>
+</tr>
+</tbody></table>
+</div><div id="stalker" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Stalker</span></div><h1>Stalker</h1>
+<p>The Stalker is a variant of the Drone enemy that initially appears with most of its word hidden. As you type, the word gradually reveals itself, requiring careful attention and quick typing to eliminate.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/stalker.png"></td>
+<td>Health: 400<br>Damage: 80<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker2.png"></td>
+<td>Health: 800<br>Damage: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker3.png"></td>
+<td>Health: 1600<br>Damage: 160<br></td>
+</tr>
+<tr>
+<td><img src="img/stalker4.png"></td>
+<td>Health: 3200<br>Damage: 200<br></td>
+</tr>
+</tbody></table>
+</div><div id="shooter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Shooter</span></div><h1>Shooter</h1>
+<p>The Shooter is an enemy that halts at the edge of the level and continuously fires durable projectiles toward your main weapon until it is destroyed.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/shooter.png"></td>
+<td>Health: 300<br>Damage: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/shooter2.png"></td>
+<td>Health: 600<br>Damage: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/shooter3.png"></td>
+<td>Health: 1200<br>Damage: 25<br></td>
+</tr>
+</tbody></table>
+</div><div id="splitter" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Splitter</span></div><h1>Splitter</h1>
+<p>The Splitter initially appears as a single enemy but is actually composed of multiple parts. When one part is destroyed, the Splitter loses its integrity, causing its components to break apart and become individual enemies.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/splitter.png"></td>
+<td>Shard Count: 4<br>Shard Health: 350<br>Shard Damage: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/splitter2.png"></td>
+<td>Shard Count: 5<br>Shard Health: 500<br>Shard Damage: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/splitter3.png"></td>
+<td>Shard Count: 6<br>Shard Health: 650<br>Shard Damage: 40<br></td>
+</tr>
+</tbody></table>
+</div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Warder</span></div><h1>Warder</h1>
+<p>The Warder is an elite enemy that appears in the late game. It features a revolving shield that blocks damage from the direction the shield is currently facing. Additionally, while the Warder is alive, it provides a protective aura to nearby enemies, making them invulnerable until the Warder is defeated.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/warder.png"></td>
+<td>Health: 300<br></td>
+</tr>
+</tbody></table>
+</div><div id="swarmer" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <a href="#enemies">Enemies</a> / <span>Swarmer</span></div><h1>Swarmer</h1>
+<p>The Swarmer is an elite enemy that periodically launches groups of smaller enemies toward the main weapon. It continues to do so until it is destroyed.</p>
+<h2>List of Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/swarmer.png"></td>
+<td>Health: 2000<br></td>
+</tr>
+</tbody></table>
+</div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Loot Items</span></div><h1>Loot Items</h1>
+<p>Loot items are obtained during a run by activating a treasure chest pickup. A randomized selection of loot items will be displayed, and choosing one grants a passive bonus that remains active for the rest of the run.</p>
+<p>Loot items are categorized as <strong>common</strong>, <strong>uncommon</strong>, and <strong>rare</strong>, which determine their likelihood of appearing in loot selections. Defeating a boss in Trial Mode rewards a treasure chest containing only rare items.</p>
+<h2>List of Rare Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Juryrigged</td>
+<td>Drones Spawned: +1<br><br>All Drone Weapons:<br>  Duration: -75%</td>
+</tr>
+<tr>
+<td>Plunder</td>
+<td>+1 Loot Option</td>
+</tr>
+<tr>
+<td>Multi-Targeting</td>
+<td>All Remote Weapons get +1% Crit Chance for each Weapon you own.</td>
+</tr>
+<tr>
+<td>Giant Magnet</td>
+<td>You have a 50% chance of automatically collecting Pickups when they expire.</td>
+</tr>
+<tr>
+<td>Frostbite</td>
+<td>Global effect - does not count as a weapon.<br><br>Enemies take damage over time when Frozen.</td>
+</tr>
+<tr>
+<td>Necrobomb</td>
+<td>On destroying an enemy with Explosive Crit damage, trigger a series of explosions around the position of the fallen enemy.</td>
+</tr>
+<tr>
+<td>Prize</td>
+<td>On destroying an enemy with Crit damage, 30% chance of spawning Re-roll, Shield or Health pickups.</td>
+</tr>
+<tr>
+<td>Aftershock</td>
+<td>Crit damage will always inflict status effect.</td>
+</tr>
+<tr>
+<td>Vampirism</td>
+<td>Gain health equal to 5% of Kinetic Crit damage.</td>
+</tr>
+<tr>
+<td>Wisdom</td>
+<td>On picking up Shield, gain 10 Kills to all weapon Evolutions.</td>
+</tr>
+<tr>
+<td>Jester</td>
+<td>On picking up Re-roll, deal a random amount of damage between 0 and 100 to all enemies on screen.</td>
+</tr>
+<tr>
+<td>Last Stand</td>
+<td>On Shield destroyed, 30% chance to gain Double Damage.</td>
+</tr>
+<tr>
+<td>Triple Damage</td>
+<td>During Double Damage, every Double Damage pickup that would have spawned is a Triple Damage instead.</td>
+</tr>
+<tr>
+<td>Fracture</td>
+<td>During Freeze, every Freeze pickup that would have spawned is a Fracture instead, which deals damage to every Frozen enemy.</td>
+</tr>
+<tr>
+<td>Ascetic</td>
+<td>When exiting Loot screen, gain +10% damage for every unused Re-roll for 20 seconds.</td>
+</tr>
+<tr>
+<td>Initiation</td>
+<td>New weapons acquired automatically get one Evolution level.</td>
+</tr>
+<tr>
+<td>Immortality</td>
+<td>If your Main Weapon is about to be destroyed, it will be reduced to 1 health instead. This ability can only be used once every 2 minutes.</td>
+</tr>
+<tr>
+<td>Enlightenment</td>
+<td>On destroying an enemy with Crit damage, gain +5 kills to weapon Evolution.</td>
+</tr>
+<tr>
+<td>Closer</td>
+<td>Completing an enemy&#39;s word after it&#39;s destroyed gives +10% damage for 10 seconds. Stacks up to 3 times.</td>
+</tr>
+<tr>
+<td>Murderous</td>
+<td>All Drone Weapons:<br>  +50% Damage</td>
+</tr>
+<tr>
+<td>Executioner</td>
+<td>All Turret Weapons:<br>  +50% Damage</td>
+</tr>
+<tr>
+<td>Degeneration</td>
+<td>All Remote Weapons:<br>  +50% Damage</td>
+</tr>
+</tbody></table>
+<h2>List of Uncommon Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Point Blank</td>
+<td>Enemies hit close to Main Weapon receive +20% damage.</td>
+</tr>
+<tr>
+<td>Aggravation</td>
+<td>All Weapons:<br>  Status Chance: +2%</td>
+</tr>
+<tr>
+<td>Cryotechnics</td>
+<td>Freeze Pickups:<br>  Drop Chance: +3%</td>
+</tr>
+<tr>
+<td>Warlike</td>
+<td>Double Damage Pickups:<br>  Drop Chance: +3%</td>
+</tr>
+<tr>
+<td>Pinata</td>
+<td>All Weapons:<br>  Loot Drop Chance: +2%</td>
+</tr>
+<tr>
+<td>Glass Cannon</td>
+<td>All Weapons:<br>  Damage: +30%<br><br>Main Weapon:<br>  Max Health: -50%</td>
+</tr>
+<tr>
+<td>Regeneration</td>
+<td>No more Health pickups.<br><br>Instead, you heal 5% of max health when you activate a Loot, Freeze, Double Damage, Re-roll or Shield pickup.</td>
+</tr>
+<tr>
+<td>Affliction</td>
+<td>D.O.T. weapons can Crit.</td>
+</tr>
+<tr>
+<td>Shatter</td>
+<td>All Kinetic Weapons gain +5% Crit Chance against Frozen enemies.</td>
+</tr>
+<tr>
+<td>Seer</td>
+<td>Activating Re-roll pickups increases your global Range by 10% for 10 seconds. Stacks up to 3 times.</td>
+</tr>
+<tr>
+<td>Resilience</td>
+<td>Activating Shield pickups increases your global Duration by 10% for 10 seconds. Stacks up to 3 times.</td>
+</tr>
+<tr>
+<td>Gambler</td>
+<td>Adds 1 to Max Re-roll, to a total of 6.</td>
+</tr>
+<tr>
+<td>Protector</td>
+<td>Adds 1 to Max Shields, to a total of 4.</td>
+</tr>
+<tr>
+<td>Flawless</td>
+<td>Every x17 Perfect Input also increases your global Rate of Fire by 5%.</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>On mistype, deal 20 Explosive damage to all enemies for every x17 Perfect Input.</td>
+</tr>
+<tr>
+<td>Wasting</td>
+<td>All D.O.T. Weapons:<br>  +35% Rate of Fire</td>
+</tr>
+<tr>
+<td>Wither</td>
+<td>All Status Effects:<br>  +35% Rate of Fire</td>
+</tr>
+</tbody></table>
+<h2>List of Common Loot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Splash</td>
+<td>All Explosive Weapons:<br>  Range: +20%</td>
+</tr>
+<tr>
+<td>Impact</td>
+<td>All Explosive Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Vaporize</td>
+<td>All Explosive Weapons:<br>  Crit Mult: +100%</td>
+</tr>
+<tr>
+<td>Dead Drop</td>
+<td>All Explosive Weapons:<br>  2x Damage Chance: +2%</td>
+</tr>
+<tr>
+<td>Hollow-Point</td>
+<td>All Kinetic Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Burst</td>
+<td>All Kinetic Weapons:<br>  Rate of Fire: +20%</td>
+</tr>
+<tr>
+<td>Penetration</td>
+<td>All Kinetic Weapons:<br>  Crit Chance: +2%</td>
+</tr>
+<tr>
+<td>Reaper</td>
+<td>All Kinetic Weapons:<br>  Bleed Effect Chance: +3%</td>
+</tr>
+<tr>
+<td>Sear</td>
+<td>All Heat Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Radiator</td>
+<td>All Heat Weapons:<br>  Range: +20%</td>
+</tr>
+<tr>
+<td>Rebirth</td>
+<td>All Heat Weapons:<br>  Re-roll Chance: +5%</td>
+</tr>
+<tr>
+<td>Flamable</td>
+<td>All Heat Weapons:<br>  Ignite Effect Chance: +3%</td>
+</tr>
+<tr>
+<td>Hypothermia</td>
+<td>All Cold Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Subzero</td>
+<td>All Cold Weapons:<br>  Freeze Effect Chance: +3%</td>
+</tr>
+<tr>
+<td>Deflection</td>
+<td>All Cold Weapons:<br>  Shield Chance: +5%</td>
+</tr>
+<tr>
+<td>Coolant</td>
+<td>All Cold Weapons:<br>  Duration: +20%</td>
+</tr>
+<tr>
+<td>Latent Charge</td>
+<td>All Electric Weapons:<br>  Static Effect Chance: +3%</td>
+</tr>
+<tr>
+<td>Capacitor</td>
+<td>All Electric Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Modulator</td>
+<td>All Electric Weapons:<br>  Rate of Fire: +20%</td>
+</tr>
+<tr>
+<td>Concentrate</td>
+<td>All Electric Weapons:<br>  Duration: +20%</td>
+</tr>
+<tr>
+<td>Extender</td>
+<td>All Drone Weapons:<br>  Duration: +20%</td>
+</tr>
+<tr>
+<td>Thrusters</td>
+<td>All Drone Weapons:<br>  Speed: +20%</td>
+</tr>
+<tr>
+<td>Automata</td>
+<td>All Drone Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Cold Hearts</td>
+<td>All Drone Weapons:<br>  Freeze Drop Chance: +2%</td>
+</tr>
+<tr>
+<td>Signal Boost</td>
+<td>All Remote Weapons:<br>  Range: +20%</td>
+</tr>
+<tr>
+<td>Zero Delay</td>
+<td>All Remote Weapons:<br>  Speed: +20%</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>All Remote Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Sustainer</td>
+<td>All Turret Weapons:<br>  Duration: +20%</td>
+</tr>
+<tr>
+<td>Auto-Cannon</td>
+<td>All Turret Weapons:<br>  Rate of Fire: +20%</td>
+</tr>
+<tr>
+<td>Calibration</td>
+<td>All Turret Weapons:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Attrition</td>
+<td>All Status Effects:<br>  Damage: +20%</td>
+</tr>
+<tr>
+<td>Suffering</td>
+<td>All Status Effects:<br>  Duration: +20%</td>
+</tr>
+<tr>
+<td>Secret</td>
+<td>All Loot Weapons:<br>  Crit Chance: +2%</td>
+</tr>
+<tr>
+<td>Armaments</td>
+<td>All Weapons:<br>  Damage: +10%</td>
+</tr>
+<tr>
+<td>Survival Kit</td>
+<td>All Weapons:<br>  Duration: +10%</td>
+</tr>
+<tr>
+<td>Telescope</td>
+<td>All Weapons:<br>  Range: +10%</td>
+</tr>
+<tr>
+<td>Epicenter</td>
+<td>Heat Weapons do +20% damage when target is close to Main Weapon.</td>
+</tr>
+<tr>
+<td>Refrigerant</td>
+<td>Freeze Pickups:<br>  Duration: +20%<br>  Drop Chance: +1%</td>
+</tr>
+<tr>
+<td>Vulnerability</td>
+<td>Double Damage Pickups:<br>  Duration: +20%<br>  Drop Chance: +1%</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>All Weapons:<br>  Crit Chance: +1%<br>  Crit Mult: +50%</td>
+</tr>
+<tr>
+<td>Medkit</td>
+<td>Restore 100 Health.<br><br>Current Health: 300 / 300</td>
+</tr>
+<tr>
+<td>Shield</td>
+<td>Add 1 Shield.<br><br>Current Shields: 0 / 3</td>
+</tr>
+<tr>
+<td>Re-Roll</td>
+<td>Add 1 Re-Roll.<br><br>Current Re-Rolls: 0 / 5</td>
+</tr>
+<tr>
+<td>Afflictor</td>
+<td>Each Afflictor increases D.O.T. Damage by 3%. This bonus is doubled when close to Main Turret.</td>
+</tr>
+</tbody></table>
+</div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Home</a> / <span>Augments</span></div><h1>Augments</h1>
+<p>Augments are permanent upgrades that can be unlocked using Coins (§), a currency earned during a run. At the start of each run, players have a limited number of slots to equip unlocked augments, with the number of available slots varying based on the selected Omen level.</p>
+<p>Each augment usually has specific conditions that determine its benefits. To get the most out of your augments, consider the synergies between them and align them with your preferred strategy.</p>
+<h2>Codex: Main Weapon</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armored</td>
+<td>Main Weapon:<br>  Health: +50%</td>
+</tr>
+<tr>
+<td>Eager</td>
+<td>At the start of each Trial or Endless game, gain a level.</td>
+</tr>
+<tr>
+<td>Gambler</td>
+<td>Every Re-roll you use gives your Main Weapon +20% damage for 20 seconds.</td>
+</tr>
+<tr>
+<td>Immaculate</td>
+<td>Perfect Input gives +1.5% Crit Chance per stack instead.</td>
+</tr>
+<tr>
+<td>Haze</td>
+<td>If you have less than 50% health, gain +50% global Rate of Fire bonus.</td>
+</tr>
+<tr>
+<td>Devotion</td>
+<td>Main Weapon gets +25% damage for each blank weapon slot.</td>
+</tr>
+</tbody></table>
+<h2>Codex: Drones</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armada</td>
+<td>20% chance to spawn an additional drone, whenever one is spawned.</td>
+</tr>
+<tr>
+<td>Diversity</td>
+<td>For every non-Drone Weapon equipped, increase all Drone duration by 20%.</td>
+</tr>
+<tr>
+<td>Blitzkrieg</td>
+<td>Drone speed upgrades also apply to Drone damage.</td>
+</tr>
+<tr>
+<td>Retribution</td>
+<td>Whenever a Shield is destroyed, all existing Drones self-destruct dealing explosive damage.</td>
+</tr>
+<tr>
+<td>Scapegoat</td>
+<td>Mistypes randomly destroy an existing Drone rather than counting as a mistype.</td>
+</tr>
+<tr>
+<td>Spoils</td>
+<td>Drones can drop pickups on expiry.</td>
+</tr>
+</tbody></table>
+<h2>Codex: Turret</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fortress</td>
+<td>Every Turret Evolution also grants +50 Main Weapon max health.</td>
+</tr>
+<tr>
+<td>Networked</td>
+<td>Each other Turret grants +10% Rate of Fire to all Turrets, up to a maximum of +50%.</td>
+</tr>
+<tr>
+<td>Field Intel</td>
+<td>Activating a pickup grants +30% Range to all existing Turrets. This effect does not stack.</td>
+</tr>
+<tr>
+<td>Dark Relay</td>
+<td>A projectile bounces between existing Turrets randomly, dealing electrical damage.</td>
+</tr>
+<tr>
+<td>Observer</td>
+<td>If you&#39;ve not attacked for 3 seconds, gain +30% Turret Damage until your next attack.</td>
+</tr>
+<tr>
+<td>Weakness</td>
+<td>Enemies within a Turret&#39;s Range take 30% more damage from other sources.</td>
+</tr>
+</tbody></table>
+<h2>Codex: D.O.T.</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Corrosion</td>
+<td>D.O.T. Damage can now crit.</td>
+</tr>
+<tr>
+<td>Lamprey</td>
+<td>D.O.T. Damage dealt close to Main Weapon heals the Main Weapon by 1 Health.</td>
+</tr>
+<tr>
+<td>Tenacity</td>
+<td>Increase duration of all D.O.T. weapons by 35%.</td>
+</tr>
+<tr>
+<td>Afflictors</td>
+<td>Add Afflictors to Loot pool.<br>Each gives +3% D.O.T. Damage. Double effect near Main Weapon.</td>
+</tr>
+<tr>
+<td>Conviction</td>
+<td>D.O.T. weapons get +40% Rate of Fire as long as you have max Re-rolls.</td>
+</tr>
+<tr>
+<td>Infector</td>
+<td>D.O.T. weapons have +3% status effect chance.</td>
+</tr>
+</tbody></table>
+<h2>Codex: Remote</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Name</div></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Close Combat</td>
+<td>All Remote Damage is considered close to Main Weapon.</td>
+</tr>
+<tr>
+<td>Caltrops</td>
+<td>On a critical hit by remote weapons, spawn 12 Caltrops that damage passing enemies.</td>
+</tr>
+<tr>
+<td>Caustic Ammo</td>
+<td>Chance to drop Caustic Ammo - adds 10 base Chemical Damage to Remote Weapons for 20 seconds.</td>
+</tr>
+<tr>
+<td>Piracy</td>
+<td>For every Loot Weapon equipped, increase all Remote Damage by 15%.</td>
+</tr>
+<tr>
+<td>Deliverance</td>
+<td>All Remote weapons get +40% Range as long as you have max Shields.</td>
+</tr>
+<tr>
+<td>Sniper</td>
+<td>Remote Range upgrades also apply to Remote Damage.</td>
+</tr>
+</tbody></table>
+</div><div id="home" class="page"><div class="breadcrumbs"><span>Home</span></div><h1>Glyphica Official Wiki</h1>
+<h2>Welcome Typist</h2>
+<p>Welcome to the official wiki for Glyphica: Typing Survival! Test your typing skills in this horde survival game where speed and accuracy are your ultimate weapons. Equip powerful tools that transform your typing prowess into devastating attacks against relentless foes. Discover more and grab the game on Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
+<p>This wiki serves as a comprehensive guide to the features, mechanics, and content available in the Early Access version of Glyphica. Our goal is to keep the information up-to-date as we progress toward the full release, version 1.0. The wiki is organized into sections listed in the table of contents and will be updated regularly as the game evolves.</p>
+<h2>Table of Contents</h2>
+<a href="#main_weapons" class="portal">Main Weapons</a><a href="#weapons" class="portal">Level-Up Weapons</a><a href="#enemies" class="portal">Enemies</a><a href="#loot" class="portal">Loot Items</a><a href="#loot1" class="portal">Augments</a></div></div></div>
+</body>
+</html>
