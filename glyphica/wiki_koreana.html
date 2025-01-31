@@ -1,0 +1,2125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Do not edit block start */
+/* ======================= */
+#imml a.portal:not(.inline) {
+	display: block;
+}
+
+#imml .pages>.page:target~.page:last-child,
+#imml .pages>.page {
+	display: none;
+}
+
+#imml .pages> :last-child,
+#imml .pages>.page:target {
+	display: block;
+}
+
+#imml .pages> :last-child .breadcrumbs {
+	visibility: hidden;
+}
+/* ===================== */
+/* Do not edit block end */
+
+:root {
+	--imml-text-light: #333333;
+	--imml-text-dark: #eeeeee;
+	--imml-background-light: #ffffff;
+	--imml-background-dark: #121212;
+	--imml-accent-light: dodgerblue;
+	--imml-accent-dark: dodgerblue;
+}
+
+:root {
+	--imml-background: var(--imml-background-light);
+	--imml-text: var(--imml-text-light);
+	--imml-text-inverse: var(--imml-text-dark);
+	--imml-accent: var(--imml-accent-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--imml-background: var(--imml-background-dark);
+		--imml-text: var(--imml-text-dark);
+		--imml-text-inverse: var(--imml-text-light);
+		--imml-accent: var(--imml-accent-dark);
+	}
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100%;
+	color: var(--imml-text);
+	background: var(--imml-background);
+}
+
+.pages {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.pages .page {
+	padding-top: 2em;
+	padding-bottom: 10em;
+}
+
+.page .breadcrumbs {
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: small;
+}
+
+p {
+	line-height: 22px;
+}
+
+a {
+	width: fit-content;
+	color: var(--imml-accent);
+	border-bottom: 1px dotted var(--imml-accent);
+	text-decoration: none;
+}
+
+hr {
+	border-style: solid;
+	border-bottom: 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	border-left: 0.5em solid var(--imml-text-inverse);
+	padding: 0 1em;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+code {
+	background: var(--imml-text-inverse);
+	border-radius: 0.25em;
+	padding: 0em 0.25em;
+	font-family: monospace;
+	display: inline-block;
+}
+
+pre code {
+	padding: 0.5em 0.5em;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	margin-top: 0.25em;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	text-align: left;
+	font-weight: bold;
+}
+
+thead tr {
+	border-bottom: 1px solid;
+}
+
+tr {
+	border-bottom: 1px dashed;
+}
+
+td,
+th {
+	padding: 4px;
+}
+</style>
+</head>
+<body>
+<div id="imml"><div class="pages"><div id="main_weapons" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <span>주 무기</span></div><h1>주 무기</h1>
+<p>주 무기는 <em>글리피카</em> 게임플레이에서 중추적인 역할을 하는 시작 무기입니다. 적의 위에 표시된 단어를 입력하면, 주 무기가 해당 적을 표적으로 설정해 조준합니다. 각각의 주 무기는 고유의 효과와 메커니즘을 가지고 있으므로, 효과적인 사용을 위해서는 각기 다른 전략을 세워야 합니다.</p>
+<p>일부 무기는 타자 속도(WPM: 분당 단어 수)에 중점을 두는 반면, 다른 무기는 보다 전략적인 접근을 요구합니다. 다른 무기와 마찬가지로 주 무기 또한 업그레이드와 진화가 가능하며, 이를 통해 능력과 효과성을 강화하며 나아갈 수 있습니다.</p>
+<h2>주 무기 목록</h2>
+<a href="#repeater" class="portal">연발총</a><a href="#heatray" class="portal">열선</a><a href="#barrage" class="portal">화포</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#main_weapons">주 무기</a> / <span>연발총</span></div><h1>연발총</h1>
+<p>태그: 물리, 주 무기<br>다수의 총알을 짧은 순간에 연사하는 파괴적인 무기입니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>서리 발톱</td>
+<td>효과:<br>  냉각 피해량: +10<br>  빙결 발동률: 3%<br><br>기본 피해량에 영향을 미치며, 냉각 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>서리 발톱 II</td>
+<td>효과:<br>  냉각 피해량: +20<br>  물리 피해량: -10<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>도탄</td>
+<td>효과:<br>  투사체 연쇄: 3<br><br>연발총의 투사체가 표적에 적중한 뒤, 근처의 무작위 표적을 향해 다시 날아가 50%의 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>도탄 II</td>
+<td>효과:<br>  투사체 연쇄: +2</td>
+</tr>
+<tr>
+<td>산탄</td>
+<td>효과:<br>  투사체 퍼짐: +400%<br>  물리 피해량: -10<br><br>연발총이 피해량이 낮은 투사체를 무더기로 넓게 흩뿌립니다. 피해량 변수는 기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>산탄 II</td>
+<td>효과:<br>  투사체 수: +5<br>  투사체 퍼짐: +100%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>증폭 학습</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>전투 데이터</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>명감독</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>풀 메탈 재킷</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>철갑탄 업그레이드</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>관통 강화</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>조준 고도화</td>
+<td>치명타 발동률: +1%<br>  치명타 피해량: +50%</td>
+</tr>
+<tr>
+<td>정밀성 보조 시스템</td>
+<td>치명타 발동률: +2%<br>  치명타 피해량: +100%</td>
+</tr>
+<tr>
+<td>이글 아이 통합</td>
+<td>치명타 발동률: +3%<br>  치명타 피해량: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#main_weapons">주 무기</a> / <span>열선</span></div><h1>열선</h1>
+<p>태그: 화상, 주 무기, 지속 피해<br>상당한 정확도를 자랑하는 응축 광선을 일정하게 발사해 적에게 지속 피해를 입힙니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>얼음 기둥</td>
+<td>효과:<br>  화상 피해량: -25<br>  냉각 피해량: +25<br>  빙결 발동률: 8%<br><br>기본 피해량에 영향을 미칩니다. 열선의 무기 유형이 &#39;냉각&#39;으로 변경되며, 빙결 발동률이 증가합니다.</td>
+</tr>
+<tr>
+<td>얼음 기둥 II</td>
+<td>효과:<br>  냉각 피해량: +20<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>반사</td>
+<td>열선이 이제 적을 관통하며 화면 가장자리에서 2x회 반사됩니다.</td>
+</tr>
+<tr>
+<td>반사 II</td>
+<td>열선이 이제 화면 가장자리에서 4x회 반사됩니다.</td>
+</tr>
+<tr>
+<td>양날 열선</td>
+<td>열선이 반대 방향으로 하나 추가로 발사됩니다. 진화 및 업그레이드는 두 광선 모두에 적용됩니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>융합 코어</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>태초의 불꽃</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>종말의 지옥불</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>맹렬한 불꽃</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>격렬한 열기</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>대변동 폭발</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>수렴</td>
+<td>광선 두께: +20%<br>  (범위)</td>
+</tr>
+<tr>
+<td>광채</td>
+<td>광선 두께: +40%<br>  (범위)</td>
+</tr>
+<tr>
+<td>광선 단조기</td>
+<td>광선 두께: +60%<br>  (범위)</td>
+</tr>
+<tr>
+<td>급속 점화</td>
+<td>연사 속도: +10%</td>
+</tr>
+<tr>
+<td>연소 가속</td>
+<td>연사 속도: +20%</td>
+</tr>
+<tr>
+<td>지옥불 소용돌이</td>
+<td>연사 속도: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#main_weapons">주 무기</a> / <span>화포</span></div><h1>화포</h1>
+<p>태그: 폭발, 주 무기<br>폭발성 로켓을 목표 지점과 그 주변으로 일제히 발사합니다. 재장전이 필요한 무기입니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>로켓 배열</td>
+<td>화포가 발사하는 미사일의 수가 장전 게이지 1칸당 2 - 5발에서 3 - 6발로 증가합니다.</td>
+</tr>
+<tr>
+<td>로켓 배열 II</td>
+<td>화포가 발사하는 미사일의 수가 장전 게이지 1칸당 3 - 6발에서 4 - 7발로 증가합니다.</td>
+</tr>
+<tr>
+<td>지진탄</td>
+<td>미사일이 지표면에 닿을 때 폭발하지 않고 관통하며, 잠시 동안 폭발 충격파를 일으킵니다.</td>
+</tr>
+<tr>
+<td>지진탄 II</td>
+<td>효과:<br>  범위: 25%<br>  지속 시간: 25%</td>
+</tr>
+<tr>
+<td>재보급</td>
+<td>이제 &#39;보급&#39; 아이템이 등장합니다. 보급 아이템을 획득할 경우, 주 무기가 최대로 재장전되며 다음 첫 사격이 30%의 추가 피해를 가합니다.</td>
+</tr>
+<tr>
+<td>재보급 II</td>
+<td>보급 아이템 획득 후 첫 사격의 폭발 범위 또한 30%만큼 증가합니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>최고급 포화</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>궁극의 공성</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>파멸의 사격</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>충격 폭발</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>황폐화</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>대변동 방출</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>사거리 연장</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>장거리 수송</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>광범위 공격</td>
+<td>범위: +30%</td>
+</tr>
+<tr>
+<td>신속 장전</td>
+<td>재장전 속도: +10%<br>  (연사 속도와 동일하게 간주)</td>
+</tr>
+<tr>
+<td>급속 재보급</td>
+<td>재장전 속도: +20%<br>  (연사 속도와 동일하게 간주)</td>
+</tr>
+<tr>
+<td>급속 충전</td>
+<td>재장전 속도: +30%<br>  (연사 속도와 동일하게 간주)</td>
+</tr>
+</tbody></table>
+</div><div id="weapons" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <span>레벨업 무기</span></div><h1>레벨업 무기</h1>
+<p>레벨업 무기는 게임 도중 레벨업을 통해 획득할 수 있습니다. 새 무기를 선택하면 당신의 무기고에 해당 무기가 추가됩니다. 각 무기는 고유한 발동 방법이 있으며, 대부분 단어를 입력하고 주 무기로 조준해서 발동시킬 수 있습니다.</p>
+<p>레벨업을 통해 최대 4개의 무기를 획득할 수 있습니다. 무기고에 무기가 추가되면, 향후 레벨업을 통해 해당 무기를 업그레이드할 수 있게 됩니다. 업그레이드를 통해 무기의 능력을 강화할 수 있습니다.</p>
+<h2>레벨업 무기 목록</h2>
+<a href="#spectre" class="portal">망령</a><a href="#sentry" class="portal">파수꾼</a><a href="#tesla" class="portal">전자기 지뢰</a><a href="#oscillator" class="portal">진동파</a><a href="#meteor" class="portal">유성</a><a href="#hunter" class="portal">사냥꾼</a><a href="#chopper" class="portal">절단기</a><a href="#minefield" class="portal">지뢰밭</a><a href="#blade" class="portal">칼날지옥</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>망령</span></div><h1>망령</h1>
+<p>태그: 물리, 드론<br>아래 문자가 포함된 단어를 완성할 경우… a, e, o 해당 단어에 위 글자가 포함된 수만큼 망령 드론을 발사합니다. 망령 드론은 빠르게 적에게 날아가 근접 공격을 개시합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>과충전 망령</td>
+<td>망령을 20회 생성할 때마다 슈퍼 망령을 소환합니다.<br><br>슈퍼 망령:<br>  피해량 +100%<br>  지속 시간 +50%<br>  이동 속도 +50%</td>
+</tr>
+<tr>
+<td>자폭</td>
+<td>효과:<br>  폭발 피해량: +50<br><br>망령의 지속 시간이 종료되면 자폭하여 폭발 피해를 입힙니다. 기본 피해량에 영향을 미치며, 폭발 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>자폭 II</td>
+<td>효과:<br>  폭발 피해량: +50<br>  범위: +30%</td>
+</tr>
+<tr>
+<td>휘발성 연료</td>
+<td>효과:<br>  이동 속도: +50%</td>
+</tr>
+<tr>
+<td>휘발성 연료 II</td>
+<td>효과:<br>  이동 속도: 50%<br>  지속 시간: -25%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>유령 학습</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>망령 전문가</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>환상을 보여 주지</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>집단 전술</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>합동 돌격</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>하이브 마인드 전술</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>리코듐 배터리</td>
+<td>지속 시간: +10%</td>
+</tr>
+<tr>
+<td>충전된 셀</td>
+<td>지속 시간: +20%</td>
+</tr>
+<tr>
+<td>파워 코어 과충전</td>
+<td>지속 시간: +30%</td>
+</tr>
+<tr>
+<td>자가 조립</td>
+<td>7타수를 초과하는 단어를 완성할 경우, 망령을 하나 추가로 소환합니다.</td>
+</tr>
+</tbody></table>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>파수꾼</span></div><h1>파수꾼</h1>
+<p>태그: 화상, 포탑<br>사정거리 안으로 들어온 적을 향해 발사하는 자동포탑을 설치합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>방어 그리드</td>
+<td>효과:<br>  포탑 수: +1</td>
+</tr>
+<tr>
+<td>솔리드 코어</td>
+<td>효과:<br>  물리 피해량: +10<br>  출혈 발동률: 3%<br><br>기본 피해량에 영향을 미치며, 물리 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>솔리드 코어 II</td>
+<td>효과:<br>  물리 피해량: +20<br>  화상 피해량: -10<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>긴급 프로토콜</td>
+<td>보호막이 파괴될 때마다 파수꾼이 10초간 긴급 프로토콜 모드에 돌입합니다.<br><br>긴급 프로토콜 발동 시:<br>  사거리: +50%<br>  연사 속도: +100%</td>
+</tr>
+<tr>
+<td>긴급 프로토콜 II</td>
+<td>긴급 프로토콜 발동 시:<br>  피해량: +50%<br>  회전 속도: +50%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>예리한 관찰자</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>숙련된 보초병</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>영구적 엄호</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>초고감도 방아쇠</td>
+<td>연사 속도: +10%</td>
+</tr>
+<tr>
+<td>속사 가속기</td>
+<td>연사 속도: +20%</td>
+</tr>
+<tr>
+<td>맹공 프로토콜</td>
+<td>연사 속도: +30%</td>
+</tr>
+<tr>
+<td>장갑 관통 탄환</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>전술적 장갑 분쇄기</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>외부 관통탄</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>광학 조준경</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>강화 조준경</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>정밀 관측 시스템</td>
+<td>범위: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>전자기 지뢰</span></div><h1>전자기 지뢰</h1>
+<p>태그: 전기, 포탑, 지속 피해<br>아래 문자 중 하나로 시작하는 단어를 완성할 경우… b, c, d, e 지속 피해를 입히는 전기 포탑을 설치합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>풍부한 코일</td>
+<td>기존 문자에 더해 위 문자 또한 전자기 지뢰를 생성합니다.</td>
+</tr>
+<tr>
+<td>전자기 화상</td>
+<td>효과:<br>  화상 피해량: +4<br>  화염 발동률: 3%<br><br>기본 피해량에 영향을 미치며, 화상 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>전자기 화상 II</td>
+<td>효과:<br>  화상 피해량: +8<br>  전기 피해량: -4<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>통제 구역</td>
+<td>전자기 지뢰의 탐지 범위 안에 있는 적들은 전기 속성 공격에 노출될 때 정전기 발동률이 20% 상승합니다.</td>
+</tr>
+<tr>
+<td>통제 구역 II</td>
+<td>정전기 피해량이 5, 범위가 30% 상승합니다. 이 효과는 모든 무기의 정전기 기능에 적용되며, 기본 피해량에 영향을 미칩니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>전도성 숙달</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>전압 전문가</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>전류 초증폭</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>강화 코일</td>
+<td>지속 시간: +10%</td>
+</tr>
+<tr>
+<td>탄성 도체</td>
+<td>지속 시간: +20%</td>
+</tr>
+<tr>
+<td>과급 유도</td>
+<td>지속 시간: +30%</td>
+</tr>
+<tr>
+<td>과충전</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>과전압</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>템페스트 증폭</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>증폭장</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>지평선 도달</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>인피니텀</td>
+<td>범위: +30%</td>
+</tr>
+<tr>
+<td>정전기 과잉</td>
+<td>정전기 발동률: +1%</td>
+</tr>
+<tr>
+<td>암전류</td>
+<td>정전기 발동률: +3%</td>
+</tr>
+<tr>
+<td>동전기 과부하</td>
+<td>정전기 발동률: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>진동파</span></div><h1>진동파</h1>
+<p>태그: 화상, 원격<br>가장 최근 타격한 지점을 향해 물결치는 입자 띠를 발사합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>쌍두파</td>
+<td>진동파가 반대 방향으로 하나 추가로 발사됩니다.</td>
+</tr>
+<tr>
+<td>번개 구체</td>
+<td>효과:<br>  전기 피해량: +3<br>  정전기 발동률: 3%<br><br>기본 피해량에 영향을 미치며, 전기 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>번개 구체 II</td>
+<td>효과:<br>  전기 피해량: +6<br>  화상 피해량: -3<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>플라즈마 안정화</td>
+<td>진동파 투사체가 적을 관통합니다. 한 번 관통된 진동파에 맞은 적은 50%의 피해를 받습니다.</td>
+</tr>
+<tr>
+<td>플라즈마 안정화 II</td>
+<td>화염 피해량이 5만큼 상승합니다. 이 효과는 모든 무기의 화염 기능에 적용되며, 기본 피해량에 영향을 미칩니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>정밀 화음</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>적응형 공진기</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>에네르기파</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>플라즈마 점화</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>양자 방전</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>초신성 폭발</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>융단폭격</td>
+<td>확산 범위: +10%</td>
+</tr>
+<tr>
+<td>궤도 도달</td>
+<td>확산 범위: +20%</td>
+</tr>
+<tr>
+<td>양자 확장</td>
+<td>확산 범위: +30%</td>
+</tr>
+<tr>
+<td>임계 초점</td>
+<td>치명타 발동률: +1%<br>  치명타 피해량: +50%</td>
+</tr>
+<tr>
+<td>정밀 파장</td>
+<td>치명타 발동률: +2%<br>  치명타 피해량: +100%</td>
+</tr>
+<tr>
+<td>양자 과잉</td>
+<td>치명타 발동률: +3%<br>  치명타 피해량: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>유성</span></div><h1>유성</h1>
+<p>태그: 폭발, 원격<br>주기적으로 무작위 위치에 착탄 지점이 표시됩니다. 발동 시 해당 지점에 계기 폭격을 개시합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>감시망</td>
+<td>유성 착탄 지점 표식이 1개에서 2개로 증가하며, 하나를 골라 폭격할 수 있습니다.</td>
+</tr>
+<tr>
+<td>감시망 II</td>
+<td>유성 착탄 지점 표식이 2개에서 3개로 증가하며, 하나를 골라 폭격할 수 있습니다.</td>
+</tr>
+<tr>
+<td>얼음비</td>
+<td>효과:<br>  폭발 피해량: -60<br>  냉각 피해량: +20<br>  빙결 발동률: 20%<br><br>기본 피해량에 영향을 미치며, 냉각 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>얼음비 II</td>
+<td>효과:<br>  냉각 피해량: +20<br>  빙결 발동률: +20%</td>
+</tr>
+<tr>
+<td>끊임없는 폭격</td>
+<td>효과:<br>  범위: -50%<br>  연사 속도: -50%<br><br>유성이 무제한으로 발사되며, 마지막으로 조준한 표적의 방향으로 이동합니다.</td>
+</tr>
+<tr>
+<td>끊임없는 폭격 II</td>
+<td>효과:<br>  이동 속도: +50%<br>  치명타 발동률: +10%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>열성적 대원</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>궤도 통찰</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>조준의 달인</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>정밀 폭격</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>충격량 강화</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>대재앙</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>중계 가속기</td>
+<td>출현 빈도: +10%</td>
+</tr>
+<tr>
+<td>발사 시퀀서</td>
+<td>출현 빈도: +20%</td>
+</tr>
+<tr>
+<td>죽음의 비</td>
+<td>출현 빈도: +30%</td>
+</tr>
+<tr>
+<td>원거리 사격 모듈</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>증폭 배열</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>대격변의 도래</td>
+<td>범위: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>사냥꾼</span></div><h1>사냥꾼</h1>
+<p>태그: 전기, 드론, 지속 피해<br>아래 문자가 포함된 단어를 완성할 경우… i, o, u 해당 단어에 위 글자가 포함된 수만큼 사냥 드론을 발사합니다. 사냥 드론은 적을 향해 전기 광선을 발사합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>정예 사냥꾼</td>
+<td>사냥꾼을 12회 생성할 때마다 정예 사냥꾼을 소환합니다.<br><br>정예 사냥꾼:<br>  피해량 +100%<br>  지속 시간 +50%<br>  이동 속도 +50%<br>  공격 범위 +50%</td>
+</tr>
+<tr>
+<td>충전 볼트</td>
+<td>효과:<br>  물리 피해량: +5<br>  출혈 발동률: 3%<br><br>사냥꾼이 전류를 흘리지 않고 투사체를 발사합니다. 기본 피해량에 영향을 미치며, 물리 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>충전 볼트 II</td>
+<td>효과:<br>  물리 피해량: +10<br>  전기 피해량: -5<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>번개 연쇄</td>
+<td>사냥꾼의 공격이 근처의 다른 적 1기에 연쇄됩니다.</td>
+</tr>
+<tr>
+<td>번개 연쇄 II</td>
+<td>사냥꾼의 공격이 근처의 다른 적 2기에 연쇄됩니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>첨예한 집중</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>정밀 충격</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>포식자</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>과전류</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>돌풍 강화</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>양자 과충전</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>집중 광선</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>직격 방전</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>낙뢰</td>
+<td>범위: +30%</td>
+</tr>
+<tr>
+<td>에너지 효율화</td>
+<td>지속 시간: +10%</td>
+</tr>
+<tr>
+<td>파괴 최적화</td>
+<td>지속 시간: +20%</td>
+</tr>
+<tr>
+<td>영구 매트릭스</td>
+<td>지속 시간: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>절단기</span></div><h1>절단기</h1>
+<p>태그: 물리, 원격<br>주 무기로 적을 공격하면 거대한 회전날을 생성해 발사합니다. 회전날은 화면 끝까지 날아가며 경로상의 모든 적을 공격합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>쌍절단기</td>
+<td>효과:<br>  절단기 수 +1</td>
+</tr>
+<tr>
+<td>불타는 칼날</td>
+<td>효과:<br>  화상 피해량: +7<br>  화염 발동률: +3%<br><br>기본 피해량에 영향을 미치며, 화상 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>불타는 칼날 II</td>
+<td>효과:<br>  화상 피해량: +14<br>  물리 피해량: -7<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>부메랑</td>
+<td>절단기가 화면 가장자리에 도달한 후 주 무기를 향해 되돌아옵니다.</td>
+</tr>
+<tr>
+<td>부메랑 II</td>
+<td>효과:<br>  이동 속도: +75%<br>  연사 속도: +50%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>연마기</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>절개 전문가</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>단두대</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>날카로운 단면</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>칼날 강화</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>면도날의 날카로움</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>회전축 강화</td>
+<td>회전 속도: +10%</td>
+</tr>
+<tr>
+<td>터보 회전</td>
+<td>회전 속도: +20%</td>
+</tr>
+<tr>
+<td>하이퍼로테이션</td>
+<td>회전 속도: +30%</td>
+</tr>
+<tr>
+<td>칼날 연장</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>도달 범위 확장</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>장사정 달인</td>
+<td>범위: +30%</td>
+</tr>
+<tr>
+<td>면도날의 끝처럼</td>
+<td>출혈 발동률: +1%</td>
+</tr>
+<tr>
+<td>출혈 강화</td>
+<td>출혈 발동률: +3%</td>
+</tr>
+<tr>
+<td>파괴자 칼잡이</td>
+<td>출혈 발동률: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>지뢰밭</span></div><h1>지뢰밭</h1>
+<p>태그: 폭발, 드론<br>아래 문자 중 하나로 시작하는 단어를 완성할 경우… f, g, h, i 천천히 움직이다가 적과 접촉하면 폭발하는 지뢰를 소환합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>기뢰함</td>
+<td>기존 문자에 더해 위 문자 또한 지뢰밭을 생성합니다.</td>
+</tr>
+<tr>
+<td>독극물 주입</td>
+<td>효과:<br>  화학 피해량: +20<br>  부식 발동률: 10%<br><br>기본 피해량에 영향을 미치며, 화학 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>독극물 주입 II</td>
+<td>효과:<br>  부식 발동률: +10%<br>  폭발 피해량: -50<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>사냥꾼 사냥꾼</td>
+<td>효과:<br>  이동 속도: +200%<br>  폭발 범위: -50%<br><br>지뢰가 무작위 표적을 향해 유도됩니다.</td>
+</tr>
+<tr>
+<td>사냥꾼 사냥꾼 II</td>
+<td>효과:<br>  지뢰 생성 수량: +1<br>  이동 속도: +100%</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>인공지능 뇌관</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>정밀 탄도학</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>대파괴</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>폭압 향상</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>중화기</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>탄두 증폭</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>폭발 거리 향상</td>
+<td>범위: +10%</td>
+</tr>
+<tr>
+<td>전투 범위 확장</td>
+<td>범위: +20%</td>
+</tr>
+<tr>
+<td>무제한 사거리</td>
+<td>범위: +30%</td>
+</tr>
+<tr>
+<td>신속 매설</td>
+<td>지뢰 생성 수량 +1</td>
+</tr>
+</tbody></table>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#weapons">레벨업 무기</a> / <span>칼날지옥</span></div><h1>칼날지옥</h1>
+<p>태그: 물리, 포탑<br>아래 문자 중 하나로 시작하는 단어를 완성할 경우… j, k, l, m 4개의 날카로운 살이 회전하는 함정을 설치합니다.</p>
+<h2>진화</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>칼날 창고</td>
+<td>기존 문자에 더해 위 문자 또한 칼날지옥을 생성합니다.</td>
+</tr>
+<tr>
+<td>독극물 코팅</td>
+<td>효과:<br>  화학 피해량: +5<br>  부식 발동률: 10%<br><br>기본 피해량에 영향을 미치며, 화학 피해량 변수의 영향을 받습니다.</td>
+</tr>
+<tr>
+<td>독극물 코팅 II</td>
+<td>효과:<br>  화학 피해량: 5+<br>  부식 발동률: +5%<br><br>기본 피해량에 영향을 미칩니다.</td>
+</tr>
+<tr>
+<td>톱니날</td>
+<td>칼날지옥의 출혈 발동률이 치명타 발동률만큼 상승합니다.</td>
+</tr>
+<tr>
+<td>톱니날 II</td>
+<td>출혈 피해량이 5만큼 상승합니다. 이 효과는 모든 무기의 출혈 기능에 적용되며, 기본 피해량에 영향을 미칩니다.</td>
+</tr>
+</tbody></table>
+<h2>업그레이드</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>올가미 정비</td>
+<td>진화 진척도: +10점</td>
+</tr>
+<tr>
+<td>반응성 소용돌이</td>
+<td>진화 진척도: +20점</td>
+</tr>
+<tr>
+<td>대심도 절단</td>
+<td>진화 진척도: +30점</td>
+</tr>
+<tr>
+<td>단단한 절단기</td>
+<td>피해량: +10%</td>
+</tr>
+<tr>
+<td>티타늄 절단기</td>
+<td>피해량: +20%</td>
+</tr>
+<tr>
+<td>다이아몬드 절단기</td>
+<td>피해량: +30%</td>
+</tr>
+<tr>
+<td>변속기 윤활</td>
+<td>회전 속도: +10%</td>
+</tr>
+<tr>
+<td>정밀 변속기</td>
+<td>회전 속도: +20%</td>
+</tr>
+<tr>
+<td>양자 변속기</td>
+<td>회전 속도: +30%</td>
+</tr>
+<tr>
+<td>향상된 태엽</td>
+<td>지속 시간: +10%</td>
+</tr>
+<tr>
+<td>무결점 태엽</td>
+<td>지속 시간: +20%</td>
+</tr>
+<tr>
+<td>리코듐 충전기</td>
+<td>지속 시간: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="enemies" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <span>적</span></div><h1>적</h1>
+<p><em>글리피카</em>에서 적들은 시간이 지나면서 증가하는 <strong>위협 수준</strong>이라는 내부적인 수치에 기반하여 점진적으로 생성됩니다. 시련 모드에서는 위협 수준에 시련 단계 값이 곱해져 후반 시련일수록 어려워집니다. 무한 모드에서는 위협 수준을 플레이어 레벨 기반 적응성 계측 값과 비교하여 더 높은 쪽을 따라 생성되는 적들의 난이도를 결정합니다.</p>
+<p>또한, 적들은 <strong>특수</strong>와 <strong>정예</strong>로 분류되며, 전체적인 위협 수준 이내를 유지할 수 있도록 각 등급별로 생성 비율 제한이 적용됩니다.</p>
+<h2>적 목록</h2>
+<a href="#drone" class="portal">드론</a><a href="#shielddrone" class="portal">방어 드론</a><a href="#stalker" class="portal">은신 드론</a><a href="#shooter" class="portal">발사 드론</a><a href="#splitter" class="portal">분열 드론</a><a href="#warder" class="portal">보호 드론</a><a href="#swarmer" class="portal">강하 드론</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>드론</span></div><h1>드론</h1>
+<p>드론은 당신의 주 무기를 향해 거침없이 다가오는 적입니다. 간혹 아래 두 종류의 강화가 부여된 상태로 등장할 수 있습니다.<br>대형: 체력이 3배로 상승해 처치하기 어려워집니다.<br>고속: 이동 속도가 2배로 상승해 최우선 처치 대상이 됩니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Drone.png"></td>
+<td>체력: 80<br>피해량: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone2.png"></td>
+<td>체력: 200<br>피해량: 60<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone3.png"></td>
+<td>체력: 500<br>피해량: 90<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone4.png"></td>
+<td>체력: 1000<br>피해량: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone5.png"></td>
+<td>체력: 4800<br>피해량: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone6.png"></td>
+<td>체력: 2600<br>피해량: 180<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone7.png"></td>
+<td>체력: 4000<br>피해량: 210<br></td>
+</tr>
+</tbody></table>
+</div><div id="shielddrone" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>방어 드론</span></div><h1>방어 드론</h1>
+<p>방어 드론은 재생성되는 방어막을 장착한 변종 드론입니다. 체력은 2개의 게이지로 표시되며, 이 중 위쪽 게이지는 방어막으로서 일정 시간 동안 공격받지 않으면 재생성됩니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/ShieldDrone.png"></td>
+<td>체력: 100<br>보호막: 200<br>피해량: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone2.png"></td>
+<td>체력: 200<br>보호막: 400<br>피해량: 100<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone3.png"></td>
+<td>체력: 400<br>보호막: 800<br>피해량: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone4.png"></td>
+<td>체력: 800<br>보호막: 1600<br>피해량: 200<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone5.png"></td>
+<td>체력: 1600<br>보호막: 3200<br>피해량: 250<br></td>
+</tr>
+</tbody></table>
+</div><div id="stalker" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>은신 드론</span></div><h1>은신 드론</h1>
+<p>은신 드론은 단어의 대부분이 가려진 채로 등장하는 변종 드론입니다. 입력할 때마다 서서히 모습이 드러나므로, 조심스럽게 접근하면서도 빠르게 처치해야 합니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Stalker.png"></td>
+<td>체력: 400<br>피해량: 80<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker2.png"></td>
+<td>체력: 800<br>피해량: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker3.png"></td>
+<td>체력: 1600<br>피해량: 160<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker4.png"></td>
+<td>체력: 9600<br>피해량: 200<br></td>
+</tr>
+</tbody></table>
+</div><div id="shooter" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>발사 드론</span></div><h1>발사 드론</h1>
+<p>발사 드론은 화면 가장자리에 멈춰 서서 당신의 주 무기를 향해 단단한 투사체를 발사하는 변종 드론입니다. 투사체는 자신이 파괴될 때까지 계속 발사합니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Shooter.png"></td>
+<td>체력: 300<br>피해량: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/Shooter2.png"></td>
+<td>체력: 600<br>피해량: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/Shooter3.png"></td>
+<td>체력: 1200<br>피해량: 25<br></td>
+</tr>
+</tbody></table>
+</div><div id="splitter" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>분열 드론</span></div><h1>분열 드론</h1>
+<p>분열 드론은 단일 개체인 듯 보이지만 사실 여러 조각으로 이루어진 변종 드론입니다. 파괴할 경우, 결합성을 잃고 부속품이 분리되어 각각이 개별적인 적이 됩니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Splitter.png"></td>
+<td>조각 수: 4<br>조각당 체력: 350<br>조각당 피해량: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Splitter2.png"></td>
+<td>조각 수: 5<br>조각당 체력: 500<br>조각당 피해량: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Splitter3.png"></td>
+<td>조각 수: 6<br>조각당 체력: 650<br>조각당 피해량: 40<br></td>
+</tr>
+</tbody></table>
+</div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>보호 드론</span></div><h1>보호 드론</h1>
+<p>보호 드론은 게임 후반부에 등장하는 정예 적입니다. 자신의 주변을 떠도는 방어막을 생성해 막이 향한 방향으로부터 다가오는 공격을 방어합니다. 또한, 보호 드론이 활성 상태인 동안에는 주변의 적에게 보호의 오라를 전개해 보호 드론이 파괴될 때까지 무적 상태를 유지시킵니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Warder.png"></td>
+<td>체력: 300<br></td>
+</tr>
+</tbody></table>
+</div><div id="swarmer" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <a href="#enemies">적</a> / <span>강하 드론</span></div><h1>강하 드론</h1>
+<p>강하 드론은 주기적으로 작은 적 무리를 발사하는 정예 적입니다. 파괴될 때까지 계속해서 적 무리를 생성합니다.</p>
+<h2>변종 목록</h2>
+<table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Swarmer.png"></td>
+<td>체력: 2000<br></td>
+</tr>
+</tbody></table>
+</div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <span>전리품 아이템</span></div><h1>전리품 아이템</h1>
+<p>전리품 아이템은 게임 도중 보물상자를 발동시키면 획득할 수 있습니다. 무작위 선별된 전리품 목록이 표시되며, 그 중 하나를 선택하면 해당 게임의 끝까지 유지되는 지속 능력 보너스가 부여됩니다.</p>
+<p>전리품은 <strong>일반</strong>, <strong>고급</strong>, <strong>희귀</strong> 등급으로 구분되며, 등급별로 선택지에 등장할 확률이 달라집니다. 시련 모드에서 보스를 처치하면 확정적으로 희귀 전리품만 등장하는 보물상자를 보상으로 받을 수 있습니다.</p>
+<h2>희귀 전리품 목록</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>응급 장비</td>
+<td>드론 생성 수량: 35%<br><br>드론 무기 전체:<br>  지속 시간: {2}</td>
+</tr>
+<tr>
+<td>약탈</td>
+<td>전리품 선택지 수 +1</td>
+</tr>
+<tr>
+<td>다중 표적</td>
+<td>보유한 무기 하나당 원격 조종 무기의 치명타 발동률 +1%</td>
+</tr>
+<tr>
+<td>거대 자석</td>
+<td>유지 시간이 만료된 아이템을 50%의 확률로 자동으로 수집합니다.</td>
+</tr>
+<tr>
+<td>동상</td>
+<td>전체 효과 - 무기로 간주되지 않음<br><br>빙결 시 적들이 지속 피해를 입습니다.</td>
+</tr>
+<tr>
+<td>시체 폭탄</td>
+<td>폭발성 무기로 적을 치명타로 처치할 경우, 해당 지점 주변으로 연쇄 폭발을 일으킵니다.</td>
+</tr>
+<tr>
+<td>당첨</td>
+<td>적을 치명타로 처치할 경우, 30% 확률로 선택지 교체권, 보호막, 회복제 중 하나를 발견합니다.</td>
+</tr>
+<tr>
+<td>여진</td>
+<td>치명타 적중 시, 확률적으로 발생하는 상태이상이 무조건 발동됩니다.</td>
+</tr>
+<tr>
+<td>흡혈</td>
+<td>물리 계열 무기의 치명타 피해량의 5%에 상응하는 수치의 체력을 회복합니다.</td>
+</tr>
+<tr>
+<td>지혜</td>
+<td>보호막 아이템을 획득할 경우, 모든 무기의 진화 진척도를 10점 획득합니다.</td>
+</tr>
+<tr>
+<td>어릿광대</td>
+<td>선택지 교체권 아이템을 획득할 경우, 화면에 있는 모든 적에게 0부터 100까지 중 무작위의 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>최후의 발악</td>
+<td>보호막이 파괴될 경우, 30%의 확률로 2배 피해가 발동됩니다.</td>
+</tr>
+<tr>
+<td>피해량 3배</td>
+<td>2배 피해 발동 도중에 등장하는 2배 피해 아이템이 3배 피해로 변경됩니다.</td>
+</tr>
+<tr>
+<td>균열</td>
+<td>빙결 발동 도중에 등장하는 빙결제 아이템이 균열로 변경됩니다. 균열 아이템은 모든 빙결 상태의 적에게 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>금욕주의</td>
+<td>전리품 선택 화면이 닫혔을 때, 20초 동안 보유하고 있는 선택지 교체권 1개당 공격력이 10% 상승합니다.</td>
+</tr>
+<tr>
+<td>Harmonizer</td>
+<td>All equipped weapons get one Evolution level.</td>
+</tr>
+<tr>
+<td>무적</td>
+<td>주 무기가 파괴에 이르는 피해를 입을 경우, 1의 체력을 남깁니다. 2분의 쿨타임이 있습니다.</td>
+</tr>
+<tr>
+<td>계몽</td>
+<td>적을 치명타로 처치할 경우, 진화 진척도를 5점 획득합니다.</td>
+</tr>
+<tr>
+<td>폐색기</td>
+<td>입력 도중 파괴된 적의 단어를 끝까지 입력할 경우, 10초 동안 공격력이 10% 상승합니다. 최대 3회 중첩됩니다.</td>
+</tr>
+<tr>
+<td>살상 드론</td>
+<td>드론 무기 전체:<br>  피해량 +50%</td>
+</tr>
+<tr>
+<td>처형 집행인</td>
+<td>포탑형 무기 전체:<br>  피해량 +50%</td>
+</tr>
+<tr>
+<td>퇴화 유도</td>
+<td>원격 무기 전체:<br>  피해량: +50%</td>
+</tr>
+</tbody></table>
+<h2>고급 전리품 목록</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tsunami</td>
+<td>All Explosive Weapons:<br>  Range: +25%</td>
+</tr>
+<tr>
+<td>Shockwave</td>
+<td>All Explosive Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Annihilation</td>
+<td>All Explosive Weapons:<br>  Crit Mult: +100%</td>
+</tr>
+<tr>
+<td>Descent</td>
+<td>All Explosive Weapons:<br>  2x Damage Chance: +2%</td>
+</tr>
+<tr>
+<td>Shattershot</td>
+<td>All Kinetic Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Eruption</td>
+<td>All Kinetic Weapons:<br>  Rate of Fire: +25%</td>
+</tr>
+<tr>
+<td>Piercer</td>
+<td>All Kinetic Weapons:<br>  Crit Chance: +2%</td>
+</tr>
+<tr>
+<td>Harbinger</td>
+<td>All Kinetic Weapons:<br>  Bleed Effect Chance: +4%</td>
+</tr>
+<tr>
+<td>Inferno</td>
+<td>All Heat Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Plasmator</td>
+<td>All Heat Weapons:<br>  Range: +25%</td>
+</tr>
+<tr>
+<td>Phoenix</td>
+<td>All Heat Weapons:<br>  Re-roll Chance: +5%</td>
+</tr>
+<tr>
+<td>Pyroclysm</td>
+<td>All Heat Weapons:<br>  Ignite Effect Chance: +4%</td>
+</tr>
+<tr>
+<td>Cryostasis</td>
+<td>All Cold Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Glacier</td>
+<td>All Cold Weapons:<br>  Freeze Effect Chance: +4%</td>
+</tr>
+<tr>
+<td>Repulsor</td>
+<td>All Cold Weapons:<br>  Shield Chance: +5%</td>
+</tr>
+<tr>
+<td>Cryogen</td>
+<td>All Cold Weapons:<br>  Duration: +25%</td>
+</tr>
+<tr>
+<td>Overload</td>
+<td>All Electric Weapons:<br>  Static Effect Chance: +4%</td>
+</tr>
+<tr>
+<td>Megastorm</td>
+<td>All Electric Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Amplifier</td>
+<td>All Electric Weapons:<br>  Rate of Fire: +25%</td>
+</tr>
+<tr>
+<td>Singularity</td>
+<td>All Electric Weapons:<br>  Duration: +25%</td>
+</tr>
+<tr>
+<td>Infinity</td>
+<td>All Drone Weapons:<br>  Duration: +25%</td>
+</tr>
+<tr>
+<td>Hyperjets</td>
+<td>All Drone Weapons:<br>  Speed: +25%</td>
+</tr>
+<tr>
+<td>Overmind</td>
+<td>All Drone Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Frostbane</td>
+<td>All Drone Weapons:<br>  Freeze Drop Chance: +2%</td>
+</tr>
+<tr>
+<td>Omniboost</td>
+<td>All Remote Weapons:<br>  Range: +25%</td>
+</tr>
+<tr>
+<td>Instalink</td>
+<td>All Remote Weapons:<br>  Speed: +25%</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>All Remote Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Energizer</td>
+<td>All Turret Weapons:<br>  Duration: +25%</td>
+</tr>
+<tr>
+<td>Hellstorm</td>
+<td>All Turret Weapons:<br>  Rate of Fire: +25%</td>
+</tr>
+<tr>
+<td>Exactitude</td>
+<td>All Turret Weapons:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Onslaught</td>
+<td>All Status Effects:<br>  Damage: +25%</td>
+</tr>
+<tr>
+<td>Torment</td>
+<td>All Status Effects:<br>  Duration: +25%</td>
+</tr>
+<tr>
+<td>Mystery</td>
+<td>All Loot Weapons:<br>  Crit Chance: +2%</td>
+</tr>
+<tr>
+<td>Arsenal</td>
+<td>All Weapons:<br>  Damage: +12.5%</td>
+</tr>
+<tr>
+<td>Lifesaver</td>
+<td>All Weapons:<br>  Duration: +12.5%</td>
+</tr>
+<tr>
+<td>Starview</td>
+<td>All Weapons:<br>  Range: +12.5%</td>
+</tr>
+<tr>
+<td>근접전</td>
+<td>주 무기 근처에서 공격받은 적이 +20%의 피해를 입습니다.</td>
+</tr>
+<tr>
+<td>상태 자극</td>
+<td>모든 무기:<br>  상태이상 발동률: +2%</td>
+</tr>
+<tr>
+<td>극저온 기술</td>
+<td>빙결제 아이템:<br>  등장 확률: +2%</td>
+</tr>
+<tr>
+<td>호전성</td>
+<td>2배 피해 아이템:<br>  등장 확률: +4%</td>
+</tr>
+<tr>
+<td>피냐타</td>
+<td>모든 무기:<br>  전리품 발견 확률: +4%</td>
+</tr>
+<tr>
+<td>유리 대포</td>
+<td>모든 무기:<br>  피해량: +30%<br><br>주 무기:<br>  최대 체력: -50%</td>
+</tr>
+<tr>
+<td>재생</td>
+<td>더 이상 회복제가 등장하지 않습니다.<br><br>대신, 전리품·빙결제·2배 피해·선택지 교체권·보호막 아이템을 획득할 때마다 최대 체력의 5%만큼 회복합니다.</td>
+</tr>
+<tr>
+<td>심리전</td>
+<td>지속 피해 무기로도 치명타를 입힐 수 있습니다.</td>
+</tr>
+<tr>
+<td>분쇄</td>
+<td>빙결 상태의 적에 대한 모든 물리 계열 무기의 치명타율이 +5% 상승합니다.</td>
+</tr>
+<tr>
+<td>천리안</td>
+<td>선택지 교체권을 사용할 경우, 10초 동안 모든 무기의 사거리가 10% 증가합니다. 최대 3회 중첩됩니다.</td>
+</tr>
+<tr>
+<td>회복탄력성</td>
+<td>보호막 아이템을 획득할 경우, 10초 동안 모든 무기의 지속 시간이 10% 증가합니다. 최대 3회 중첩됩니다.</td>
+</tr>
+<tr>
+<td>도박</td>
+<td>선택지 교체권 최대 보유 가능 수량을 5개에서 6개로 늘립니다.</td>
+</tr>
+<tr>
+<td>보호기</td>
+<td>보호막 최대 보유 가능 수량을 3개에서 4개로 늘립니다.</td>
+</tr>
+<tr>
+<td>무결점</td>
+<td>정확한 입력 콤보가 17회 쌓일 때마다 모든 무기의 연사 속도 또한 5%만큼 상승합니다.</td>
+</tr>
+<tr>
+<td>방출</td>
+<td>오타가 발생할 경우, 정확한 입력 콤보 17회당 20의 폭발 피해를 모든 적에게 입힙니다.</td>
+</tr>
+<tr>
+<td>소모성 질환</td>
+<td>지속 피해 무기 전체:<br>  연사 속도 +35%</td>
+</tr>
+<tr>
+<td>말려 죽이기</td>
+<td>상태이상 전체:<br>  연사 속도 +35%</td>
+</tr>
+</tbody></table>
+<h2>일반 전리품 목록</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">명칭</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>낙진</td>
+<td>폭발형 무기 전체:<br>  범위: +15%</td>
+</tr>
+<tr>
+<td>충격파</td>
+<td>폭발형 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>증발</td>
+<td>폭발형 무기 전체:<br> 치명타 피해량: +75%</td>
+</tr>
+<tr>
+<td>데드 드롭</td>
+<td>폭발형 무기 전체:<br>  2배 피해 발견 확률: +1%</td>
+</tr>
+<tr>
+<td>중공탄</td>
+<td>물리 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>파열</td>
+<td>물리 무기 전체:<br>  연사 속도: +15%</td>
+</tr>
+<tr>
+<td>관통</td>
+<td>물리 무기 전체:<br>  치명타 발동률: +1%</td>
+</tr>
+<tr>
+<td>사신</td>
+<td>물리 무기 전체:<br>  출혈 발동률: +2%</td>
+</tr>
+<tr>
+<td>그을음</td>
+<td>화상 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>방열체</td>
+<td>화상 무기 전체:<br>  범위: +15%</td>
+</tr>
+<tr>
+<td>재탄생</td>
+<td>화상 무기 전체:<br>  선택지 교체권 발견 확률: +2%</td>
+</tr>
+<tr>
+<td>가연성 물질</td>
+<td>화상 무기 전체:<br>  화염 발동률: +2%</td>
+</tr>
+<tr>
+<td>저체온증</td>
+<td>냉각 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>영하권</td>
+<td>냉각 무기 전체:<br>  빙결 발동률: +2%</td>
+</tr>
+<tr>
+<td>Deflection</td>
+<td>All Cold Weapons:<br>  Shield Chance: +2%</td>
+</tr>
+<tr>
+<td>냉각수</td>
+<td>냉각 무기 전체:<br>  지속 시간: +15%</td>
+</tr>
+<tr>
+<td>잠재 전하</td>
+<td>전기 무기 전체:<br>  정전기 발동률: +2%</td>
+</tr>
+<tr>
+<td>축전지</td>
+<td>전기 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>변조기</td>
+<td>전기 무기 전체:<br>  연사 속도: +15%</td>
+</tr>
+<tr>
+<td>집전</td>
+<td>전기 무기 전체:<br>  지속 시간: +15%</td>
+</tr>
+<tr>
+<td>연장기</td>
+<td>드론 무기 전체:<br>  지속 시간: +15%</td>
+</tr>
+<tr>
+<td>추진기</td>
+<td>드론 무기 전체:<br>  이동 속도: +15%</td>
+</tr>
+<tr>
+<td>자동화</td>
+<td>드론 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>차가운 심장</td>
+<td>드론 무기 전체:<br>  빙결제 발견 확률: +1%</td>
+</tr>
+<tr>
+<td>신호 증폭</td>
+<td>원격 조종 무기 전체:<br>  범위: +15%</td>
+</tr>
+<tr>
+<td>제로 딜레이</td>
+<td>원격 조종 무기 전체:<br>  이동 속도: +15%</td>
+</tr>
+<tr>
+<td>컨트롤</td>
+<td>원격 조종 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>유지 장치</td>
+<td>포탑형 무기 전체:<br>  지속 시간: +15%</td>
+</tr>
+<tr>
+<td>기관포</td>
+<td>포탑형 무기 전체:<br>  연사 속도: +15%</td>
+</tr>
+<tr>
+<td>보정</td>
+<td>포탑형 무기 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>마찰</td>
+<td>상태이상 전체:<br>  피해량: +15%</td>
+</tr>
+<tr>
+<td>오랜 고통</td>
+<td>상태이상 전체:<br>  지속 시간: +15%</td>
+</tr>
+<tr>
+<td>비밀</td>
+<td>전리품에서 획득한 무기 전체:<br>  치명타율: +1%</td>
+</tr>
+<tr>
+<td>무장</td>
+<td>모든 무기:<br>  피해량: +5%</td>
+</tr>
+<tr>
+<td>생존 키트</td>
+<td>모든 무기:<br>  지속 시간: +5%</td>
+</tr>
+<tr>
+<td>망원경</td>
+<td>모든 무기:<br>  사거리: +5%</td>
+</tr>
+<tr>
+<td>진원지</td>
+<td>화상 계열 무기가 주 무기에 근접한 적들을 향해 +20%의 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>냉매</td>
+<td>빙결제:<br>  지속 시간: +20%<br>  등장 확률: +1%</td>
+</tr>
+<tr>
+<td>약점</td>
+<td>2배 피해:<br>  지속 시간: +20%<br>  등장 확률: +1%</td>
+</tr>
+<tr>
+<td>정밀 사격</td>
+<td>모든 무기:<br>  치명타 발동률: +1%<br>  치명타 피해량: +50%</td>
+</tr>
+<tr>
+<td>회복 키트</td>
+<td>체력을 100 회복합니다.<br><br>현재 체력: 300 / 300</td>
+</tr>
+<tr>
+<td>보호막</td>
+<td>보호막을 1개 획득합니다.<br><br>현재 보유량: 0 / 3</td>
+</tr>
+<tr>
+<td>선택지 교체권</td>
+<td>선택지 교체권을 1개 획득합니다.<br><br>현재 보유량: 3 / 5</td>
+</tr>
+<tr>
+<td>시달림</td>
+<td>획득한 시달림 중첩 1회당 지속 피해의 피해량이 +4%만큼 증가합니다. 주 무기에 근접한 적에게는 보너스가 2배가 됩니다.</td>
+</tr>
+</tbody></table>
+</div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">홈</a> / <span>확장툴</span></div><h1>확장툴</h1>
+<p>확장툴은 게임 도중에 획득한 화폐인 코인(§)을 지불하여 해금할 수 있는 영구적인 업그레이드입니다. 게임을 시작할 때, 플레이어는 해금한 확장툴을 제한된 수의 슬롯에 장착할 수 있으며, 슬롯 수 제한은 흉조 등급에 따라 달라집니다.</p>
+<p>대부분의 확장툴은 도움이 되는 효과가 발동되기 위한 각각의 조건이 있습니다. 확장툴을 최대한 활용하려면, 확장툴 간의 시너지를 고려해 선호하는 전략에 맞춰 선택하세요.</p>
+<h2>도감: 주 무기</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">명칭</div></th>
+<th><div style="width:50px">비용</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>장갑</td>
+<td>50 §,<br>200 §</td>
+<td>주 무기:<br>  체력: +50%</td>
+</tr>
+<tr>
+<td>열정</td>
+<td>50 §</td>
+<td>새로운 시련 또는 무한 모드를 시작할 때마다 한 번씩 레벨업합니다.</td>
+</tr>
+<tr>
+<td>도박꾼</td>
+<td>50 §</td>
+<td>선택지 교체권을 사용할 경우, 20초 동안 주 무기의 피해량이 20% 증가합니다.</td>
+</tr>
+<tr>
+<td>흠 없는 입력</td>
+<td>100 §</td>
+<td>정확한 입력 콤보의 단계당 치명타율 보너스가 1.5%로 증가합니다.</td>
+</tr>
+<tr>
+<td>의식 불안정</td>
+<td>200 §,<br>500 §</td>
+<td>보유 체력이 50% 미만일 경우, 모든 무기의 연사 속도가 50% 상승합니다.</td>
+</tr>
+<tr>
+<td>헌신</td>
+<td>200 §</td>
+<td>빈 무기 슬롯 한 칸당 주 무기의 피해량이 25% 증가합니다.</td>
+</tr>
+</tbody></table>
+<h2>도감: 드론</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">명칭</div></th>
+<th><div style="width:50px">비용</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>드론 부대</td>
+<td>200 §</td>
+<td>드론을 생성할 때마다 20%의 확률로 1기를 추가로 생성합니다.</td>
+</tr>
+<tr>
+<td>다양성</td>
+<td>50 §</td>
+<td>드론 계열이 아닌 무기를 소지할 경우, 1종류당 20%씩 드론의 지속 시간이 증가합니다.</td>
+</tr>
+<tr>
+<td>대공습</td>
+<td>50 §</td>
+<td>드론 계열 무기의 이동 속도 업그레이드가 드론의 피해량에도 적용됩니다.</td>
+</tr>
+<tr>
+<td>보복</td>
+<td>300 §</td>
+<td>보호막이 파괴될 때마다 존재하던 모든 드론이 자폭해 폭발 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>희생양</td>
+<td>100 §</td>
+<td>드론이 존재하는 상태에서 오타가 발생했을 때, 오타로 반영하지 않고 무작위 드론 1기를 파괴합니다.</td>
+</tr>
+<tr>
+<td>전리품 배달</td>
+<td>200 §</td>
+<td>드론의 지속 시간이 만료되면 확률적으로 아이템을 떨어뜨립니다.</td>
+</tr>
+</tbody></table>
+<h2>도감: 포탑</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">명칭</div></th>
+<th><div style="width:50px">비용</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>요새</td>
+<td>100 §,<br>400 §</td>
+<td>소지한 포탑 계열 무기 1종류당 주 무기의 체력이 50만큼 증가합니다.</td>
+</tr>
+<tr>
+<td>포탑 네트워크</td>
+<td>50 §</td>
+<td>배치된 포탑 1기당 모든 포탑 계열 무기의 연사 속도가 10%씩 상승합니다. (최대 50%)</td>
+</tr>
+<tr>
+<td>전장 정보</td>
+<td>50 §</td>
+<td>아이템을 획득할 경우, 모든 포탑 계열 무기의 사거리가 30% 증가합니다. (중첩 불가)</td>
+</tr>
+<tr>
+<td>암흑 릴레이</td>
+<td>500 §</td>
+<td>투사체 하나가 배치된 포탑 사이를 이리저리 돌아다니며 전기 피해를 가합니다.</td>
+</tr>
+<tr>
+<td>관찰자</td>
+<td>100 §</td>
+<td>3초간 주 무기로 공격하지 않을 경우, 다음 공격 시까지 포탑의 피해량이 30% 증가합니다.</td>
+</tr>
+<tr>
+<td>약점</td>
+<td>200 §</td>
+<td>포탑 계열 무기의 사거리 내 적들이 포탑 외 무기로부터 받는 피해가 30% 증가합니다.</td>
+</tr>
+</tbody></table>
+<h2>도감: 지속 피해</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">명칭</div></th>
+<th><div style="width:50px">비용</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>용식</td>
+<td>500 §</td>
+<td>이제 지속 피해로도 치명타를 가할 수 있습니다.</td>
+</tr>
+<tr>
+<td>칠성장어</td>
+<td>200 §</td>
+<td>주 무기에 근접한 적에게 지속 피해를 입힐 때마다 주 무기의 체력이 1씩 회복됩니다.</td>
+</tr>
+<tr>
+<td>끈기</td>
+<td>100 §,<br>300 §</td>
+<td>모든 지속 피해 무기의 지속 시간이 35% 증가합니다.</td>
+</tr>
+<tr>
+<td>시달림</td>
+<td>50 §</td>
+<td>전리품 목록에 &#39;시달림&#39;이 추가됩니다. 시달림 1중첩당 지속 피해의 피해량이 3% 증가하며, 주 무기에 가까운 적에게는 보너스가 2배가 됩니다.</td>
+</tr>
+<tr>
+<td>신념</td>
+<td>100 §</td>
+<td>선택지 교체권을 최대로 보유하고 있을 경우, 지속 피해 무기의 연사 속도가 40% 증가합니다.</td>
+</tr>
+<tr>
+<td>감염자</td>
+<td>300 §,<br>500 §</td>
+<td>지속 피해 무기의 상태이상 발동률이 3% 증가합니다.</td>
+</tr>
+</tbody></table>
+<h2>도감: 원격</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">명칭</div></th>
+<th><div style="width:50px">비용</div></th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>근접전</td>
+<td>100 §</td>
+<td>원거리 피해의 기준 거리가 주 무기에 보다 가까워집니다.</td>
+</tr>
+<tr>
+<td>마름쇠</td>
+<td>200 §</td>
+<td>원격 무기로 치명타를 입힐 경우, 마름쇠 12기를 생성해 지나쳐 가는 적들에게 피해를 입힙니다.</td>
+</tr>
+<tr>
+<td>부식성 탄약</td>
+<td>500 §</td>
+<td>확률적으로 &#39;부식성 탄약&#39; 아이템이 생성됩니다. 획득 시 20초 동안 원격 무기에 화학 피해량 10이 추가됩니다.</td>
+</tr>
+<tr>
+<td>도적</td>
+<td>50 §</td>
+<td>전리품에서 무기를 획득할 때마다 모든 원거리 피해량이 15% 증가합니다.</td>
+</tr>
+<tr>
+<td>구출</td>
+<td>100 §</td>
+<td>보호막을 최대로 보유하고 있을 경우, 원격 무기의 사거리가 40% 증가합니다.</td>
+</tr>
+<tr>
+<td>저격수</td>
+<td>200 §</td>
+<td>원격 무기의 사거리 업그레이드가 피해량에도 적용됩니다.</td>
+</tr>
+</tbody></table>
+</div><div id="home" class="page"><div class="breadcrumbs"><span>홈</span></div><h1>Glyphica 공식 위키</h1>
+<h2>반갑습니다, 타자수 여러분</h2>
+<p>글리피카: 타이핑 서바이벌 공식 위키에 오신 것을 환영합니다! 이 군중 생존 게임에서 궁극의 무기가 되는 속도와 정확도로 당신의 타자 실력을 시험하세요. 용맹스런 타자 실력을 파괴적인 공격으로 변환해 줄 강력한 도구를 장착해 끊임없이 다가오는 적들을 마주하세요. 더 알아보거나 게임을 구매하고 싶다면 Steam에서 확인해 보세요. <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a></p>
+<p>이 위키는 글리피카의 앞서 해 보기 버전에서 이용할 수 있는 기능 및 메커니즘, 컨텐츠에 대한 종합적인 가이드를 제공합니다. 1.0 버전으로 정식 출시되기까지 정보를 최신화하는 것을 목표로 하고 있습니다. 목차에 나열된 섹션을 기준으로 정리되어 있으며, 게임 개발이 진전됨에 따라 주기적으로 업데이트될 예정입니다.</p>
+<h2>목차</h2>
+<a href="#main_weapons" class="portal">주 무기</a><a href="#weapons" class="portal">레벨업 무기</a><a href="#enemies" class="portal">적</a><a href="#loot" class="portal">전리품 아이템</a><a href="#loot1" class="portal">확장툴</a></div></div></div>
+</body>
+</html>
