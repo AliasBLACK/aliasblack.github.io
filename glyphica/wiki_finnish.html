@@ -1,0 +1,2321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Do not edit block start */
+/* ======================= */
+#imml a.portal:not(.inline) {
+	display: block;
+}
+
+#imml .pages>.page:target~.page:last-child,
+#imml .pages>.page {
+	display: none;
+}
+
+#imml .pages> :last-child,
+#imml .pages>.page:target {
+	display: block;
+}
+
+#imml .pages> :last-child .breadcrumbs {
+	visibility: hidden;
+}
+/* ===================== */
+/* Do not edit block end */
+
+:root {
+	--imml-text-light: #333333;
+	--imml-text-dark: #eeeeee;
+	--imml-background-light: #ffffff;
+	--imml-background-dark: #121212;
+	--imml-accent-light: dodgerblue;
+	--imml-accent-dark: dodgerblue;
+}
+
+:root {
+	--imml-background: var(--imml-background-light);
+	--imml-text: var(--imml-text-light);
+	--imml-text-inverse: var(--imml-text-dark);
+	--imml-accent: var(--imml-accent-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--imml-background: var(--imml-background-dark);
+		--imml-text: var(--imml-text-dark);
+		--imml-text-inverse: var(--imml-text-light);
+		--imml-accent: var(--imml-accent-dark);
+	}
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100%;
+	color: var(--imml-text);
+	background: var(--imml-background);
+}
+
+.pages {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.pages .page {
+	padding-top: 2em;
+	padding-bottom: 10em;
+}
+
+.page .breadcrumbs {
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: small;
+}
+
+p {
+	line-height: 22px;
+}
+
+a {
+	width: fit-content;
+	color: var(--imml-accent);
+	border-bottom: 1px dotted var(--imml-accent);
+	text-decoration: none;
+}
+
+hr {
+	border-style: solid;
+	border-bottom: 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	border-left: 0.5em solid var(--imml-text-inverse);
+	padding: 0 1em;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+code {
+	background: var(--imml-text-inverse);
+	border-radius: 0.25em;
+	padding: 0em 0.25em;
+	font-family: monospace;
+	display: inline-block;
+}
+
+pre code {
+	padding: 0.5em 0.5em;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	margin-top: 0.25em;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	text-align: left;
+	font-weight: bold;
+}
+
+thead tr {
+	border-bottom: 1px solid;
+}
+
+tr {
+	border-bottom: 1px dashed;
+}
+
+td,
+th {
+	padding: 4px;
+}
+</style>
+</head>
+<body>
+<div id="imml"><div class="pages"><div id="main_weapons" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <span>Pääaseet</span></div><h1>Pääaseet</h1>
+<p>Pääaseet ovat <em>Glyphican</em> aloitusaseet ja niillä on keskinäinen rooli pelissä. Kun kirjoitat sanan vihollisen yllä, sinun pääaseesti lukittautuu tähän viholliseen. Jokaisella pääaseella on uniikit efektit ja mekaniikat, jotka vaativat eri strategioita jotta saat niistä kaiken irti.</p>
+<p>Jotkin pääaseet keskittyvät kirjoitusnopeuteen ja toiset vaativat taktisempaa lähestymistapaa. Kuten toiset aseet, myös pääaseet voivat saada parannuksia ja evoluutioita, jotka parantavat niiden ominaisuuksia ja tehokkuutta.</p>
+<h2>Lista pääaseista</h2>
+<a href="#repeater" class="portal">Toistaja</a><a href="#heatray" class="portal">Lämpösäde</a><a href="#barrage" class="portal">Pommitus</a><a href="#splattershot" class="portal">Pärskytin</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#main_weapons">Pääaseet</a> / <span>Toistaja</span></div><h1>Toistaja</h1>
+<p>Tagit: Kineettinen, Pää<br>Tulivoimainen ase joka ampuu useita ammuksia lyhyissä sarjoissa.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kuurahammas</td>
+<td>Vaikutus:<br>  Jäävahinko: +10<br>  Jäädytys mahdollisuus: 3%<br><br>Vaikuttaa perusvahinkoon. Sitä muokkaavat jäävahingon muutokset.</td>
+</tr>
+<tr>
+<td>Kuurahammas II</td>
+<td>Vaikutus:<br>  Jäävahinko: +20<br>  Kineettinen vahinko: -10<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Kimmotus</td>
+<td>Vaikutus:<br>  Ammusten kimmotus: 3<br><br>Toistajan ammukset kimpoavat lähellä oleviin vastustajiin ja tekevät 50% vahinkoa osuessaan niihin.</td>
+</tr>
+<tr>
+<td>Kimmotus II</td>
+<td>Vaikutus:<br>  Ammusten kimmotus: +2</td>
+</tr>
+<tr>
+<td>Haulikko</td>
+<td>Vaikutus:<br>  Ammusten määrä: +5<br>  Ammusten levintä: +400%<br>  Kineettinenvahinko: -10<br><br>Toistaja ampuu nyt rykelmän heikompia ammuksia, joilla on iso levintä. Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Haulikko II</td>
+<td>Vaikutus:<br>  Ammusten määrä: +5<br>  Ammusten levintä: +100%</td>
+</tr>
+<tr>
+<td>Räjähtävät ammukset</td>
+<td>Vaikutus:<br> Räjähdysvahinko: +5<br>  Kineettinen vahinko: -10<br><br> Vaikuttaa perusvahinkoon. Ammukset aiheuttavat nyt pienen räjähdyksen.</td>
+</tr>
+<tr>
+<td>Räjähtävät ammukset II</td>
+<td>Vaikutus:<br> Räjähdysvahinko: +10<br>  Kineettinen vahinko: -10<br><br> Vaikuttaa perusvahinkoon. Ammukset aiheuttavat nyt isomman räjähdyksen.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tehostettu oppiminen</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Taistelukoulutus</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Mestarin alkeet</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Kovat piipussa</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Panssarin lävistys parannus</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Läpäisyn parannus</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Kehittyneempi tähtäys</td>
+<td>Kriittisen mahdollisuus: +1%<br>  Kriittisen vahinko: +50%</td>
+</tr>
+<tr>
+<td>Täsmäohjausysteemi</td>
+<td>Kriittisen mahdollisuus: +2%<br>  Kriittisen vahinko: +100%</td>
+</tr>
+<tr>
+<td>Tarkka-ampuja koulutus</td>
+<td>Kriittisen mahdollisuus: +3%<br>  Kriittisen vahinko: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#main_weapons">Pääaseet</a> / <span>Lämpösäde</span></div><h1>Lämpösäde</h1>
+<p>Tagit: Tuli, Pää, Vahinko ajan myötä<br>Ampuu jatkuvan valosäteen joka tekee vahinkoa jatkuvasti.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Jääsäde</td>
+<td>Vaikutus:<br> Tulivahinko: -25<br>  Jäävahinko: +25<br>  Jäädytys mahdollisuus: 8%<br><br>Vaikuttaa perusvahinkoon. Lämpösäteen vahinko muuttuu jääksi ja sillä on isompi mahdollisuus jäädyttää.</td>
+</tr>
+<tr>
+<td>Jääsäde II</td>
+<td>Vaikutus:<br>  Jäävahinko: +20<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Peili</td>
+<td>Lämpösäde läpäisee vihollistet ja kimpoaa näytön reunoista.</td>
+</tr>
+<tr>
+<td>Peili II</td>
+<td>Lämpösäde kimpoaa näytön 4x kulmasta.</td>
+</tr>
+<tr>
+<td>Tuplaterä</td>
+<td>Ampuu toisen säteen vastakkaiseen suuntaan. Kaikki parannukset ja evoluutiot vaikuttavat molempiin säteisiin.</td>
+</tr>
+<tr>
+<td>Räjäytin</td>
+<td>Vaikutus:<br>  Tulinopeus: +500%<br><br>Säde ampuu nyt itsenäisen moniosumaisen laset ammuksen jatkuvan säteen sijaan. Se tekee edelleen vahinkoa ajan yli.</td>
+</tr>
+<tr>
+<td>Räjäytin II</td>
+<td>Vaikutus:<br>  Ammuksen pituus: +100%<br>  Vahinko: +40%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fuusioydin</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Muinainen tuli</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Apokalyptinen tulimyrsky</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Lämpöaalto</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Intensiivinen kuumuus</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Katastrofinen purkaus</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Liekinhehku</td>
+<td>Säteen leveys: +20%<br>  (Kantomatka)</td>
+</tr>
+<tr>
+<td>Säteilyvaroitus</td>
+<td>Säteen leveys: +40%<br>  (Kantomatka)</td>
+</tr>
+<tr>
+<td>Auringonydin</td>
+<td>Säteen leveys: +60%<br>  (Kantomatka)</td>
+</tr>
+<tr>
+<td>Pikainen sytytys</td>
+<td>Tulinopeus: +10%</td>
+</tr>
+<tr>
+<td>Syttymispiste</td>
+<td>Tulinopeus: +20%</td>
+</tr>
+<tr>
+<td>Tuskanliekit</td>
+<td>Tulinopeus: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#main_weapons">Pääaseet</a> / <span>Pommitus</span></div><h1>Pommitus</h1>
+<p>Tagit: Räjähdys, Pää<br>Ampuu sarjan raketteja kohteeseen ja sen ympärille. Latautuu ajan kuluessa.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rakettiryhmä</td>
+<td>Pommitus ampuu nyt 3 - 6 ohjusta per ammus 2 - 5 sijaan.</td>
+</tr>
+<tr>
+<td>Rakettiryhmä II</td>
+<td>Pommitus ampuu nyt 4 - 7 ohjusta per ammus 3 - 6 sijaan.</td>
+</tr>
+<tr>
+<td>Seismiset ampumistarvikkeet</td>
+<td>Ohjukset uppoutuvat nyt maahan räjähtämisen sijaan ja ne tekevät räjähtäviä pulsseja muutaman sekunnin ajan.</td>
+</tr>
+<tr>
+<td>Seismiset ampumistarvikkeet II</td>
+<td>Vaikutus:<br>  Kantomatka: 25%<br>  Kestoaika: 25%</td>
+</tr>
+<tr>
+<td>Täydennys</td>
+<td>Täydennyksia voi nyt ilmestyä. Jos aktivoit ne niin ne lataavat sinun pääaseen täysin ja saat 30% vahinkobonuksen seuraavan ammukseen.</td>
+</tr>
+<tr>
+<td>Täydennys II</td>
+<td>Täydennykset nyt antavat myös 30% räjähdyksen kantomatkaan seuraavalle ammukselle.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Yhteislaukaus</td>
+<td>Evoluutio: +10</td>
+</tr>
+<tr>
+<td>Sarjapommitus</td>
+<td>Evoluutio: +20</td>
+</tr>
+<tr>
+<td>Apokalyptinen ryöppy</td>
+<td>Evoluutio: +30</td>
+</tr>
+<tr>
+<td>Tehostettu pamaus</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Hävitysisku</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Kataklysminen räjähdys</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Lisäkantomatka</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Pitkänmatkan ammus</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Laajan kantaman hyökkäys</td>
+<td>Kantomatka: +30%</td>
+</tr>
+<tr>
+<td>Nopea lataus</td>
+<td>Lataus nopeus: +10%<br>  (Tulinopeus)</td>
+</tr>
+<tr>
+<td>Pikainen täydennys</td>
+<td>Lataus nopeus: +20%<br>  (Tulinopeus)</td>
+</tr>
+<tr>
+<td>Täyslaidallinen</td>
+<td>Lataus nopeus: +30%<br>  (Tulinopeus)</td>
+</tr>
+</tbody></table>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#main_weapons">Pääaseet</a> / <span>Pärskytin</span></div><h1>Pärskytin</h1>
+<p>Tagit: Kemikaali, Pää, Vahinko ajan myötä<br>Ammu mönjää vihollistesi päälle ja vammauta ja vahingoita niitä.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Limakupla</td>
+<td>Pärskytin nyt luo limakuplia sen vahinkoalueelle.<br><br>Kun limakuplat aktivoidaan ne purkautuvat, aiheuttaen vahinkoa pienelle alueelle ja luovat uusia vahinkoalueita.</td>
+</tr>
+<tr>
+<td>Limakupla II</td>
+<td>Luo useampia limakuplia.<br><br>Limakuplilla on 50% mahdollisuus räjähtää automaattisesti kun niiden aika on loppu.</td>
+</tr>
+<tr>
+<td>Tartunta</td>
+<td>Pärskyttimen efektit:<br>  Status efektin mahdollisuus: +5%<br><br>Globaalit efektit:<br>  Status efektien vahinko: +30%</td>
+</tr>
+<tr>
+<td>Tartunta II</td>
+<td>Status efektien tappamat viholliset räjähtävät vahinkoalueiksi.</td>
+</tr>
+<tr>
+<td>Laava</td>
+<td>Efektit:<br>  Kemikaali vahinko: -100%<br>  Tulivahinko: +40<br><br>Vaikuttaa perusvahinkoon. Pärskyttimen vahinko muuttuu tulivahingoksi.</td>
+</tr>
+<tr>
+<td>Laava II</td>
+<td>Efektit:<br>  Tulivahinko: +20<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Tartuntavaara</td>
+<td>Vahinkoalueiden efektit:<br>  Kestoaika: -50%<br><br>Vahinkoalueet kasvavat hiljalleen isommiksi.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Harvinaiset myrkyt</td>
+<td>Evoluutio: +10</td>
+</tr>
+<tr>
+<td>Myrkkyjen mestari</td>
+<td>Evoluutio: +20</td>
+</tr>
+<tr>
+<td>Rutonkylväjä</td>
+<td>Evoluutio: +30</td>
+</tr>
+<tr>
+<td>Myrkky loiskaus</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Kuolettava sumu</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Tuomion pilvi</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Viipyvät huurut</td>
+<td>Kantomatka: 10%</td>
+</tr>
+<tr>
+<td>Hermomyrkyn tuulahdus</td>
+<td>Kantomatka: 20%</td>
+</tr>
+<tr>
+<td>Globaali epidemia</td>
+<td>Kantomatka: 30%</td>
+</tr>
+<tr>
+<td>Hidas hajoaminen</td>
+<td>Kestoaika: 10%</td>
+</tr>
+<tr>
+<td>Pidennetty puolittumisaika</td>
+<td>Kestoaika: 20%</td>
+</tr>
+<tr>
+<td>Loputon laskeuma</td>
+<td>Kestoaika: 30%</td>
+</tr>
+</tbody></table>
+</div><div id="weapons" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <span>Tason noususta saatavat aseet</span></div><h1>Tason noususta saatavat aseet</h1>
+<p>Jotkin aseet saat kun saat tason. Kun valitset yhden niistä niin se lisätään sinun arsenaaliin. Jokaisella aseella on uniikki aktivoitumistapa, mutta suurin osa niistä laukeaa kun kirjoitat vihollisen ylläolevia sanoja ja pääaseen tähdätessä vihollisia.</p>
+<p>Voit saada maksimissaan 4 näitä aseita. Kun ase on lisätty sinun arsenaaliisi sen parannukset lisätään mahdollisiin tason nousu palkintoihin, mahdollistaen niiden ominaisuuksien parantamisen kun pääset eteenpäin pelissä.</p>
+<h2>Lista tason noususta saatavista aseista</h2>
+<a href="#spectre" class="portal">Aave</a><a href="#sentry" class="portal">Vartija</a><a href="#tesla" class="portal">Teslamiina</a><a href="#oscillator" class="portal">Oskillaattori</a><a href="#meteor" class="portal">Meteori</a><a href="#hunter" class="portal">Metsästäjä</a><a href="#chopper" class="portal">Hakkuri</a><a href="#minefield" class="portal">Miinakenttä</a><a href="#blade" class="portal">Teräansa</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Aave</span></div><h1>Aave</h1>
+<p>Tagit: Kineettinen, Drooni<br>Suorita sanoja joissa on merkkejä a, e, o luo yllämainutun määrän nopeita lähitaisteludrooneja.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Turboahdettu</td>
+<td>Joka 20. aave on SUPER aave.<br><br>Super aave:<br>  +100% vahinko<br>  +50% kestoaika<br>  +50% nopeus</td>
+</tr>
+<tr>
+<td>Itsensätuhoaminen</td>
+<td>Vaikutus:<br>  Räjähdysvahinko: +50<br><br>Aave räjähtää kun sen kestoaika loppuu. Vaikuttaa perusvahinkoon ja siihen vaikuttaa räjähdysvahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Self Destruct II</td>
+<td>Vaikutus:<br>  Räjähdysvahinko: +50<br>  Kantomatka: +30%<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Epävakaa polttoaine</td>
+<td>Vaikutus:<br>  Nopeus: +50%</td>
+</tr>
+<tr>
+<td>Epävakaa polttoaine II</td>
+<td>Vaikutus:<br>  Nopeus: 50%<br>  Kestoaika: -25%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rajantakainen tieto</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Aavemainen asiantuntemus</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Fantasmagoria</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Laumataktiikka</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Koordinoitu hyökkäys</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Parvistrategia</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Ridodium patterit</td>
+<td>Kestoaika: +10%</td>
+</tr>
+<tr>
+<td>Lisäparistot</td>
+<td>Kestoaika: +20%</td>
+</tr>
+<tr>
+<td>Ytimen ylikuormitus</td>
+<td>Kestoaika: +30%</td>
+</tr>
+<tr>
+<td>Itsekokoonpano</td>
+<td>Yli 7 merkin pituisen sanan suorittaminen luo uuden aaveen.</td>
+</tr>
+</tbody></table>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Vartija</span></div><h1>Vartija</h1>
+<p>Tagit: Tuli, Torni<br>Laukaise automaattinen tykkitorni joka ampuu vihollisia kantamansa sisällä.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Puolustuslinja</td>
+<td>Vaikutus:<br>  Tornit: +1</td>
+</tr>
+<tr>
+<td>Kiinteä ydin</td>
+<td>Vaikutus:<br>  Kineettinen vahinko: +10<br>  Verenvuodatuksen mahdollisuus: 3%<br><br>Vaikuttaa perusvahinkoon ja siihen vaikuttaa kineettinen vahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Kiinteä ydin II</td>
+<td>Vaikutus:<br>  Kineettinen vahinko: +20<br>  Tulivahinko: -10<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Hätäprotokolla</td>
+<td>Kun vartijan kilpi tuhoutuu se menee hätäprotokolla moodiin 10 sekunniksi.<br><br>Hätäprotokollan aikana:<br>  Kantomatka: +50%<br>  Tulinopeus: +100%</td>
+</tr>
+<tr>
+<td>Hätäprotokolla</td>
+<td>Hätäprotokollan aikana:<br>  Vahinko: +50%<br>  Pyörimisnopeus: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tarkkavalvoja</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Valpas vartija</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Ikuinen vartio</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Herkkyysliipasin</td>
+<td>Tulinopeus: +10%</td>
+</tr>
+<tr>
+<td>Sarjatulen nopeutin</td>
+<td>Tulinopeus: +20%</td>
+</tr>
+<tr>
+<td>Salamahyökkäys protokolla</td>
+<td>Tulinopeus: +30%</td>
+</tr>
+<tr>
+<td>Pansasrinläpäisevät ammukset</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Panssarisilppuri</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Kaikenläpäisevä aseistus</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Kehittyneet optiikat</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Parannettu kiikari</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Täsmä ohjausysteemi</td>
+<td>Kantomatka: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Teslamiina</span></div><h1>Teslamiina</h1>
+<p>Tagit: Sähkö, Torni, Vahinko ajan myötä<br>Suorita sanoja jotka alkavat merkillä b, c, d, e Laukaisee sähkötornin joka tekee jatkuvasti vahinkoa.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ylimääräiset käämit</td>
+<td>luo teslamiinan olemassa olevien merkkien lisäksi.</td>
+</tr>
+<tr>
+<td>Kuolettava jännite</td>
+<td>Vaikutus:<br>  Tulivahinko: +4<br>  Mahdollisuus syttyä tuleen: 3%<br><br>Vaikuttaa perusvahinkoon ja siihen vaikuttaa tulivahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Kuolettava jännite II</td>
+<td>Vaikutus:<br>  Tulivahinko: +8<br>  Sähkövahinko: -4<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Rajoitettu alue</td>
+<td>Teslamiinan kentässä olevilla vihollisilla on 20% mahdollisuus saada staattinen isku sähkö vahingosta.</td>
+</tr>
+<tr>
+<td>Rajoitettu alue II</td>
+<td>5 enemmän staattista vahinkoa ja kantomatka kasvaa 30%. Vaikuttaa kaikkiin staattisiin iskuihin ja perusvahinkoon.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sähkömekaanikko</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Volttimestari</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Ukkosjumala</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Vahvistetut käämit</td>
+<td>Kestoaika: +10%</td>
+</tr>
+<tr>
+<td>Kestävät johtimet</td>
+<td>Kestoaika: +20%</td>
+</tr>
+<tr>
+<td>Hyperkuormitettu induktio</td>
+<td>Kestoaika: +30%</td>
+</tr>
+<tr>
+<td>Ylilataus</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Jännitetulva</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Sähkömyrsky</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Vahvistettu kenttä</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Uskomaton kantomatka</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Rajaton kantama</td>
+<td>Kantomatka: +30%</td>
+</tr>
+<tr>
+<td>Staattinen purkaus</td>
+<td>Staattisen mahdollisuus: +1%</td>
+</tr>
+<tr>
+<td>Sähköshokki</td>
+<td>Staattisen mahdollisuus: +3%</td>
+</tr>
+<tr>
+<td>Voltti ylilataus</td>
+<td>Staattisen mahdollisuus: +5%</td>
+</tr>
+</tbody></table>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Oskillaattori</span></div><h1>Oskillaattori</h1>
+<p>Tagit: Tuli, Kauko<br>Ammu oskilloiva partikkelivirta viimeisintä vihollista kohti.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kaksoispäinen</td>
+<td>Oskillaattori ampuu nyt myös vastakkaiseen suuntaan.</td>
+</tr>
+<tr>
+<td>Pallosalama</td>
+<td>Vaikutus:<br>  Sähkövahinko: +3<br>  Staattisen mahdollisuus: 3%<br><br>Vaikuttaa perusvahinkoon ja siihen vaikuttaa sähkövahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Pallosalama II</td>
+<td>Vaikutus:<br>  Sähkövahinko: +6<br>  Tulivahinko: -3<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Stabiloitu plasma</td>
+<td>Oskillaattorin ammukset nyt läpäisevät viholliset. Ensimmäisen osuman jälkeiset viholliset ottavat 50% vahinkoa.</td>
+</tr>
+<tr>
+<td>Stabiloitu plasma II</td>
+<td>Palovahinko kasvaa 5. Tämä vaikuttaa kaikkeen palovahinkoon ja vaikuttaa perusvahinkoon.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Harmoniset komponentit</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Adaptoituva resonaattori</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Aaltovahvennin</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Plasma sytytin</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Kvanttipurkaus</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Supernova</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Sarjapommitus</td>
+<td>Hajonta: +10%</td>
+</tr>
+<tr>
+<td>Räjähdysmäinen purkaus</td>
+<td>Hajonta: +20%</td>
+</tr>
+<tr>
+<td>Kvanttilaajeneminen</td>
+<td>Hajonta: +30%</td>
+</tr>
+<tr>
+<td>Kriittinen pesäke</td>
+<td>Kriittisen mahdollisuus: +1%<br>  Kriittisen kerroin: +50%</td>
+</tr>
+<tr>
+<td>Tarkkuusaalto</td>
+<td>Kriittisen mahdollisuus: +2%<br>  Kriittisen kerroin: +100%</td>
+</tr>
+<tr>
+<td>Polttopiste</td>
+<td>Kriittisen mahdollisuus: +3%<br>  Kriittisen kerroin: +200%</td>
+</tr>
+</tbody></table>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Meteori</span></div><h1>Meteori</h1>
+<p>Tagit: Räjähdys, Kauko<br>Ajoittain luo tähtäinmerkkejä satunnaisiin paikkoihiin johon ammutaan pommitusta.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Valvonta</td>
+<td>Meteori osuu nyt kahteen kohteeseen yhden sijaan.</td>
+</tr>
+<tr>
+<td>Valvonta II</td>
+<td>Meteori osuu nyt kolmeen kohteeseen kahden sijaan.</td>
+</tr>
+<tr>
+<td>Raekuuro</td>
+<td>Vaikutus:<br>  Räjähdysvahinko: -65<br> Jäävahinko: +25<br>  Jäädytys mahdollisuus: 5%<br><br>Vaikuttaa perusvahinkoon ja siihen vaikuttaa jäävahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Raekuuro II</td>
+<td>Vaikutus:<br>  Jäävahinko: +20<br>  Jäädytys mahdollisuus: +5%</td>
+</tr>
+<tr>
+<td>Periksiantamaton</td>
+<td>Vaikutus:<br>  Kantomatka: -50%<br>  Tulinopeus: -50%<br><br>Meteorit tippuvat nyt jatkuvasti ja liikkuvat kohti sinun viimeistä kohdetta.</td>
+</tr>
+<tr>
+<td>Periksiantamaton II</td>
+<td>Vaikutus: <br>  Nopeus: +50%<br>  Kriittisen mahdollisuus: +10%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Innokkaat joukot</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Satelliittipaikannus</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Veteraani tulenjohtaja</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Tarkkuuspommitus</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Iskunvahvistin</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Maailmanloppu</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Relekiihdytin</td>
+<td>Latausnopeus: +10%</td>
+</tr>
+<tr>
+<td>Laukaussekvenssi</td>
+<td>Latausnopeus: +20%</td>
+</tr>
+<tr>
+<td>Kuolemansade</td>
+<td>Latausnopeus: +30%</td>
+</tr>
+<tr>
+<td>Kaukolaukaus moduuli</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Kantamanvahvistin</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Kataklysminen kantomatka</td>
+<td>Kantomatka: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Metsästäjä</span></div><h1>Metsästäjä</h1>
+<p>Tagit: Sähkö, Drooni, Vahinko ajan myötä<br>Suorita sanoja joissa on merkkejä i, o, u Luo yllämainitun määrän drooneja jotka ampuvat sähkösäteitä.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Eliittimetsästäjä</td>
+<td>Joka kahdestoista metsästäjä on eliitti.<br><br>Eliittimetsästjä:<br>  +100% vahinko<br>  +50% kestoaika<br>  +50% nopeus<br>  +50% kantomatka</td>
+</tr>
+<tr>
+<td>Sähköistetyt nuolet</td>
+<td>Vaikutus:<br>  Kineettinen vahinko: +5<br>  Verenvuodatuksen mahdollisuus: 3%<br><br>Metsästäjät ampuvat nyt sähköpurkauksia. Vaikuttaa perusvahinkoon ja siihen vaikuttavat kineettisen vahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Sähköistetyt nuolet II</td>
+<td>Vaikutus:<br>  Kineettinen vahinko: +10<br>  Sähkövahinko: -5<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Viivasalama</td>
+<td>Metsästäjien hyökkäykset hyppäävät nyt yhteen lisäviholliseen.</td>
+</tr>
+<tr>
+<td>Viivasalama II</td>
+<td>Metsästäjien hyökkäykset hyppäävät nyt kahteen lisäviholliseen.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tarkennettu fokus</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Huipputarkkuus</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Saalistaja</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Sähköpurkaus</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Purkauksenmodulaattori</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Kvantti ylilataus</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Kohdistettu säde</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Kohdistettu purkaus</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Salamaryöppy</td>
+<td>Kantomatka: +30%</td>
+</tr>
+<tr>
+<td>Energiatehokkuus</td>
+<td>Kestoaika: +10%</td>
+</tr>
+<tr>
+<td>Optimoitu tuhoaminen</td>
+<td>Kestoaika: +20%</td>
+</tr>
+<tr>
+<td>Loputon matriisi</td>
+<td>Kestoaika: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Hakkuri</span></div><h1>Hakkuri</h1>
+<p>Tagit: Kineettinen, Kauko<br>Luo massiivisen pyörivän terän joka matkustaa pitkin näytön laitoja ja pilkkoo vihollisia tiellään.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kaksikätinen</td>
+<td>Vaikutus:<br>  +1 Hakkuri</td>
+</tr>
+<tr>
+<td>Palavat terät</td>
+<td>Vaikutus:<br>  Tulivahinko: +7<br>  Mahdollisuus syttyä tuleen: +3%<br><br>Vaikuttaa perusvahinkoon ja siihen vaikuttaa tulivahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Palavat terät II</td>
+<td>Vaikutus:<br>  Tulivahinko: +14<br>  Kineettinen vahinko: -7<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Bumerangi</td>
+<td>Hakkuri palaa nyt pääaseen luo päästyään näytön reunalle.</td>
+</tr>
+<tr>
+<td>Bumerangi II</td>
+<td>Vaikutus:<br>  Nopeus: +75%<br>  Tulinopeus: +50%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Veitsenteroitin</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Kirurgin tarkkuus</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Giljotiini</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Teroitetut terät</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Karkaistu terä</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Partaveitsen terävä</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Roottorin parannukset</td>
+<td>Pyörimisnopeus: +10%</td>
+</tr>
+<tr>
+<td>Turbomoottori</td>
+<td>Pyörimisnopeus: +20%</td>
+</tr>
+<tr>
+<td>Hyperroottorit</td>
+<td>Pyörimisnopeus: +30%</td>
+</tr>
+<tr>
+<td>Pidennetyt terät</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Pidenmpi kantomatka</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Pitkän matkan mestari</td>
+<td>Kantomatka: +30%</td>
+</tr>
+<tr>
+<td>Sahalaitainen</td>
+<td>Verenvuodatuksen mahdollisuus +1%</td>
+</tr>
+<tr>
+<td>Verenvuodattaja</td>
+<td>Verenvuodatuksen mahdollisuus +3%</td>
+</tr>
+<tr>
+<td>Silppuri</td>
+<td>Verenvuodatuksen mahdollisuus +5%</td>
+</tr>
+</tbody></table>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Miinakenttä</span></div><h1>Miinakenttä</h1>
+<p>Tagit: Räjähdys, Drooni<br>Suorita sanoja jotka alkavat merkillä f, g, h, i luo hitaasti liikkuvia kosketuksesta räjähtäviä miinoja.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Miinoittaja</td>
+<td>luo miinan olemassa olevien merkkien lisäksi.</td>
+</tr>
+<tr>
+<td>Infuusio</td>
+<td>Vaikutus:<br>  Kemikaalivahinko: +20<br>  Vitsauksen mahdollisuus: 10%<br><br>AVaikuttaa perusvahinkoon ja siihen vaikuttaa kemikaalivahingon muuttujat.</td>
+</tr>
+<tr>
+<td>Infuusio II</td>
+<td>Vaikutus: <br>  Vitsauksen mahdollisuus: +10%<br>  Räjähdysvahinko: -50<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Verikoira</td>
+<td>Vaikuttaa:<br>  Nopeus: +200%<br>  Kantomatka: -50%<br><br>Miinat nyt liikkuvat vihollisia kohti.</td>
+</tr>
+<tr>
+<td>Verikoira II</td>
+<td>Vaikutus:<br>  Luodut miinat: +1<br>  Nopeus: +100%</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI räjäytin</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Tarkkuus ballistiikka</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Tuhoaja</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Voimakkaampi kantoraketti</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Raskaat ammukset</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Taistelukärkien vahvistus</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Kantomatkan lisäys</td>
+<td>Kantomatka: +10%</td>
+</tr>
+<tr>
+<td>Taistelukentän kattavuus</td>
+<td>Kantomatka: +20%</td>
+</tr>
+<tr>
+<td>Rajaton kantomatka</td>
+<td>Kantomatka: +30%</td>
+</tr>
+<tr>
+<td>Nopea työpaja</td>
+<td>+1 luotu miina</td>
+</tr>
+</tbody></table>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#weapons">Tason noususta saatavat aseet</a> / <span>Teräansa</span></div><h1>Teräansa</h1>
+<p>Tagit: Kineettinen, Torni<br>Suorita sanoja jotka alkavat merkillä j, k, l, m Laukaisee pyörivän neljäteräisen teräansan.</p>
+<h2>Evoluutiot</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Terävarasto</td>
+<td>luo teräansan olemassa olevien merkkien lisäksi.</td>
+</tr>
+<tr>
+<td>Myrkytetty</td>
+<td>Vaikutus:<br>  Kemikaalivahinko: +5<br>  Vitsauksen mahdollisuus: 10%<br><br>Vaikuttaa perusvahinkoon. Siihen vaikuttaa kemikaalivahingon muutokset.</td>
+</tr>
+<tr>
+<td>Myrkytetty II</td>
+<td>Vaikutus:<br>  Kemikaalivahinko: 5+<br>  Vitsauksen mahdollisuus: +5%<br><br>Vaikuttaa perusvahinkoon.</td>
+</tr>
+<tr>
+<td>Sahalaitaiset terät</td>
+<td>Teräansojen kriittinen mahdollisuus lisätään niiden mahdollisuuteen vuodattaa verta.</td>
+</tr>
+<tr>
+<td>Sahalaitaiset terät II</td>
+<td>Veren vuodatuksen vahinko nousee 5. Tämä vaikuttaa kaikkeen veren vuodatukseen  ja vaikuttaa perusvahinkoon.</td>
+</tr>
+</tbody></table>
+<h2>Upgrades</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tuunattu koneisto</td>
+<td>Evoluutio: +10 Tappoa</td>
+</tr>
+<tr>
+<td>Reaktivinen pyörre</td>
+<td>Evoluutio: +20 Tappoa</td>
+</tr>
+<tr>
+<td>Viiltäjä</td>
+<td>Evoluutio: +30 Tappoa</td>
+</tr>
+<tr>
+<td>Vahvistetut leikkurit</td>
+<td>Vahinko: +10%</td>
+</tr>
+<tr>
+<td>Titaanileikkurit</td>
+<td>Vahinko: +20%</td>
+</tr>
+<tr>
+<td>Timanttileikkurit</td>
+<td>Vahinko: +30%</td>
+</tr>
+<tr>
+<td>Öljytyt vaihteet</td>
+<td>Pyörimisnopeus: +10%</td>
+</tr>
+<tr>
+<td>Tarkkuusvaihteet</td>
+<td>Pyörimisnopeus: +20%</td>
+</tr>
+<tr>
+<td>Kvanttivaihteet</td>
+<td>Pyörimisnopeus: +30%</td>
+</tr>
+<tr>
+<td>Parannettu koneisto</td>
+<td>Kestoaika: +10%</td>
+</tr>
+<tr>
+<td>Virheetön koneisto</td>
+<td>Kestoaika: +20%</td>
+</tr>
+<tr>
+<td>Ricodium laturit</td>
+<td>Kestoaika: +30%</td>
+</tr>
+</tbody></table>
+</div><div id="enemies" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <span>Viholliset</span></div><h1>Viholliset</h1>
+<p><strong>Glyphican</strong> viholliset luodaan pelin sisäisen mekaniikan <strong>uhan</strong> mukaisesti, joka kasvaa pelin edetessä. Haaste moodissa uhka on kerrottu sen hetkisen Haasteen tason mukaisesti, joka tekee jokaisesta tasosta vaikeamman. Loputtomassa moodissa uhka kasvaa pelaajan tason mukaisesti, progressiivisesti kasvattaen vihollisten vaikeutta.</p>
+<p>Viholliset ovat myös jaettu <strong>erikois</strong> ja <strong>eliitti</strong> vihollisiin. Niillä on jokaisella on oma vaikeusaste, joka rajoittaa niiden ilmestymistä. Tätä vaikeusastetta verrataan sen hetkiseen uhkaan.</p>
+<h2>Vastustaja listaus</h2>
+<a href="#drone" class="portal">Drooni</a><a href="#shielddrone" class="portal">Kilpidrooni</a><a href="#stalker" class="portal">Vaanija</a><a href="#shooter" class="portal">Ampuja</a><a href="#splitter" class="portal">Jakautuja</a><a href="#warder" class="portal">Suojelija</a><a href="#swarmer" class="portal">Laumoittaija</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Drooni</span></div><h1>Drooni</h1>
+<p>Droonit ovat vihollisia, jotka tarmokkaasti pyrkivät sinun pääasettasi kohti. Ajoittain ne ilmenevät voimakkaammissa muodoissa:<br>Jätti: Kolminkertainen kesto, joka tekee niistä vaikeampia tuhota.<br>Huippunopea: Tuplaa niiden nopeuden, joten ne täytyy tuhota kiireellisesti.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Drone.png"></td>
+<td>Kesto: 120<br>Vahinko: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone2.png"></td>
+<td>Kesto: 300<br>Vahinko: 60<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone3.png"></td>
+<td>Kesto: 750<br>Vahinko: 90<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone4.png"></td>
+<td>Kesto: 1500<br>Vahinko: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone5.png"></td>
+<td>Kesto: 2400<br>Vahinko: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone6.png"></td>
+<td>Kesto: 3900<br>Vahinko: 180<br></td>
+</tr>
+<tr>
+<td><img src="img/Drone7.png"></td>
+<td>Kesto: 6000<br>Vahinko: 210<br></td>
+</tr>
+</tbody></table>
+</div><div id="shielddrone" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Kilpidrooni</span></div><h1>Kilpidrooni</h1>
+<p>Kilpidrooni on droonin variaatio jolla on itsestäänparaneva kilpi. Sillä on kahdet kestopisteet: Ylämpi on sen kilpi, joka alkaa paranemaan jos se ei ota hetkeen vahinkoa.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/ShieldDrone.png"></td>
+<td>Kesto: 150<br>Kilpi: 200<br>Vahinko: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone2.png"></td>
+<td>Kesto: 300<br>Kilpi: 400<br>Vahinko: 100<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone3.png"></td>
+<td>Kesto: 600<br>Kilpi: 800<br>Vahinko: 150<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone4.png"></td>
+<td>Kesto: 1200<br>Kilpi: 1600<br>Vahinko: 200<br></td>
+</tr>
+<tr>
+<td><img src="img/ShieldDrone5.png"></td>
+<td>Kesto: 2400<br>Kilpi: 3200<br>Vahinko: 250<br></td>
+</tr>
+</tbody></table>
+</div><div id="stalker" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Vaanija</span></div><h1>Vaanija</h1>
+<p>Vaanija on droonin variaatio, jonka kirjaimista osa on aluksi piilossa. Kun kirjoitat sanaa niin se alkaa hitaasti paljastua, joka vaatii tarkkuutta ja nopeaa kirjoittamista sen tuhoamiseksi.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Stalker.png"></td>
+<td>Kesto: 600<br>Vahinko: 80<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker2.png"></td>
+<td>Kesto: 1200<br>Vahinko: 120<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker3.png"></td>
+<td>Kesto: 2400<br>Vahinko: 160<br></td>
+</tr>
+<tr>
+<td><img src="img/Stalker4.png"></td>
+<td>Kesto: 4800<br>Vahinko: 200<br></td>
+</tr>
+</tbody></table>
+</div><div id="shooter" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Ampuja</span></div><h1>Ampuja</h1>
+<p>Ampuja on vihollinen joka vaanii tason laitamilla ja ampuu jatkuvasti kestäviä ammuksia sinun pääasettasi kohti kunnes se tuhoutuu.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Shooter.png"></td>
+<td>Kesto: 450<br>Vahinko: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/Shooter2.png"></td>
+<td>Kesto: 900<br>Vahinko: 25<br></td>
+</tr>
+<tr>
+<td><img src="img/Shooter3.png"></td>
+<td>Kesto: 1800<br>Vahinko: 25<br></td>
+</tr>
+</tbody></table>
+</div><div id="splitter" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Jakautuja</span></div><h1>Jakautuja</h1>
+<p>Jakautuja aluksi ilmenee yksittäisenä vihollisena mutta se on muodostunut monesta osasta. Kun yksi osa tuhoutuu, jakautuja hajoaa eri osiin joista muodostuu uusia yksittäisiä vihollisia.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Splitter.png"></td>
+<td>Sirpaleiden määrä: 4<br>Sirpaleiden kesto: 525<br>Sirpaleiden vahinko: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Splitter2.png"></td>
+<td>Sirpaleiden määrä: 5<br>Sirpaleiden kesto: 750<br>Sirpaleiden vahinko: 40<br></td>
+</tr>
+<tr>
+<td><img src="img/Splitter3.png"></td>
+<td>Sirpaleiden määrä: 6<br>Sirpaleiden kesto: 975<br>Sirpaleiden vahinko: 40<br></td>
+</tr>
+</tbody></table>
+</div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Suojelija</span></div><h1>Suojelija</h1>
+<p>Suojelija on eliitti vihollinen, joka ilmenee pelin loppu puolella. Sillä on pyörivä kilpi, joka suojelee sitä kilven suunnasta tulevia ammuksia vastaan. Kun Suojelija on elossa se myös suojelee muita lähellä olevia vihollisia, jotka eivät voi kuolla niin kauan kuin Suojelija on elossa.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Warder.png"></td>
+<td>Kesto: 450<br></td>
+</tr>
+</tbody></table>
+</div><div id="swarmer" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <a href="#enemies">Viholliset</a> / <span>Laumoittaija</span></div><h1>Laumoittaija</h1>
+<p>Laumoittaja on eliitti vihollinen, joka ajoittain laukaisee lauman pienempiä vihollisia pääasettasi kohti. Se jatkaa kunnes se on tuhottu.</p>
+<h2>Variaatio listaus</h2>
+<table>
+<thead>
+<tr>
+<th>Kuva</th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Swarmer.png"></td>
+<td>Kesto: 3000<br></td>
+</tr>
+</tbody></table>
+</div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <span>Palkinnot</span></div><h1>Palkinnot</h1>
+<p>Palkinto esineet on mahdollista saada pelin aikana aktivoimalla aarrearkku bonukset. Voit valita yhden satunnaisesti arvotun esineen, joka antaa sinulle passiivisen bonuksen koko pelin ajaksi.</p>
+<p>Palkinto esineet ovat jaettu <strong>yleisiin</strong>, <strong>epätavallisiin</strong>, ja *<em>harvinaisiin</em> esineisin, joka vaikuttaa niiden todennäköisyyteen ilmestyä. Pomon kukistaminen Haaste moodissa palkitsee sinut arkulla jossa on vain harvinaisia esineitä.</p>
+<h2>Lista harvinaisista palkinnoista</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Näkijä</td>
+<td>Jos sinulla ei ole yhtään uudelleen arvontaa kun saat tason, evoluution tai palkinnon saat yhden udelleen arvonnan käytettäväksi sitä varten.</td>
+</tr>
+<tr>
+<td>Viritys</td>
+<td>Droonien määrä: 35%<br><br>Kaikki drooniaseet:<br>  Kestoaika: {2}</td>
+</tr>
+<tr>
+<td>Ryöstö</td>
+<td>+1 Palkinto mahdollisuus</td>
+</tr>
+<tr>
+<td>Monikohdistus</td>
+<td>Kaikki kaukoaseet saavat +1% kriittisen mahdollisuuden per jokainen ase joka sinulla on.</td>
+</tr>
+<tr>
+<td>Jättimagneetti</td>
+<td>Sinulla on 50% mahdollisuus automaattisesti kerätä bonukset kun ne häviävät.</td>
+</tr>
+<tr>
+<td>Paleltuma</td>
+<td>Globaali efekti - Ei lasketa aseeksi.<br><br>Viholliset saavat lisävahinkoa kun ovat jäätyneet.</td>
+</tr>
+<tr>
+<td>Räjättävät viholliset</td>
+<td>Räjähdysvahinkoon kuolevat viholliset aiheuttavaf sarjan räjähdyksiä ympärilleen.</td>
+</tr>
+<tr>
+<td>Pikavoitto</td>
+<td>Kriittiseen vahinkoon kuolevilla vihollisilla on 30% mahdollisuus tiputtaa Uudelleen arvonta, Kilpi tai Kesto bonus.</td>
+</tr>
+<tr>
+<td>Jälkijäristys</td>
+<td>Kriittinen vahinko aina aiheuttaa status efektin.</td>
+</tr>
+<tr>
+<td>Vampyyri</td>
+<td>Kriittiset osumat kineettisellä vahingolla parantavat sinua 5% sen määrästä.</td>
+</tr>
+<tr>
+<td>Viisaus</td>
+<td>Kun saat kilven kaikki ase evoluutiot saavat 10 tappoa.</td>
+</tr>
+<tr>
+<td>Narri</td>
+<td>Kaikki viholliset saavat 0 ja 100 väliltä vahinkoa kun saat uudelleen arvonnan.</td>
+</tr>
+<tr>
+<td>Viimeiseen mieheen</td>
+<td>Kun sinun kilpi tuhoutuu sinulla on 30% mahdollisuus saada tuplavahinko.</td>
+</tr>
+<tr>
+<td>Triplavahinko</td>
+<td>Tuplavahingon aikana ilmenevät tuplavahinko bonukset ovat triplavahinko bonuksia.</td>
+</tr>
+<tr>
+<td>Murtuma</td>
+<td>Kaikki vahinko jäätyneisiin vihollisiin kasvaa {}. Muuttuja on kerroin.</td>
+</tr>
+<tr>
+<td>Askeetikko</td>
+<td>Kun poistut ruudusta kaikki käyttämättömät uudelleen arvonnat nostavat vahinkoa +10% 20 sekunniksi.</td>
+</tr>
+<tr>
+<td>Harmonisoija</td>
+<td>Kaikki tämän hetkiset aseet saavat yhden evoluutio tason.</td>
+</tr>
+<tr>
+<td>Kuolemattomuus</td>
+<td>Jos sinun pääaseesi meinaa tuhoutua tuhoutumisen sijaan sen kesto laskee yhteen. Tämä voi tapahtua vain kerran 2 minuutissa.</td>
+</tr>
+<tr>
+<td>Valaistuminen</td>
+<td>Saat +5 tappoa aseen evoluution jos se tappaa vihollisen kriittisellä vahingolla.</td>
+</tr>
+<tr>
+<td>Viiimeinen sana</td>
+<td>Vihollissanan viimeistely sen tuhoutumisen jälkeen antaa sinulle +10% vahinkoa 10 sekunniksi. Kolme efektiä voi olla voimassa yhtäaikaa.</td>
+</tr>
+<tr>
+<td>Murhamielinen</td>
+<td>Kaikki drooniaseet:<br>  +50% vahinko</td>
+</tr>
+<tr>
+<td>Mestaaja</td>
+<td>Kaikki torniaseet:<br>  +50% vahinko</td>
+</tr>
+<tr>
+<td>Rappeutuminen</td>
+<td>Kaikki kaukoaseet:<br>  +50% vahinko</td>
+</tr>
+</tbody></table>
+<h2>Lista epätavallisista palkinnoista</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tsunami</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +25%</td>
+</tr>
+<tr>
+<td>Shokkiaalto</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +25%</td>
+</tr>
+<tr>
+<td>Täysuho</td>
+<td>Kaikki kineettiset aseet:<br>  Kriittisen kerroin: +100%</td>
+</tr>
+<tr>
+<td>Laskeuma</td>
+<td>Kaikki kineettiset aseet:<br>  Kaksinkertaisen vahingon mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Hajoava ammus</td>
+<td>Kaikki kineettiset aseet:<br>  Vahinko +25%</td>
+</tr>
+<tr>
+<td>Purkaus</td>
+<td>Kaikki kineettiset aseet:<br>  Tulinopeus: +25%</td>
+</tr>
+<tr>
+<td>Läpäisijä</td>
+<td>Kaikki kineettiset aseet:<br>  Kriittisen mahdollisuus: +2%</td>
+</tr>
+<tr>
+<td>Sanansaattaja</td>
+<td>Kaikki kineettiset aseet:<br>  Verenvuodatuksen mahdollisuus: +4%</td>
+</tr>
+<tr>
+<td>Inferno</td>
+<td>Kaikki tuliaseet:<br>  Vahinko +25%</td>
+</tr>
+<tr>
+<td>Plasmoittaja</td>
+<td>Kaikki tuliaseet:<br>  Kantomatka: +25%</td>
+</tr>
+<tr>
+<td>Feeniks</td>
+<td>Kaikki tuliaseet:<br>  Uudelleen arvonnan mahdollisuus: +5%</td>
+</tr>
+<tr>
+<td>Pyroklasmia</td>
+<td>Kaikki tuliseet:<br>  Syttymisen mahdollisuus +4%</td>
+</tr>
+<tr>
+<td>Syväjäädytys</td>
+<td>Kaikki jääaseet:<br>  Vahinko: +25%</td>
+</tr>
+<tr>
+<td>Jäävuori</td>
+<td>Kaikki jääaseet:<br>  Jäädytyksen mahdollituus: +4%</td>
+</tr>
+<tr>
+<td>Hylkijä</td>
+<td>Kaikki jääaseet:<br>  Kilven mahdollisuus: +5%</td>
+</tr>
+<tr>
+<td>Jäämyrsky</td>
+<td>Kaikk jääaseet:<br>  Kestoaika: +25%</td>
+</tr>
+<tr>
+<td>Ylikuormitus</td>
+<td>Kaikki sähköaseet:<br>  Staattisen iskun mahdollisuus: +4%</td>
+</tr>
+<tr>
+<td>Megamyrsky</td>
+<td>Kaikki sähköaseet:<br>  Vahinko: +25%</td>
+</tr>
+<tr>
+<td>Vahvistaja</td>
+<td>Kaikki sähköaseet:<br>  Tulinopeus: +25%</td>
+</tr>
+<tr>
+<td>Singulariteetti</td>
+<td>Kaikki sähköaseet:<br>  Kestoaika: +25%</td>
+</tr>
+<tr>
+<td>Loputtomuus</td>
+<td>Kaikki drooniaseet:<br>  Kestoaika: +25%</td>
+</tr>
+<tr>
+<td>Hypermoottori</td>
+<td>Kaikki drooniaseet:<br>  Nopeus: +25%</td>
+</tr>
+<tr>
+<td>Supertietokone</td>
+<td>Kaikki drooniaseet:<br>  Vahinko: +25%</td>
+</tr>
+<tr>
+<td>Jääriesa</td>
+<td>Kaikki kineettiset aseet:<br>  Jäädytys bonuksen mahdollisuus: +2%</td>
+</tr>
+<tr>
+<td>Boosteri</td>
+<td>Kaikki kaukoaseet:<br>  Kantomatka: +25%</td>
+</tr>
+<tr>
+<td>Suora yhteys</td>
+<td>Kaikki kaukoaseet:<br>  Nopeus: +25%</td>
+</tr>
+<tr>
+<td>Komentoyksikkö</td>
+<td>Kaikki kaukoaseet:<br>  Vahinko: +25%</td>
+</tr>
+<tr>
+<td>Energiayksikkö</td>
+<td>Kaikki torniaseet:<br>  Kestoaika: +25%</td>
+</tr>
+<tr>
+<td>Helvetillinen myrsky</td>
+<td>Kaikki torniaseet:<br>  Tulinopeus: +25%</td>
+</tr>
+<tr>
+<td>Täsmällisyys</td>
+<td>Kaikki torniaseet:<br>  Vahinko: +25%</td>
+</tr>
+<tr>
+<td>Vyöry</td>
+<td>Kaikki status efektit:<br>  Vahinko +25%</td>
+</tr>
+<tr>
+<td>Piinaus</td>
+<td>Kaikki status efektit:<br>  Kestoaika: +25%</td>
+</tr>
+<tr>
+<td>Mysteeri</td>
+<td>Kaikki palkintoaseet:<br>  Kriittisen mahdollisuus: +2%</td>
+</tr>
+<tr>
+<td>Arsenaali</td>
+<td>Kaikki aseet:<br>  Vahinko: +12.5%</td>
+</tr>
+<tr>
+<td>Pelastaja</td>
+<td>Kaikki aseet:<br>  Kestoaika: +12.5%</td>
+</tr>
+<tr>
+<td>Satelliittinäkymä</td>
+<td>Kaikki aseet:<br>  Kantomatka: +12.5%</td>
+</tr>
+<tr>
+<td>Lähietäisyys</td>
+<td>Pääaseen lähellä olevat viholliset saavat +20% vahinkoa.</td>
+</tr>
+<tr>
+<td>Arsyke</td>
+<td>Kaikki aseet:<br>  Status efektin mahdollisuus: +2%</td>
+</tr>
+<tr>
+<td>Kryotekniikka</td>
+<td>Jäädytys bonukset:<br>  Mahdollisuus ilmetä: +2%</td>
+</tr>
+<tr>
+<td>Sotaisa</td>
+<td>Tuplavahinko bonukset:<br>  Mahdollisuus ilmetä: +4%</td>
+</tr>
+<tr>
+<td>Pinata</td>
+<td>Kaikki aseet:<br>  Bonusten mahdollisuus: +2%</td>
+</tr>
+<tr>
+<td>Lasinen veitsi</td>
+<td>Kaikki aseet:<br>  Vahinko: +30%<br><br>Pääase:<br>  Maksimi kesto: -50%</td>
+</tr>
+<tr>
+<td>Uudistuminen</td>
+<td>Ei parannus bonuksia.<br><br>Sen sijaan paranet 5% kun aktivoit Bonus, Jäädytys, Tuplavahinko, Uudelleen arvonta tai kilpi palkinnon.</td>
+</tr>
+<tr>
+<td>Vaiva</td>
+<td>Kaikki ajan myötä vahinkoa tekevät aseet voivat tehdä kriittistä vahinkoa.</td>
+</tr>
+<tr>
+<td>Pirstoa</td>
+<td>Kaikki kineettiset aseet saavat +5% kriittisen mahdollisuutta jäätyneitä vihollisia vastaan.</td>
+</tr>
+<tr>
+<td>Sinnikkyys</td>
+<td>Kilven aktivointi kasvattaa sinun kaikkea kestoaikaa 10% seuraavaksi 10 sekunniksi. Kolme efektiä voi olla voimassa yhtäaikaa.</td>
+</tr>
+<tr>
+<td>Uhkapeluri</td>
+<td>Nostaa uudelleen arvontojen maksimia yhdellä. Maksimi on 6.</td>
+</tr>
+<tr>
+<td>Turvamies</td>
+<td>Nostaa kilpien maksimia yhdellä. Maksimi on 4.</td>
+</tr>
+<tr>
+<td>Täydellinen</td>
+<td>Joka x17 täydellinen sana myös nostaa sinun kaikkea tulinopeutta: 5%.</td>
+</tr>
+<tr>
+<td>Laukaus</td>
+<td>Kirjoitusvirheet aiheuttavat 20 räjähdysvahinkoa kaikkiin vihollisiin per x17 täydellinen sana.</td>
+</tr>
+<tr>
+<td>Riuduttava</td>
+<td>Kaikki ajan myötä vahinkoa tekevät aseet:<br>  +35% tulinopeus.</td>
+</tr>
+<tr>
+<td>Kuihtua</td>
+<td>Kaikki status efektit:<br>  +35% tulinopeus</td>
+</tr>
+</tbody></table>
+<h2>Lista yleisistä palkinnoista</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:160px">Nimi</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pamaus</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +2%</td>
+</tr>
+<tr>
+<td>Räjäytys</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +2%</td>
+</tr>
+<tr>
+<td>Murskaus</td>
+<td>Kaikki kineettiset aseet:<br>  Vahinko +2%</td>
+</tr>
+<tr>
+<td>Ryöppy</td>
+<td>Kaikki kineettiset aseet:<br>  Tulinopeus +2%</td>
+</tr>
+<tr>
+<td>Korvennus</td>
+<td>Kaikki tuliaseet:<br>  Vahinko +2%</td>
+</tr>
+<tr>
+<td>Kekäleet</td>
+<td>Kaikki tuliaseet:<br>  Kantomatka+2%</td>
+</tr>
+<tr>
+<td>Ikirouta</td>
+<td>Kaikki jääaseet:<br>  Vahinko +2%</td>
+</tr>
+<tr>
+<td>Kuura</td>
+<td>Kaikki jääaseet:<br>  Kestoaika +2%</td>
+</tr>
+<tr>
+<td>Shokki</td>
+<td>Kaikki sähköaseet:<br>  Vahinko +2%</td>
+</tr>
+<tr>
+<td>Purkaus</td>
+<td>Kaikki sähköaseet:<br>  Tulinopeus +2%</td>
+</tr>
+<tr>
+<td>Tehostettu reititin</td>
+<td>Kaikki drooniaseet:<br>  Kestoaika +2%</td>
+</tr>
+<tr>
+<td>Pistoisku</td>
+<td>Kaikki drooniaseet:<br>  Vahinko +2%</td>
+</tr>
+<tr>
+<td>Kantama</td>
+<td>Kaikki kaukoaseet:<br>  Kantomatka: +2%</td>
+</tr>
+<tr>
+<td>Voimistettu isku</td>
+<td>Kaikki kaukoaseet:<br>  Vahinko: +2%</td>
+</tr>
+<tr>
+<td>Puolutuksen lujitus</td>
+<td>Kaikki torniaseet:<br>  Kestomatka: +2%</td>
+</tr>
+<tr>
+<td>Linnoitus</td>
+<td>Kaikki torniaseet:<br>  Vahinko: +2%</td>
+</tr>
+<tr>
+<td>Vaiva</td>
+<td>Kaikki status efektit:<br>  Vahinko: +2%</td>
+</tr>
+<tr>
+<td>Resonanssi</td>
+<td>Kaikki status efektit:<br>  Kestoaika: +2%</td>
+</tr>
+<tr>
+<td>Dominaatio</td>
+<td>Kaikki aseet:<br>  Vahinko: +1%</td>
+</tr>
+<tr>
+<td>Sitkeys</td>
+<td>Kaikki aseet:<br>  Kestoaika: +1%</td>
+</tr>
+<tr>
+<td>Projektio</td>
+<td>Kaikki aseet:<br>  Kantomatka: +1%</td>
+</tr>
+<tr>
+<td>Räiske</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +15%</td>
+</tr>
+<tr>
+<td>Isku</td>
+<td>Kaikki räjähdysaseet:<br>  Kantomatka: +15%</td>
+</tr>
+<tr>
+<td>Atomisoi</td>
+<td>Kaikki räjähdysaseet:<br>  Kriittisen kerroin: +75%</td>
+</tr>
+<tr>
+<td>Megapommi</td>
+<td>Kaikki räjähdysaseet:<br>  Tuplavahingon mahdollisuus +1%</td>
+</tr>
+<tr>
+<td>Laajenevat luodit</td>
+<td>Kaikki kineettiset aseet:<br>  Vahinko +15%</td>
+</tr>
+<tr>
+<td>Sarja</td>
+<td>Kaikki kineettiset aseet:<br>  Tulinopeus +15%</td>
+</tr>
+<tr>
+<td>Läpäisy</td>
+<td>Kaikki kineettiset aseet:<br>  Kriittisen mahdollisuus +1%</td>
+</tr>
+<tr>
+<td>Viikatemies</td>
+<td>Kaikki kineettiset aseet:<br>  Verenvuodon mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Poltin</td>
+<td>Kaikki tuliaseet:<br>  Vahinko +15%</td>
+</tr>
+<tr>
+<td>Säteilijä</td>
+<td>Kaikki tuliaseet:<br>  Kantomatka+15%</td>
+</tr>
+<tr>
+<td>Uudelleensyntymä</td>
+<td>Kaikki tuliaseet:<br>  Uudelleen arvonnan mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Palava</td>
+<td>Kaikki tuliaseet:<br>  Sytytyksen mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Hypotermia</td>
+<td>Kaikki jääaseet:<br>  Vahinko +15%</td>
+</tr>
+<tr>
+<td>Pakkanen</td>
+<td>Kaikki jääaseet:<br>  Jäädytys mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Torjunta</td>
+<td>Kaikki jääaseet:<br>  Kilven mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Jäähdytinneste</td>
+<td>Kaikki jääaseet:<br>  Kestoaika +15%</td>
+</tr>
+<tr>
+<td>Piilevä lataus</td>
+<td>Kaikki sähköaseet:<br>  Staattisen iskun mahdollisuus +2%</td>
+</tr>
+<tr>
+<td>Kapasitaattori</td>
+<td>Kaikki sähköaseet:<br>  Vahinko +15%</td>
+</tr>
+<tr>
+<td>Modulaattori</td>
+<td>Kaikki sähköaseet:<br>  Tulinopeus +15%</td>
+</tr>
+<tr>
+<td>Keskitys</td>
+<td>Kaikki sähköaseet:<br>  Kestoaika +15%</td>
+</tr>
+<tr>
+<td>Isompi akku</td>
+<td>Kaikki drooniaseet:<br>  Kestoaika +15%</td>
+</tr>
+<tr>
+<td>Potkurit</td>
+<td>Kaikki drooniaseet:<br>  Nopeus +15%</td>
+</tr>
+<tr>
+<td>Koneäly</td>
+<td>Kaikki drooniaseet:<br>  Vahinko +15%</td>
+</tr>
+<tr>
+<td>Sydämetön</td>
+<td>Kaikki drooniaseet:<br>  Jäädytyksen mahdollisuus +1%</td>
+</tr>
+<tr>
+<td>Signaalin tehostin</td>
+<td>Kaikki kaukoaseet:<br>  Kantomatka: +15%</td>
+</tr>
+<tr>
+<td>Ei viivettä</td>
+<td>Kaikki kaukoaseet:<br>  Nopeus: +15%</td>
+</tr>
+<tr>
+<td>Kontrollit</td>
+<td>Kaikki kaukoaseet:<br>  Vahinko: +15%</td>
+</tr>
+<tr>
+<td>Ylläpitäjä</td>
+<td>Kaikki torniaseet:<br>  Kestomatka: +15%</td>
+</tr>
+<tr>
+<td>Konetykki</td>
+<td>Kaikki torniaseet:<br>  Tulinopeus: +15%</td>
+</tr>
+<tr>
+<td>Kalibrointi</td>
+<td>Kaikki torniaseet:<br>  Vahinko: +15%</td>
+</tr>
+<tr>
+<td>Hiertymä</td>
+<td>Kaikki status efektit:<br>  Vahinko: +15%</td>
+</tr>
+<tr>
+<td>Kärsimys</td>
+<td>Kaikki status efektit:<br>  Kestoaika: +15%</td>
+</tr>
+<tr>
+<td>Salaisuus</td>
+<td>Kaikki palkinto aseet:<br>  Kriittisen mahdollisuus: +1%</td>
+</tr>
+<tr>
+<td>Aseistus</td>
+<td>Kaikki aseet:<br>  Vahinko: +5%</td>
+</tr>
+<tr>
+<td>Selviytymispakkaus</td>
+<td>Kaikki aseet:<br>  Kestoaika: +5%</td>
+</tr>
+<tr>
+<td>Teleskooppi</td>
+<td>Kaikki aseet:<br>  Kantomatka: +5%</td>
+</tr>
+<tr>
+<td>Episentri</td>
+<td>Tuliaseet tekevät +20% vahinkoa pääaseen ympärillä.</td>
+</tr>
+<tr>
+<td>Pakastin</td>
+<td>Jäädytys bonus:<br>  Kestoaika: +20%<br>  Mahdollisuus ilmetä: +1%</td>
+</tr>
+<tr>
+<td>Haavoittuvuus</td>
+<td>Tuplavahinko bonus:<br>  Kestoaika: +20%<br>  Mahdollisuus ilmetä: +1%</td>
+</tr>
+<tr>
+<td>Tarkkuus</td>
+<td>Kaikki aseet:<br>  Kriittisen mahdollisuus: +1%<br>  Kriittisen kerroin: +50%</td>
+</tr>
+<tr>
+<td>Ensiapupakkaus</td>
+<td>Parantaa 100 kestopistettä.<br><br>Tämän hetkinen kesto: 300 / 300</td>
+</tr>
+<tr>
+<td>Kilpi</td>
+<td>Lisää yhden kilven.<br><br>Tämän hetkiset kilvet: 0 / 3</td>
+</tr>
+<tr>
+<td>Uudelleenarvonta</td>
+<td>Lisää yhden uudelleen arvonnan.<br><br>Tämän hetkiset uudelleen arvonnat: 3 / 5</td>
+</tr>
+<tr>
+<td>Tuskanaiheuttaja</td>
+<td>Nostaa ajan myötä tapahtuvan vahingon määrää: +4%. Tämä tuplaantuu lähellä pääasetta.</td>
+</tr>
+</tbody></table>
+</div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Koti</a> / <span>Augmentaatiot</span></div><h1>Augmentaatiot</h1>
+<p>Augmentaatiot ovat pysyviä parannuksia, joita voit ansaita Kolikoilla (§), joita tienaat pelatessaasi. Jokaisen pelin alussa pelaajalla on rajattu määrä tilaa johon hän voi laittaa tienattuja augmentaatioita. Sen hetkinen Enne taso vaikuttaa kuinka paljon pelaajalla on tilaa.</p>
+<p>Jokaisella augmentaatiolla on yleensä tietyt ehdot jotka vaikuttavat sen hyötyihin. Jotta saat kaiken irti augmentaatioista harkitse niiden synergioita ja yhdistä ne sinun strategiaasi.</p>
+<h2>Koodeksi: Pääase</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">Nimi</div></th>
+<th><div style="width:50px">Hinta</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Panssaroitu</td>
+<td>50 §,<br>200 §</td>
+<td>Pääase:<br>  Kesto: +50%</td>
+</tr>
+<tr>
+<td>Innokas</td>
+<td>50 §</td>
+<td>Saat tason haasteen tai loputtoman pelin alussa.</td>
+</tr>
+<tr>
+<td>Uhkapeluri</td>
+<td>50 §</td>
+<td>Jokainen uudelleen arvonta antaa pääaseellesi +20% vahinkoa 20 sekunniksi.</td>
+</tr>
+<tr>
+<td>Tahraton</td>
+<td>100 §</td>
+<td>Täydelliset sanat antavat +1.5% kriittisen mahdollisuuteen.</td>
+</tr>
+<tr>
+<td>Usva</td>
+<td>200 §,<br>500 §</td>
+<td>Kun sinun kesto on alle 50% saat +50% bonuksen tulinopeuteen.</td>
+</tr>
+<tr>
+<td>Kiintymys</td>
+<td>200 §</td>
+<td>Pääase saa +25% vahinkoon jokaista tyhjää asepaikkaa kohden.</td>
+</tr>
+</tbody></table>
+<h2>Koodeksi: Droonit</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">Nimi</div></th>
+<th><div style="width:50px">Hinta</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Armada</td>
+<td>200 §</td>
+<td>Kun luot droonin niin sinulla on 20% mahdollisuus luoda ylimääräinen drooni.</td>
+</tr>
+<tr>
+<td>Moninaisuus</td>
+<td>50 §</td>
+<td>Jokainen ei-drooni ase joka sinulla on nostaa droonien kestoaikaa 20%.</td>
+</tr>
+<tr>
+<td>Salamasota</td>
+<td>50 §</td>
+<td>Droonien nopeuden parannukset myös nostavat droonien vahinkoa.</td>
+</tr>
+<tr>
+<td>Kosto</td>
+<td>300 §</td>
+<td>Aina kun sinun kilpi tuhoutuu kaikki sen hetkiset droonit räjähtävät vahingoittaen vihollisia.</td>
+</tr>
+<tr>
+<td>Syntipukki</td>
+<td>100 §</td>
+<td>Väärin kirjoitetut sanat tuhoavat yhden sinun drooneista eikä niitä lasketa vääriksi sanoiksi.</td>
+</tr>
+<tr>
+<td>Saalis</td>
+<td>200 §</td>
+<td>Droonit voivat tiputtaa bonuksia niiden tuhouduttua.</td>
+</tr>
+</tbody></table>
+<h2>Koodeksi: Torni</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">Nimi</div></th>
+<th><div style="width:50px">Hinta</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Linnoitus</td>
+<td>100 §,<br>400 §</td>
+<td>Jokainen torni evoluution antaa myös pääaseelle +50 maksimi kestoa.</td>
+</tr>
+<tr>
+<td>Verkostoitunut</td>
+<td>50 §</td>
+<td>Jokainen torni antaa +10% tulinopeuteen kaikille torneille, +50% asti.</td>
+</tr>
+<tr>
+<td>Tiedustelutieto</td>
+<td>50 §</td>
+<td>Bonuksen aktivointi antaa +30% kantomatkaa kaikille torneille. Tätä bonusta ei voi aktivoida yhtä aikaa kuin kerran.</td>
+</tr>
+<tr>
+<td>Salainen rele</td>
+<td>500 §</td>
+<td>Torniesi väillä lentelee satunnaisesti ammus, joka tekee sähkövahinkoa.</td>
+</tr>
+<tr>
+<td>Tarkkailija</td>
+<td>100 §</td>
+<td>Jos et ole hyökännyt 3 sekunttiin saat +30% vahinkoa torneille siihen asti kunnes hyökkäät.</td>
+</tr>
+<tr>
+<td>Heikkous</td>
+<td>200 §</td>
+<td>Tornin kantamassa olevat viholliset ottavat 30% enemmän vahinkoa muista lähteistä.</td>
+</tr>
+</tbody></table>
+<h2>Koodeksi: Ajan yli tapahtuva vahinko</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">Nimi</div></th>
+<th><div style="width:50px">Hinta</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Korroosio</td>
+<td>500 §</td>
+<td>Ajan myötä vahinkoa tekevät aseet voivat tehdä kriittistä vahinkoa.</td>
+</tr>
+<tr>
+<td>Nahkiainen</td>
+<td>200 §</td>
+<td>Pääaseen ajan myötä tekemä vahinko parantaa sitä 1 kestopisteen verran.</td>
+</tr>
+<tr>
+<td>Sitkeys</td>
+<td>100 §,<br>300 §</td>
+<td>Nostaa kaikkien ajan myötä vahinkoa tekevien aseiden kestoaikaa 35%.</td>
+</tr>
+<tr>
+<td>Tuskanaiheuttajat</td>
+<td>50 §</td>
+<td>Lisää Tuskanaiheuttajat bonus mahdollisuuksiin. Jokainen antaa +3% ajan myötä tapahtuvan vahinkoon. Tupla vaikutus pääaseen lähellä.</td>
+</tr>
+<tr>
+<td>Vakaumus</td>
+<td>100 §</td>
+<td>Kun sinulla on täydet uudelleen arvonnat kaikki sinun ajan myötä vahinkoa tekevät aseet saavat +40% tulinopeuteen.</td>
+</tr>
+<tr>
+<td>Tartuttaja</td>
+<td>300 §,<br>500 §</td>
+<td>Ajan myötä vahinkoa tekevillä aseilla on +3% mahdollisuus aiheuttaa status efekti.</td>
+</tr>
+</tbody></table>
+<h2>Koodeksi: Kaukohyökkäykset</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:120px">Nimi</div></th>
+<th><div style="width:50px">Hinta</div></th>
+<th>Selitys</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Lähitaistelu</td>
+<td>100 §</td>
+<td>Kaikki kaukovahinko lasketaan tapahtuvan sinun pääaseen lähellä.</td>
+</tr>
+<tr>
+<td>Jalkapiikit</td>
+<td>200 §</td>
+<td>Luo 12 jalkapiikkiä kun kaukoaseet aiheuttavat kriiittistä vahinkoa. Ne vahingoittavat niiden ohi kulkevia vihollisia.</td>
+</tr>
+<tr>
+<td>Syövyttävät ammukset</td>
+<td>500 §</td>
+<td>Mahdollisuus löytää syövyttäviä ammuksia - lisää 10 kemikaalivahinkoa sinun kaukoaseisiin 20 sekunniksi.</td>
+</tr>
+<tr>
+<td>Piratismi</td>
+<td>50 §</td>
+<td>Jokainen palkintoase joka sinulla on nostaa kaikkien kaukoaseiden vahinkoa 15%.</td>
+</tr>
+<tr>
+<td>Pelastus</td>
+<td>100 §</td>
+<td>Kaikki kaukoaseet saavat +40% kantomatkaan jos sinulla on maksimi määrä kilpiä.</td>
+</tr>
+<tr>
+<td>Tarkka-ampuja</td>
+<td>200 §</td>
+<td>Kaukoaseiden kantomatkan parannukset nostavat myös niiden vahinkoa.</td>
+</tr>
+</tbody></table>
+</div><div id="home" class="page"><div class="breadcrumbs"><span>Koti</span></div><h1>Glyphica Virallinen Wiki</h1>
+<h2>Tervetuloa näppäilijä</h2>
+<p>Tervetuloa Glyphica: Typing Survival pelin viralliseen Wikiin! Testaa kirjoitustaitojasi pelaamalla tätä laumaselvitymispeliä, jossa nopeus ja tarkkuus ovat parhaimmat aseesi. Voimakkaat työkalut muuttavat kirjoitustaitosi tuhoaviksi iskuiksi heltymättömiä vihollisia vastaan. Löydä lisätietoa ja nappaa peli Steamistä: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
+<p>Tästä wikistä löydät kattavan oppaan pelin ominaisuuksista, mekaniikoista ja sisällöstä, joka on tällä hetkellä saatavilla Glyphical Early Access versiossa. Meidän tavoite on pitää tämä tieto ajantasalla kun pyrimme täyttä julkaisua, versiota 1.0., kohti. Wiki on organisoitu osioihin sisällölistassa ja sitä päivitetään jatkuvasti kun peli kehittyy.</p>
+<h2>Sisältö</h2>
+<a href="#main_weapons" class="portal">Pääaseet</a><a href="#weapons" class="portal">Tason noususta saatavat aseet</a><a href="#enemies" class="portal">Viholliset</a><a href="#loot" class="portal">Palkinnot</a><a href="#loot1" class="portal">Augmentaatiot</a></div></div></div>
+</body>
+</html>
