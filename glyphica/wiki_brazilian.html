@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Armas principais são as armas de início em <em>Glyphica</em> e desempenham um papel principal no gameplay. Quando você digita uma palavra mostrada acima de um inimigo, a arma principal mira naquele inimigo como seu alvo. Cada arma principal tem efeitos e mecânicas únicas, necessitando estratégias diferentes para serem usadas de forma eficiente.</p>
 <p>Enquanto algumas armas principais enfatizam a velocidade de digitação (PPM), outras demandam um método mais tático. Como outras armas no jogo, armas principais podem ser aprimoradas e evoluídas, melhorando as suas capacidades e eficácias enquanto avança.</p>
 <h2>Lista de Armas Principais</h2>
-<a href="#repeater" class="portal">Repetidor</a><a href="#heatray" class="portal">Raio de Calor</a><a href="#barrage" class="portal">Barragem</a><a href="#splattershot" class="portal">Tiro Espalhado</a><a href="#overmind" class="portal">Poder de Mente</a><a href="#wildcard" class="portal">Coringa</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Repetidor</span></div><h1>Repetidor</h1>
+<a href="#repeater" class="portal">Repetidor</a><a href="#heatray" class="portal">Raio de Calor</a><a href="#barrage" class="portal">Barragem</a><a href="#splattershot" class="portal">Tiro Espalhado</a><a href="#overmind" class="portal">Poder de Mente</a><a href="#wildcard" class="portal">Coringa</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Repetidor</span></div><h1><span class="weapon-icon"></span> Repetidor</h1>
 <p>Tags: Cinético, Principal<br>Arma devastante que atira um número de balas em sequências curtas.</p>
 <h2>Evoluções</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Alcance: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Raio de Calor</span></div><h1>Raio de Calor</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Raio de Calor</span></div><h1><span class="weapon-icon"></span> Raio de Calor</h1>
 <p>Tags: Quente, Principal, D.C.T.<br>Atira um raio constante de luz concentrada muito preciso que causa dano ao passar do tempo.</p>
 <h2>Evoluções</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Taxa de Tiro: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Barragem</span></div><h1>Barragem</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Barragem</span></div><h1><span class="weapon-icon"></span> Barragem</h1>
 <p>Tags: Explosivo, Principal<br>Atira uma onda de foguetes explosivos em um alvo e ao seu redor. Recarrega ao passar do tempo.</p>
 <h2>Evoluções</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Velocidade de Recarga: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Tiro Espalhado</span></div><h1>Tiro Espalhado</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Tiro Espalhado</span></div><h1><span class="weapon-icon"></span> Tiro Espalhado</h1>
 <p>Tags: Químico, Principal, D.C.T.<br>Atira gotas de gosma nos seus oponentes para paralisar e causar dano a eles.</p>
 <h2>Evoluções</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Duração: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Poder de Mente</span></div><h1>Poder de Mente</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Poder de Mente</span></div><h1><span class="weapon-icon"></span> Poder de Mente</h1>
 <p>Tags: Elétrico, Drone, Principal<br>Comande um conjunto de drones para causar dano de energia ao seus inimigos.</p>
 <h2>Evoluções</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Campo Vazio</td>
-<td>Inimigos mirados com a Mente Superior tem suas velocidades reduzidas e recebem 50% de dano de outras armas e efeitos Elétricos.</td>
+<td>Inimigos mirados com a Mente Superior tem suas velocidades reduzidas e recebem +50% de dano de outras armas e efeitos Elétricos.</td>
 </tr>
 <tr>
 <td>Campo Vazio II</td>
@@ -682,7 +728,7 @@ th {
 <td>Taxa de Tiro: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Coringa</span></div><h1>Coringa</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#main_weapons">Armas Principais</a> / <span>Coringa</span></div><h1><span class="weapon-icon"></span> Coringa</h1>
 <p>Tags: Cinético, Quente, Gelado, Elétrico, Principal<br>O seu próximo tiro será aleatoriamente selecionado de quatro possíveis armas, então atire com cuidado.</p>
 <h2>Evoluções</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>Armas de aumento de nível são obtidas durante uma partida quando aumenta de nível. Quando selecionado, a arma é adicionada ao seu arsenal. Cada arma tem um método único de ativação, mas a maioria pode ser ativada enquanto digita e mira com a arma principal.</p>
 <p>Um máximo de quatro armas podem ser obtidas desta maneira. Quando uma arma for adicionada ao seu arsenal, suas aprimorações ficam disponíveis no reservatório de aprimorações de aumento de nível, permitindo que você melhore as suas habilidades enquanto progride.</p>
 <h2>Lista de Armas de Aumento de Nível</h2>
-<a href="#spectre" class="portal">Espectro</a><a href="#sentry" class="portal">Sentinela</a><a href="#tesla" class="portal">Mina Tesla</a><a href="#oscillator" class="portal">Oscilador</a><a href="#meteor" class="portal">Meteoro</a><a href="#hunter" class="portal">Caçador</a><a href="#chopper" class="portal">Picador</a><a href="#minefield" class="portal">Campo Minado</a><a href="#blade" class="portal">Armadilha de Lâminas</a><a href="#orbiter" class="portal">Orbitador</a><a href="#guardian" class="portal">Guardião</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Espectro</span></div><h1>Espectro</h1>
+<a href="#spectre" class="portal">Espectro</a><a href="#sentry" class="portal">Sentinela</a><a href="#tesla" class="portal">Mina Tesla</a><a href="#oscillator" class="portal">Oscilador</a><a href="#meteor" class="portal">Meteoro</a><a href="#hunter" class="portal">Caçador</a><a href="#chopper" class="portal">Picador</a><a href="#minefield" class="portal">Campo Minado</a><a href="#blade" class="portal">Armadilha de Lâminas</a><a href="#orbiter" class="portal">Orbitador</a><a href="#guardian" class="portal">Guardião</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Espectro</span></div><h1><span class="weapon-icon"></span> Espectro</h1>
 <p>Tags: Cinético, Drone<br>Completando mundos contendo os glifos a, e, o Invoca drones rápidos de curta distância equivalentes ao número do acima combinado.</p>
 <h2>Evoluções</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>Completando uma palavra acima de 7 grifos de comprimento invoca um Espectro adicional.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Sentinela</span></div><h1>Sentinela</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Sentinela</span></div><h1><span class="weapon-icon"></span> Sentinela</h1>
 <p>Tags: Quente, Torreta<br>Aciona uma torreta automática que atira em qualquer inimigo que chega perto do seu alcance.</p>
 <h2>Evoluções</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>Alcance: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Mina Tesla</span></div><h1>Mina Tesla</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Mina Tesla</span></div><h1><span class="weapon-icon"></span> Mina Tesla</h1>
 <p>Tags: Elétrico, Torreta, D.C.T.<br>Completando palavras começando com glifos b, c, d, e Aciona uma torreta elétrica que causa dano ao passar do tempo.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>Chance de Estática: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Oscilador</span></div><h1>Oscilador</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Oscilador</span></div><h1><span class="weapon-icon"></span> Oscilador</h1>
 <p>Tags: Quente, Remoto<br>Atira um fluxo oscilante de partículas na direção do seu alvo mais recente.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Chance de Crítico: +3%<br> Multi-Crítico: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Meteoro</span></div><h1>Meteoro</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Meteoro</span></div><h1><span class="weapon-icon"></span> Meteoro</h1>
 <p>Tags: Explosivo, Remoto<br>Periodicamente invoca marcadores de alvo em locais aleatórios a qual podem ativados para iniciar um bombardeio orbital.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>Alcance: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Caçador</span></div><h1>Caçador</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Caçador</span></div><h1><span class="weapon-icon"></span> Caçador</h1>
 <p>Tags: Elétrico, Drone, D.C.T.<br>Completando mundos contendo os glifos i, o, u Invoca drones que atiram raios elétricos equivalentes ao número do acima combinado.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>Duração: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Picador</span></div><h1>Picador</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Picador</span></div><h1><span class="weapon-icon"></span> Picador</h1>
 <p>Tags: Cinético, Remoto<br>Invoca uma imensa lâmina giratória no tiro da arma principal que segue para a borda da tela, causando dano a todos os inimigos no seu caminho.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>Chance de Sangramento: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Campo Minado</span></div><h1>Campo Minado</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Campo Minado</span></div><h1><span class="weapon-icon"></span> Campo Minado</h1>
 <p>Tags: Explosivo, Drone<br>Completando palavras começando com glifos f, g, h, i Invoca minas de movimento lento que explodem ao entrar em contato com inimigos.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1590,8 +1636,8 @@ th {
 <td>Minas Recursivas:<br> Taxa de Invocação: +30%<br> (Taxa de Tiro)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Armadilha de Lâminas</span></div><h1>Armadilha de Lâminas</h1>
-<p>Tags: Cinético, Torreta<br>Completando palavras começando com glifos j, k, l, m Ativa uma armadilha de lâmina giratória quadrifacetada.</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Armadilha de Lâminas</span></div><h1><span class="weapon-icon"></span> Armadilha de Lâminas</h1>
+<p>Tags: Cinético, Torreta<br>Completando palavras começando com glifos p, k, l, m Ativa uma armadilha de lâmina giratória quadrifacetada.</p>
 <h2>Evoluções</h2>
 <table>
 <thead>
@@ -1682,7 +1728,7 @@ th {
 <td>Duração: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Orbitador</span></div><h1>Orbitador</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Orbitador</span></div><h1><span class="weapon-icon"></span> Orbitador</h1>
 <p>Tags: Químico, Remoto<br>Completando palavras começando com glifos n, o, p, q aciona uma orbe que orbita a Arma Principal, causando dano a tudo no seu caminho.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>Velocidade: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Guardião</span></div><h1>Guardião</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#weapons">Armas de Aumento de Nível</a> / <span>Guardião</span></div><h1><span class="weapon-icon"></span> Guardião</h1>
 <p>Tags: Quente, Drone<br>Instantaneamente aciona um Drone que atira lasers aos inimigos. Ativa itens de Combustível para recarregar o Guardião, a qual irá consumir combustível e se desativa quando o combustível acabar.</p>
 <h2>Evoluções</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Inimigos em <em>Glyphica</em> são gerados proceduralmente baseados em uma métrica interna chamada <strong>perigo</strong>, a qual é aumentado enquanto a partida progride. No Modo Desafio, o perigo é multiplicado pelo Nível atual de Perigo, deixando cada nível gradualmente mais difícil. No Modo Infinito, o perigo é comparável com um sistema adaptativo de escala baseado no nível do jogador, com o valor maior determinando a dificuldade de aparecimento.</p>
 <p>Inimigos também são categorizados em <strong>especiais</strong> e <strong>elites</strong>, cada um com os seus limites de classe que limitam a sua taxa de aparecimento dentro do nível geral de perigo.</p>
 <h2>Lista de Inimigos</h2>
-<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Drone de Escudo</a><a href="#stalker" class="portal">Perseguidor</a><a href="#shooter" class="portal">Atirador</a><a href="#splitter" class="portal">Repartidor</a><a href="#warder" class="portal">Guardião</a><a href="#swarmer" class="portal">Avassalador</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#enemies">Inimigos</a> / <span>Drone</span></div><h1>Drone</h1>
+<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Drone de Escudo</a><a href="#stalker" class="portal">Perseguidor</a><a href="#shooter" class="portal">Atirador</a><a href="#splitter" class="portal">Repartidor</a><a href="#wurm" class="portal">Verme</a><a href="#warder" class="portal">Guardião</a><a href="#swarmer" class="portal">Avassalador</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#enemies">Inimigos</a> / <span>Drone</span></div><h1>Drone</h1>
 <p>Drones são inimigos que implacavelmente se movem em direção a sua arma principal. Eles podem as vezes aparecerem em duas versões melhoradas: <br>Grandão: As vidas deles são triplicadas, sendo mais difíceis de serem derrotados. <br>Acelerado: A velocidade de movimento deles é duplicada, logo aumentando a urgência em eliminar eles.</p>
 <h2>Lista de Variantes</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Vida: 240<br>Dano: 40<br></td>
+<td>Vida: 80<br>Dano: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Vida: 2400<br>Dano: 120<br></td>
+<td>Vida: 800<br>Dano: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Quantidade de Fragmentos: 6<br>Vida de Fragmentos: 650<br>Dano de Fragmentos: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#enemies">Inimigos</a> / <span>Verme</span></div><h1>Verme</h1>
+<p>O Verme é um inimigo multi-segmentado cujas partes devem ser destruídas em sequência. Cada segmento está ligado ao próximo por uma barreira indestrutível que bloqueia todos os ataques de projéteis.</p>
+<h2>Lista de Variantes</h2>
+<table>
+<thead>
+<tr>
+<th>Imagem</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Quantidade de Segmentos: 2<br>Vida de Segmentos: 80<br>Dano de Segmentos: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Quantidade de Segmentos: 3<br>Vida de Segmentos: 200<br>Dano de Segmentos: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Quantidade de Segmentos: 4<br>Vida de Segmentos: 1000<br>Dano de Segmentos: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Quantidade de Segmentos: 4<br>Vida de Segmentos: 1800<br>Dano de Segmentos: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <a href="#enemies">Inimigos</a> / <span>Guardião</span></div><h1>Guardião</h1>
 <p>O Guardião é um inimigo de elite que aparece após um certo tempo na partida. Ele possui um escudo giratório que bloqueia dano da direção que o escudo estiver de frente. Adicionalmente, quando o Guardião estiver vivo, ele provém uma aura protetiva aos inimigos próximos, deixando eles invulneráveis até que o Guardião seja derrotado.</p>
 <h2>Lista de Variantes</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <span>Itens de Prêmios</span></div><h1>Itens de Prêmios</h1>
 <p>Itens de prêmios são obtidos durante uma partida ao ativar um item de baú de tesouro. Uma seleção aleatória de itens de prêmios serão mostrados, e escolhendo um irá lhe dar um bônus passivo que se mantém ativo pelo resto da partida.</p>
 <p>Itens de prêmios são categorizados como <strong>comum</strong>, <strong>incomum</strong>, e <strong>raro</strong>, a qual determinam a probabilidade de aparecerem nas seleções de prêmios. Derrotar um chefe no Modo Desafio te dará um baú de tesouro contendo apenas itens raros.</p>
-<h2>Lista de Prêmios Raros</h2>
+<details><summary>Lista de Prêmios Raros</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nome</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Vidente</td>
 <td>Se você tiver 0 Rolar Novamentes ao entrar em uma tela de aumento de nível, evolução ou prêmio, você irá ter 1 Rolar Novamente.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Improvisada</td>
 <td>Todas as Armas Drone:<br> Chance de drone adicional: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Presenteado</td>
 <td>+1 Opções de Prêmio</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Multi-Mira</td>
 <td>Todas as Armas Remotas recebem +1% de Chance de Crítico por cada arma que você possui.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Imã Gigante</td>
 <td>Você automaticamente coleta itens quando eles expiram.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Queimadura de Gelo</td>
 <td>Inimigos recebem dano ao passar do tempo quando Congelados.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Necrobomba</td>
 <td>Ao destruir um inimigo com dano Crítico Explosivo, causa uma série de explosões ao redor da posição do inimigo caído.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Premiação</td>
 <td>Ao destruir um inimigo com dano Crítico, 30% de chance de aparecer um item Rolar Novamente, Escudo ou de Vida.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pós-Choque</td>
 <td>Dano Crítico sempre irá causar efeitos de estado.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vampirismo</td>
 <td>Ganha vida igual a 5% do dano Cinético Crítico.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sabedoria</td>
 <td>Ao pegar um Escudo, ganha 10 Mortes para todas as Evoluções de armas.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Coringa</td>
 <td>Ao pegar um Rolar Novamente, causa uma quantidade aleatória de dano entre 0 a 100 a todos os inimigos na tela.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Última Batalha</td>
 <td>Ganha Dobro de Dano quando um Escudo for destruído.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Triplo de Dano</td>
 <td>Todos os itens de Dobro de Dano agora serão Triplo de Dano.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fractura</td>
 <td>Todos os danos para inimigos Congelados são aumentados em 50%. Modificador é multiplicativo.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ascético</td>
 <td>Ao sair da tela de Prêmios, recebe +10% de dano para cada item Rolar Novamente não utilizado por 20 segundos.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harmonizador</td>
 <td>Todas as armas equipadas recebem um nível de Evolução.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Imortalidade</td>
 <td>Se a sua Arma Principal estiver prestes a ser destruída, ficará com 1 de vida ao invés dela ser destruída. Essa habilidade apenas pode ser usada uma vez a cada 2 minutos.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Elucidação</td>
 <td>Ao destruir um inimigo com dano Crítico, ganha +1 de mortes para todas as Evoluções de armas.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mais Próximo</td>
 <td>Completar uma palavra do inimigo após ele ser destruído lhe dá +10% de dano por 10 segundos. O efeito se empilha até 3 vezes.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Homicida</td>
 <td>Todas as Armas Drone: +50% de Dano</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Executador</td>
 <td>Todas as Armas Torreta: +50% de Dano</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Degeneração</td>
 <td>Todas as Armas Remotas: +50% de Dano</td>
 </tr>
 </tbody></table>
-<h2>Lista de Prêmios Incomuns</h2>
+</details>
+
+<details><summary>Lista de Prêmios Incomuns</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nome</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Tsunami</td>
 <td>Todas as Armas Explosivas:<br> Alcance: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Onda de Choque</td>
 <td>Todas as Armas Explosivas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aniquilação</td>
 <td>Todas as Armas Explosivas:<br> Multi Crítico: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ascensão</td>
 <td>Todas as Armas Explosivas:<br> Itens de Dobro de Dano:<br> Chance de Aparecer: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Estilhaços</td>
 <td>Todas as Armas Cinéticas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erupção</td>
 <td>Todas as Armas Cinéticas:<br> Taxa de Tiro: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Perfurador</td>
 <td>Todas as Armas Cinéticas:<br> Chance de Crítico: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Precursor</td>
 <td>Todas as Armas Cinéticas:<br> Chance de Efeito de Sangramento: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Inferno</td>
 <td>Todas as Armas Quentes:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plasmatizador</td>
 <td>Todas as Armas Quentes:<br> Alcance: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fênix</td>
 <td>Todas as Armas Quentes:<br> Chance de Rolar Novamente: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Piroclismo</td>
 <td>Todas as Armas Quentes:<br> Chance de Efeito de Incendiar: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criostase</td>
 <td>Todas as Armas Geladas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Geleira</td>
 <td>Todas as Armas Geladas:<br> Chance de Efeito Congelar: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Repulsor</td>
 <td>Todas as Armas Geladas:<br> Chance de Escudo: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criogênio</td>
 <td>Todas as Armas Geladas:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sobrecarga</td>
 <td>Todas as Armas Elétricas:<br> Chance de Efeito Estático: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Megatempestade</td>
 <td>Todas as Armas Elétricas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Amplificador</td>
 <td>Todas as Armas Elétricas:<br> Taxa de Tiro: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Singularidade</td>
 <td>Todas as Armas Elétricas:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Contágio</td>
 <td>Todas as Armas Químicas:<br> Chance de Efeito de Praga: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sepse</td>
 <td>Todas as Armas Químicas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Convulsão</td>
 <td>Todas as Armas Químicas:<br> Taxa de Tiro: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Decomposição</td>
 <td>Todas as Armas Químicas:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Infinidade</td>
 <td>Todas as Armas Drone:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hiperjatos</td>
 <td>Todas as Armas Drone:<br> Velocidade: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mente Superior</td>
 <td>Todas as Armas Drone:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Maldição de Geada</td>
 <td>Todas as Armas Drone:<br> Chance de Receber Tiros Gelados: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Omnimpulso</td>
 <td>Todas as Armas Remotas:<br> Alcance: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Conexão Instantânea</td>
 <td>Todas as Armas Remotas:<br> Velocidade: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Comando</td>
 <td>Todas as Armas Remotas:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Energizador</td>
 <td>Todas as Armas Torreta:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tempestade Infernal</td>
 <td>Todas as Armas Torreta:<br> Taxa de Tiro: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Exatidão</td>
 <td>Todas as Armas Torreta:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Investida</td>
 <td>Todos os Efeitos de Estado:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tormenta</td>
 <td>Todos os Efeitos de Estado:<br> Duração: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Forrada</td>
 <td>Todos os Efeitos de Prêmio:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mistério</td>
 <td>Todas as Armas de Prêmio:<br> Chance de Crítico: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Carnificina</td>
 <td>Todos os Efeitos de Aprimoramento:<br> Dano: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Além</td>
 <td>Todos os Efeitos de Aprimoramento:<br> Alcance: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arsenal</td>
 <td>Todas as Armas:<br> Dano: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salva-vidas</td>
 <td>Todas as Armas:<br> Duração: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Visão das Estrelas</td>
 <td>Todas as Armas:<br> Alcance: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>À Queima-Roupa</td>
 <td>Inimigos acertados próximo da Arma Principal receberão +20% de dano.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Agravação</td>
 <td>Todas as Armas:<br> Chance de Efeito de Estado: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criotécnica</td>
 <td>Itens de Congelar:<br> Chance de Aparecer: +2%<br><br>Itens de Dobro de Dano:<br> -100% de Chance de Aparecer</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tipo Guerra</td>
 <td>Itens de Dobro de Dano:<br> Chance de Aparecer: +4%<br><br>Itens de Congelar:<br> -100% de Chance de Aparecer</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pinhata</td>
 <td>Efeito Global:<br>  Frequência de Prêmios: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Feito de Vidro</td>
 <td>Todas as Armas:<br> Dano: +30%<br><br>Arma Principal:<br> Vida Máxima: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Regeneração</td>
 <td>Você recupera 5% do máximo de vida quando você ativa um item de Prêmio, Congelar, Dobro de Dano, Rolar Novamente ou Escudo</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erosão</td>
 <td>Armas D.C.T. podem dar Críticos.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Despedaçar</td>
 <td>Todas as Armas Cinéticas ganham +5% de Chance de Crítico contra Inimigos Congelados.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resiliência</td>
 <td>Ativar itens de Escudo aumenta a sua Duração global em 10% por 10 segundos. O efeito se empilha até 3 vezes.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Apostador</td>
 <td>Adiciona 1 Rolar Novamente e aumenta o máximo de Rolar Novamente, para um total de 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Protetor</td>
 <td>Adiciona 1 Escudo e aumenta o máximo de Escudos, para um total de 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Impecável</td>
 <td>Cada x17 Apertar Perfeito também aumenta a sua Taxa de Tiro global em 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Liberar</td>
 <td>Ao errar a tecla, causa 20 de dano Explosivo para todos os inimigos por cada x17 Apertar Perfeito.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Desperdício</td>
 <td>Todas as Armas D.C.T.: +35% de Taxa de Tiro</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Murchar</td>
 <td>Todos os Efeitos de Estado: +35% de Taxa de Tiro</td>
 </tr>
 </tbody></table>
-<h2>Lista de Prêmios Comuns</h2>
+</details>
+
+<details><summary>Lista de Prêmios Comuns</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nome</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Explosão</td>
 <td>Todas as Armas Explosivas:<br> Alcance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Detonação</td>
 <td>Todas as Armas Explosivas:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Esmagar</td>
 <td>Todas as Armas Cinéticas:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salva</td>
 <td>Todas as Armas Cinéticas:<br> Taxa de Tiro: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Queimadura</td>
 <td>Todas as Armas Quentes:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Chamas</td>
 <td>Todas as Armas Quentes:<br> Alcance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Permafrost</td>
 <td>Todas as Armas Geladas:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Calafrio</td>
 <td>Todas as Armas Geladas:<br> Duração: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Choque</td>
 <td>Todas as Armas Elétricas:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Surto</td>
 <td>Todas as Armas Elétricas:<br> Taxa de Tiro: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Uplink</td>
 <td>Todas as Armas Drone:<br> Duração: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ferroada</td>
 <td>Todas as Armas Drone:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Contato</td>
 <td>Todas as Armas Remotas:<br> Alcance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Golpear</td>
 <td>Todas as Armas Remotas:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fortificar</td>
 <td>Todas as Armas Torreta:<br> Duração: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bastião</td>
 <td>Todas as Armas Torreta:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Malária</td>
 <td>Todos os Efeitos de Estado:<br> Dano: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ressonância</td>
 <td>Todos os Efeitos de Estado:<br> Duração: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dominação</td>
 <td>Todas as Armas:<br> Dano: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resistência</td>
 <td>Todas as Armas:<br> Duração: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Projeção</td>
 <td>Todas as Armas:<br> Alcance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Espalhar</td>
 <td>Todas as Armas Explosivas:<br> Alcance: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Impacto</td>
 <td>Todas as Armas Explosivas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vaporizar</td>
 <td>Todas as Armas Explosivas:<br> Multi Crítico: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Queda Explosiva</td>
 <td>Todas as Armas Explosivas:<br>  Dbl. De Itens de Dano:<br>    Chance de Itens: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ponto-Vazio</td>
 <td>Todas as Armas Cinéticas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rajada</td>
 <td>Todas as Armas Cinéticas:<br> Taxa de Tiro: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penetração</td>
 <td>Todas as Armas Cinéticas:<br> Chance de Crítico: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ceifador</td>
 <td>Todas as Armas Cinéticas:<br> Chance de Efeito de Sangramento: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rostear</td>
 <td>Todas as Armas Quentes:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Radiador</td>
 <td>Todas as Armas Quentes:<br> Alcance: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Renascimento</td>
 <td>Todas as Armas Quentes:<br> Chance de Rolar Novamente: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Inflamável</td>
 <td>Todas as Armas Quentes:<br> Chance de Efeito de Incendiar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hipotermia</td>
 <td>Todas as Armas Geladas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Abaixo de Zero</td>
 <td>Todas as Armas Geladas:<br> Chance de Efeito Congelar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Deflexão</td>
 <td>Todas as Armas Geladas:<br> Chance de Escudo: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arrefecimento</td>
 <td>Todas as Armas Geladas:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Carga Latente</td>
 <td>Todas as Armas Elétricas:<br> Chance de Efeito Estático: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Condensador</td>
 <td>Todas as Armas Elétricas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Modulador</td>
 <td>Todas as Armas Elétricas:<br> Taxa de Tiro: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Concentração</td>
 <td>Todas as Armas Elétricas:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Contaminação</td>
 <td>Todas as Armas Químicas:<br> Chance de Efeito de Praga: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Toxina</td>
 <td>Todas as Armas Químicas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pulsar</td>
 <td>Todas as Armas Químicas:<br> Taxa de Tiro: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Delongar</td>
 <td>Todas as Armas Químicas:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Extensor</td>
 <td>Todas as Armas Drone:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Propulsores</td>
 <td>Todas as Armas Drone:<br> Velocidade: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Automata</td>
 <td>Todas as Armas Torreta:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Corações Frios</td>
 <td>Todas as Armas Drone:<br> Chance de Receber Tiros Gelados: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Melhoria de Sinal</td>
 <td>Todas as Armas Remotas:<br> Alcance: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sem Delay</td>
 <td>Todas as Armas Remotas:<br> Velocidade: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Controles</td>
 <td>Todas as Armas Remotas:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sustentador</td>
 <td>Todas as Armas Torreta:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Canhão Automático</td>
 <td>Todas as Armas Torreta:<br> Taxa de Tiro: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Calibração</td>
 <td>Todas as Armas Torreta:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Atrito</td>
 <td>Todos os Efeitos de Estado:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sofrimento</td>
 <td>Todos os Efeitos de Estado:<br> Duração: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Beneficiado</td>
 <td>Todos os Efeitos de Prêmio:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Segredo</td>
 <td>Todos os Efeitos de Prêmio:<br> Chance de Crítico: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Potência Máxima</td>
 <td>Todos os Efeitos de Aprimoramento:<br> Dano: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Medidor de Distância</td>
 <td>Todos os Efeitos de Aprimoramento:<br> Alcance: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Armamentos</td>
 <td>Todas as Armas:<br> Dano: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kit de Sobrevivência</td>
 <td>Todas as Armas:<br> Duração: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Telescópio</td>
 <td>Todas as Armas:<br> Alcance: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Medpack</td>
 <td>Adiciona 3 Medpacks ao seu inventário.<br><br>Medpacks recuperam até 30% do máximo de vida da Torreta Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ogiva</td>
 <td>Adiciona 2 Ogiva ao seu inventário.<br><br>Ogivas causam uma série de explosões poderosas que radiam a frente da arma principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Soro</td>
 <td>Adiciona 2 Soro ao seu inventário.<br><br>Soros dão 25% de Chance de Crítico por 10 segundos.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Núcleo Gelado</td>
 <td>Adiciona 2 Núcleo Gelado ao seu inventário.<br><br>Núcleos Gelados ativam um efeito global de Congelar.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pílula da Morte</td>
 <td>Adiciona 2 Pílula da Morte ao seu inventário.<br><br>Pílulas da Morte ativam um efeito global de Dano Duplo.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Onda de Chamas</td>
 <td>Adiciona 2 Ondas de Chamas ao seu inventário.<br><br>Ondas de Chamas incendeiam todos os inimigos visíveis ao custo de 10% da vida atual da Torreta Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Torreta Portátil</td>
 <td>Adiciona 1 Torreta Portátil ao seu inventário.<br><br>A Torreta Portátil invoca uma torreta automática perto de grupos de inimigos.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Epicentro</td>
 <td>Armas Quentes causam +20% de dano quando o alvo estiver próximo da Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Refrigeração</td>
 <td>Itens de Congelar:<br> Duração: +20%<br> Chance de Aparecer: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vulnerabilidade</td>
 <td>Itens de Dobro de Dano:<br> Duração: +20%<br> Chance de Aparecer: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Precisão</td>
 <td>Todas as Armas:<br> Chance de Crítico: +1%<br> Multi Crítico: +50%<br><br>Chance de:<br> Palavra mais Longa: +10%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kit Médico</td>
 <td>Restaura 100 de Vida</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Escudo</td>
 <td>Adiciona 1 Escudo.<br><br>Escudos Obtidos: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rolar Novamente</td>
 <td>Adiciona 1 Rolar Novamente.<br><br>Rolars Obtidos: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aflitor</td>
 <td>Cada Aflitor aumenta o Dano D.C.T. em +4%. Este bônus é dobrado ao ficar próximo da Torreta Principal.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <span>Aprimorações</span></div><h1>Aprimorações</h1>
 <p>Aprimorações são melhorias permanentes a qual podem ser desbloqueadas usando Moedas (§), um dinheiro obtido dentro de uma partida. No início de cada partida, jogadores tem um número limitado de espaços para equiparem aprimorações desbloqueadas, com o número de espaços disponíveis variam dependendo do nível selecionado de Presságio.</p>
 <p>Cada aprimoração costumam ter condições específicas que determinam os seus benefícios. Para aproveitar ao máximo as suas aprimorações, considere as sinergias entre eles e as alinhe nas suas estratégias preferidas.</p>
-<h2>Registro: Arma Principal</h2>
+<details><summary>Registro: Arma Principal</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Impenetrável</td>
 <td>50 §,<br>200 §</td>
 <td>Arma Principal:<br> Vida: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Disposto</td>
 <td>50 §</td>
 <td>No começo de cada jogo de Teste ou Infinito, ganha um nível. Por cada 4 minutos sobrevividos no Modo Infinito, ganha um nível.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Apostador</td>
 <td>50 §</td>
 <td>Cada Rolar Novamente a qual você usa dá a sua Arma Principal +20% de dano por 20 segundos.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Imaculado</td>
 <td>100 §</td>
 <td>Apertar Perfeito agora dá +1.5% de Chance de Crítico por cada empilha.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Nebuloso</td>
 <td>200 §,<br>500 §</td>
 <td>Se estiver com menos de 50% de vida, ganha um bônus de +50% de Taxa Global de Tiro.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Devoção</td>
 <td>200 §</td>
 <td>Arma Principal ganha +25% de dano por cada espaço vazio de arma. Ao menos uma opção no aumentar de nível será uma aprimoração.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Drones</h2>
+</details>
+
+<details><summary>Registro: Drones</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Armada</td>
 <td>200 §</td>
 <td>20% de chance de ativar um drone adicionar sempre que um for ativado.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Diversidade</td>
 <td>50 §</td>
 <td>Para cada Arma não-Drone equipada, aumenta a duração de todos os drones em 20%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Blitzkrieg</td>
 <td>50 §</td>
 <td>Aprimorações de velocidade para Drones também se aplicam ao dano do Drone,</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Retribuição</td>
 <td>300 §</td>
 <td>Sempre que um Escudo for destruído, todos os Drones existentes se autodestroem, causando dano explosivo.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bode Expiatório</td>
 <td>100 §</td>
 <td>Erros de Digitação aleatoriamente destroem um Drone existente ao invés de serem contados como um erro de digitação.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pilhagem</td>
 <td>200 §</td>
 <td>Drones podem pegar itens quando expirarem.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Torreta</h2>
+</details>
+
+<details><summary>Registro: Torreta</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Fortaleza</td>
 <td>100 §,<br>400 §</td>
 <td>Cada Evolução de Torreta também provém +50 de vida máxima para a Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Conectado</td>
 <td>50 §</td>
 <td>Cada outra Torreta provém +10% de Taxa de Tiro para todas as Torretas, até um máximo de +50%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Informações da Batalha</td>
 <td>50 §</td>
 <td>Ativar um item provém +40% de Alcance para todas as Torretas existentes. Este efeito não pode ser empilhado.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Relé Escuro</td>
 <td>500 §</td>
 <td>Um projétil se ricocheteia entre as Torretas existentes de forma aleatória, causando dano elétrico.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Observador</td>
 <td>100 §</td>
 <td>Se você não atacou por 3 segundos, ganha +30% de Dano de Torreta até o seu próximo ataque.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Fraqueza</td>
 <td>200 §</td>
 <td>Inimigos dentro do Alcance de uma Torra recebem 30% mais dano de outras fontes.</td>
 </tr>
 </tbody></table>
-<h2>Registro: D.C.T.</h2>
+</details>
+
+<details><summary>Registro: D.C.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Corrosão</td>
 <td>500 §</td>
 <td>Dano D.C.T. agora pode ser crítico.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Lampreia</td>
 <td>200 §</td>
 <td>Dano D.C.T. causado próximo da Arma Principal cura a Arma Principal em 1 de Vida.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Tenacidade</td>
 <td>100 §,<br>300 §</td>
 <td>Aumenta a duração de todas as armas D.C.T. em 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Aflitores</td>
 <td>50 §</td>
 <td>Adiciona Aflitores aos possíveis Prêmios. Cada um provém +4% de Dano D.C.T. Efeito é duplicado quando estiver próximo da Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Convicção</td>
 <td>100 §</td>
 <td>Armas D.C.T. recebem +40% de Taxa de Tiro enquanto tiver o máximo de Rolar Novamentes.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Infectador</td>
 <td>300 §,<br>500 §</td>
 <td>Armas D.C.T. tem +3% de chance de inflingir efeito de estado.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Remoto</h2>
+</details>
+
+<details><summary>Registro: Remoto</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Combate Próximo</td>
 <td>100 §</td>
 <td>Todos os Danos Remotos são considerados danos próximo à Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Estrepe</td>
 <td>200 §</td>
 <td>Num acerto crítico com armas de longo alcance, invoca 12 Estrepes que causam dano a inimigos passantes, com chance de sangramento aumentada com base no dano.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Munição Cáustica</td>
 <td>500 §</td>
 <td>Chance de aparecer Munição Cáustica - adiciona 10 de Dano Químico base para Armas Remotas por 20 segundos.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Premiado</td>
 <td>50 §</td>
 <td>Para cada Efeito de Prêmio equipado, aumenta todos os Danos Remotos em 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Libertação</td>
 <td>100 §</td>
 <td>Todas as armas Remotas recebem +10% de Alcance enquanto tiver o máximo de Escudos.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Atirador</td>
 <td>200 §</td>
 <td>Aprimorações de Alcance Remoto também se aplicam ao Dano Remoto.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Elétrico</h2>
+</details>
+
+<details><summary>Registro: Elétrico</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Explosão Voltaica</td>
 <td>200 §</td>
 <td>Melhorias de Duração Elétrica também aplicam 25% de seu valor à Chance de Efeito Estático Elétrico.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bateria de Tempestade</td>
 <td>500 §</td>
 <td>A Torreta Principal causa dano Elétrico aos inimigos próximos. Cada Arma Elétrica equipada aumenta o dano base.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Faíscas</td>
 <td>300 §</td>
 <td>Em um acerto crítico com armas Elétricas, dispara 6 Faíscas Elétricas cujo dano escala com a Chance de Crítico e o Multiplicador de Crítico.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Rede Eficiente</td>
 <td>100 §</td>
 <td>Para cada arma não-Elétrica equipada, aumenta toda a duração dos efeitos Elétricos em 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Descarga Violenta</td>
 <td>300 §</td>
 <td>Estático causa mais dano e tem maior alcance. Inimigos mortos por Estático têm 50% de chance de espalhar Estático para inimigos próximos.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Torreta Eletrificada</td>
 <td>100 §</td>
 <td>A Arma Principal recebe +5 de Dano Elétrico base e aumenta o dano de todas as armas Elétricas em 10%.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Calor</h2>
+</details>
+
+<details><summary>Registro: Calor</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Piromancia</td>
 <td>200 §</td>
 <td>Aumenta o Dano de Calor em 2% para cada inimigo em chamas. Aplicar Incineração causa dano adicional de Calor com base na duração e no dano da Incineração.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Cauterização</td>
 <td>200 §</td>
 <td>Bônus de Alcance também se aplicam à dano causado próximo da Arma Principal para Armas/Efeitos de Calor.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Núcleo de Fornalha</td>
 <td>100 §</td>
 <td>A Torreta Principal recebe +5 de Dano de Calor base. Todo o dano de Calor é aumentado em 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bola de Fogo</td>
 <td>500 §</td>
 <td>Disparar a Arma Principal libera uma Bola de Fogo lenta que causa Dano de Calor aos inimigos em seu caminho. Máximo de 1 Bola de Fogo ativa.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Onda de Chamas</td>
 <td>250 §</td>
 <td>Adiciona o item Onda de Chamas ao inventário inicial e aos possíveis prêmios. Incendeia todos os inimigos visíveis e consome 10% da vida atual da Torreta Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Glória Ardente</td>
 <td>50 §</td>
 <td>Inimigos próximos à Arma Principal recebem +25% de Dano de Calor e têm 12% de chance adicional de serem incendiados por Dano de Calor.</td>
 </tr>
 </tbody></table>
-<h2>Registro: Cinético</h2>
+</details>
+
+<details><summary>Registro: Cinético</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nome</div></th>
-<th><div style="width:50px">Custo</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Pistoleiro</td>
 <td>500 §</td>
 <td>Aumenta o Máximo da Corrida de Palavras em 5. Cada nível da Corrida de Palavras dá +2,5% de dano cinético.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Sede de Sangue</td>
 <td>200 §</td>
 <td>Aumenta a Taxa de Tiro Cinético em 2% e o Alcance em 1% para cada inimigo Sangrando.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Munição Infundida</td>
 <td>300 §</td>
 <td>Acertos Críticos de Dano Cinético têm 40% de chance de aplicar um Estado aleatório no inimigo.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Estilhaços</td>
 <td>500 §</td>
 <td>Chance de derrubar Estilhaços - adiciona 10 Dano Cinético base nas Armas Cinéticas por 20 segundos.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Armas Combinadas</td>
 <td>100 §</td>
 <td>Para cada Arma não Cinética equipada, aumenta todo o dano Cinético em 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Torreta Portátil</td>
 <td>200 §</td>
 <td>Adiciona o item Torreta Portátil ao inventário e para os possíveis prêmios. A Torreta Portátil invoca uma torreta que pode ser coletada ao expirar.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Registro: Químico</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nome</div></th>
+<th><div style="width:70px">Custo</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Reanimação</td>
+<td>500 §</td>
+<td>Eliminações com dano Químico têm 30% de chance de criar um Drone Reanimado que persegue inimigos e causa dano Químico.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Superexposição</td>
+<td>300 §</td>
+<td>O efeito Químico agora pode acumular até 3 vezes, multiplicando o dano de Praga por acúmulo.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Hibridização</td>
+<td>500 §</td>
+<td>25% dos bônus de dano aplicados a outros tipos de dano também são aplicados ao dano Químico.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Descarga Residual</td>
+<td>300 §</td>
+<td>Aplica Praga a todos os inimigos próximos da Arma Principal a cada 12 segundos.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Escala Reativa</td>
+<td>100 §</td>
+<td>Cada arma Química equipada aumenta o dano Químico em 10% e a duração das Armas Químicas em 20%.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Queimaduras Tóxicas</td>
+<td>200 §</td>
+<td>Incendiar causa dano Químico em vez de Calor. Praga tem 10% de chance de aplicar Incendiar a cada pulso, aumentado ainda mais pela Chance de Crítico.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Página Inicial</a> / <span>Presságios</span></div><h1>Presságios</h1>
+<p>Presságios são modificadores de dificuldade que são selecionados aleatoriamente de um grupo no início de uma partida de Provação ou Infinito. Cada Presságio aumenta o desafio de uma forma específica, e níveis mais altos de Presságio desbloqueiam modificadores progressivamente mais difíceis.</p>
+<p>Os Presságios são divididos em três níveis. Presságios de Nível 1 oferecem um desafio moderado, Presságios de Nível 2 são mais exigentes, e Presságios de Nível 3 apresentam a maior dificuldade. Vencer Provações em um determinado nível de Presságio desbloqueia o próximo nível, aumentando o número de Presságios simultâneos ativos durante uma partida, até um máximo de 6. Completar partidas com Presságios ativos recompensa mais Moedas e desbloqueia conteúdo adicional.</p>
+<details><summary>Presságios Nível 1</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nome</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Inimigos Fortes</td>
+<td>Inimigos têm 50% mais vida.</td>
+</tr>
+<tr>
+<td>Palavras Longas</td>
+<td>As palavras ficam um caractere mais longas.</td>
+</tr>
+<tr>
+<td>Sem Melhorias</td>
+<td>Sem dobro de dano ou prêmios de congelar.</td>
+</tr>
+<tr>
+<td>Inimigos Ligeiros</td>
+<td>Inimigos são 5% mais rápidos.</td>
+</tr>
+<tr>
+<td>Menos Escolhas</td>
+<td>Uma opção de prêmio a menos.</td>
+</tr>
+<tr>
+<td>Enfraquecido</td>
+<td>O jogador causa 20% menos dano.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Presságios Nível 2</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nome</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arma Frágil</td>
+<td>A durabilidade da arma principal é reduzida pela metade.</td>
+</tr>
+<tr>
+<td>Inimigos Resilientes</td>
+<td>Inimigos têm 100% mais vida.</td>
+</tr>
+<tr>
+<td>Sem Rolar Novamente</td>
+<td>Sem prêmios de Rolar Novamente.</td>
+</tr>
+<tr>
+<td>Sem Escudos</td>
+<td>Sem prêmios de Escudos.</td>
+</tr>
+<tr>
+<td>Inimigos Velozes</td>
+<td>Inimigos são 10% mais rápidos.</td>
+</tr>
+<tr>
+<td>Sem Crítico</td>
+<td>Suas armas não podem dar dano crítico.</td>
+</tr>
+<tr>
+<td>Espreitadores</td>
+<td>Chance de inimigos aparecerem com palavras parcialmente ocultas.</td>
+</tr>
+<tr>
+<td>Vermes</td>
+<td>Chance de inimigos aparecerem com uma sequência de palavras.</td>
+</tr>
+<tr>
+<td>Digitação às Cegas</td>
+<td>As palavras não mostram o progresso da digitação.</td>
+</tr>
+<tr>
+<td>Recuperação Rápida</td>
+<td>Efeitos de estado nos inimigos expiram 2x mais rápido.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Presságios Nível 3</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nome</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Erros de Tecla Punitivos</td>
+<td>Recebe 3 de dano para cada erro de digitação.</td>
+</tr>
+<tr>
+<td>Névoa de Guerra</td>
+<td>Você não consegue ver palavras distantes.</td>
+</tr>
+<tr>
+<td>Inimigos Titãs</td>
+<td>Inimigos têm 150% mais vida.</td>
+</tr>
+<tr>
+<td>Palavras Cifradas</td>
+<td>Alguns inimigos tem palavras cifradas.</td>
+</tr>
+<tr>
+<td>Palavras Duplas</td>
+<td>Alguns inimigos tem palavras duplas.</td>
+</tr>
+<tr>
+<td>Tropa de Elite</td>
+<td>Guardiões e Avassaladores aparecem com 2x mais frequência.</td>
+</tr>
+<tr>
+<td>Inimigos com Escudo</td>
+<td>Inimigos aparecem com um escudo que bloqueia um ataque.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Página Inicial</span></div><h1>Wiki Oficial Glyphica</h1>
 <h2>Bem Vindo Digitador</h2>
 <p>Bem vindo ao wiki oficial do Glyphica: Typing Survival! Teste as suas habilidades de digitação nesse jogo de sobrevivência de horda onde a sua velocidade e precisão são as suas armas supremas. Equipe poderosas ferramentas que transformam os seus poderes de digitação em ataques devastadores contra inimigos implacáveis. Descubra mais e pegue o jogo na Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Este wiki serve como um guia compreensivo para as funcionalidades, mecânicas e conteúdos disponíveis na versão Acesso Antecipado de Glyphica. Nosso objetivo é manter as informações atualizadas enquanto progredimos ao lançamento do lançamento completo, versão 1.0. O wiki é organizado em seção listadas nas tabelas de conteúdos e será regularmente atualizada enquanto o jogo evolui.</p>
 <h2>Tabela de Conteúdos</h2>
-<a href="#main_weapons" class="portal">Armas Principais</a><a href="#weapons" class="portal">Armas de Aumento de Nível</a><a href="#enemies" class="portal">Inimigos</a><a href="#loot" class="portal">Itens de Prêmios</a><a href="#loot1" class="portal">Aprimorações</a></div></div></div>
+<a href="#main_weapons" class="portal">Armas Principais</a><a href="#weapons" class="portal">Armas de Aumento de Nível</a><a href="#enemies" class="portal">Inimigos</a><a href="#loot" class="portal">Itens de Prêmios</a><a href="#loot1" class="portal">Aprimorações</a><a href="#omens" class="portal">Presságios</a></div></div></div>
 </body>
 </html>

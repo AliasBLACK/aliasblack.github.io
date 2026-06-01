@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Ana silahlar, <em>Glyphica</em>&#39;daki başlangıç ​​silahlarıdır ve oyun oynanışında merkezi bir rol oynar. Bir düşmanın üzerinde görüntülenen bir kelimeyi yazdığınızda, ana silah o düşmana hedef olarak kilitlenir. Her ana silahın kendine özgü etkileri ve mekanikleri vardır ve etkili bir şekilde kullanmak için farklı stratejiler gerektirir.</p>
 <p>Bazı ana silahlar yazma hızına (WPM) vurgu yaparken, diğerleri daha taktiksel bir yaklaşım gerektirir. Oyundaki diğer silahlar gibi, ana silahlar da yükseltilebilir ve evrimleştirilebilir, ilerledikçe yetenekleri ve etkinlikleri artırılabilir.</p>
 <h2>Ana Silahların Listesi</h2>
-<a href="#repeater" class="portal">Tekrarlayıcı</a><a href="#heatray" class="portal">Isı Lazeri</a><a href="#barrage" class="portal">Yayılım Ateşi</a><a href="#splattershot" class="portal">Sıçrayan Atış</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Joker</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Tekrarlayıcı</span></div><h1>Tekrarlayıcı</h1>
+<a href="#repeater" class="portal">Tekrarlayıcı</a><a href="#heatray" class="portal">Isı Lazeri</a><a href="#barrage" class="portal">Yayılım Ateşi</a><a href="#splattershot" class="portal">Sıçrayan Atış</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Joker</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Tekrarlayıcı</span></div><h1><span class="weapon-icon"></span> Tekrarlayıcı</h1>
 <p>Etiketler: Kinetik, Ana<br>Kısa aralıklarla çok sayıda mermi ateşleyen yıkıcı bir silah.</p>
 <h2>Evrimler</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Menzil: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Isı Lazeri</span></div><h1>Isı Lazeri</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Isı Lazeri</span></div><h1><span class="weapon-icon"></span> Isı Lazeri</h1>
 <p>Etiketler: Isı, Ana, Zamanla Hasar<br>Zamanla hasar veren, isabetli, yoğunlaştırılmış ışıktan oluşan sabit bir ışın ateşler.</p>
 <h2>Evrimler</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Atış Hızı: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Yayılım Ateşi</span></div><h1>Yayılım Ateşi</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Yayılım Ateşi</span></div><h1><span class="weapon-icon"></span> Yayılım Ateşi</h1>
 <p>Etiketler: Patlayıcı, Ana<br>Bir hedefe ve çevresine patlayıcı roketlerden oluşan bir yaylım ateşi açar. Zamanla şarj olur.</p>
 <h2>Evrimler</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Yeniden Yükleme Hızı: +30%<br>  (Ateş Hızı)<br><br></td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Sıçrayan Atış</span></div><h1>Sıçrayan Atış</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Sıçrayan Atış</span></div><h1><span class="weapon-icon"></span> Sıçrayan Atış</h1>
 <p>Etiketler: Kimyasal, Ana, Zamanla Hasar<br>Rakiplerinizi sakatlamak ve onlara zarar vermek için yapışkan madde kürelerini ateşleyin.</p>
 <h2>Evrimler</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Süre: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Overmind</span></div><h1>Overmind</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Overmind</span></div><h1><span class="weapon-icon"></span> Overmind</h1>
 <p>Etiketler: Elektrik, Dron, Ana<br>Düşmanlarınıza enerji hasarı vermek için çeşitli insansız hava araçlarını yönetin.</p>
 <h2>Evrimler</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Yokluk Alanı</td>
-<td>Overmind ile hedef alınan düşmanlar yavaşlar ve diğer Elektrik etkilerinden ve silahlardan 50% hasar alırlar.</td>
+<td>Overmind ile hedef alınan düşmanlar yavaşlar ve diğer Elektrik etkilerinden ve silahlardan +50% hasar alırlar.</td>
 </tr>
 <tr>
 <td>Yokluk Alanı II</td>
@@ -682,7 +728,7 @@ th {
 <td>Atış Hızı: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Joker</span></div><h1>Joker</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#main_weapons">Ana Silahlar</a> / <span>Joker</span></div><h1><span class="weapon-icon"></span> Joker</h1>
 <p>Etiketler: Kinetik, Isı, Soğuk, Elektrik, Ana<br>Bir sonraki atışınız dört olası silah arasından rastgele seçilecektir, bu nedenle dikkatli ateş edin.</p>
 <h2>Evrimler</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>Seviye yükseltme silahları, seviye atladıkça bir koşu sırasında elde edilir. Seçildikten sonra, silah cephaneliğinize eklenir. Her silahın kendine özgü bir etkinleştirme yöntemi vardır, ancak çoğu ana silahla yazma ve hedefleme yoluyla tetiklenebilir.</p>
 <p>Bu şekilde en fazla dört silah elde edilebilir. Bir silah cephaneliğinize eklendiğinde, yükseltmeleri seviye yükseltme havuzunda kullanılabilir hale gelir ve ilerledikçe yeteneklerini geliştirmenize olanak tanır.</p>
 <h2>Seviye Yükseltme Silahlarının Listesi</h2>
-<a href="#spectre" class="portal">Hayalet</a><a href="#sentry" class="portal">Muhafız</a><a href="#tesla" class="portal">Tesla Madeni</a><a href="#oscillator" class="portal">Osilatör</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Avcı</a><a href="#chopper" class="portal">Kesici</a><a href="#minefield" class="portal">Mayın tarlası</a><a href="#blade" class="portal">Bıçak Tuzağı</a><a href="#orbiter" class="portal">Yörüngede</a><a href="#guardian" class="portal">Gardiyan</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Hayalet</span></div><h1>Hayalet</h1>
+<a href="#spectre" class="portal">Hayalet</a><a href="#sentry" class="portal">Muhafız</a><a href="#tesla" class="portal">Tesla Madeni</a><a href="#oscillator" class="portal">Osilatör</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Avcı</a><a href="#chopper" class="portal">Kesici</a><a href="#minefield" class="portal">Mayın tarlası</a><a href="#blade" class="portal">Bıçak Tuzağı</a><a href="#orbiter" class="portal">Yörüngede</a><a href="#guardian" class="portal">Gardiyan</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Hayalet</span></div><h1><span class="weapon-icon"></span> Hayalet</h1>
 <p>Etiketler: Kinetik, Dron<br>Glifleri içeren kelimeleri tamamlanması a, e, o Yukarıda eşleşenlerin sayısına eşdeğer hızlı yakın dövüş dronları üretir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>Uzunluğu 7 glifin üzerinde olan bir kelimeyi tamamlamak, ek bir Hayalet doğurur.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Muhafız</span></div><h1>Muhafız</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Muhafız</span></div><h1><span class="weapon-icon"></span> Muhafız</h1>
 <p>Etiketler: Isı, Taret<br>Menzil içerisine giren tüm düşmanlara ateş eden otomatik bir taret konuşlandırın.</p>
 <h2>Evrimler</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>Menzil: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Tesla Madeni</span></div><h1>Tesla Madeni</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Tesla Madeni</span></div><h1><span class="weapon-icon"></span> Tesla Madeni</h1>
 <p>Etiketler: Elektrik, Taret, Zamanla Hasar<br>Gliflerle başlayan kelimeleri tamamlanması b, c, d, e Zamanla hasar veren bir elektrikli taret yerleştirir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>Statik Şans: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Osilatör</span></div><h1>Osilatör</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Osilatör</span></div><h1><span class="weapon-icon"></span> Osilatör</h1>
 <p>Etiketler: Isı, Kontrolcü<br>En son hedefinize doğru salınımlı bir parçacık akışını ateşleyin.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Kritik Şansı: +3%<br> Kritik Çarpanı: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Meteor</span></div><h1>Meteor</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Meteor</span></div><h1><span class="weapon-icon"></span> Meteor</h1>
 <p>Etiketler: Patlayıcı, Kontrolcü<br>Yörünge bombardımanını başlatmak için etkinleştirilebilecek rastgele konumlarda hedef işaretleyicileri periyodik olarak ortaya çıkarır.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>Menzil: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Avcı</span></div><h1>Avcı</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Avcı</span></div><h1><span class="weapon-icon"></span> Avcı</h1>
 <p>Etiketler: Elektrik, Dron, Zamanla Hasar<br>Glifleri içeren kelimeleri tamamlanması i, o, u Yukarıdaki eşleşenlerin sayısına eşdeğer elektrik ışınıyla ateşleyen dronlar üretir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>Süre: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Kesici</span></div><h1>Kesici</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Kesici</span></div><h1><span class="weapon-icon"></span> Kesici</h1>
 <p>Etiketler: Kinetik, Kontrolcü<br>Ana silah ateşinde ekranın kenarına doğru ilerleyen ve yoluna çıkan tüm düşmanlara hasar veren devasa bir dönen bıçak ortaya çıkarır.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>Kanama Şansı: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Mayın tarlası</span></div><h1>Mayın tarlası</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Mayın tarlası</span></div><h1><span class="weapon-icon"></span> Mayın tarlası</h1>
 <p>Etiketler: Patlayıcı, Dron<br>Gliflerle başlayan kelimeleri tamamlanması f, g, h, i Düşmanlarla temas ettiğinde patlayan, yavaş hareket eden mayınlar üretir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1590,7 +1636,7 @@ th {
 <td>Tekrarlı Mayınlar:<br> Üretilme Hızı: +30%<br> (Ateş Hızı)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Bıçak Tuzağı</span></div><h1>Bıçak Tuzağı</h1>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Bıçak Tuzağı</span></div><h1><span class="weapon-icon"></span> Bıçak Tuzağı</h1>
 <p>Etiketler: Kinetik, Taret<br>Gliflerle başlayan kelimeleri tamamlanması j, k, l, m dönen dört kollu bir bıçak tuzağı kullanır.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1682,7 +1728,7 @@ th {
 <td>Süre: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Yörüngede</span></div><h1>Yörüngede</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Yörüngede</span></div><h1><span class="weapon-icon"></span> Yörüngede</h1>
 <p>Etiketler: Kimyasal, Kontrolcü<br>Gliflerle başlayan kelimeleri tamamlanması n, o, p, q Bir küre fırlatır, küre Ana Silahın yörüngesine girer ve yoluna çıkan her şeye hasar verir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>Hız: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Gardiyan</span></div><h1>Gardiyan</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#weapons">Seviye Yükseltme Silahları</a> / <span>Gardiyan</span></div><h1><span class="weapon-icon"></span> Gardiyan</h1>
 <p>Etiketler: Isı, Dron<br>Düşmanlara lazer ateşleyen bir Drone&#39;u hemen görevlendir. Yakıt tüketecek ve boşaldığında devre dışı bırakacak olan Guardian&#39;a yakıt ikmali yapmak için Yakıt toplayıcılarını etkinleştir.</p>
 <h2>Evrimler</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p><em>Glyphica</em>&#39;daki düşmanlar, <strong>tehdit</strong> adı verilen ve koşu ilerledikçe artan dahili bir ölçüte göre prosedürel olarak ortaya çıkar. Deneme Modu&#39;nda, tehdit mevcut Deneme Seviyesi ile çarpılır ve her seviye giderek zorlaşır. Sonsuz Mod&#39;da, tehdit, oyuncunun seviyesine göre uyarlanabilir bir ölçekleme sistemiyle karşılaştırılır ve daha yüksek değer ortaya çıkma zorluğunu belirler.</p>
 <p>Düşmanlar ayrıca <strong>özel</strong> ve <strong>elit</strong> olmak üzere iki kategoriye ayrılır; her birinin, genel tehdit seviyesi içindeki ortaya çıkma oranlarını sınırlayan kendi sınıf sınırı vardır.</p>
 <h2>Düşman Listesi</h2>
-<a href="#drone" class="portal">Dron</a><a href="#shielddrone" class="portal">Kalkan Dronu</a><a href="#stalker" class="portal">Takipçi</a><a href="#shooter" class="portal">Nişancı</a><a href="#splitter" class="portal">Bölücü</a><a href="#warder" class="portal">Muhafız</a><a href="#swarmer" class="portal">Saldırgan</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#enemies">Düşmanlar</a> / <span>Dron</span></div><h1>Dron</h1>
+<a href="#drone" class="portal">Dron</a><a href="#shielddrone" class="portal">Kalkan Dronu</a><a href="#stalker" class="portal">Takipçi</a><a href="#shooter" class="portal">Nişancı</a><a href="#splitter" class="portal">Bölücü</a><a href="#wurm" class="portal">Solucan</a><a href="#warder" class="portal">Muhafız</a><a href="#swarmer" class="portal">Saldırgan</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#enemies">Düşmanlar</a> / <span>Dron</span></div><h1>Dron</h1>
 <p>Dronlar, ana silahınıza doğru amansızca hareket eden düşmanlardır. Bazen iki gelişmiş biçimde ortaya çıkabilirler:<br>Genişletilmiş: Canlarını üç katına çıkarır ve onları yenmeyi zorlaştırır.<br>Hızlandırılmış: Hareket hızlarını iki katına çıkarır ve onları ortadan kaldırma aciliyetini artırır.</p>
 <h2>Varyant Listesi</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Can: 240<br>Hasar: 40<br></td>
+<td>Can: 80<br>Hasar: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Can: 2400<br>Hasar: 120<br></td>
+<td>Can: 800<br>Hasar: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Parça Sayısı: 6<br>Parça Sağlığı: 650<br>Parça Hasarı: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#enemies">Düşmanlar</a> / <span>Solucan</span></div><h1>Solucan</h1>
+<p>Solucan, parçalarının sırayla yok edilmesi gereken çok parçalı bir düşmandır. Her parça, tüm mermi saldırılarını engelleyen yok edilemez bir bariyerle bir sonrakine bağlıdır.</p>
+<h2>Varyant Listesi</h2>
+<table>
+<thead>
+<tr>
+<th>Görüntü</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Segment Sayısı: 2<br>Segment Sağlığı: 80<br>Segment Hasarı: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Segment Sayısı: 3<br>Segment Sağlığı: 200<br>Segment Hasarı: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Segment Sayısı: 4<br>Segment Sağlığı: 1000<br>Segment Hasarı: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Segment Sayısı: 4<br>Segment Sağlığı: 1800<br>Segment Hasarı: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <a href="#enemies">Düşmanlar</a> / <span>Muhafız</span></div><h1>Muhafız</h1>
 <p>Muhafız, oyunun sonlarında beliren seçkin bir düşmandır. Kalkanın şu anda baktığı yönden gelen hasarı engelleyen dönen bir kalkanı vardır. Ayrıca, Muhafız hayattayken yakındaki düşmanlara koruyucu bir aura sağlar ve yok edilene kadar onları yenilmez kılar.</p>
 <h2>Varyant Listesi</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <span>Ganimet Öğeleri</span></div><h1>Ganimet Öğeleri</h1>
 <p>Ganimet öğeleri, bir koşu sırasında bir hazine sandığı toplama işlemini etkinleştirerek elde edilir. Rastgele bir ganimet öğeleri seçimi gösterilecek ve bunlardan birini seçmek, koşunun geri kalanında aktif kalan pasif bir bonus sağlar.</p>
 <p>Ganimet öğeleri, ganimet seçimlerinde görünme olasılıklarını belirleyen <strong>yaygın</strong>, <strong>nadir</strong> ve <strong>ender</strong> olarak kategorilendirilir. Deneme Modunda bir boss yenmek, yalnızca nadir öğe içeren bir hazine sandığıyla ödüllendirilir.</p>
-<h2>Ender Ganimet Listesi</h2>
+<details><summary>Ender Ganimet Listesi</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Ad</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Görücü</td>
 <td>Seviye atlama, evrim veya ganimet ekranına girdiğinizde 0 Yeniden Atma hakkınız varsa, bunun yerine 1 Yeniden Atma hakkınız olur.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>üstünkörü</td>
 <td>Tüm Dron Silahları:<br> Ek İHA şansı: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yağmacı</td>
 <td>+1 Ganimet Seçeneği</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Çoklu Hedefleme</td>
 <td>Tüm Uzaktan Silahlar, sahip olduğunuz her Silah için +%1 Kritik Şansı alır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dev Mıknatıs</td>
 <td>Teslim alımları süreleri dolduğunda otomatik olarak toplarsınız.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Donma</td>
 <td>Dondurulmuş durumdayken düşmanlar zamanla hasar alır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Nekrobomba</td>
 <td>Patlayıcı Kritik hasarına sahip bir düşmanı yok ettiğinizde, düşen düşmanın konumu etrafında bir dizi patlama tetikleyin.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ödül</td>
 <td>Kritik hasarla bir düşmanı yok ettiğinizde, Yeniden Atma, Kalkan veya Sağlık kazanımlarının ortaya çıkma şansı 30% olur.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Artçı şok</td>
 <td>Kritik hasar her zaman durum etkisi yaratır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vampirlik</td>
 <td>Kinetik Kritik hasarının 5% kadarına eşit can kazan.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bilge</td>
 <td>Kalkan aldığınızda, tüm silah Evrimlerine 10 Öldürme kazanırsınız.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Soytarı</td>
 <td>Zar hakkı kazandığınızda, ekrandaki tüm düşmanlara 0 ile 100 arasında rastgele bir hasar verin.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Son Direniş</td>
 <td>Kalkan yok edildiğinde, İki Kat Hasar kazanırsın.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Üçlü Hasar</td>
 <td>Tüm Çift Hasar alımları artık Üçlü Hasar.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kırık</td>
 <td>Donmuş düşmanlara verilen tüm hasar 50% artar. Değiştirici çarpansaldır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zahit</td>
 <td>Ganimet ekranından çıktığınızda, 20 saniye boyunca kullanılmayan her zar hakkı için +%10 hasar kazanın.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harmonizer</td>
 <td>Donanımlı tüm silahlar bir Evrim seviyesi kazanır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ölümsüzlük</td>
 <td>Ana Silahınız yok edilmek üzereyse, bunun yerine 1 cana düşürülecektir. Bu yetenek yalnızca her 2 dakikada bir kullanılabilir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aydınlanma</td>
 <td>Bir düşmanı kritik hasarla yok ettiğinde, tüm silah Evrimlerine +1 öldürme kazandırır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yakındı</td>
 <td>Bir düşmanın kelimesini yok edildikten sonra tamamlamak, 10 saniye boyunca +%10 hasar verir. 3 defaya kadar birikir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cinayet</td>
 <td>Tüm Dron Silahları: +%50 Hasar</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cellat</td>
 <td>Tüm Taret Silahları: +%50 Hasar</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dejenerasyon</td>
 <td>Tüm Uzaktan Silahlar: +%50 Hasar</td>
 </tr>
 </tbody></table>
-<h2>Nadir Ganimet Listesi</h2>
+</details>
+
+<details><summary>Nadir Ganimet Listesi</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Ad</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Tsunami</td>
 <td>Tüm Patlayıcı Silahlar:<br> Menzil: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Şok dalgası</td>
 <td>Tüm Patlayıcı Silahlar:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İmha</td>
 <td>Tüm Patlayıcı Silahlar:<br> Kritik Çarpan: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Çöküş</td>
 <td>Tüm Patlayıcı Silahlar:\ve Çift Hasar Alma:\ve Düşme Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Parçalanan atış</td>
 <td>Tüm Kinetik Silahlar:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Patlama</td>
 <td>Tüm Kinetik Silahlar:<br> Atış Hızı: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Delici</td>
 <td>Tüm Kinetik Silahlar:<br> Kritik Şans: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Haberci</td>
 <td>Tüm Kinetik Silahlar:<br> Kanama Etkisi Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İnferno</td>
 <td>Tüm Isı Silahları:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plazmatör</td>
 <td>Tüm Isı Silahları:<br> Menzil: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Anka</td>
 <td>Tüm Isı Silahları:<br> Tekrar Atma Şansı: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pyroclysm</td>
 <td>Tüm Isı Silahları:<br>  Tutuşturma Etkisi Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriyostaz</td>
 <td>Tüm Soğuk Silahları:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Buzul</td>
 <td>Tüm Soğuk Silahlar:<br> Donma Etkisi Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İtici</td>
 <td>Tüm Soğuk Silahlar:<br> Kalkan Şansı: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriyojen</td>
 <td>Tüm Soğuk Silahlar:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aşırı Yük</td>
 <td>Tüm Elektrikli Silahlar:<br> Statik Etki Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mega Fırtına</td>
 <td>Tüm Elektrikli Silahlar:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Amplifier</td>
 <td>Tüm Elektrikli Silahlar:<br> Atış Hızı: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tekillik</td>
 <td>Tüm Elektrikli Silahlar:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bulaşma</td>
 <td>Tüm Kimyasal Silahlar:<br> Yıkım Etkisi Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sepsis</td>
 <td>Tüm Kimyasal Silahlar:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Konvülsiyon</td>
 <td>Tüm Kimyasal Silahlar:<br> Atış Hızı: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Çürüme</td>
 <td>Tüm Kimyasal Silahlar:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sonsuzluk</td>
 <td>Tüm Drone Silahları:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hiperjet</td>
 <td>Tüm Drone Silahları:<br> Hız: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Üst Akıl</td>
 <td>Tüm Dron Silahları:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Don</td>
 <td>Tüm Drone Silahları:<br> Freeze Drop Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Omniboost</td>
 <td>Tüm Uzaktan Kumandalı Silahlar:<br> Menzil: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Anında bağlantı</td>
 <td>Tüm Uzaktan Kumandalı Silahlar:<br> Hız: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Komut</td>
 <td>Tüm Uzaktan Kumandalı Silahlar:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Enerji verici</td>
 <td>Tüm Taret Silahları:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cellat</td>
 <td>Tüm Taret Silahları:<br> Atış Hızı: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kesin</td>
 <td>Tüm Taret Silahları:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kıyım</td>
 <td>Tüm Durum Etkileri:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İşkence</td>
 <td>Tüm Durum Etkileri:<br> Süre: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vurgun</td>
 <td>Tüm Ganimet Etkileri:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gizem</td>
 <td>Tüm Ganimet Silahları:<br> Kritik Şans: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Öfke</td>
 <td>Tüm Geliştirme Etkileri:<br> Hasar: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ötesinde</td>
 <td>Tüm Geliştirme Etkileri:<br> Menzil: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arsenal</td>
 <td>Tüm Silahlar:<br> Hasar: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lifesaver</td>
 <td>Tüm Silahlar:<br> Süre: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Starview</td>
 <td>Tüm Silahlar:<br> Menzil: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sıfır Açı</td>
 <td>Ana Silah&#39;a yakın vurulan düşmanlar +20% hasar alır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Şiddetli</td>
 <td>Tüm Silahlar:<br> Durum Efekti: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriyoteknik</td>
 <td>Dondurulmuş Alımlar:<br> Düşme Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Savaşçı</td>
 <td>Çift Hasar Alma:<br> Düşme Şansı: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pinata</td>
 <td>Küresel Etki:<br> Ganimet Bolluğu: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cam Topu</td>
 <td>Tüm Silahlar:<br> Hasar: +30%<br>\Ana Silah:<br> Maksimum Sağlık: -50%<br><br></td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yenilenme</td>
 <td>Bir Ganimet, Dondurma, Çift Hasar, Zarlama veya Kalkan alma işlemini etkinleştirdiğinizde maksimum canınızın 5% kadarı iyileşirsin.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erozyon</td>
 <td>Zamanla hasar veren silahlar Kritik vurabilir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Paramparça</td>
 <td>Tüm Kinetik Silahlar Donmuş düşmanlara karşı +5% Kritik Şansı kazanır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dirençli</td>
 <td>Kalkan alımlarını etkinleştirmek, küresel Sürenizi 10 saniyeliğine %10 artırır. 3 defaya kadar birikir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kumarbaz</td>
 <td>1 Tekrar Atma ekler ve Maksimum Tekrar Atma&#39;yı toplamda 6&#39;ya çıkarır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Koruyucu</td>
 <td>1 Kalkan ekler ve Maksimum Kalkan sayısını toplamda 4&#39;e çıkarır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kusursuz</td>
 <td>Her x17 Mükemmel Giriş aynı zamanda genel Ateş Oranınızı 5% artırır.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salınım</td>
 <td>Yanlış yazıldığında, her x17 Mükemmel Giriş için tüm düşmanlara 20 Patlayıcı hasar ver.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İsraf</td>
 <td>Tüm D.O.T. Silahları: +%35 Ateş Oranı</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Çürüme</td>
 <td>Tüm Durum Etkileri: +%35 Ateş Oranı</td>
 </tr>
 </tbody></table>
-<h2>Yaygın Ganimet Listesi</h2>
+</details>
+
+<details><summary>Yaygın Ganimet Listesi</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Ad</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Patlama</td>
 <td>Tüm Patlayıcı Silahlar:<br>  Menzil: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İnflak</td>
 <td>Tüm Patlayıcı Silahlar:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ezici</td>
 <td>Tüm Kinetik Silahlar:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Voley</td>
 <td>Tüm Kinetik Silahlar:<br>  Ateş Hızı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kavurucu</td>
 <td>Tüm Isı Silahları:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Köz</td>
 <td>Tüm Isı Silahları:<br>  Menzil: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sonsuz Don</td>
 <td>Tüm Soğuk Silahlar:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dondurucu</td>
 <td>Tüm Soğuk Silahlar:<br>  Süre: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Şok</td>
 <td>Tüm Elektrikli Silahlar:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kapasitör</td>
 <td>Tüm Elektrikli Silahlar:<br>  Ateş Hızı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İşlemci</td>
 <td>Tüm Drone Silahları:<br>  Süre: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Diken</td>
 <td>Tüm Drone Silahları:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ulaşım</td>
 <td>Tüm Uzaktan Silahlar:<br>  Menzil: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Darbe</td>
 <td>Tüm Uzaktan Silahlar:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sağlam</td>
 <td>Tüm Taret Silahları:<br>  Süre: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Burç</td>
 <td>Tüm Taret Silahları:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İllet</td>
 <td>Tüm Durum Etkileri:<br>  Hasar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rezonans</td>
 <td>Tüm Durum Etkileri:<br>  Süre: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hakimiyet</td>
 <td>Tüm Silahlar:<br>  Hasar: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dayanıklılık</td>
 <td>Tüm Silahlar:<br>  Süre: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hakimiyet</td>
 <td>Tüm Silahlar:<br>  Menzil: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sıçrama</td>
 <td>Tüm Patlayıcı Silahlar:<br> Menzil: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Darbe</td>
 <td>Tüm Patlayıcı Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Buharlaştır</td>
 <td>Tüm Patlayıcı Silahlar:<br> Kritik Çarpan: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Çifte Tepki</td>
 <td>Tüm Patlayıcı Silahlar:\Çift Hasar Alma:\ve Düşme Şansı: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İçi Boş Nokta</td>
 <td>Tüm Kinetik Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Patlama</td>
 <td>Tüm Kinetik Silahlar:<br> Ateş Hızı: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penetrasyon</td>
 <td>Tüm Kinetik Silahlar:<br> Kritik Şans: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tırpan</td>
 <td>Tüm Kinetik Silahlar:<br>  Kanama Efekti Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mühür</td>
 <td>Tüm Isı Silahları:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Radyatör</td>
 <td>Tüm Isı Silahları:<br> Menzil: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İkinci Şans</td>
 <td>Tüm Isı Silahları:<br> Zar Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yanıcı</td>
 <td>Tüm Isı Silahları:<br> Tutuşturma Etkisi Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hipotermi</td>
 <td>Tüm Soğuk Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sıfır altı</td>
 <td>Tüm Soğuk Silahlar:<br> Donma Etkisi Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Saptırma</td>
 <td>Tüm Soğuk Silahlar:<br> Kalkan Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Soğutma sıvısı</td>
 <td>Tüm Soğuk Silahlar:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gizli Yük</td>
 <td>Tüm Elektrikli Silahlar:<br> Statik Etki Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kapasitör</td>
 <td>Tüm Elektrikli Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Modülatör</td>
 <td>Tüm Elektrikli Silahlar:<br> Ateş Hızı: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Konsantre</td>
 <td>Tüm Elektrikli Silahlar:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Leke</td>
 <td>Tüm Kimyasal Silahlar:<br> Yıkım Etkisi Şansı: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Toksin</td>
 <td>Tüm Kimyasal Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vuruntu</td>
 <td>Tüm Kimyasal Silahlar:<br> Atış Hızı: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Oyalanma</td>
 <td>Tüm Kimyasal Silahlar:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Genişletici</td>
 <td>Tüm Drone Silahları:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İticiler</td>
 <td>Tüm Drone Silahları:<br> Hız: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Otomat</td>
 <td>Tüm Drone Silahları:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Soğuk Kalpler</td>
 <td>Tüm İHA Silahları:<br> Dondurarak Düşürme Şansı: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sinyal Güçlendirme</td>
 <td>Tüm Uzaktan Silahlar:<br> Menzil: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sıfır Gecikme</td>
 <td>Tüm Uzaktan Silahlar:<br> Hız: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kontroller</td>
 <td>Tüm Uzaktan Silahlar:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sürdürülebilir</td>
 <td>Tüm Taret Silahları:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Otomatik Top</td>
 <td>Tüm Kule Silahları:<br> Ateş Hızı: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kalibrasyon</td>
 <td>Tüm Taret Silahları:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yıpratıcı</td>
 <td>Tüm Durum Etkileri:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Eziyet</td>
 <td>Tüm Durum Etkileri:<br> Süre: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Beklenmedik</td>
 <td>Tüm Ganimet Etkileri:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gizli</td>
 <td>Tüm Ganimet Etkileri:<br> Kritik Şans: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aşırı Hız</td>
 <td>Tüm Geliştirme Etkileri:<br> Hasar: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mesafe Ölçer</td>
 <td>Tüm Artırma Etkileri:<br> Menzil: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Silahlanma</td>
 <td>Tüm Silahlar:<br> Hasar: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hayatta Kalma Kiti</td>
 <td>Tüm Silahlar:<br> Süre: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Teleskop</td>
 <td>Tüm Silahlar:<br> Menzil: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sağlık Paketi</td>
 <td>Envanterine 3 Sağlık Paketi ekler.<br><br>Sağlık Paketleri, Ana Taret’in azami sağlığının en fazla 30% kadarını iyileştirir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Savaş Başlığı</td>
 <td>Envanterine 2 Savaş Başlıkları ekler.<br><br>Savaş Başlıkları, ana silahtan dışa doğru yayılan güçlü bir dizi patlama tetikler.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Serum</td>
 <td>Envanterine 2 Serum ekler.<br><br>Serumlar, 10 saniyeliğine 25% Kritik Vuruş Şansı sağlar.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Buz Çekirdeği</td>
 <td>Envanterine 2 Buz Çekirdeği ekler.<br><br>Buz Çekirdekleri, küresel donma efektini tetikler.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ölüm Hapı</td>
 <td>Envanterine 2 Ölüm Hapı ekler.<br><br>Ölüm Hapları, Çift Hasar etkisini küresel olarak tetikler.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Alev Dalgası</td>
 <td>Envanterinize 2 Alev Dalgası ekler.<br><br>Alev Dalgaları, Ana Kulenin mevcut canının %10&#39;u kadar maliyetle tüm görünür düşmanları tutuşturur.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cep Taret</td>
 <td>Envantere 1 Cep Tareti ekler.<br><br>Cep Tareti, düşman gruplarının yakınında otomatik bir taret oluşturur.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Merkez üssü</td>
 <td>Isı Silahları, hedef Ana Silaha yakın olduğunda +20% hasar verir.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Soğutucu</td>
 <td>Alımları Dondur:<br> Süre: +20%<br> Düşme Şansı: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Açık</td>
 <td>Çifte Hasar Alma:<br> Süre: +20%<br> Düşme Şansı: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kesinlik</td>
 <td>Tüm Silahlar:<br> Kritik Şansı: +1%<br> Krit Çarpanı: +50%<br><br>Şansı:<br> Daha Uzun Kelime: +10%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>İlk yardım çantası</td>
 <td>100 Sağlık Yenile</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kalkan</td>
 <td>1 Kalkan Ekle.<br><br>Mevcut Kalkanlar: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zar Hakkı</td>
 <td>1 Zar Hakkı Ekle.<br><br>Mevcut Zar Hakkı: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Geliştirici</td>
 <td>Her geliştirici D.O.T.&#39;yi arttırır. +4% kadar hasar. Ana Kule&#39;ye yaklaşıldığında bu bonus iki katına çıkar.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <span>Geliştirmeler</span></div><h1>Geliştirmeler</h1>
 <p>Geliştirmeler, bir koşu sırasında kazanılan bir para birimi olan Madeni Paralar (§) kullanılarak açılabilen kalıcı yükseltmelerdir. Her koşunun başında, oyuncuların kilidi açılan geliştirmeleri donatmak için sınırlı sayıda yuvası vardır ve kullanılabilir yuva sayısı seçilen Omen seviyesine göre değişir.</p>
 <p>Her geliştirmenin genellikle faydalarını belirleyen belirli koşulları vardır. Geliştirmelerinizden en iyi şekilde yararlanmak için, aralarındaki sinerjileri göz önünde bulundurun ve bunları tercih ettiğiniz stratejiyle uyumlu hale getirin.</p>
-<h2>Kodeks: Ana Silah</h2>
+<details><summary>Kodeks: Ana Silah</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Zırhlı</td>
 <td>50 §,<br>200 §</td>
 <td>Ana Silah:<br> Can: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Hevesli</td>
 <td>50 §</td>
 <td>Her Deneme veya Sonsuz oyununun başında bir seviye kazanılır. Sonsuz Modda her 4 dakika hayatta kalındığında bir seviye kazanılır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kumarbaz</td>
 <td>50 §</td>
 <td>Kullandığın her Yeniden Atış Ana Silahına 20 saniye boyunca +%20 hasar verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kusursuz</td>
 <td>100 §</td>
 <td>Mükemmel Giriş, yığın başına +%1,5 Kritik Şans verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Sis</td>
 <td>200 §,<br>500 §</td>
 <td>Canın %50&#39;den azsa, +%50 genel Ateş Oranı bonusu kazan.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Adanmışlık</td>
 <td>200 §</td>
 <td>Ana Silah, her boş silah yuvası için +%25 hasar alır. Her seviye atlamada en az bir yükseltme seçeneği çıkar.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Dronlar</h2>
+</details>
+
+<details><summary>Kodeks: Dronlar</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Arma</td>
 <td>200 §</td>
 <td>Ne zaman bir İHA ortaya çıkarsa, ek bir İHA ortaya çıkarma şansı %20.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Çeşitlilik</td>
 <td>50 §</td>
 <td>Donanımlı olmayan her İHA Silahı için, tüm İHA sürelerini %20 artır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Blitzkrieg</td>
 <td>50 §</td>
 <td>İHA hızı yükseltmeleri İHA hasarına da uygulanır. İntikam</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>İntikam</td>
 <td>300 §</td>
 <td>Bir Kalkan yok edildiğinde, mevcut tüm İHA&#39;lar patlayıcı hasar vererek kendi kendini yok eder.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Günah Keçisi</td>
 <td>100 §</td>
 <td>Yanlış Tipler, yanlış tip olarak sayılmak yerine mevcut bir İHA&#39;yı rastgele yok eder.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ganimet</td>
 <td>200 §</td>
 <td>Dronlar sona erdiğinde alımlar bırakabilir.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Taret</h2>
+</details>
+
+<details><summary>Kodeks: Taret</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Kale</td>
 <td>100 §,<br>400 §</td>
 <td>Her Taret Evrimi ayrıca +50 Ana Silah maksimum canı verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ağ bağlantılı</td>
 <td>50 §</td>
 <td>Her farklı Taret, tüm diğer Taretlere maksimum +%50&#39;ye kadar +%10 Atış Hızı kazandırır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Saha İstihbaratı</td>
 <td>50 §</td>
 <td>Bir alımı etkinleştirmek, mevcut tüm Taretlere +%30 Menzil verir. Bu etki üst üste gelmez.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Karanlık Röle</td>
 <td>500 §</td>
 <td>Bir mermi, mevcut Taretlerin arasında rastgele sekerek elektrik hasarı verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Gözlemci</td>
 <td>100 §</td>
 <td>3 saniye boyunca saldırmadıysanız, bir sonraki saldırınıza kadar +%30 Taret Hasarı kazanın.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Zayıflık</td>
 <td>200 §</td>
 <td>Bir Taret Menzili içindeki düşmanlar diğer kaynaklardan %30 daha fazla hasar alır.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: D.O.T.</h2>
+</details>
+
+<details><summary>Kodeks: D.O.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Korozyon</td>
 <td>500 §</td>
 <td>D.O.T. Hasar artık kritik hale gelebilir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bofa balığı</td>
 <td>200 §</td>
 <td>D.O.T. Ana Silaha yakın bir yerde verilen hasar, Ana Silahı 1 Sağlık kadar iyileştirir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Azim</td>
 <td>100 §,<br>300 §</td>
 <td>Tüm D.O.T. silahların süresini  %35 oranında artırılmıştır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Geliştiriciler</td>
 <td>50 §</td>
 <td>Ganimet havuzuna Geliştiriciler ekleyin. Her biri +%4 D.O.T verir. Zarar. Ana Silahın yakınında çift etki.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Hüküm</td>
 <td>100 §</td>
 <td>D.O.T. maksimum Yeniden Atma sayısına sahip olduğunuz sürece silahlar +%40 Ateş Oranı alır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Enfektör</td>
 <td>300 §,<br>500 §</td>
 <td>D.O.T. silahların +%3 durum etkisi şansı vardır.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Kontrolcü</h2>
+</details>
+
+<details><summary>Kodeks: Kontrolcü</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Yakın Dövüş</td>
 <td>100 §</td>
 <td>Tüm Uzaktan Hasar, Ana Silaha yakın kabul edilir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Caltroplar</td>
 <td>200 §</td>
 <td>Uzaktan kumandalı silahlardan gelen kritik vuruşta, geçen düşmanlara hasar veren ve hasarlarına bağlı olarak kanama şansı artan 12 Caltrop ortaya çıkar.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kostik Cephane</td>
 <td>500 §</td>
 <td>Kostik Cephane düşürme şansı - Uzaktaki Silahlara 20 saniye boyunca 10 temel Kimyasal Hasar ekler.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Korsanlık</td>
 <td>50 §</td>
 <td>Kuşanılan her Ganimet Etkisi için tüm Uzaktan Hasar %15 artar.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kurtuluş</td>
 <td>100 §</td>
 <td>Maksimum Kalkanınız olduğu sürece tüm Uzak silahlar +%40 Menzil alır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Keskin Nişancı</td>
 <td>200 §</td>
 <td>Uzaktan Menzil yükseltmeleri Uzaktan Hasar için de geçerlidir.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Elektrik</h2>
+</details>
+
+<details><summary>Kodeks: Elektrik</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Voltaik Patlama</td>
 <td>200 §</td>
 <td>Elektrik Süresi yükseltmeleri, değerlerinin %25&#39;ini Elektrik Statik Şansına uygular.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Fırtına Bataryası</td>
 <td>500 §</td>
 <td>Ana Taret, yakındaki düşmanlara Elektrik hasarı verir. Takılan her Elektrik Silahı, temel hasarı artırır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kıvılcımlar</td>
 <td>300 §</td>
 <td>Elektrik silahlarıyla kritik vuruşta, hasarlarını Kritik Şansı ve Kritik Çarpanı ile ölçeklendiren 6 Şimşek Kıvılcımı serbest bırakır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Verimli Izgara</td>
 <td>100 §</td>
 <td>Kuşandığın her Elektrik harici Silah için, tüm Elektrik süresini %10 artırır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Şiddetli Deşarj</td>
 <td>300 §</td>
 <td>Statik daha fazla hasar verir ve daha geniş bir menzile sahiptir. Statik tarafından öldürülen düşmanların Statik&#39;i yakındaki düşmanlara yayma olasılığı %50&#39;dir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Elektrikli Taret</td>
 <td>100 §</td>
 <td>Ana Silah +5 Temel Elektrik Hasarı kazanır ve tüm Elektrikli silah hasarını %10 artırır.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Isı</h2>
+</details>
+
+<details><summary>Kodeks: Isı</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Ateş Büyüsü</td>
 <td>200 §</td>
 <td>Yanan her düşman için Isı Hasarını %2 artırır. Tutuşturma uygulamak, Tutuşturma süresine ve hasarına bağlı olarak ilave Isı hasarı verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Dağlama</td>
 <td>200 §</td>
 <td>Bonus Menzil, Isı Silahları/Etkileri için Ana Silaha yakın mesafede verilen hasara da uygulanır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Fırın Çekirdeği</td>
 <td>100 §</td>
 <td>Ana Taret +5 temel Isı Hasarı kazanır. Tüm Isı hasarı %10 artar.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ateş Topu</td>
 <td>500 §</td>
 <td>Ana Silah&#39;ı ateşlemek, yolundaki düşmanlara Isı hasarı veren yavaş hareket eden bir Ateş Topu fırlatır. En fazla 1 Ateş Topu aktiftir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Alev Dalgası</td>
 <td>250 §</td>
 <td>Başlangıç ​​envanterine ve ganimet havuzuna tüketilebilir Alev Dalgası ekler. Görünen tüm düşmanları tutuşturur ve Ana Taret&#39;in mevcut canının %10&#39;unu tüketir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Yanan Zafer</td>
 <td>50 §</td>
 <td>Ana Silah&#39;a yakın düşmanlar +%25 Isı Hasarı alır ve Isı Hasarı nedeniyle Tutuşma olasılığı %12 artar.</td>
 </tr>
 </tbody></table>
-<h2>Kodeks: Kinetik</h2>
+</details>
+
+<details><summary>Kodeks: Kinetik</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Ad</div></th>
-<th><div style="width:50px">Maliyet</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Silahşör</td>
 <td>500 §</td>
 <td>Maksimum Kelime Akını&#39;nı 5 artırır. Her Kelime Akını seviyesi %2,5 kinetik hasar verir.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kan Tutkusu</td>
 <td>200 §</td>
 <td>Kanayan her düşman için Kinetik Atış Hızı&#39;nı %2 ve Menzili %1 artırır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Eklenmiş Cephane</td>
 <td>300 §</td>
 <td>Kinetik Kritik Vuruşlar, düşmana rastgele durum uygulama şansı %40.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Şarapnel</td>
 <td>500 §</td>
 <td>Şarapnel düşürme şansı - Kinetik Silahlara 20 saniye boyunca 10 temel Kinetik Hasar ekler.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Birleşik Silahlar</td>
 <td>100 §</td>
 <td>Kumanlanan her Kinetik Olmayan Silah için tüm Kinetik hasarı %10 artırır.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Cep Taret</td>
 <td>200 §</td>
 <td>Envantere ve ganimet havuzuna Cep Taret sarf malzemesi ekler. Cep Taret bir taret oluşturur ve süresi dolduğunda alınabilir.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Kodeks: Kimyasal</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Ad</div></th>
+<th><div style="width:70px">Maliyet</div></th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Reanimasyon</td>
+<td>500 §</td>
+<td>Kimyasal saldırılarla ölen düşmanlar %30 ihtimalle düşmanları arayan ve onlara Kimyasal hasar veren Reanime edilmiş bir Drone&#39;un ortaya çıkartabilir.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Maruz Kalma</td>
+<td>300 §</td>
+<td>Kimyasal Durum artık 3 kata kadar birikebilir ve her birikim başına Zehir hasarını katlar.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Hibritleşme</td>
+<td>500 §</td>
+<td>Diğer hasar türlerine uygulanan hasar artışlarının %25&#39;i Kimyasal hasara da uygulanır.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Atık Boşaltımı</td>
+<td>300 §</td>
+<td>Ana Silaha yakın tüm düşmanlara her 12 saniyede bir Zehir uygular.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Reaktif Ölçeklendirme</td>
+<td>100 §</td>
+<td>Donatılan her Kimyasal silah, Kimyasal hasarı %10 ve Kimyasal Silahların süresini %20 artırır.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Zehirli Yanıklar</td>
+<td>200 §</td>
+<td>Ateşleme, Isı yerine Kimyasal hasar verir. Zehir, her vuruşta Ateşleme uygulama şansına sahiptir ve bu şans Kritik Şans ile daha da artar.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Ana Sayfa</a> / <span>Omenler</span></div><h1>Omenler</h1>
+<p>Omenler, Deneme veya Sonsuz oyunun başında havuzdan rastgele seçilen zorluk değiştiricileridir. Her Omen, zorluğu belirli bir şekilde artırır ve daha yüksek Omen seviyeleri giderek daha zor değiştiricilerin kilidini açar.</p>
+<p>Omenler üç seviyeye ayrılır. Seviye 1 Omenler orta düzeyde zorluk sağlar, Seviye 2 Omenler daha talepkardır ve Seviye 3 Omenler en büyük zorluğu sunar. Belirli bir Omen seviyesinde Denemeleri geçmek bir sonraki seviyenin kilidini açar ve oyun sırasında aynı anda aktif olan Omen sayısını maksimum 6&#39;ya kadar artırır. Aktif Omenlerle oyunları tamamlamak daha fazla Madeni Para ödüllendirir ve ek içerik açar.</p>
+<details><summary>Seviye 1 Omenler</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Ad</div></th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Zorlu Rakip</td>
+<td>Düşmanların Canı %50 artar.</td>
+</tr>
+<tr>
+<td>Uzun Kelimeler</td>
+<td>Her kelime bir harf uzar.</td>
+</tr>
+<tr>
+<td>Güçlendirme Yok</td>
+<td>Çifte hasar veya dondurma yok.</td>
+</tr>
+<tr>
+<td>Hızlı Düşmanlar</td>
+<td>Düşmanlar %5 daha hızlı.</td>
+</tr>
+<tr>
+<td>Seçenek Düşüşü</td>
+<td>Ganimet seçeneği bir azaldı.</td>
+</tr>
+<tr>
+<td>Zayıflamış</td>
+<td>Oyuncu %20 daha az hasar verir.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Seviye 2 Omenler</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Ad</div></th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kırılgan Silah</td>
+<td>Ana silah canı yarıya düşer</td>
+</tr>
+<tr>
+<td>Dayanıklı Düşman</td>
+<td>Düşmanların canı %100 artar.</td>
+</tr>
+<tr>
+<td>Zarlama Yok</td>
+<td>Zar düşmez.</td>
+</tr>
+<tr>
+<td>Kalkan Yok</td>
+<td>Kalkan düşmez.</td>
+</tr>
+<tr>
+<td>Çok Hızlı Düşmanlar</td>
+<td>Düşmanlar %10 daha hızlı.</td>
+</tr>
+<tr>
+<td>Kritik Yok</td>
+<td>Silahların kritik vuramaz.</td>
+</tr>
+<tr>
+<td>Takipçi</td>
+<td>Kısmen gizlenmiş kelimeler içeren düşmanların ortaya çıkabilir.</td>
+</tr>
+<tr>
+<td>Solucanlar</td>
+<td>Belirli bir kelime dizisiyle düşman çıkma olasılığı.</td>
+</tr>
+<tr>
+<td>Kör Modu</td>
+<td>Yazım ilerlemesi kelimelerle gösterilmez.</td>
+</tr>
+<tr>
+<td>Hızlı Yenilenme</td>
+<td>Düşmanlardaki durum etkiler iki kat hızlı geçer.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Seviye 3 Omenler</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Ad</div></th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hata Cezası</td>
+<td>Her yazım hatası için 3 hasar al.</td>
+</tr>
+<tr>
+<td>Savaş Sisi</td>
+<td>Uzaktaki kelimeleri göremezsin.</td>
+</tr>
+<tr>
+<td>Titan Düşmanlar</td>
+<td>Düşmanların canı %150 daha fazla.</td>
+</tr>
+<tr>
+<td>Şifrelenmiş Kelimeler</td>
+<td>Bazı düşmanlar kelimeleri şifreli.</td>
+</tr>
+<tr>
+<td>Çift Kelimeler</td>
+<td>Bazı düşmanların iki kelimesi vardır.</td>
+</tr>
+<tr>
+<td>Seçkin Varlık</td>
+<td>Muhafızlar ve Sürüler iki kat daha sık ortaya çıkar.</td>
+</tr>
+<tr>
+<td>Kalkanlı Düşmanlar</td>
+<td>Düşmanlar tek vuruşta yok olan bir kalkanla ortaya çıkar.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Ana Sayfa</span></div><h1>Glyphica Resmi Wiki</h1>
 <h2>Hoş Geldin Yazıcı</h2>
 <p>Glyphica: Typing Survival için resmi wiki&#39;ye hoş geldiniz! Hız ve doğruluğun en önemli silahlarınız olduğu bu sürü hayatta kalma oyununda yazma becerilerinizi test edin. Yazma becerilerinizi amansız düşmanlara karşı yıkıcı saldırılara dönüştüren güçlü araçlar donatın. Daha fazlasını keşfedin ve oyunu Steam&#39;den edinin: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Bu wiki, Glyphica&#39;nın Erken Erişim sürümünde bulunan özellikler, mekanikler ve içerikler için kapsamlı bir rehber görevi görür. Amacımız, tam sürüm olan 1.0 sürümüne doğru ilerlerken bilgileri güncel tutmaktır. Wiki, içerik tablosunda listelenen bölümlere ayrılmıştır ve oyun geliştikçe düzenli olarak güncellenecektir.</p>
 <h2>İçindekiler</h2>
-<a href="#main_weapons" class="portal">Ana Silahlar</a><a href="#weapons" class="portal">Seviye Yükseltme Silahları</a><a href="#enemies" class="portal">Düşmanlar</a><a href="#loot" class="portal">Ganimet Öğeleri</a><a href="#loot1" class="portal">Geliştirmeler</a></div></div></div>
+<a href="#main_weapons" class="portal">Ana Silahlar</a><a href="#weapons" class="portal">Seviye Yükseltme Silahları</a><a href="#enemies" class="portal">Düşmanlar</a><a href="#loot" class="portal">Ganimet Öğeleri</a><a href="#loot1" class="portal">Geliştirmeler</a><a href="#omens" class="portal">Omenler</a></div></div></div>
 </body>
 </html>

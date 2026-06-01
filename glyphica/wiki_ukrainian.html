@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Основна зброя — це стартова зброя в Glyphica і вона відіграє центральну роль у геймплеї. Коли ти вводиш слово, що з’являється над ворогом, основна зброя фіксує цього ворога як ціль. Кожен тип основної зброї має унікальні ефекти й механіки, які потребують різних стратегій для ефективного використання.</p>
 <p>Деякі види основної зброї роблять акцент на швидкість друку (WPM), інші ж вимагають тактичного підходу. Як і іншу зброю в грі, основну зброю можна покращувати та еволюціонувати, посилюючи її здібності та ефективність у міру прогресу.</p>
 <h2>Список основної зброї</h2>
-<a href="#repeater" class="portal">Транслятор</a><a href="#heatray" class="portal">Тепловий промінь</a><a href="#barrage" class="portal">Залп</a><a href="#splattershot" class="portal">Кривавий постріл</a><a href="#overmind" class="portal">Надрозум</a><a href="#wildcard" class="portal">Джокер</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Транслятор</span></div><h1>Транслятор</h1>
+<a href="#repeater" class="portal">Транслятор</a><a href="#heatray" class="portal">Тепловий промінь</a><a href="#barrage" class="portal">Залп</a><a href="#splattershot" class="portal">Кривавий постріл</a><a href="#overmind" class="portal">Надрозум</a><a href="#wildcard" class="portal">Джокер</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Транслятор</span></div><h1><span class="weapon-icon"></span> Транслятор</h1>
 <p>Мітки: Кінетика, Основний<br>Руйнівна зброя, що випускає серії куль короткими чергами.</p>
 <h2>Еволюції</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Дальність: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Тепловий промінь</span></div><h1>Тепловий промінь</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Тепловий промінь</span></div><h1><span class="weapon-icon"></span> Тепловий промінь</h1>
 <p>Мітки: Тепло, Основний, Шкода періодичної дії<br>Випускає постійний промінь надзвичайно точно сфокусованого світла, що завдає шкоди з часом.</p>
 <h2>Еволюції</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Швидкість стрільби: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Залп</span></div><h1>Залп</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Залп</span></div><h1><span class="weapon-icon"></span> Залп</h1>
 <p>Мітки: Вибух, Основний<br>Випускає залп вибухових ракет по цілі та в її оточення. Перезаряджається з часом.</p>
 <h2>Еволюції</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Швидкість перезарядки: +30%<br>  (Швидкість стрільби)</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Кривавий постріл</span></div><h1>Кривавий постріл</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Кривавий постріл</span></div><h1><span class="weapon-icon"></span> Кривавий постріл</h1>
 <p>Мітки: Хімія, Основний, Шкода періодичної дії<br>Стріляйте в супротивників згустками слизу, щоб знешкодити їх і завдати шкоди.</p>
 <h2>Еволюції</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Тривалість: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Надрозум</span></div><h1>Надрозум</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Надрозум</span></div><h1><span class="weapon-icon"></span> Надрозум</h1>
 <p>Мітки: Електрика, Дрон, Основний<br>Керуйте цілою армією дронів, які несуть спустошення вашим ворогам.</p>
 <h2>Еволюції</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Нульове поле</td>
-<td>Вороги, на яких націлений Надрозум, сповільнюються і отримують 50% шкоди від інших електричних впливів і зброї.</td>
+<td>Вороги, на яких націлений Надрозум, сповільнюються і отримують +50% шкоди від інших електричних впливів і зброї.</td>
 </tr>
 <tr>
 <td>Нульове поле II</td>
@@ -682,7 +728,7 @@ th {
 <td>Швидкострільність: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Джокер</span></div><h1>Джокер</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#main_weapons">Основна зброя</a> / <span>Джокер</span></div><h1><span class="weapon-icon"></span> Джокер</h1>
 <p>Мітки: Кінетика, Тепло, Холод, Електрика, Основний<br>Ваш наступний постріл обирається випадково з чотирьох можливих видів зброї, тому стріляйте обережно.</p>
 <h2>Еволюції</h2>
 <table>
@@ -810,8 +856,8 @@ th {
 <p>Зброю підвищення рівня можна отримати під час проходження, коли гравець підвищує свій рівень. Після вибору ця зброя додається до твого арсеналу. Кожна з них має унікальний спосіб активації, але більшість активується через набір тексту й націлювання основною зброєю.</p>
 <p>Максимум чотири одиниці зброї можна отримати таким чином. Після додавання до арсеналу, її покращення стають доступними у списку покращень при підвищенні рівня, що дозволяє розвивати її здібності з часом.</p>
 <h2>Список зброї підвищення рівня</h2>
-<a href="#spectre" class="portal">Привид</a><a href="#sentry" class="portal">Вартовий</a><a href="#tesla" class="portal">Міна "Тесла"</a><a href="#oscillator" class="portal">Осцилятор</a><a href="#meteor" class="portal">Метеор</a><a href="#hunter" class="portal">Мисливець</a><a href="#chopper" class="portal">Рубак</a><a href="#minefield" class="portal">Мінне поле</a><a href="#blade" class="portal">Лезо-пастка</a><a href="#orbiter" class="portal">Орбітальний апарат</a><a href="#guardian" class="portal">Охоронець</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Привид</span></div><h1>Привид</h1>
-<p>Мітки: Кінетика, Дрон<br>Завершення слів, що містять гліфи a, e, o Викликає швидкі дрони ближнього бою, кількість яких дорівнює кількості збігів вище.</p>
+<a href="#spectre" class="portal">Привид</a><a href="#sentry" class="portal">Вартовий</a><a href="#tesla" class="portal">Міна "Тесла"</a><a href="#oscillator" class="portal">Осцилятор</a><a href="#meteor" class="portal">Метеор</a><a href="#hunter" class="portal">Мисливець</a><a href="#chopper" class="portal">Рубак</a><a href="#minefield" class="portal">Мінне поле</a><a href="#blade" class="portal">Лезо-пастка</a><a href="#orbiter" class="portal">Орбітальний апарат</a><a href="#guardian" class="portal">Охоронець</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Привид</span></div><h1><span class="weapon-icon"></span> Привид</h1>
+<p>Мітки: Кінетика, Дрон<br>Завершення слів, що містять гліфи а, е, о Викликає швидкі дрони ближнього бою, кількість яких дорівнює кількості збігів вище.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -894,7 +940,7 @@ th {
 <td>Завершення слова довжиною понад 7 гліфів створює додаткового Привида.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Вартовий</span></div><h1>Вартовий</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Вартовий</span></div><h1><span class="weapon-icon"></span> Вартовий</h1>
 <p>Мітки: Тепло, Турель<br>Розгортає автоматичну турель, що стріляє по будь-якому ворогу в зоні досяжності.</p>
 <h2>Еволюції</h2>
 <table>
@@ -986,8 +1032,8 @@ th {
 <td>Дальність: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Міна "Тесла"</span></div><h1>Міна &quot;Тесла&quot;</h1>
-<p>Мітки: Електрика, Турель, Шкода періодичної дії<br>Завершення слів, що починаються з гліфів b, c, d, e Розгортає електричну турель, що завдає шкоди періодичної дії.</p>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Міна "Тесла"</span></div><h1><span class="weapon-icon"></span> Міна &quot;Тесла&quot;</h1>
+<p>Мітки: Електрика, Турель, Шкода періодичної дії<br>Завершення слів, що починаються з гліфів б, в, д, є Розгортає електричну турель, що завдає шкоди періодичної дії.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -1090,7 +1136,7 @@ th {
 <td>Шанс статичності: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Осцилятор</span></div><h1>Осцилятор</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Осцилятор</span></div><h1><span class="weapon-icon"></span> Осцилятор</h1>
 <p>Мітки: Тепло, Дистанційне<br>Випускає коливальний потік частинок у напрямку вашої останньої цілі.</p>
 <h2>Еволюції</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Шанс критичного удару: +3%<br>  Множник критичної шкоди: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Метеор</span></div><h1>Метеор</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Метеор</span></div><h1><span class="weapon-icon"></span> Метеор</h1>
 <p>Мітки: Вибух, Дистанційне<br>Періодично створює мітки цілей у випадкових місцях, які можна активувати для орбітального бомбардування.</p>
 <h2>Еволюції</h2>
 <table>
@@ -1278,8 +1324,8 @@ th {
 <td>Дальність: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Мисливець</span></div><h1>Мисливець</h1>
-<p>Мітки: Електрика, Дрон, Шкода періодичної дії<br>Завершення слів, що містять гліфи i, o, u Викликає дронів з електричними променями, кількість яких дорівнює кількості збігів вище.</p>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Мисливець</span></div><h1><span class="weapon-icon"></span> Мисливець</h1>
+<p>Мітки: Електрика, Дрон, Шкода періодичної дії<br>Завершення слів, що містять гліфи і, о, у Викликає дронів з електричними променями, кількість яких дорівнює кількості збігів вище.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -1370,7 +1416,7 @@ th {
 <td>Тривалість: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Рубак</span></div><h1>Рубак</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Рубак</span></div><h1><span class="weapon-icon"></span> Рубак</h1>
 <p>Мітки: Кінетика, Дистанційне<br>Створює масивне обертове лезо під час пострілу з основної зброї, яке рухається до краю екрану, завдаючи шкоди всім ворогам на своєму шляху.</p>
 <h2>Еволюції</h2>
 <table>
@@ -1486,8 +1532,8 @@ th {
 <td>Шанс кровотечі: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Мінне поле</span></div><h1>Мінне поле</h1>
-<p>Мітки: Вибух, Дрон<br>Завершення слів, що починаються з гліфів f, g, h, i Випускає повільні міни, що вибухають при контакті з ворогами.</p>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Мінне поле</span></div><h1><span class="weapon-icon"></span> Мінне поле</h1>
+<p>Мітки: Вибух, Дрон<br>Завершення слів, що починаються з гліфів ф, ж, х, і Випускає повільні міни, що вибухають при контакті з ворогами.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -1590,8 +1636,8 @@ th {
 <td>Рекурсивні міни:<br>    Швидкість появи: +30%<br>    (Швидкість стрільби)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Лезо-пастка</span></div><h1>Лезо-пастка</h1>
-<p>Мітки: Кінетика, Турель<br>Завершення слів, що починаються з гліфів j, k, l, m Розгортає обертову пастку з чотирма лезами.</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Лезо-пастка</span></div><h1><span class="weapon-icon"></span> Лезо-пастка</h1>
+<p>Мітки: Кінетика, Турель<br>Завершення слів, що починаються з гліфів з, к, л, м Розгортає обертову пастку з чотирма лезами.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -1682,8 +1728,8 @@ th {
 <td>Тривалість: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Орбітальний апарат</span></div><h1>Орбітальний апарат</h1>
-<p>Мітки: Хімія, Дистанційне<br>Завершення слів, що починаються з гліфів n, o, p, q Випускає сферу, яка обертається навколо основної зброї, завдаючи шкоди всьому на своєму шляху.</p>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Орбітальний апарат</span></div><h1><span class="weapon-icon"></span> Орбітальний апарат</h1>
+<p>Мітки: Хімія, Дистанційне<br>Завершення слів, що починаються з гліфів н, я, б, г Випускає сферу, яка обертається навколо основної зброї, завдаючи шкоди всьому на своєму шляху.</p>
 <h2>Еволюції</h2>
 <table>
 <thead>
@@ -1786,7 +1832,7 @@ th {
 <td>Швидкість: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Охоронець</span></div><h1>Охоронець</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#weapons">Зброя підвищення рівня</a> / <span>Охоронець</span></div><h1><span class="weapon-icon"></span> Охоронець</h1>
 <p>Мітки: Тепло, Дрон<br>Миттєво запускайте дрон, який стріляє лазерами по ворогах. Активуйте паливні баки, щоб заправити Вартового, який буде споживати паливо і вимкнеться, коли бак спорожніє.</p>
 <h2>Еволюції</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Вороги у Glyphica з’являються процедурно, виходячи з внутрішнього показника, що називається загроза, який зростає в міру просування забігу. У режимі Випробування загроза множиться на поточний рівень Випробування, що робить кожен рівень поступово складнішим. У режимі Нескінченності загроза порівнюється з адаптивною шкалою складності на основі рівня гравця — вищий показник визначає складність генерації.</p>
 <p>Вороги також поділяються на <strong>спеціальних</strong> та <strong>елітних</strong>, кожен з яких має власний класовий ліміт, що обмежує їхню швидкість появи в межах загального рівня загрози.</p>
 <h2>Список ворогів</h2>
-<a href="#drone" class="portal">Дрон</a><a href="#shielddrone" class="portal">Дрон-щит</a><a href="#stalker" class="portal">Сталкер</a><a href="#shooter" class="portal">Стрілець</a><a href="#splitter" class="portal">Розщеплювач</a><a href="#warder" class="portal">Охоронець</a><a href="#swarmer" class="portal">Свормер</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#enemies">Вороги</a> / <span>Дрон</span></div><h1>Дрон</h1>
+<a href="#drone" class="portal">Дрон</a><a href="#shielddrone" class="portal">Дрон-щит</a><a href="#stalker" class="portal">Сталкер</a><a href="#shooter" class="portal">Стрілець</a><a href="#splitter" class="portal">Розщеплювач</a><a href="#wurm" class="portal">Червяк</a><a href="#warder" class="portal">Охоронець</a><a href="#swarmer" class="portal">Свормер</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#enemies">Вороги</a> / <span>Дрон</span></div><h1>Дрон</h1>
 <p>Дрони — це вороги, які невпинно рухаються до вашої основної зброї. Вони іноді можуть з’являтися у двох посилених формах:<br> Збільшені: Утричі більше здоров’я, що робить їх складнішими для знищення.<br> Прискорені: Удвічі більша швидкість руху, що підвищує терміновість їх знищення.</p>
 <h2>Список варіантів</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Здоров’я: 240<br>Шкода: 40<br></td>
+<td>Здоров’я: 80<br>Шкода: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Здоров’я: 2400<br>Шкода: 120<br></td>
+<td>Здоров’я: 800<br>Шкода: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Кількість осколків: 6<br>Здоров&#39;я осколків: 650<br>Осколкові пошкодження: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#enemies">Вороги</a> / <span>Червяк</span></div><h1>Черв&#39;як</h1>
+<p>Черв&#39;як — це багатосегментний ворог, частини якого потрібно знищувати послідовно. Кожен сегмент з&#39;єднаний з наступним незруйнованим бар&#39;єром, який блокує всі снарядні атаки.</p>
+<h2>Список варіантів</h2>
+<table>
+<thead>
+<tr>
+<th>Зображення</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Кількість сегментів: 2<br>Здоров&#39;я сегментів: 80<br>Пошкодження сегментів: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Кількість сегментів: 3<br>Здоров&#39;я сегментів: 200<br>Пошкодження сегментів: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Кількість сегментів: 4<br>Здоров&#39;я сегментів: 1000<br>Пошкодження сегментів: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Кількість сегментів: 4<br>Здоров&#39;я сегментів: 1800<br>Пошкодження сегментів: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <a href="#enemies">Вороги</a> / <span>Охоронець</span></div><h1>Охоронець</h1>
 <p>Охоронець — це елітний ворог, що з’являється на пізньому етапі гри. Має обертовий щит, який блокує шкоду з того напрямку, куди спрямований. Крім того, поки Охоронець живий, він створює захисну ауру для навколишніх ворогів, роблячи їх невразливими, доки його не буде знищено.</p>
 <h2>Список варіантів</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <span>Предмети-здобич</span></div><h1>Предмети-здобич</h1>
 <p>Здобич, або лут-предмети отримуються під час забігу шляхом активації підбирача зі скринькою. Відображається випадковий набір луту, і вибір одного з них надає пасивний бонус, який залишається активним до кінця забігу.</p>
 <p>Здобич класифікується як <strong>звичайна</strong>, <strong>незвичайна</strong> і <strong>рідкісна</strong>, що визначає ймовірність їх появи в пропозиції. Перемога над босом у режимі Випробування винагороджується скринькою, яка містить лише рідкісні предмети.</p>
-<h2>Список рідкісної здобичі</h2>
+<details><summary>Список рідкісної здобичі</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Назва</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Провидець</td>
 <td>Якщо у вас 0 перебросів при вході в підвищення рівня, еволюцію чи екран луту, ви отримаєте 1 переброс.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Імпровізація</td>
 <td>Уся зброя-дрони:<br> Шанс додаткового дрона: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Грабунок</td>
 <td>+1 опція здобичі</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Багатоцільовість</td>
 <td>Уся дистанційна зброя отримує +1% шансу критичного удару за кожну зброю у вашій власності.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Великий магніт</td>
 <td>Ви маєте 50% шансу автоматично зібрати підбирачі, коли ті зникають.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Обмороження</td>
 <td>Вороги отримують шкоду з часом, коли вони Заморожені.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Некробомба</td>
 <td>Під час знищення ворога за допомогою вибухового критичного урону викликає серію вибухів навколо позиції знищеного ворога.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Трофей</td>
 <td>При знищенні ворога критичним ударом, 30% шанс на появу предметів «Перекидання», «Щит» або «Здоров&#39;я».</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Афтершок</td>
 <td>Критичний урон завжди накладає статус-ефект.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вампіризм</td>
 <td>Відновлює здоров’я, рівне 5% від кінетичного критичного урону.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мудрість</td>
 <td>Після підняття щита отримайте 10 Убивств до всіх Еволюцій зброї.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Блазень</td>
 <td>Після підбору перебросу завдає випадкову кількість шкоди (від 0 до 100) всім ворогам на екрані.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Останній рубіж</td>
 <td>Після знищення Щита ви отримуєте Подвійну Шкоду.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Потрійна шкода</td>
 <td>Усі підбирачі Подвійної Шкоди тепер стають Потрійною Шкодою.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Тріщина</td>
 <td>Уся шкода по Замороженим ворогам збільшується на 50%.<br><br>Модифікатор множиться.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Аскет</td>
 <td>Після виходу з екрану луту ви отримуєте +10% шкоди за кожен невикористаний переброс на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гармонізатор</td>
 <td>Уся екіпірована зброя отримує +1 рівень Еволюції.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Безсмертя</td>
 <td>Якщо ваша Головна зброя ось-ось буде знищена, її здоров’я буде зменшено до 1 замість знищення. Цю здібність можна використовувати лише раз на 2 хвилини.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Просвітлення</td>
 <td>Після знищення ворога критичним ударом, усі еволюції зброї отримують +1 Убивства.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Фінішер</td>
 <td>Завершення слова ворога після його знищення дає +10% шкоди на 10 секунд. Складається до 3 разів.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вбивчий</td>
 <td>Уся зброя-дрони:<br> +50% Шкода</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кат</td>
 <td>Уся турельна зброя:<br> +50% Шкода</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Деградація</td>
 <td>Уся дистанційна зброя:<br> +50% Шкода</td>
 </tr>
 </tbody></table>
-<h2>Список незвичайної здобичі</h2>
+</details>
+
+<details><summary>Список незвичайної здобичі</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Назва</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Цунамі</td>
 <td>Уся вибухова зброя:<br> Дальність: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ударна хвиля</td>
 <td>Уся вибухова зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Знищення</td>
 <td>Уся вибухова зброя:<br> Множник критичного удару: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Спуск</td>
 <td>Уся вибухова зброя:<br> Шанс 2x шкоди: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Розбивний постріл</td>
 <td>Уся кінетична зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Виверження</td>
 <td>Уся кінетична зброя:<br> Швидкість стрільби: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Проникач</td>
 <td>Уся кінетична зброя:<br> Шанс критичного удару: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Провісник</td>
 <td>Уся кінетична зброя:<br> Шанс ефекту кровотечі: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пекло</td>
 <td>Уся теплова зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Плазматор</td>
 <td>Уся теплова зброя:<br> Дальність: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Фенікс</td>
 <td>Уся теплова зброя:<br> Шанс перебросу: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Піроклізм</td>
 <td>Уся теплова зброя:<br> Шанс ефекту підпалення: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кріостаз</td>
 <td>Уся холодова зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Льодовик</td>
 <td>Уся холодова зброя:<br> Шанс ефекту замороження: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Відштовхувач</td>
 <td>Уся холодова зброя:<br> Шанс щита: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кріоген</td>
 <td>Уся холодова зброя:<br> Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Перевантаження</td>
 <td>Уся електрична зброя:<br> Шанс ефекту Статики: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мегабуря</td>
 <td>Уся електрична зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Підсилювач</td>
 <td>Уся електрична зброя:<br> Швидкість стрільби: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сингулярність</td>
 <td>Уся електрична зброя:<br> Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Зараження</td>
 <td>Усі хімічні види зброї:<br>  Шанс ефекту зараження: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сепсис</td>
 <td>Усі хімічні види зброї:<br>  Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Судома</td>
 <td>Усі хімічні види зброї:<br>  Швидкість атаки: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Розпад</td>
 <td>Усі хімічні види зброї:<br>  Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Нескінченність</td>
 <td>Уся зброя-дрони:<br> Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гіпердвигуни</td>
 <td>Уся зброя-дрони:<br> Швидкість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Надрозум</td>
 <td>Уся зброя-дрони:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Морозне прокляття</td>
 <td>Уся зброя-дрони:<br> Шанс випадіння Замороження: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Універсальне підсилення</td>
 <td>Уся дистанційна зброя:<br> Дальність: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Інсталінк</td>
 <td>Уся дистанційна зброя:<br> Швидкість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Команда</td>
 <td>Уся дистанційна зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Енергетик</td>
 <td>Уся турельна зброя:<br> Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пекельна буря</td>
 <td>Уся турельна зброя:<br> Швидкість стрільби: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Точність</td>
 <td>Уся турельна зброя:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Натиск</td>
 <td>Усі статус-ефекти:<br> Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мука</td>
 <td>Усі статус-ефекти:<br> Тривалість: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Джекпот</td>
 <td>Всі ефекти лута:<br>  Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Таємниця</td>
 <td>Вся зброя лута:<br>  Шанс критичного удару: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бунт</td>
 <td>Усі Ефекти Покращень:<br>  Шкода: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>За Межею</td>
 <td>Усі Ефекти Покращень:<br>  Дальність: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Арсенал</td>
 <td>Уся зброя:<br> Шкода: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Рятівний комплект</td>
 <td>Уся зброя:<br> Тривалість: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Зоряний огляд</td>
 <td>Уся зброя:<br> Дальність: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Упритул</td>
 <td>Вороги, вражені поблизу Головної Зброї, отримують +20% шкоди.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Роздратування</td>
 <td>Уся зброя:<br> Шанс статус-ефекту: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кріотехніка</td>
 <td>Підбирачі Замороження:<br> Шанс випадіння: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Войовничість</td>
 <td>Підбирачі Подвійної шкоди:<br> Шанс випадіння: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Піньята</td>
 <td>Глобальний ефект:<br>  Частота появи здобичі: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Крихка гармата</td>
 <td>Уся Зброя:<br>  Шкода: +30%<br><br>Головна Зброя:<br>  Макс. Здоров’я: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Регенерація</td>
 <td>Ви відновлюєте 5% від максимального здоров’я, коли активуєте лут, замороження, подвійну шкоду, переброс або щит.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ерозія</td>
 <td>Зброя зі шкодою періодичної дії може завдавати критичні удари.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Розбивання</td>
 <td>Уся Кінетична Зброя отримує +5% Шанс критичного удару проти заморожених ворогів.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Стійкість</td>
 <td>Активація щита збільшує вашу глобальну тривалість на 10% на 10 секунд. Складається до 3 разів.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Азартний гравець</td>
 <td>Додає 1 переброс і збільшує макс. перебросів до 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Захисник</td>
 <td>Додає 1 щит і збільшує макс. щитів до 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бездоганність</td>
 <td>Кожне x17 Ідеальне введення також збільшує вашу глобальну Швидкість стрільби на 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вивільнення</td>
 <td>При помилковому введенні завдає 20 Вибухової шкоди всім ворогам за кожне x17 Ідеальне введення.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Марнування</td>
 <td>Уся зброя з ефектом шкоди періодичної дії:<br> +35% швидкість стрільби</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Зів’янення</td>
 <td>Усі статус-ефекти:<br> +35% швидкість стрільби</td>
 </tr>
 </tbody></table>
-<h2>Список звичайної здобичі</h2>
+</details>
+
+<details><summary>Список звичайної здобичі</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Назва</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Вибух</td>
 <td>Уся вибухова зброя:<br> Дальність: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Детонація</td>
 <td>Уся вибухова зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удар</td>
 <td>Уся кінетична зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Залп</td>
 <td>Уся кінетична зброя:<br> Швидкість стрільби: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Обпалення</td>
 <td>Уся теплова зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вугілля</td>
 <td>Уся теплова зброя:<br> Дальність: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вічна мерзлота</td>
 <td>Уся холодова зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Холод</td>
 <td>Уся холодова зброя:<br> Тривалість: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удар струмом</td>
 <td>Уся електрична зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Струм</td>
 <td>Уся електрична зброя:<br> Швидкість стрільби: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Канал зв’язку</td>
 <td>Уся зброя-дрони:<br> Тривалість: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Жало</td>
 <td>Уся зброя-дрони:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Досяжність</td>
 <td>Уся дистанційна зброя:<br> Дальність: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удар дистанційно</td>
 <td>Уся дистанційна зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Укріплення</td>
 <td>Уся турельна зброя:<br> Тривалість: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бастіон</td>
 <td>Уся турельна зброя:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Хвороба</td>
 <td>Усі статус-ефекти:<br> Шкода: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Резонанс</td>
 <td>Усі статус-ефекти:<br> Тривалість: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Домінація</td>
 <td>Уся зброя:<br> Шкода: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Витривалість</td>
 <td>Уся зброя:<br> Тривалість: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Проєкція</td>
 <td>Уся зброя:<br> Дальність: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Уламки</td>
 <td>Уся вибухова зброя:<br> Дальність: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удар</td>
 <td>Уся вибухова зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Випаровування</td>
 <td>Уся вибухова зброя:<br> Множник криту: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Скидання смерті</td>
 <td>Уся вибухова зброя:<br> Шанс 2x шкоди: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Порожні кулі</td>
 <td>Уся кінетична зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Черга</td>
 <td>Уся кінетична зброя:<br> Швидкість стрільби: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Проникнення</td>
 <td>Уся кінетична зброя:<br> Шанс критичного удару: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Жнець</td>
 <td>Уся кінетична зброя:<br> Шанс ефекту кровотечі: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Обпалення</td>
 <td>Уся теплова зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Радіатор</td>
 <td>Уся теплова зброя:<br> Дальність: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Відродження</td>
 <td>Уся теплова зброя:<br> Шанс перебросу: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Займистість</td>
 <td>Уся теплова зброя:<br> Шанс ефекту підпалення: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гіпотермія</td>
 <td>Уся холодова зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Нижче нуля</td>
 <td>Уся холодова зброя:<br> Шанс ефекту замороження: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Відхилення</td>
 <td>Уся холодова зброя:<br> Шанс щита: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Охолодження</td>
 <td>Уся холодова зброя:<br> Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Прихований заряд</td>
 <td>Уся електрична зброя:<br> Шанс ефекту Статики: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Конденсатор</td>
 <td>Уся електрична зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Модулятор</td>
 <td>Уся електрична зброя:<br> Швидкість стрільби: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Концентрація</td>
 <td>Уся електрична зброя:<br> Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Зараза</td>
 <td>Уся хімічна зброя:<br>  Шанс ефекту отруєння: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Токсин</td>
 <td>Уся хімічна зброя:<br>  Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пульсація</td>
 <td>Уся хімічна зброя:<br>  Швидкість атаки: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Затримка</td>
 <td>Уся хімічна зброя:<br>  Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Розширювач</td>
 <td>Уся зброя-дрони:<br> Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Турбіни</td>
 <td>Уся зброя-дрони:<br> Швидкість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Автомати</td>
 <td>Уся зброя-дрони:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Холодні серця</td>
 <td>Уся зброя-дрони:<br> Шанс випадіння Замороження: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Підсилення сигналу</td>
 <td>Уся дистанційна зброя:<br> Дальність: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Нульова затримка</td>
 <td>Уся дистанційна зброя:<br> Швидкість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Керування</td>
 <td>Уся дистанційна зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Стабілізатор</td>
 <td>Уся турельна зброя:<br> Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Автогармата</td>
 <td>Уся турельна зброя:<br> Швидкість стрільби: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Калібрування</td>
 <td>Уся турельна зброя:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Виснаження</td>
 <td>Усі статус-ефекти:<br> Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Страждання</td>
 <td>Усі статус-ефекти:<br> Тривалість: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Знахідка</td>
 <td>Усі Ефекти Луту:<br>  Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Таємниця</td>
 <td>Усі Ефекти Луту:<br>  Шанс критичного удару: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Форсаж</td>
 <td>Усі Ефекти Покращень:<br>  Шкода: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Далекомір</td>
 <td>Усі Ефекти Покращень:<br>  Дальність: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Озброєння</td>
 <td>Уся зброя:<br> Шкода: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Набір виживання</td>
 <td>Уся зброя:<br> Тривалість: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Телескоп</td>
 <td>Уся зброя:<br> Дальність: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Медпакет</td>
 <td>Додає 3 медпакетів до вашого інвентаря.<br><br>Медпакети зцілюють до 30% від максимального здоров’я Основної Турелі.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Боєголовка</td>
 <td>Додає 2 боєголовок до вашого інвентаря.<br><br>Боєголовки спричиняють серію потужних вибухів, що розходяться від Основної Зброї.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сироватка</td>
 <td>Додає 2 сироваток до вашого інвентаря.<br><br>Сироватки дають 25% шансу критичного удару на 10 секунд.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кріоядро</td>
 <td>Додає 2 кріоядро до вашого інвентаря.<br><br>Кріоядра запускають глобальний ефект Замороження.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Убивча пігулка</td>
 <td>Додає 2 убивчих пігулок до вашого інвентаря.<br><br>Убивчі пігулки запускають глобальний ефект Подвійної Шкоди.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Хвиля полум&#39;я</td>
 <td>Додає 2 Хвиль полум&#39;я до вашого інвентаря.<br><br>Хвилі полум&#39;я підпалюють усіх видимих ворогів ціною 10% поточного здоров’я Головної Турелі.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Кишенькова турель</td>
 <td>Додає 1 кишенькову турель до вашого інвентарю.<br><br>Кишенькова турель створює автоматичну турель поруч із групами ворогів.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Епіцентр</td>
 <td>Вогняна Зброя завдає +20% шкоди, коли ціль знаходиться близько до Головної Зброї.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Холодоагент</td>
 <td>Підбирачі Замороження:<br> Тривалість: +20%<br> Шанс випадіння: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вразливість</td>
 <td>Підбирачі Подвійної шкоди:<br> Тривалість: +20%<br> Шанс випадіння: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Точність</td>
 <td>Уся зброя:<br> Шанс критичного удару: +1%<br> Множник критичного удару: +50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Аптечка</td>
 <td>Відновити 100 здоров’я.<br><br>Поточне здоров’я: 300 / 300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Щит</td>
 <td>Додати 1 Щит.<br><br>Поточні щити: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Переброс</td>
 <td>Додати 1 Переброс.<br><br>Поточні переброси: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Заражувач</td>
 <td>Кожен Заражувач збільшує шкоду періодичної дії на +4%. Цей бонус подвоюється, коли ви поруч з Основною Туреллю.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <span>Аугменти</span></div><h1>Аугменти</h1>
 <p>Аугменти — це постійні покращення, які можна розблокувати за Монети (§), що здобуваються під час забігу. На початку кожного забігу гравець має обмежену кількість слотів для встановлення розблокованих аугментів. Кількість доступних слотів залежить від обраного рівня Знамення.</p>
 <p>Кожен аугмент зазвичай має специфічні умови, що визначають його ефективність. Щоб отримати максимальну користь, звертай увагу на синергію між аугментами та підлаштовуй їх під свій стиль гри.</p>
-<h2>Кодекс: Основна зброя</h2>
+<details><summary>Кодекс: Основна зброя</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Броньований</td>
 <td>50 §,<br>200 §</td>
 <td>Основна зброя:<br> Здоров’я: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Нетерплячий</td>
 <td>50 §</td>
 <td>На початку кожного випробування або нескінченної гри отримуйте один рівень. За кожні 4 хвилини, прожиті в нескінченному режимі, отримуйте один рівень.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Азартний гравець</td>
 <td>50 §</td>
 <td>Кожен використаний переброс дає Основній Зброї +20% шкоди на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Бездоганний</td>
 <td>100 §</td>
 <td>Ідеальне введення дає +1,5% шансу критичного удару за кожен стек.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Туман</td>
 <td>200 §,<br>500 §</td>
 <td>Якщо у вас менше 50% здоров’я, отримуєте +50% глобальної швидкості стрільби.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Відданість</td>
 <td>200 §</td>
 <td>Головна зброя отримує +25% до шкоди за кожен порожній слот зброї.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Дрони</h2>
+</details>
+
+<details><summary>Кодекс: Дрони</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Армада</td>
 <td>200 §</td>
 <td>20% шанс на появу додаткового дрона щоразу, коли з’являється дрон.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Різноманітність</td>
 <td>50 §</td>
 <td>За кожну не-дронову зброю збільшується тривалість усіх дронів на 20%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Бліцкриг</td>
 <td>50 §</td>
 <td>Покращення швидкості дронів також діють на їхню шкоду.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Помста</td>
 <td>300 §</td>
 <td>Щоразу, коли знищується Щит, усі дрони самознищуються, завдаючи вибухову шкоду.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Цап-відбувайло</td>
 <td>100 §</td>
 <td>Помилкове введення випадковим чином знищує існуючий дрон, а не зараховується як помилка введення.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Трофеї</td>
 <td>200 §</td>
 <td>Дрони можуть скидати підбирачі після завершення роботи.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Турель</h2>
+</details>
+
+<details><summary>Кодекс: Турель</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Фортеця</td>
 <td>100 §,<br>400 §</td>
 <td>Кожна еволюція турелі також надає +50 до максимального здоров&#39;я основної зброї.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Мережа</td>
 <td>50 §</td>
 <td>Кожна додаткова турель збільшує скорострільність всіх турелей на 10%, максимум до 50%.”</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Польова розвідка</td>
 <td>50 §</td>
 <td>Активація підбирача надає +30% дальності всім поточним Турелям. Ефект не складається.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Темний ретранслятор</td>
 <td>500 §</td>
 <td>Снаряд випадково відбивається між Турелями, завдаючи електричну шкоду.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Спостерігач</td>
 <td>100 §</td>
 <td>Якщо ви не атакували протягом 3 секунд, усі Турелі отримують +30% шкоди до наступної вашої атаки.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Слабкість</td>
 <td>200 §</td>
 <td>Вороги в радіусі Турелі отримують на 30% більше шкоди з інших джерел.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Шкода періодичної дії</h2>
+</details>
+
+<details><summary>Кодекс: Шкода періодичної дії</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Корозія</td>
 <td>500 §</td>
 <td>Шкода періодичної дії тепер може бути критичною.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Мінога</td>
 <td>200 §</td>
 <td>Шкода періодичної дії поблизу Основної Зброї лікує її на 1 здоров’я.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Завзятість</td>
 <td>100 §,<br>300 §</td>
 <td>Збільшує тривалість усієї зброї зі шкодою періодичної дії на 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Заражувачі</td>
 <td>50 §</td>
 <td>Додає Заражувачі до пулу здобичі. Кожен дає +4% шкоди періодичної дії. Ефект подвоюється біля Основної Зброї.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Переконання</td>
 <td>100 §</td>
 <td>Зброя зі шкодою з періодичної дії +40% швидкості стрільби, поки у вас максимум перебросів.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Інфектор</td>
 <td>300 §,<br>500 §</td>
 <td>Зброя зі шкодою періодичної дії має +3% шансу статус-ефекту.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Дистанційна</h2>
+</details>
+
+<details><summary>Кодекс: Дистанційна</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Ближній бій</td>
 <td>100 §</td>
 <td>Уся дистанційна шкода вважається такою, що завдана поруч із Основною Зброєю.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Їжаки</td>
 <td>200 §</td>
 <td>При критичному ударі дистанційної зброї вийде 12 кальтропів, атакуючи проходячих ворогів і підвищуючи шанс кровотечі залежно від шкоди.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Їдкі набої</td>
 <td>500 §</td>
 <td>Шанс випадіння Їдких Набоїв — додає 10 базової Хімічної шкоди до Дистанційної Зброї на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Піратство</td>
 <td>50 §</td>
 <td>За кожну зброю з луту збільшується вся Дистанційна шкода на 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Визволення</td>
 <td>100 §</td>
 <td>Уся Дистанційна зброя отримує +40% дальності, поки у вас максимум щитів.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Снайпер</td>
 <td>200 §</td>
 <td>Покращення дальності Дистанційної зброї також діють на її шкоду.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Електрика</h2>
+</details>
+
+<details><summary>Кодекс: Електрика</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Вольтовий вибух</td>
 <td>200 §</td>
 <td>Покращення тривалості Електрики також додають 25% свого значення до шансу накладення Статики.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Штормова батарея</td>
 <td>500 §</td>
 <td>Головна турель завдає електричної шкоди найближчим ворогам. Кожна оснащена Електрична зброя підвищує базову шкоду.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Іскри</td>
 <td>300 §</td>
 <td>При критичному ударі Електричною зброєю випускає 6 Іскор Блискавки, що масштабують шкоду від шансу критмчного удару та його множника.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ефективна Мережа</td>
 <td>100 §</td>
 <td>За кожну неелектричну зброю збільшує тривалість усіх ефектів Електрики на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Люте Розрядження</td>
 <td>300 §</td>
 <td>Статика завдає більше шкоди та має більший радіус дії. Вороги, вбиті Статикою, мають 50% шанс поширити її на найближчих ворогів.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Електрифікована Турель</td>
 <td>100 §</td>
 <td>Головна зброя отримує +5 базової шкоди Електрикою та збільшує шкоду всієї електричної зброї на 10%.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Вогонь</h2>
+</details>
+
+<details><summary>Кодекс: Вогонь</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Піромантія</td>
 <td>200 §</td>
 <td>Збільшує шкоду Вогнем на 2% за кожного Підпаленого ворога. Підпал завдає додаткової шкоди залежно від своєї тривалості та сили.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Коагуляція</td>
 <td>200 §</td>
 <td>Бонуси до дальності також застосовуються до шкоди, завданої поблизу Головної зброї для Вогняної зброї/ефектів.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ядро Печі</td>
 <td>100 §</td>
 <td>Головна турель отримує +5 базової шкоди Вогнем. Уся шкода Вогнем збільшується на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Вогняна куля</td>
 <td>500 §</td>
 <td>Вистріл з Головної зброї випускає повільну Вогняну кулю, яка завдає шкоди Вогнем ворогам на своєму шляху. Максимум 1 активна куля.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Хвиля полум&#39;я</td>
 <td>250 §</td>
 <td>Додає витратний предмет <em>Хвиля полум’я</em> до початкового інвентарю та пулу здобичі. Підпалює всіх видимих ворогів та споживає 10% поточного здоров’я Головної турелі.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Палаюча Слава</td>
 <td>50 §</td>
 <td>Вороги поблизу Головної зброї отримують +25% шкоди Вогнем та мають додаткові 12% шансу загорітися від вогняної шкоди.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Кінетична зброя</h2>
+</details>
+
+<details><summary>Кодекс: Кінетична зброя</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Назва</div></th>
-<th><div style="width:50px">Ціна</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
 <th>Опис</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Стрілець</td>
 <td>500 §</td>
 <td>Збільшує максимальний Словесний ривок на 5. Кожен ранг словесного ривка дає +2,5% до кінетичного шкоди.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Кровожерливість</td>
 <td>200 §</td>
 <td>Збільшує кінетичну швидкість стрільби на 2% і дальність на 1% за кожного ворога, що стікає кров&#39;ю.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Заряджені патрони</td>
 <td>300 §</td>
 <td>Критичні удари з кінетичною шкодою мають 40% шанс накласти на ворога випадковий статус.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Шрапнель</td>
 <td>500 §</td>
 <td>Шанс випадання шрапнелі — додає 10 базової кінетичної шкоди до кінетичної зброї на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Комбінована зброя</td>
 <td>100 §</td>
 <td>За кожну некінетичну зброю в екіпіровці збільшує всю кінетичну шкоду на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Кишенькова турель</td>
 <td>200 §</td>
 <td>Додає витратний предмет «Кишенькова турель» в інвентар і пул здобичі. Кишенькова турель створює турель і може бути взята після закінчення терміну дії.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Кодекс: Хімічна зброя</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Назва</div></th>
+<th><div style="width:70px">Ціна</div></th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Реанімація</td>
+<td>500 §</td>
+<td>При вбивстві хімічною зброєю з 30% ймовірністю з&#39;являється «Реанімований дрон», який шукає ворогів і завдає їм хімічної шкоди.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Надмірний вплив</td>
+<td>300 §</td>
+<td>Хімічний статус тепер може накопичуватися до 3 разів, при цьому шкода від зараження збільшується в кілька разів за кожен накопичений ефект.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Гібридизація</td>
+<td>500 §</td>
+<td>25% від усіх бафів шкоди, застосованих до інших типів шкоди, також застосовуються до хімічної шкоди.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Викид відходів</td>
+<td>300 §</td>
+<td>Кожні 12 секунд застосовує зараження до всіх ворогів поблизу основної зброї.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Реактивне масштабування</td>
+<td>100 §</td>
+<td>Кожна укомплектована хімічна зброя збільшує хімічний урон на 10% і тривалість дії хімічної зброї на 20%.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Токсичні опіки</td>
+<td>200 §</td>
+<td>Підпал дає хімічне ушкодження, а не теплове. Зараження має 10% шанс на підпал при кожному тику, що збільшується шансом критичного удару.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Головна</a> / <span>Знамення</span></div><h1>Знамення</h1>
+<p>Знамення — це модифікатори складності, які випадковим чином обираються з пулу на початку Випробування або Нескінченного режиму. Кожне Знамення збільшує складність певним чином, а вищі рівні Знамень відкривають поступово складніші модифікатори.</p>
+<p>Знамення поділяються на три рівні. Знамення 1 рівня забезпечують помірну складність, Знамення 2 рівня більш вимогливі, а Знамення 3 рівня представляють найбільшу складність. Проходження Випробувань на певному рівні Знамення відкриває наступний рівень, збільшуючи кількість одночасно активних Знамень під час гри до максимуму в 6. Завершення ігор з активними Знаменнями нагороджує більшою кількістю Монет та відкриває додатковий контент.</p>
+<details><summary>Знамення 1 рівня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Назва</div></th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Потужні вороги</td>
+<td>У ворогів на 50% більше здоров’я.</td>
+</tr>
+<tr>
+<td>Довші слова</td>
+<td>Слова довші на один символ.</td>
+</tr>
+<tr>
+<td>Немає буфів</td>
+<td>Немає подвійної шкоди або заморожування.</td>
+</tr>
+<tr>
+<td>Швидкі вороги</td>
+<td>Вороги на 5% швидші.</td>
+</tr>
+<tr>
+<td>Менше варіантів</td>
+<td>На один варіант трофеїв менше.</td>
+</tr>
+<tr>
+<td>Ослаблення</td>
+<td>Гравець завдає на 20% менше шкоди.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Знамення 2 рівня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Назва</div></th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Крихка зброя</td>
+<td>Міцність основної зброї зменшена вдвічі.</td>
+</tr>
+<tr>
+<td>Витривалі вороги</td>
+<td>Здоров&#39;я ворогів збільшено на 100%.</td>
+</tr>
+<tr>
+<td>Без перекидання</td>
+<td>Більше немає перекидання.</td>
+</tr>
+<tr>
+<td>Без щитів</td>
+<td>Більше немає щитів.</td>
+</tr>
+<tr>
+<td>Швидші вороги</td>
+<td>Вороги на 10% швидші.</td>
+</tr>
+<tr>
+<td>Без критичних ударів</td>
+<td>Ваша зброя не завдає критичних ударів.</td>
+</tr>
+<tr>
+<td>Сталкери</td>
+<td>Шанс появи ворогів із частково прихованими словами.</td>
+</tr>
+<tr>
+<td>Хробаки</td>
+<td>Шанс появи ворогів із ланцюжком слів.</td>
+</tr>
+<tr>
+<td>Сліпий ввід тексту</td>
+<td>Під час набору тексту не відображається прогрес.</td>
+</tr>
+<tr>
+<td>Швидке відновлення</td>
+<td>Ефекти статусів на ворогів зникають удвічі швидше.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Знамення 3 рівня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Назва</div></th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Покарання за помилки</td>
+<td>Отримуйте 3 очки шкоди за кожну помилку.</td>
+</tr>
+<tr>
+<td>Туман війни</td>
+<td>Ви не бачите слів, що знаходяться далеко.</td>
+</tr>
+<tr>
+<td>Вороги-титани</td>
+<td>Вороги мають на 150% більше здоров&#39;я.</td>
+</tr>
+<tr>
+<td>Зашифровані слова</td>
+<td>Деякі вороги мають зашифровані слова.</td>
+</tr>
+<tr>
+<td>Подвійні слова</td>
+<td>Деякі вороги мають подвійні слова.</td>
+</tr>
+<tr>
+<td>Присутність еліти</td>
+<td>Вартові та Рої з&#39;являються вдвічі частіше.</td>
+</tr>
+<tr>
+<td>Вороги зі щитами</td>
+<td>Вороги з&#39;являються зі щитом, що захищає від одного удару.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Головна</span></div><h1>Офіційна сторінка вікі Glyphica</h1>
 <h2>Вітаємо, Друкарю</h2>
 <p>Ласкаво просимо до офіційної вікі гри Glyphica: Typing Survival! Перевір свої навички набору в цій грі на виживання проти орд ворогів, де швидкість і точність — це твої головні види зброї. Оснащуйся потужними інструментами, що перетворюють твою майстерність друку в нищівні атаки проти безжальних супротивників. Дізнайся більше та придбай гру в Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Ця сторінка вікі слугує повним путівником по функціях, механіках і контенту, доступному в версії раннього доступу Glyphica. Наша мета — підтримувати актуальність інформації в міру наближення до повного релізу (версія 1.0). Вікі структурована за розділами, наведеними у змісті, і регулярно оновлюється разом із розвитком гри.</p>
 <h2>Зміст</h2>
-<a href="#main_weapons" class="portal">Основна зброя</a><a href="#weapons" class="portal">Зброя підвищення рівня</a><a href="#enemies" class="portal">Вороги</a><a href="#loot" class="portal">Предмети-здобич</a><a href="#loot1" class="portal">Аугменти</a></div></div></div>
+<a href="#main_weapons" class="portal">Основна зброя</a><a href="#weapons" class="portal">Зброя підвищення рівня</a><a href="#enemies" class="portal">Вороги</a><a href="#loot" class="portal">Предмети-здобич</a><a href="#loot1" class="portal">Аугменти</a><a href="#omens" class="portal">Знамення</a></div></div></div>
 </body>
 </html>

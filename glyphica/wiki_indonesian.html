@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Senjata utama adalah senjata awal di <em>Glyphica</em> dan memainkan peran sentral dalam permainan. Ketika Kamu mengetik kata yang ditampilkan di atas musuh, senjata utama akan mengunci musuh tersebut sebagai target. Setiap senjata utama memiliki efek dan mekanisme yang unik, sehingga membutuhkan strategi yang berbeda untuk digunakan secara efektif.</p>
 <p>Sementara beberapa senjata utama menekankan kecepatan mengetik (WPM), senjata lainnya menuntut pendekatan yang lebih taktis. Seperti senjata lain dalam game ini, senjata utama dapat ditingkatkan dan berevolusi, meningkatkan kemampuan dan keefektifannya seiring dengan kemajuan Kamu.</p>
 <h2>Daftar Senjata Utama</h2>
-<a href="#repeater" class="portal">Repeater</a><a href="#heatray" class="portal">Sinar Panas</a><a href="#barrage" class="portal">Rentetan</a><a href="#splattershot" class="portal">Tembakan Lendir</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Wildcard</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Repeater</span></div><h1>Repeater</h1>
+<a href="#repeater" class="portal">Repeater</a><a href="#heatray" class="portal">Sinar Panas</a><a href="#barrage" class="portal">Rentetan</a><a href="#splattershot" class="portal">Tembakan Lendir</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Wildcard</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Repeater</span></div><h1><span class="weapon-icon"></span> Repeater</h1>
 <p>Tags: Kinetik, Utama<br>Senjata penghancur yang menembakkan sejumlah peluru dalam semburan pendek.</p>
 <h2>Evolusi</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Jarak: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Sinar Panas</span></div><h1>Sinar Panas</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Sinar Panas</span></div><h1><span class="weapon-icon"></span> Sinar Panas</h1>
 <p>Tags: Panas, Utama, D.O.T.<br>Menembakkan seberkas cahaya terkonsentrasi yang sangat akurat dan konstan yang menimbulkan kerusakan seiring waktu.</p>
 <h2>Evolusi</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Laju Tembakan: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Rentetan</span></div><h1>Rentetan</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Rentetan</span></div><h1><span class="weapon-icon"></span> Rentetan</h1>
 <p>Tags: Peledak, Utama<br>Menembakkan rentetan roket peledak ke target dan sekitarnya. Mengisi ulang daya seiring waktu.</p>
 <h2>Evolusi</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Kecepatan Reload: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Tembakan Lendir</span></div><h1>Tembakan Lendir</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Tembakan Lendir</span></div><h1><span class="weapon-icon"></span> Tembakan Lendir</h1>
 <p>Tags: Kimia, Utama, D.O.T.<br>Menembakkan gumpalan lendir ke lawan untuk melumpuhkan dan merusak mereka.</p>
 <h2>Evolusi</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Durasi: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Overmind</span></div><h1>Overmind</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Overmind</span></div><h1><span class="weapon-icon"></span> Overmind</h1>
 <p>Tags: Listrik, Drone, Utama<br>Memerintahkan berbagai macam drone untuk menimbulkan kerusakan energi pada musuh.</p>
 <h2>Evolusi</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Null Field</td>
-<td>Musuh yang menjadi target Overmind akan melambat dan menerima 50% kerusakan dari efek listrik dan senjata lainnya.</td>
+<td>Musuh yang menjadi target Overmind akan melambat dan menerima +50% kerusakan dari efek listrik dan senjata lainnya.</td>
 </tr>
 <tr>
 <td>Null Field II</td>
@@ -682,7 +728,7 @@ th {
 <td>Tingkat Serangan: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Wildcard</span></div><h1>Wildcard</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#main_weapons">Senjata Utama</a> / <span>Wildcard</span></div><h1><span class="weapon-icon"></span> Wildcard</h1>
 <p>Tags: Kinetik, Panas, Dingin, Listrik, Utama<br>Tembakanmu berikutnya dipilih secara acak dari empat senjata yang memungkinkan, jadi tembaklah dengan hati-hati.</p>
 <h2>Evolusi</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>Peningkatan level Senjata diperoleh selama bermain saat Kamu naik level. Setelah dipilih, senjata tersebut akan ditambahkan ke gudang senjata Kamu. Setiap senjata memiliki metode aktivasi yang unik, tetapi sebagian besar dapat dipicu dengan mengetik dan membidik dengan senjata utama.</p>
 <p>Maksimal empat senjata dapat diperoleh dengan cara ini. Setelah senjata ditambahkan ke gudang senjata Kamu, peningkatannya tersedia di kumpulan peningkatan level, sehingga Kamu dapat meningkatkan kemampuannya seiring kemajuan Kamu.</p>
 <h2>Daftar Peningkatan Level Senjata</h2>
-<a href="#spectre" class="portal">Hantu</a><a href="#sentry" class="portal">Penjaga</a><a href="#tesla" class="portal">Ranjau Tesla</a><a href="#oscillator" class="portal">Osilator</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Pemburu</a><a href="#chopper" class="portal">Pemotong</a><a href="#minefield" class="portal">Ladang Ranjau</a><a href="#blade" class="portal">Perangkap Pisau</a><a href="#orbiter" class="portal">Pengorbit</a><a href="#guardian" class="portal">Pelindung</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Hantu</span></div><h1>Hantu</h1>
+<a href="#spectre" class="portal">Hantu</a><a href="#sentry" class="portal">Penjaga</a><a href="#tesla" class="portal">Ranjau Tesla</a><a href="#oscillator" class="portal">Osilator</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Pemburu</a><a href="#chopper" class="portal">Pemotong</a><a href="#minefield" class="portal">Ladang Ranjau</a><a href="#blade" class="portal">Perangkap Pisau</a><a href="#orbiter" class="portal">Pengorbit</a><a href="#guardian" class="portal">Pelindung</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Hantu</span></div><h1><span class="weapon-icon"></span> Hantu</h1>
 <p>Tags: Kinetik, Drone<br>Melengkapi kata yang mengandung glif a, e, o Memunculkan drone cepat jarak dekat yang setara dengan jumlah drone yang cocok.</p>
 <h2>Evolusi</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>Menyelesaikan kata di atas 7 glyph panjangnya memunculkan Spectre tambahan.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Penjaga</span></div><h1>Penjaga</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Penjaga</span></div><h1><span class="weapon-icon"></span> Penjaga</h1>
 <p>Tags: Panas, Turret<br>Menerjunkan menara otomatis yang menembaki musuh di dalam jangkauan.</p>
 <h2>Evolusi</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>Jarak: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Ranjau Tesla</span></div><h1>Ranjau Tesla</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Ranjau Tesla</span></div><h1><span class="weapon-icon"></span> Ranjau Tesla</h1>
 <p>Tags: Listrik, Turret, D.O.T.<br>Melengkapi kata yang dimulai dengan glif b, c, d, e Menerjunkan turret listrik yang menimbulkan kerusakan seiring waktu.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>Peluang Statis: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Osilator</span></div><h1>Osilator</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Osilator</span></div><h1><span class="weapon-icon"></span> Osilator</h1>
 <p>Tags: Panas, Remot<br>Menembakkan aliran partikel yang berosilasi ke arah target terakhir kamu.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Peluang Kritis: +3%<br> Kritik Mult: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Meteor</span></div><h1>Meteor</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Meteor</span></div><h1><span class="weapon-icon"></span> Meteor</h1>
 <p>Tags: Peledak, Remot<br>Secara berkala memunculkan penanda target di lokasi acak yang dapat diaktifkan untuk memulai pemboman orbital.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>Jarak: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pemburu</span></div><h1>Pemburu</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pemburu</span></div><h1><span class="weapon-icon"></span> Pemburu</h1>
 <p>Tags: Listrik, Drone, D.O.T.<br>Melengkapi kata yang mengandung glif i, o, u memunculkan drone yang menembakkan sinar listrik dengan jumlah setara dengan jumlah yang cocok di atas.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>Durasi: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pemotong</span></div><h1>Pemotong</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pemotong</span></div><h1><span class="weapon-icon"></span> Pemotong</h1>
 <p>Tags: Kinetik, Remot<br>Memunculkan pedang berputar yang besar pada tembakan senjata utama yang bergerak ke tepi layar, melukai semua musuh yang dilewatinya.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>Peluang Pendarahan: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Ladang Ranjau</span></div><h1>Ladang Ranjau</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Ladang Ranjau</span></div><h1><span class="weapon-icon"></span> Ladang Ranjau</h1>
 <p>Tags: Peledak, Drone<br>Melengkapi kata yang dimulai dengan glif f, g, h, i Memunculkan ranjau yang bergerak lambat yang meledak saat bersentuhan dengan musuh.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1590,7 +1636,7 @@ th {
 <td>Ranjau Rekursif:<br> Tingkat Pemunculan: +30%<br> ( Kecepatan Tembakan)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Perangkap Pisau</span></div><h1>Perangkap Pisau</h1>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Perangkap Pisau</span></div><h1><span class="weapon-icon"></span> Perangkap Pisau</h1>
 <p>Tags: Kinetik, Turret<br>Melengkapi kata yang dimulai dengan glif j, k, l, m Menyebarkan perangkap bilah empat jari yang berputar.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1682,7 +1728,7 @@ th {
 <td>Durasi: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pengorbit</span></div><h1>Pengorbit</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pengorbit</span></div><h1><span class="weapon-icon"></span> Pengorbit</h1>
 <p>Tags: Kimia, Remot<br>Melengkapi kata yang dimulai dengan glif n, o, p, q menyebarkan Orb yang mengorbitkan Senjata Utama, merusak semua yang dilewatinya.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>Kecepatan: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pelindung</span></div><h1>Pelindung</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#weapons">Peningkatan Level Senjata </a> / <span>Pelindung</span></div><h1><span class="weapon-icon"></span> Pelindung</h1>
 <p>Tags: Panas, Drone<br>Gunakan Drone secara instan untuk menembakkan laser ke arah musuh. Aktifkan pengambilan bahan bakar untuk mengisi bahan bakar Guardian, yang akan mengonsumsi bahan bakar dan menonaktifkannya saat kosong.</p>
 <h2>Evolusi</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Musuh di <em>Glyphica</em> secara prosedural dimunculkan berdasarkan metrik internal yang disebut <strong>ancaman</strong>, yang meningkat seiring berjalannya permainan. Dalam Mode Uji Coba, ancaman dikalikan dengan Level Uji Coba saat ini, membuat setiap level semakin sulit. Dalam Mode Endless, ancaman dibandingkan dengan sistem penskalaan adaptif berdasarkan level pemain, dengan nilai yang lebih tinggi menentukan tingkat kesulitan pemunculan.</p>
 <p>Musuh juga dikategorikan ke dalam <strong>specials</strong> dan <strong>elites</strong>, masing-masing dengan batas kelasnya sendiri yang membatasi tingkat kemunculan mereka dalam tingkat ancaman secara keseluruhan.</p>
 <h2>Daftar Musuh</h2>
-<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Drone Perisai </a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Penembak</a><a href="#splitter" class="portal">Splitter</a><a href="#warder" class="portal">Warder</a><a href="#swarmer" class="portal">Swarmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#enemies">Musuh</a> / <span>Drone</span></div><h1>Drone</h1>
+<a href="#drone" class="portal">Drone</a><a href="#shielddrone" class="portal">Drone Perisai </a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Penembak</a><a href="#splitter" class="portal">Splitter</a><a href="#wurm" class="portal">Cacing</a><a href="#warder" class="portal">Warder</a><a href="#swarmer" class="portal">Swarmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#enemies">Musuh</a> / <span>Drone</span></div><h1>Drone</h1>
 <p>Drone adalah musuh yang terus bergerak ke arah senjata utamamu. Mereka terkadang dapat muncul dalam dua bentuk yang ditingkatkan:<br>Diperbesar: Melipatgandakan kesehatan mereka, membuat mereka lebih sulit dikalahkan.<br>Dipercepat: Melipatgandakan kecepatan gerakan mereka, meningkatkan urgensi untuk mengalahkan mereka.</p>
 <h2>Daftar Varian</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Health: 240<br>Kerusakan: 40<br></td>
+<td>Health: 80<br>Kerusakan: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Health: 2400<br>Kerusakan: 120<br></td>
+<td>Health: 800<br>Kerusakan: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Jumlah pecahan: 6<br>Kesehatan Pecahan: 650<br>Kerusakan Pecahan: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#enemies">Musuh</a> / <span>Cacing</span></div><h1>Cacing</h1>
+<p>Cacing adalah musuh multi-segmen yang bagian-bagiannya harus dihancurkan secara berurutan. Setiap segmen terhubung ke segmen berikutnya oleh penghalang yang tidak dapat dihancurkan yang memblokir semua serangan proyektil.</p>
+<h2>Daftar Varian</h2>
+<table>
+<thead>
+<tr>
+<th>Gambar</th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Jumlah Segmen: 2<br>Kesehatan Segmen: 80<br>Kerusakan Segmen: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Jumlah Segmen: 3<br>Kesehatan Segmen: 200<br>Kerusakan Segmen: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Jumlah Segmen: 4<br>Kesehatan Segmen: 1000<br>Kerusakan Segmen: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Jumlah Segmen: 4<br>Kesehatan Segmen: 1800<br>Kerusakan Segmen: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <a href="#enemies">Musuh</a> / <span>Warder</span></div><h1>Warder</h1>
 <p>Warder adalah musuh elit yang muncul di akhir permainan. Ia memiliki perisai berputar yang memblokir kerusakan dari arah perisai saat ini. Selain itu, selama Warder masih hidup, ia akan terus memberikan aura perlindungan kepada musuh di sekitarnya, membuat mereka kebal hingga Warder dikalahkan.</p>
 <h2>Daftar Varian</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <span>Barang Jarahan</span></div><h1>Barang Jarahan</h1>
 <p>Item jarahan diperoleh selama bermain dengan mengaktifkan pengambilan peti harta karun. Pilihan item jarahan secara acak akan ditampilkan, dan memilih salah satu akan memberikan bonus pasif yang tetap aktif selama bermain.</p>
 <p>Item jarahan dikategorikan sebagai <strong>umum</strong>, <strong>jarang</strong>, dan <strong>langka</strong>, yang menentukan kemungkinannya untuk muncul dalam pilihan jarahan. Mengalahkan bos dalam Mode Uji Coba akan memberi hadiah peti harta karun yang hanya berisi item langka.</p>
-<h2>Daftar Harta Karun Langka</h2>
+<details><summary>Daftar Harta Karun Langka</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nama</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Peramal</td>
 <td>Jika Kamu memiliki 0 Re-roll saat memasuki layar kenaikan level, evolusi, atau jarahan, Kamu akan mendapatkan 1 Re-roll.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sementara</td>
 <td>Semua Senjata Drone:<br> Kesempatan untuk mendapatkan drone tambahan: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Menjarah</td>
 <td>+1 Opsi Penjarahan</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Multi-Penargetan</td>
 <td>Semua Senjata Jarak Jauh mendapatkan +1% Peluang Kritik untuk setiap Senjata yang Kamu miliki.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Magnet Raksasa</td>
 <td>Kamu mendapat 50% kesempatan secara otomatis mengumpulkan pengambilan saat habis masa berlakunya.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Radang dingin</td>
 <td>Musuh menerima kerusakan seiring waktu saat Beku.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Necrobomb</td>
 <td>Saat menghancurkan musuh dengan kerusakan Ledakan Kritikal, memicu serangkaian ledakan di sekitar posisi musuh yang tewas.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hadiah</td>
 <td>Saat menghancurkan musuh dengan kerusakan Kritikal, 30% peluang untuk memunculkan Re-roll, Perisai, atau pengambilan Health.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gempa susulan</td>
 <td>Kerusakan kritikal akan selalu menimbulkan efek status.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vampirisme</td>
 <td>Dapatkan Health yang setara dengan 5% dari kerusakan Kritikal Kinetik.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kebijaksanaan</td>
 <td>Saat mengambil Perisai, dapatkan 10 Kill untuk semua Evolusi senjata.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Jester</td>
 <td>Saat mengambil Re-roll, berikan jumlah kerusakan acak antara 0 dan 100 ke semua musuh di layar.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Yang Terakhir</td>
 <td>Mendapatkan Kerusakan Ganda, Pada saat Perisai hancur.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kerusakan Tiga Kali Lipat</td>
 <td>Semua Kerusakan Ganda sekarang menjadi Kerusakan Tiga Kali Lipat.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Patah tulang</td>
 <td>Semua kerusakan pada musuh yang dibekukan meningkat sebesar 50%. Pengubah memiliki sifat penggandaan.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pertapa</td>
 <td>Saat keluar dari layar Loot, dapatkan +10% kerusakan untuk setiap Re-roll yang tidak terpakai selama 20 detik.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harmonizer</td>
 <td>Semua senjata yang digunakan mendapatkan satu level Evolusi.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Keabadian</td>
 <td>Jika Senjata Utama Kamu akan dihancurkan, maka akan berkurang menjadi 1 health. Kemampuan ini hanya dapat digunakan setiap 2 menit sekali.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pencerahan</td>
 <td>Saat menghancurkan musuh dengan kerusakan Kritikal, mendapatkan +1 kill untuk semua Evolusi senjata.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lebih dekat</td>
 <td>Menyelesaikan kata musuh setelah dihancurkan memberikan +10% kerusakan selama 10 detik. Tumpukan hingga 3 kali.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pembunuhan</td>
 <td>Semua Senjata Drone: +50% Kerusakan</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Algojo</td>
 <td>Semua Senjata Turret: +50% Kerusakan</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Degenerasi</td>
 <td>Semua Senjata Jarak Jauh: +50% Kerusakan</td>
 </tr>
 </tbody></table>
-<h2>Daftar Harta Karun Tidak Umum</h2>
+</details>
+
+<details><summary>Daftar Harta Karun Tidak Umum</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nama</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Tsunami</td>
 <td>Semua Senjata Peledak:<br> Jangkauan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gelombang Kejut</td>
 <td>Semua Senjata Peledak:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pemusnahan</td>
 <td>Semua Senjata Peledak:<br> Crit Mult: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Turun</td>
 <td>Semua Senjata Peledak:<br> Peningkatan Kerusakan Ganda:<br> Peluang Jatuhkan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Shattershot</td>
 <td>Semua Senjata Kinetik:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erupsi</td>
 <td>Semua Senjata Kinetik:<br> Laju Tembakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Piercer</td>
 <td>Semua Senjata Kinetik:<br> Kesempatan Crit: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harbinger</td>
 <td>Semua Senjata Kinetik:<br> Peluang Efek Pendarahan: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Inferno</td>
 <td>Semua Senjata Panas:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plasmator</td>
 <td>Semua Senjata Panas:<br> Jangkauan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Phoenix</td>
 <td>Semua Senjata Panas:<br> Putar ulang Kesempatan: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Piroklisma</td>
 <td>Semua Senjata Panas:<br> Kesempatan Efek Menyala: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriostasis</td>
 <td>Semua Senjata Dingin:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gletser</td>
 <td>Semua Senjata Dingin:<br> Peluang Efek Pembekuan: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Repulsor</td>
 <td>Semua Senjata Dingin:<br> Peluang Perisai: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriogen</td>
 <td>Semua Senjata Dingin:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Overload</td>
 <td>Semua Senjata Listrik:<br> Peluang Efek Statis: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Badai Besar</td>
 <td>Semua Senjata Listrik:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Amplifier</td>
 <td>Semua Senjata Listrik:<br> Laju Tembakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Singularitas</td>
 <td>Semua Senjata Listrik:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penularan</td>
 <td>Semua Senjata Kimia:<br> Peluang Efek Pembusukan: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sepsis</td>
 <td>Semua Senjata Kimia: Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kejang</td>
 <td>Semua Senjata Kimia:<br> Tingkat Serangan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pembusukan</td>
 <td>Semua Senjata Kimia:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Infinity</td>
 <td>Semua Senjata Drone:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hyperjet</td>
 <td>Semua Senjata Drone:<br> Kecepatan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Overmind</td>
 <td>Semua Senjata Drone:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Frostbane</td>
 <td>Semua Senjata Drone:<br> Kesempatan Membekukan Drop: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Omniboost</td>
 <td>Semua Senjata Jarak Jauh:<br> Jangkauan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Instalink</td>
 <td>Semua Senjata Jarak Jauh:<br> Kecepatan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Perintah</td>
 <td>Semua Senjata Jarak Jauh:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Energizer</td>
 <td>Semua Senjata Turret:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hellstorm</td>
 <td>Semua Senjata Turret:<br> Laju Tembakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ketepatan</td>
 <td>Semua Senjata Turret:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Onslaught</td>
 <td>Semua Efek Status:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Siksaan</td>
 <td>Semua Efek Status:<br> Durasi: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Jackpot</td>
 <td>Semua Efek Jarahan:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Misteri</td>
 <td>Semua Senjata Jarahan:<br> Kesempatan Crit: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mengamuk</td>
 <td>Semua Efek Augment:<br> Kerusakan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Melampaui</td>
 <td>Semua Efek Augment:<br> Jangkauan: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arsenal</td>
 <td>Semua Senjata:<br> Kerusakan: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lifesaver</td>
 <td>Semua Senjata:<br> Durasi: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Starview</td>
 <td>Semua Senjata:<br> Jangkauan: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Titik Kosong</td>
 <td>Musuh yang terkena serangan dekat dengan Senjata Utama menerima +20% kerusakan.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Keresahan</td>
 <td>Semua Senjata:<br> Peluang Status: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Krioteknik</td>
 <td>Pengambilan Beku:<br> Peluang Jatuh: +2%<br><br>Penjemputan Kerusakan Ganda:<br> -100% Peluang Jatuh</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Suka berperang</td>
 <td>Pengambilan Kerusakan Ganda:<br> Peluang Jatuh: +4%<br><br>Pengambilan Beku:<br> -100% Peluang Jatuh</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pinata</td>
 <td>Efek Global:<br>  Frekuensi Jarahan: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Meriam Kaca</td>
 <td>Semua Senjata:<br> Kerusakan: +30%<br><br>Senjata Utama:<br> Max Health: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Regenerasi</td>
 <td>Menyembuhkan 5% kesehatan maksimal saat mengaktifkan Loot, Beku, Kerusakan Ganda, Re-roll, atau Perisai.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erosi</td>
 <td>Senjata DOT bisa Kritikal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pecah</td>
 <td>Semua Senjata Kinetik mendapatkan +5% Peluang Kritikal melawan musuh Beku.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ketahanan</td>
 <td>Mengaktifkan Pengambilan Perisai meningkatkan Durasi global Kamu sebesar 10% selama 10 detik. Tumpukan hingga 3 kali.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penjudi</td>
 <td>Menambahkan 1 Re-roll dan meningkatkan Max Re-roll, menjadi total 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pelindung</td>
 <td>Menambahkan 1 Perisai dan meningkatkan Max Perisai, menjadi total 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sempurna</td>
 <td>Setiap x17 Input Sempurna juga meningkatkan Laju Tembakan global Kamu sebesar 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lepaskan</td>
 <td>Saat salah ketik, berikan 20 Kerusakan ledakan ke semua musuh untuk setiap x17 Input Sempurna.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pemborosan</td>
 <td>Semua Senjata D.O.T: +35% Laju Tembakan</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Layu</td>
 <td>Semua Efek Status: +35% Laju Tembakan</td>
 </tr>
 </tbody></table>
-<h2>Daftar Harta Karun Umum</h2>
+</details>
+
+<details><summary>Daftar Harta Karun Umum</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nama</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Ledakan</td>
 <td>Semua Senjata Peledak:<br> Jangkauan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Peledakan</td>
 <td>Semua Senjata Peledak:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kehancuran</td>
 <td>Semua Senjata Kinetik:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tembakan</td>
 <td>Semua Senjata Kinetik:<br> Laju Tembakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hangus</td>
 <td>Semua Senjata Panas:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Membara</td>
 <td>Semua Senjata Panas:<br> Jangkauan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Embun Beku</td>
 <td>Semua Senjata Dingin:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pendingin</td>
 <td>Semua Senjata Dingin:<br> Durasi: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kejutan</td>
 <td>Semua Senjata Listrik:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gelombang</td>
 <td>Semua Senjata Listrik:<br> Laju Tembakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Menaikkan</td>
 <td>Semua Senjata Drone:<br> Durasi: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sengatan</td>
 <td>Semua Senjata Drone:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Jangkauan</td>
 <td>Semua Senjata Jarak Jauh:<br> Jangkauan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Serangan</td>
 <td>Semua Senjata Jarak Jauh:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Menara</td>
 <td>Semua Senjata Menara:<br> Durasi: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Benteng</td>
 <td>Semua Senjata Menara:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Wabah</td>
 <td>Semua Efek Status:<br> Kerusakan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resonan</td>
 <td>Semua Efek Status:<br> Durasi: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dominan</td>
 <td>Semua Senjata:<br> Kerusakan: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ketahanan</td>
 <td>Semua Senjata:<br> Durasi: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Proyeksi</td>
 <td>Semua Senjata:<br> Jarak: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Memercikkan</td>
 <td>Semua Senjata Peledak:<br> Jangkauan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dampak</td>
 <td>Semua Senjata Peledak:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Menguapkan</td>
 <td>Semua Senjata Peledak:<br> Pengganda krit: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Jatuhkan Kematian</td>
 <td>Semua Senjata Peledak:<br> Dbl. Kerusakan Angkutan:<br> Peluang Menjatuhkan: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Titik Berongga</td>
 <td>Semua Senjata Kinetik:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Meletus</td>
 <td>Semua Senjata Kinetik:<br> Laju Tembakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penetrasi</td>
 <td>Semua Senjata Kinetik:<br> Peluang Krit: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Reaper</td>
 <td>Semua Senjata Kinetik:<br> Peluang Efek Pendarahan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Menghanguskan</td>
 <td>Semua Senjata Panas:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Radiator</td>
 <td>Semua Senjata Panas:<br> Jangkauan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lahir Kembali</td>
 <td>Semua Senjata Panas:<br> Peluang Re-roll: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mudah Terbakar</td>
 <td>Semua Senjata Panas:<br> Peluang Efek Menyala: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hipotermia</td>
 <td>Semua Senjata Dingin:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Di bawah nol</td>
 <td>Semua Senjata Dingin:<br> Peluang Efek Beku: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Defleksi</td>
 <td>Semua Senjata Dingin: Peluang Perisai: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pendingin</td>
 <td>Semua Senjata Dingin:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Biaya Laten</td>
 <td>Semua Senjata Listrik:<br> Peluang Efek Statis: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kapasitor</td>
 <td>Semua Senjata Listrik:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Alat modulasi</td>
 <td>Semua Senjata Listrik:<br> Laju Tembakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Konsentrasi</td>
 <td>Semua Senjata Listrik:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Noda</td>
 <td>Semua Senjata Kimia:<br> Peluang Efek Pembusukan: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Racun</td>
 <td>Semua Senjata Kimia:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Denyut</td>
 <td>Semua Senjata Kimia:<br> Tingkat Serangan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Linger</td>
 <td>Semua Senjata Kimia:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pemanjang</td>
 <td>Semua Senjata Drone:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pendorong</td>
 <td>Semua Senjata Drone:<br> Kecepatan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>mesin otomatis</td>
 <td>Semua Senjata Drone:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hati yang Dingin</td>
 <td>Semua Senjata Drone: Peluang Jatuhkan Pembekuan: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Peningkatan Sinyal</td>
 <td>Semua Senjata Jarak Jauh:<br> Jangkauan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tanpa Jeda</td>
 <td>Semua Senjata Jarak Jauh:<br> Kecepatan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kontrol</td>
 <td>Semua Senjata Jarak Jauh:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pemelihara</td>
 <td>Semua Senjata Menara:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Meriam Otomatis</td>
 <td>Semua Senjata Menara:<br> Laju Tembakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kalibrasi</td>
 <td>Semua Senjata Menara:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erosi</td>
 <td>Semua Efek Status:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penderitaan</td>
 <td>Semua Efek Status:<br> Durasi: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rejeki</td>
 <td>Semua Efek Jarahan:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rahasia</td>
 <td>Semua Efek Jarahan:<br> Peluang Kritik: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Overdrive</td>
 <td>Semua Efek Augment:<br> Kerusakan: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pengintai</td>
 <td>Semua Efek Augment:<br> Jarak: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Persenjataan</td>
 <td>Semua Senjata:<br> Kerusakan: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Perlengkapan Bertahan Hidup</td>
 <td>Semua Senjata:<br> Durasi: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Teleskop</td>
 <td>Semua Senjata:<br> Jarak: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Obat Medis</td>
 <td>Menambahkan 3 Obat Medis ke inventaris Anda.<br><br>Obat Medis menyembuhkan hingga 30% dari kesehatan maksimal Turret Utama.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hulu Ledak</td>
 <td>Menambahkan 2 Hulu ledak ke inventaris Anda.<br><br>Hulu ledak melepaskan serangkaian ledakan dahsyat yang memancar keluar dari senjata utama.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Serum</td>
 <td>Menambahkan 2 Serum ke dalam inventori kamu.<br><br>Serum memberikan 25% Peluang Kritik selama 10 detik.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cryocore</td>
-<td><br><br>Menambahkan 2 Cryocores ke inventarismu.<br><br>Cryocores memicu efek pembekuan global.</td>
+<td>Menambahkan 2 Cryocores ke inventarismu.<br><br>Cryocores memicu efek pembekuan global.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kill Pill</td>
 <td>Menambahkan 2 Kill Pills ke inventaris Anda.<br><br>Kill Pills memicu efek global Kerusakan Ganda.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gelombang Api</td>
 <td>Menambahkan 2 Gelombang Api ke inventaris Anda.<br><br>Gelombang Api membakar semua musuh yang terlihat dengan biaya 10% dari kesehatan Turret Utama saat ini.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pocket Turret</td>
 <td>Menambahkan 1 Pocket Turret ke inventori.<br><br>Pocket Turret memunculkan menara otomatis di dekat musuh.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pusat gempa</td>
 <td>Senjata Panas menyebabkan +20% kerusakan saat target dekat dengan Senjata Utama.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pendingin</td>
 <td>Pengambilan Beku:<br> Durasi: +20%<br> Peluang Jatuhkan: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kerentanan</td>
 <td>Pengambilan Kerusakan Ganda:<br> Durasi: +20%<br> Peluang Jatuhkan: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Presisi</td>
 <td>Semua Senjata:<br> Peluang Kritis: +1%<br> Multi Kritis: +50%<br><br>Peluang:<br> Kata yang Lebih Panjang: +10%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>obat-obatan</td>
 <td>Pulihkan 100 Health.<br><br>Health Saat Ini: 300 / 300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Perisai</td>
 <td>Menambahkan 1 Perisai.<br><br>Perisai Saat Ini: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Re-Roll</td>
 <td>Menambahkan 1 Re-Roll.<br><br>Re-Roll Saat Ini: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Afflictor</td>
 <td>Setiap Afflictor meningkatkan D.O.T. Kerusakan sebesar +4%. Bonus ini akan berlipat ganda saat berada di dekat Turret Utama.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <span>Augment</span></div><h1>Augment</h1>
 <p>Augmentasi adalah peningkatan permanen yang dapat dibuka menggunakan Koin (§), mata uang yang diperoleh selama bermain. Pada awal setiap putaran, pemain memiliki sejumlah slot terbatas untuk melengkapi augment yang belum dibuka, dengan jumlah slot yang tersedia bervariasi berdasarkan level Omen yang dipilih.</p>
 <p>Setiap augment biasanya memiliki kondisi spesifik yang menentukan manfaatnya. Untuk mendapatkan hasil maksimal dari augment Kamu, pertimbangkan sinergi di antara keduanya dan selaraskan dengan strategi pilihan Kamu.</p>
-<h2>Codex: Senjata Utama</h2>
+<details><summary>Codex: Senjata Utama</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Lapis Baja</td>
 <td>50 §,<br>200 §</td>
 <td>Senjata Utama: Health: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bersemangat</td>
 <td>50 §</td>
 <td>Di awal setiap permainan Trial atau Endless, dapatkan satu level. Untuk setiap 4 menit bertahan dalam Mode Tanpa Akhir, dapatkan satu level.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Penjudi</td>
 <td>50 §</td>
 <td>Setiap Re-roll yang Kamu gunakan memberikan Senjata Utama +20% kerusakan selama 20 detik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bersih</td>
 <td>100 §</td>
 <td>Perfect Input memberikan +1.5% Kesempatan Kritikal per stack.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kabut</td>
 <td>200 §,<br>500 §</td>
 <td>Jika Kamu memiliki kesehatan kurang dari 50%, dapatkan bonus Rate of Fire global +50%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pengabdian</td>
 <td>200 §</td>
 <td>Senjata Utama mendapatkan +25% kerusakan untuk setiap slot senjata yang kosong. Setidaknya satu opsi selama kenaikan level adalah peningkatan.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Drone</h2>
+</details>
+
+<details><summary>Codex: Drone</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Armada</td>
 <td>200 §</td>
 <td>20% peluang untuk mengeluarkan drone tambahan, setiap kali ada drone yang dikeluarkan.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Keanekaragaman</td>
 <td>50 §</td>
 <td>Untuk setiap Senjata non-Drone yang digunakan, meningkatkan semua durasi Drone sebesar 20%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Serangan Kilat</td>
 <td>50 §</td>
 <td>Peningkatan kecepatan Drone juga berlaku untuk serangan Drone.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Retribusi</td>
 <td>300 §</td>
 <td>Setiap kali sebuah Perisai dihancurkan, semua Drone yang ada akan hancur dengan sendirinya dan memberikan kerusakan eksplosif.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kambing hitam</td>
 <td>100 §</td>
 <td>Kesalahan ketik secara acak menghancurkan Drone yang ada dan tidak dihitung sebagai kesalahan ketik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Rampasan</td>
 <td>200 §</td>
 <td>Drone dapat menjatuhkan pickups pada saat kedaluwarsa.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Turret</h2>
+</details>
+
+<details><summary>Codex: Turret</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Benteng</td>
 <td>100 §,<br>400 §</td>
 <td>Setiap Evolusi Turret juga memberikan +50 kesehatan maksimal Senjata Utama.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Jaringan</td>
 <td>50 §</td>
 <td>Setiap Turret lainnya memberikan +10% Tingkat Serangan ke semua Turret, hingga maksimum +50%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Intel Lapangan</td>
 <td>50 §</td>
 <td>Mengaktifkan pickup akan memberikan +30% Range ke semua Turret yang ada. Efek ini tidak bertumpuk.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Relai Gelap</td>
 <td>500 §</td>
 <td>Proyektil memantul di antara Turret yang ada secara acak, memberikan kerusakan listrik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pengamat</td>
 <td>100 §</td>
 <td>Jika kamu tidak menyerang selama 3 detik, dapatkan +30% Turret Damage hingga serangan berikutnya.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kelemahan</td>
 <td>200 §</td>
 <td>Musuh yang berada dalam Jangkauan Turret menerima 30% lebih banyak kerusakan dari sumber lain.</td>
 </tr>
 </tbody></table>
-<h2>Codex: D.O.T.</h2>
+</details>
+
+<details><summary>Codex: D.O.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Korosi</td>
 <td>500 §</td>
 <td>D.O.T. Kerusakan sekarang dapat menimbulkan kritikal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Lamprey</td>
 <td>200 §</td>
 <td>D.O.T. Kerusakan yang terjadi di dekat Senjata Utama menyembuhkan Senjata Utama sebesar 1 Health.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kegigihan</td>
 <td>100 §,<br>300 §</td>
 <td>Meningkatkan durasi semua senjata D.O.T. sebesar 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Afflictors</td>
 <td>50 §</td>
 <td>Menambahkan Afflictors ke Loot pool. Masing-masing memberikan +4% Kerusakan D.O.T. Efek berganda di dekat Senjata Utama.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Keyakinan</td>
 <td>100 §</td>
 <td>Senjata D.O.T. mendapatkan +40% Tingkat Serangan selama Kamu memiliki Re-roll maksimal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Infektor</td>
 <td>300 §,<br>500 §</td>
 <td>Senjata D.O.T. memiliki peluang efek status +3%.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Remot</h2>
+</details>
+
+<details><summary>Codex: Remot</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Pertarungan Jarak Dekat</td>
 <td>100 §</td>
 <td>Semua Serangan Jarak Jauh dianggap dekat dengan Senjata Utama.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Caltrops</td>
 <td>200 §</td>
 <td>Serangan kritis jarak jauh memunculkan 12 Caltrops yang melukai musuh yang lewat dan menaikkan peluang pendarahan sesuai kerusakan.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Amunisi Kaustik</td>
 <td>500 §</td>
 <td>Peluang untuk menjatuhkan Amunisi Kaustik - menambahkan 10 Kerusakan Kimia dasar ke Senjata Jarak Jauh selama 20 detik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pembajakan</td>
 <td>50 §</td>
 <td>Untuk setiap Efek Jarahan yang dilengkapi, tingkatkan semua Kerusakan Jarak Jauh sebesar 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pembebasan</td>
 <td>100 §</td>
 <td>Semua senjata jarak jauh mendapatkan +40% Jangkauan selama Kamu memiliki Perisai maksimal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Sniper</td>
 <td>200 §</td>
 <td>Peningkatan Jangkauan Jarak Jauh juga berlaku untuk Serangan Jarak Jauh.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Electrik</h2>
+</details>
+
+<details><summary>Codex: Electrik</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Ledakan Volta</td>
 <td>200 §</td>
 <td>Peningkatan Durasi Listrik juga berlaku 25% dari nilainya untuk Peluang Listrik Statis.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Baterai Badai</td>
 <td>500 §</td>
 <td>Turret Utama memberikan kerusakan listrik kepada musuh di dekatnya. Setiap Senjata Listrik yang dilengkapi meningkatkan kerusakan dasar.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Percikan</td>
 <td>300 §</td>
 <td>Pada serangan kritis oleh senjata listrik, lepaskan 6 Percikan Petir yang meningkatkan kerusakannya dengan Peluang Kritik dan Pengganda Kritik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Grid yang Efisien</td>
 <td>100 §</td>
 <td>Untuk setiap Senjata non-Listrik yang dilengkapi, tingkatkan semua durasi Listrik sebesar 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Melepaskan Kekerasan</td>
 <td>300 §</td>
 <td>Statis lebih kuat dan jauh, dengan 50% peluang menyebar ke musuh terdekat saat membunuh.<br><br></td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Turret Listrik</td>
 <td>100 §</td>
 <td>Senjata Utama mendapatkan +5 Kerusakan Listrik Dasar dan meningkatkan semua kerusakan senjata listrik sebesar 10%.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Panas</h2>
+</details>
+
+<details><summary>Codex: Panas</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Pyromancy</td>
 <td>200 §</td>
 <td>Menambah serangan Panas 2% setiap musuh yang terbakar. Serangan bakar memberi bonus sesuai durasi dan kerusakannya.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kauterisasi</td>
 <td>200 §</td>
 <td>Bonus jangkauan juga berlaku untuk kerusakan yang ditimbulkan di dekat Senjata Utama untuk Senjata/Efek Panas.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Inti Tungku</td>
 <td>100 §</td>
 <td>Turret Utama mendapatkan +5 kerusakan panas dasar. Semua kerusakan Panas meningkat sebesar 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bola Api</td>
 <td>500 §</td>
 <td>Menembakkan Senjata Utama akan melepaskan Bola Api yang bergerak lambat yang memberikan kerusakan Panas pada musuh yang dilewatinya. Maksimal 1 Bola Api aktif.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Gelombang Api</td>
 <td>250 §</td>
 <td>Menambah gelombang api ke inventaris dan loot, membakar musuh yang terlihat dan menguras 10% HP Turret Utama.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kemuliaan yang Berkobar</td>
 <td>50 §</td>
 <td>Musuh yang dekat dengan Senjata Utama menerima +25% Kerusakan Panas dan memiliki peluang tambahan 12% untuk tersulut dari Kerusakan Panas.</td>
 </tr>
 </tbody></table>
-<h2>Codex: Kintetik</h2>
+</details>
+
+<details><summary>Codex: Kintetik</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nama</div></th>
-<th><div style="width:50px">Biaya</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
 <th>Deskripsi</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Penembak Jitu</td>
 <td>500 §</td>
-<td>Tingkatkan Maksimum Kata Serbu sebesar 5. Setiap tingkatan Kata Serbu memberikan +2,5% kerusakan kinetik.</td>
+<td>Tingkatkan Maksimum Kata Serbu sebesar 5. Setiap tingkatan Kata Serbu memberikan +2.5% kerusakan kinetik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Haus Darah</td>
 <td>200 §</td>
 <td>Tingkatkan laju tembakan kinetik sebesar 2% dan jangkauan sebesar 1% untuk setiap musuh yang terluka.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Peluru Terisi</td>
 <td>300 §</td>
 <td>Serangan dengan Kerusakan Kinetik memiliki peluang 40% untuk menerapkan status acak pada musuh.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pecahan peluru</td>
 <td>500 §</td>
 <td>Kesempatan untuk melepaskan pecahan peluru - menambah 10 kerusakan kinetik dasar pada senjata kinetik selama 20 detik.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Senjata Terkombinasi</td>
 <td>100 §</td>
 <td>Untuk setiap senjata non-Kinetic yang dilengkapi, tingkatkan semua kerusakan Kinetic sebesar 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pocket Turret</td>
 <td>200 §</td>
 <td>Menambahkan Pocket Turret ke inventaris dan loot. Item ini memanggil turret yang bisa diambil lagi setelah durasinya habis.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Codex: Kimia</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nama</div></th>
+<th><div style="width:70px">Biaya</div></th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Reanimasi</td>
+<td>500 §</td>
+<td>Membunuh dengan Kimia memiliki peluang 30% untuk memunculkan Reanimasi Drone yang mencari musuh dan memberikan serangan Kimia kepada musuh.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Paparan Berlebih</td>
+<td>300 §</td>
+<td>Status Kimia kini dapat ditumpuk hingga 3 kali, sehingga menggandakan kerusakan Hawar per tumpukan.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Hibridisasi</td>
+<td>500 §</td>
+<td>25% dari peningkatan kerusakan yang diterapkan pada jenis kerusakan lain juga berlaku untuk kerusakan Kimia.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Pelepasan Limbah</td>
+<td>300 §</td>
+<td>Menerapkan efek Hawar setiap 12 detik kepada semua musuh yang berada di dekat Senjata Utama.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Scaling Reaktif</td>
+<td>100 §</td>
+<td>Setiap senjata kimia yang dilengkapi akan meningkatkan kerusakan kimia sebesar 10% dan durasi efek senjata kimia sebesar 20%.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Luka Bakar Beracun</td>
+<td>200 §</td>
+<td>Terbakar memberi kerusakan Kimia, bukan Panas. Hawar punya peluang 10% memicu Terbakar yang semakin meningkat berkat Peluang Kritis.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Beranda</a> / <span>Omen</span></div><h1>Omen</h1>
+<p>Omen adalah pengubah kesulitan yang dipilih secara acak dari kumpulan di awal permainan Uji Coba atau Tak Terbatas. Setiap Omen meningkatkan tantangan dengan cara tertentu, dan level Omen yang lebih tinggi membuka pengubah yang semakin sulit.</p>
+<p>Omen dibagi menjadi tiga level. Omen Level 1 memberikan tantangan sedang, Omen Level 2 lebih menuntut, dan Omen Level 3 menghadirkan kesulitan terbesar. Mengalahkan Uji Coba pada level Omen tertentu membuka level berikutnya, meningkatkan jumlah Omen simultan yang aktif selama permainan, hingga maksimum 6. Menyelesaikan permainan dengan Omen aktif memberikan lebih banyak Koin dan membuka konten tambahan.</p>
+<details><summary>Omen Level 1</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nama</div></th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Musuh Tangguh</td>
+<td>Musuh memiliki 50% lebih banyak HP.</td>
+</tr>
+<tr>
+<td>Kata Lebih Panjang</td>
+<td>Kata menjadi lebih panjang satu huruf.</td>
+</tr>
+<tr>
+<td>Tanpa Buff</td>
+<td>Tidak ada drop double damage atau freeze.</td>
+</tr>
+<tr>
+<td>Musuh Gesit</td>
+<td>Musuh bergerak 5% lebih cepat.</td>
+</tr>
+<tr>
+<td>Pilihan Lebih Sedikit</td>
+<td>Pilihan loot berkurang satu.</td>
+</tr>
+<tr>
+<td>Melemah</td>
+<td>Pemain memberikan 20% lebih sedikit damage.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Omen Level 2</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nama</div></th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Senjata Rapuh</td>
+<td>Durabilitas senjata utama berkurang setengah.</td>
+</tr>
+<tr>
+<td>Musuh Tahan Banting</td>
+<td>Musuh memiliki 100% lebih banyak HP.</td>
+</tr>
+<tr>
+<td>Tanpa Reroll</td>
+<td>Tidak ada drop Reroll.</td>
+</tr>
+<tr>
+<td>Tanpa Shield</td>
+<td>Tidak ada drop Shield.</td>
+</tr>
+<tr>
+<td>Musuh Lebih Cepat</td>
+<td>Musuh bergerak 10% lebih cepat.</td>
+</tr>
+<tr>
+<td>Tanpa Crit</td>
+<td>Senjatamu tidak bisa menghasilkan crit.</td>
+</tr>
+<tr>
+<td>Penguntit</td>
+<td>Ada kemungkinan musuh muncul dengan kata yang sebagian tersembunyi.</td>
+</tr>
+<tr>
+<td>Wurms</td>
+<td>Ada kemungkinan musuh muncul dengan rangkaian kata.</td>
+</tr>
+<tr>
+<td>Ketik Buta</td>
+<td>Kata tidak menampilkan progres pengetikan.</td>
+</tr>
+<tr>
+<td>Pemulihan Cepat</td>
+<td>Efek status pada musuh hilang dua kali lebih cepat.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Omen Level 3</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nama</div></th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Salah Ketik Menyakitkan</td>
+<td>Menerima 3 damage setiap kali salah mengetik.</td>
+</tr>
+<tr>
+<td>Kabut Perang</td>
+<td>Kamu tidak dapat melihat kata yang jauh.</td>
+</tr>
+<tr>
+<td>Musuh Titan</td>
+<td>Musuh memiliki 150% lebih banyak HP.</td>
+</tr>
+<tr>
+<td>Kata Tersandi</td>
+<td>Beberapa musuh memiliki kata tersandi.</td>
+</tr>
+<tr>
+<td>Kata Ganda</td>
+<td>Beberapa musuh memiliki kata ganda.</td>
+</tr>
+<tr>
+<td>Kehadiran Elite</td>
+<td>Warders dan Swarmers muncul dua kali lebih sering.</td>
+</tr>
+<tr>
+<td>Musuh Bershield</td>
+<td>Musuh muncul dengan shield satu serangan.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Beranda</span></div><h1>Wiki Resmi Glyphica</h1>
 <h2>Selamat datang juru ketik</h2>
 <p>Selamat datang di wiki resmi untuk Glyphica: Bertahan Hidup dengan Mengetik! Uji kemampuan mengetikmu di game bertahan hidup di mana kecepatan dan ketepatan menjadi senjata utama. Lengkapi alat canggih yang meningkatkan kehebatan mengetikmu menjadi serangan dahsyat melawan musuh yang tak kenal lelah. Cari tahu lebih lanjut dan dapatkan gim ini di Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Wiki ini berfungsi sebagai panduan komprehensif untuk fitur, mekanisme, dan konten yang tersedia dalam versi Akses Awal Glyphica. Tujuan kami adalah untuk terus memperbarui informasi seiring dengan kemajuan kami menuju rilis lengkap, versi 1.0. Wiki ini disusun ke dalam beberapa bagian yang tercantum dalam daftar isi dan akan diperbarui secara berkala seiring dengan perkembangan game.</p>
 <h2>Daftar Isi</h2>
-<a href="#main_weapons" class="portal">Senjata Utama</a><a href="#weapons" class="portal">Peningkatan Level Senjata </a><a href="#enemies" class="portal">Musuh</a><a href="#loot" class="portal">Barang Jarahan</a><a href="#loot1" class="portal">Augment</a></div></div></div>
+<a href="#main_weapons" class="portal">Senjata Utama</a><a href="#weapons" class="portal">Peningkatan Level Senjata </a><a href="#enemies" class="portal">Musuh</a><a href="#loot" class="portal">Barang Jarahan</a><a href="#loot1" class="portal">Augment</a><a href="#omens" class="portal">Omen</a></div></div></div>
 </body>
 </html>

@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>主武器是《指尖疾速》中初始武器，在游戏中扮演最重要的角色。当你拼写出敌人身上的一个词，主武器就会锁定该敌人。每个主武器有独特的效果和机制，需要你采用不同的策略才能高效地利用它们。</p>
 <p>一些主武器强调打字时的速度（WPM），有一些则强调策略的使用。和游戏中其他类型的武器一样，主武器也可以升级和进化，随着游戏深入而增强它们的能力和效率。</p>
 <h2>主武器列表</h2>
-<a href="#repeater" class="portal">连发枪</a><a href="#heatray" class="portal">高温射线</a><a href="#barrage" class="portal">火力网</a><a href="#splattershot" class="portal">溅射射击</a><a href="#overmind" class="portal">集群意识</a><a href="#wildcard" class="portal">任意卡</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>连发枪</span></div><h1>连发枪</h1>
+<a href="#repeater" class="portal">连发枪</a><a href="#heatray" class="portal">高温射线</a><a href="#barrage" class="portal">火力网</a><a href="#splattershot" class="portal">溅射射击</a><a href="#overmind" class="portal">集群意识</a><a href="#wildcard" class="portal">任意卡</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>连发枪</span></div><h1><span class="weapon-icon"></span> 连发枪</h1>
 <p>标签: 动能, 主要<br>通过极短时间内爆发式射击来毁灭敌人的武器。</p>
 <h2>进化</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>攻击范围：+25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>高温射线</span></div><h1>高温射线</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>高温射线</span></div><h1><span class="weapon-icon"></span> 高温射线</h1>
 <p>标签: 高温, 主要, 持续伤害<br>可以发射高精度的聚集光束来对敌人造成持续伤害。</p>
 <h2>进化</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>射速：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>火力网</span></div><h1>火力网</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>火力网</span></div><h1><span class="weapon-icon"></span> 火力网</h1>
 <p>标签: 爆炸, 主要<br>发射导弹群来轰炸目标及其周围；随时间充能。</p>
 <h2>进化</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>装填速度：+30%<br>  （射速）</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>溅射射击</span></div><h1>溅射射击</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>溅射射击</span></div><h1><span class="weapon-icon"></span> 溅射射击</h1>
 <p>标签: 化学, 主要, 持续伤害<br>发射黏球来致残并伤害敌人。</p>
 <h2>进化</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>持续时间：30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>集群意识</span></div><h1>集群意识</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>集群意识</span></div><h1><span class="weapon-icon"></span> 集群意识</h1>
 <p>标签: 电击, 无人机, 主要<br>指挥无人机群给敌人带来灭顶之灾。</p>
 <h2>进化</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>空域</td>
-<td>集群意识瞄准的敌人会被减速并受到来自其他电击效果和武器的50%伤害。</td>
+<td>集群意识瞄准的敌人会被减速并受到来自其他电击效果和武器的+50%伤害。</td>
 </tr>
 <tr>
 <td>空域II</td>
@@ -682,7 +728,7 @@ th {
 <td>射速：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>任意卡</span></div><h1>任意卡</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#main_weapons">主武器</a> / <span>任意卡</span></div><h1><span class="weapon-icon"></span> 任意卡</h1>
 <p>标签: 动能, 高温, 冰冻, 电击, 主要<br>你的下一次攻击会从四种可能武器中的一种发射而出，所以请谨慎。</p>
 <h2>进化</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>在一轮挑战中，当你的等级提升，你就会获得升级武器。一旦选择了这种武器，它便会进入你的武器库。每个武器有独特的激活方法，但绝大多数都可以通过打字激活，以主武器来瞄准。</p>
 <p>你可以通过这种方式来获得最多4个武器。一旦武器进入你的武器库，它便可以在升级池中获得升级选项，你就可以强化它的能力了。</p>
 <h2>升级武器列表</h2>
-<a href="#spectre" class="portal">幽灵</a><a href="#sentry" class="portal">哨兵</a><a href="#tesla" class="portal">特斯拉地雷</a><a href="#oscillator" class="portal">振荡器</a><a href="#meteor" class="portal">彗星</a><a href="#hunter" class="portal">猎手</a><a href="#chopper" class="portal">屠夫</a><a href="#minefield" class="portal">地雷阵</a><a href="#blade" class="portal">利刃陷阱</a><a href="#orbiter" class="portal">环游者</a><a href="#guardian" class="portal">守卫</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>幽灵</span></div><h1>幽灵</h1>
+<a href="#spectre" class="portal">幽灵</a><a href="#sentry" class="portal">哨兵</a><a href="#tesla" class="portal">特斯拉地雷</a><a href="#oscillator" class="portal">振荡器</a><a href="#meteor" class="portal">彗星</a><a href="#hunter" class="portal">猎手</a><a href="#chopper" class="portal">屠夫</a><a href="#minefield" class="portal">地雷阵</a><a href="#blade" class="portal">利刃陷阱</a><a href="#orbiter" class="portal">环游者</a><a href="#guardian" class="portal">守卫</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>幽灵</span></div><h1><span class="weapon-icon"></span> 幽灵</h1>
 <p>标签: 动能, 无人机<br>完成包含特定字母的词。 a, e, o 生成快速近程无人机，其数量等同于上方匹配数。</p>
 <h2>进化</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>完成由7个以上字母拼写成的词会生成一个额外的幽灵。</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>哨兵</span></div><h1>哨兵</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>哨兵</span></div><h1><span class="weapon-icon"></span> 哨兵</h1>
 <p>标签: 高温, 炮塔<br>部署会一座攻击范围内敌人的自动炮塔。</p>
 <h2>进化</h2>
 <table>
@@ -986,8 +1032,8 @@ th {
 <td>攻击范围：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>特斯拉地雷</span></div><h1>特斯拉地雷</h1>
-<p>标签: 电击, 炮塔, 持续伤害<br>完成以特定字母开头的词 b, c, d, e 部署会对敌人造成持续伤害的电磁炮塔。</p>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>特斯拉地雷</span></div><h1><span class="weapon-icon"></span> 特斯拉地雷</h1>
+<p>标签: 电击, 炮塔, 持续伤害<br>完成以特定字母开头的词 b, c, d 部署会对敌人造成持续伤害的电磁炮塔。</p>
 <h2>进化</h2>
 <table>
 <thead>
@@ -1090,7 +1136,7 @@ th {
 <td>禁锢几率：+5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>振荡器</span></div><h1>振荡器</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>振荡器</span></div><h1><span class="weapon-icon"></span> 振荡器</h1>
 <p>标签: 高温, 远程<br>对你最近攻击过的目标发射一束振荡粒子流。</p>
 <h2>进化</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>暴击率：+3%<br>  暴击系数：+200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>彗星</span></div><h1>彗星</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>彗星</span></div><h1><span class="weapon-icon"></span> 彗星</h1>
 <p>标签: 爆炸, 远程<br>周期性地在随机地点生成目标指示器，指示器被激活后会发起轨道轰炸。</p>
 <h2>进化</h2>
 <table>
@@ -1278,8 +1324,8 @@ th {
 <td>攻击范围：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>猎手</span></div><h1>猎手</h1>
-<p>标签: 电击, 无人机, 持续伤害<br>完成包含特定字母的词。 i, o, u 生成电击射线无人机，其数量等同于上方匹配数。</p>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>猎手</span></div><h1><span class="weapon-icon"></span> 猎手</h1>
+<p>标签: 电击, 无人机, 持续伤害<br>完成包含特定字母的词。 i, o, u, v 生成电击射线无人机，其数量等同于上方匹配数。</p>
 <h2>进化</h2>
 <table>
 <thead>
@@ -1370,7 +1416,7 @@ th {
 <td>持续时间：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>屠夫</span></div><h1>屠夫</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>屠夫</span></div><h1><span class="weapon-icon"></span> 屠夫</h1>
 <p>标签: 动能, 远程<br>生成巨型旋转飞刃并使其附着在主武器的攻击上，飞刃会到达屏幕边缘并对沿途所有敌人造成伤害。</p>
 <h2>进化</h2>
 <table>
@@ -1486,8 +1532,8 @@ th {
 <td>流血几率：+5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>地雷阵</span></div><h1>地雷阵</h1>
-<p>标签: 爆炸, 无人机<br>完成以特定字母开头的词 f, g, h, i 生成缓慢移动的地雷，一接触敌人便会爆炸。</p>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>地雷阵</span></div><h1><span class="weapon-icon"></span> 地雷阵</h1>
+<p>标签: 爆炸, 无人机<br>完成以特定字母开头的词 f, g, h 生成缓慢移动的地雷，一接触敌人便会爆炸。</p>
 <h2>进化</h2>
 <table>
 <thead>
@@ -1590,8 +1636,8 @@ th {
 <td>回归地雷：<br>生成速率：+30%<br> （射速）</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>利刃陷阱</span></div><h1>利刃陷阱</h1>
-<p>标签: 动能, 炮塔<br>完成以特定字母开头的词 j, k, l, m 部署一个四向的轮辐式刀刃陷阱。</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>利刃陷阱</span></div><h1><span class="weapon-icon"></span> 利刃陷阱</h1>
+<p>标签: 动能, 炮塔<br>完成以特定字母开头的词 j, k, l 部署一个四向的轮辐式刀刃陷阱。</p>
 <h2>进化</h2>
 <table>
 <thead>
@@ -1682,7 +1728,7 @@ th {
 <td>持续时间：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>环游者</span></div><h1>环游者</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>环游者</span></div><h1><span class="weapon-icon"></span> 环游者</h1>
 <p>标签: 化学, 远程<br>完成以特定字母开头的词 n, o, p, q 布置一个环绕主武器飞行的球体，对其路径上所有目标造成伤害。</p>
 <h2>进化</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>速度：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>守卫</span></div><h1>守卫</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#weapons">升级武器</a> / <span>守卫</span></div><h1><span class="weapon-icon"></span> 守卫</h1>
 <p>标签: 高温, 无人机<br>马上部署一架对敌人发射镭射光束的无人机；激活燃料拾取道具来为守卫注满燃料，这样做会消耗燃料并且当燃料耗尽时会休眠。</p>
 <h2>进化</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>在《指尖疾速》中，敌人是基于一个内部衡量标准——<strong>威胁度</strong>，由程序生成的，威胁度会随着游戏深入而提升。在试炼模式中，威胁度是当前试炼等级的乘数，每个更高的等级都会相应地变难。在无尽模式中，威胁度会根据玩家的等级并基于一个自适应浮动系统来调整，数值越高，设置的难度越高。</p>
 <p>敌人分为<strong>特殊敌人</strong>和<strong>精英敌人</strong>，在总体威胁度等级的限制下，每种敌人都有其生成速率的上限。</p>
 <h2>敌人列表</h2>
-<a href="#drone" class="portal">无人机</a><a href="#shielddrone" class="portal">护盾无人机</a><a href="#stalker" class="portal">追踪者</a><a href="#shooter" class="portal">诡枪手</a><a href="#splitter" class="portal">分裂者</a><a href="#warder" class="portal">看守者</a><a href="#swarmer" class="portal">群聚者</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#enemies">敌人</a> / <span>无人机</span></div><h1>无人机</h1>
+<a href="#drone" class="portal">无人机</a><a href="#shielddrone" class="portal">护盾无人机</a><a href="#stalker" class="portal">追踪者</a><a href="#shooter" class="portal">诡枪手</a><a href="#splitter" class="portal">分裂者</a><a href="#wurm" class="portal">蠕虫</a><a href="#warder" class="portal">看守者</a><a href="#swarmer" class="portal">群聚者</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#enemies">敌人</a> / <span>无人机</span></div><h1>无人机</h1>
 <p>无人机是一种会无休止地向你的主武器进攻的敌人。他们偶尔会以两种强化形态出现：<br>体积增大： 其生命值为之前的三倍，更难击败。<br>速度更快：其移动速度为之前的两倍，解决它们变得更迫在眉睫。</p>
 <h2>变异敌人列表</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>生命值: 240<br>伤害: 40<br></td>
+<td>生命值: 80<br>伤害: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>生命值: 2400<br>伤害: 120<br></td>
+<td>生命值: 800<br>伤害: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>分裂碎片数量: 6<br>分裂碎片生命值: 650<br>分裂碎片伤害: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#enemies">敌人</a> / <span>蠕虫</span></div><h1>蠕虫</h1>
+<p>蠕虫是一种多节敌人，其各部分必须按顺序摧毁。每个节段通过一道无法摧毁的屏障与下一个节段相连，该屏障会阻挡所有弹丸攻击。</p>
+<h2>变异敌人列表</h2>
+<table>
+<thead>
+<tr>
+<th>图像</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>节段数量: 2<br>节段生命值: 80<br>节段伤害: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>节段数量: 3<br>节段生命值: 200<br>节段伤害: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>节段数量: 4<br>节段生命值: 1000<br>节段伤害: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>节段数量: 4<br>节段生命值: 1800<br>节段伤害: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <a href="#enemies">敌人</a> / <span>看守者</span></div><h1>看守者</h1>
 <p>看守者是在游戏后期会出现的精英敌人，拥有围绕自身旋转的护盾，阻挡护盾面向方向袭来的攻击。另外，当看守者在场时，它会为周围其他敌人提供保护性的光环，令被保护的敌人处于无敌状态直到看守者被消灭。</p>
 <h2>变异敌人列表</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <span>战利品道具</span></div><h1>战利品道具</h1>
 <p>当你在挑战时激活一个宝箱，你就会获得战利品道具。在弹出的随机战利品选择界面中，你可以选择一个带有被动效果的加成，在接下来的游戏中你都可以从中受益。</p>
 <p>战利品道具的品质分为<strong>普通</strong>，<strong>优质</strong>和<strong>稀有</strong>。品质高低决定了他们出现在战利品选择界面的几率，在试炼模式中击败一个Boss会给予你一个宝箱，里面只包含稀有品质的道具。</p>
-<h2>稀有战利品列表</h2>
+<details><summary>稀有战利品列表</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名称</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>先知</td>
 <td>如果在升级、进化或获得战利品时没有重随次数，你自动获得1重随机会。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>暂时用品</td>
 <td>所有无人机类武器：<br>  无人机生成几率：35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>劫掠</td>
 <td>战利品选项+1</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>多重目标</td>
 <td>你每拥有一个武器，所有远程类武器+1%暴击率。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>巨型磁铁</td>
 <td>当拾取道具即将消失时，你有50%几率自动拾取它们。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>霜蚀</td>
 <td>被冰冻的敌人会受到持续伤害。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>尸体爆炸</td>
 <td>当一名敌人被爆炸类暴击伤害摧毁时，在其周围触发一系列爆炸。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>奖励</td>
 <td>当一名敌人被暴击伤害摧毁时，有30%几率生成重随/护盾/生命值拾取道具。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>余震</td>
 <td>暴击伤害可以施加状态效果。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>吸血惊情</td>
 <td>获得等同于5%动能伤害的生命值。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>智慧</td>
 <td>在拾取护盾道具时，所有武器进化的进度增加10个击杀。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>佞臣</td>
 <td>在拾取重随道具时，对屏幕上所有敌人造成0至100之间的随机伤害。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>坚毅不倒</td>
 <td>在护盾被摧毁时，有30%几率获得双倍伤害道具。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>三倍伤害</td>
 <td>在双倍伤害持续过程中，每个生成的双倍伤害道具会变成三倍伤害道具。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>碎裂</td>
 <td>被冰冻的敌人所受到的伤害增加50%。伤害系数会相乘而非相加。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>苦修</td>
 <td>在退出战利品界面时，每有一个未使用的重随机会，获得持续20秒的+10%伤害效果。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>和谐之道</td>
 <td>所有装配的武器获得1进化等级。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>不朽</td>
 <td>当你的主武器将被摧毁时，其生命值会降低至1。该技能有2分钟的冷却时间。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>启蒙</td>
 <td>当一名敌人被暴击伤害摧毁时，武器进化进度获得+5击杀。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>愈发接近</td>
 <td>在敌方词语被摧毁后仍然完成该词可使伤害+10%，持续10秒，该效果最多叠加3层。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>杀戮欲望</td>
 <td>所有无人机类武器：<br>  伤害+50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>行刑者</td>
 <td>所有炮塔类武器：<br>  伤害+50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>恶化</td>
 <td>所有远程类武器：<br>  伤害+50%</td>
 </tr>
 </tbody></table>
-<h2>优质战利品列表</h2>
+</details>
+
+<details><summary>优质战利品列表</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名称</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>海啸</td>
 <td>所有爆炸类武器：<br>  攻击范围：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冲击波</td>
 <td>所有爆炸类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>湮灭</td>
 <td>所有爆炸类武器：<br>  暴击系数：+100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>降临</td>
 <td>所有爆炸类武器：<br> 双倍伤害拾取道具：<br> 掉率几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>粉碎射击</td>
 <td>所有动能类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>爆发</td>
 <td>所有动能类武器：<br>  射速：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>穿透者</td>
 <td>所有动能类武器：<br>  暴击率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>先兆</td>
 <td>所有动能类武器：<br>  流血几率：+4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>炼狱</td>
 <td>所有高温类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>等离子体</td>
 <td>所有高温类武器：<br>  攻击范围：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>不死鸟</td>
 <td>所有高温类武器：<br>  重随次数：+5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>岩浆奔流</td>
 <td>所有高温类武器：<br>  点燃几率：+4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>极寒冻结</td>
 <td>所有冰冻类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冰川</td>
 <td>所有冰冻类武器：<br>  冰冻几率：+4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>反击者</td>
 <td>所有冰冻类武器：<br>  护盾几率：+5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冰之复苏</td>
 <td>所有冰冻类武器：<br>  持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>过载</td>
 <td>所有电击类武器：<br>  禁锢几率：+4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>究极风暴</td>
 <td>所有电击类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>放大器</td>
 <td>所有电击类武器：<br>  射速：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>奇点</td>
 <td>所有电击类武器：<br>  持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>接触传染</td>
 <td>所有化学类武器：<br> 疫病几率： +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>脓毒症</td>
 <td>所有化学类武器：<br> 伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>痉挛</td>
 <td>所有化学类武器：<br> 射速：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>衰败</td>
 <td>所有化学类武器：<br> 持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>无限</td>
 <td>所有无人机类武器：<br>  持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>疾速飞行器</td>
 <td>所有无人机类武器：<br>  速度：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>集群意识</td>
 <td>所有无人机类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>霜弑</td>
 <td>所有无人机类武器：<br>  冰冻掉落几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>全面提升</td>
 <td>所有远程类武器：<br>  攻击范围：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>高速链接</td>
 <td>所有远程类武器：<br>  速度：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>最高指令</td>
 <td>所有远程类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>能量注入器</td>
 <td>所有炮塔类武器：<br>  持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>地狱风暴</td>
 <td>所有炮塔类武器：<br>  射速：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>精密仪器</td>
 <td>所有炮塔类武器：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>屠杀</td>
 <td>所有状态效果：<br>  伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>折磨</td>
 <td>所有状态效果：<br>  持续时间：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>中大奖！</td>
 <td>所有战利品效果：<br> 伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>灾祸</td>
 <td>所有战利品武器：<br>  暴击率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>狂潮</td>
 <td>所有助力效果：<br> 伤害：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>超越</td>
 <td>所有助力效果：<br> 范围：+25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>武器库</td>
 <td>所有武器：<br>  伤害：+12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>救星</td>
 <td>所有武器：<br>  持续时间：+12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>观星者</td>
 <td>所有武器：<br>  攻击范围：+12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>近距离平射</td>
 <td>在主武器附近被击中的敌人受到+20%伤害。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>恶化</td>
 <td>所有武器：<br>  状态几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>极冰科技</td>
 <td>冰冻拾取道具：<br>  掉落几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>战时状态</td>
 <td>双倍伤害拾取道具：<br>  掉落几率：+4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>皮纳塔</td>
 <td>全局效果：<br>战利品掉落频率： +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>玻璃大炮</td>
 <td>所有武器：<br>  伤害：+30%<br><br>主武器：<br>  最大生命值：-50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>重新生成</td>
 <td>不再生成生命值拾取道具。<br><br>当你激活一个战利品/冰冻/双倍伤害/重随/护盾拾取道具时，回复最大生命值的5%。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>眼中钉</td>
 <td>持续伤害类武器可以暴击。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>破碎</td>
 <td>所有动能类武器在攻击被冰冻的敌人时获得+5%暴击率。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>韧性</td>
 <td>激活护盾拾取道具时会使你的全局持续时间提升10%，持续10秒。效果最多叠加3层。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>赌徒</td>
 <td>最大重随次数＋1，直到拥有6次。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>保护者</td>
 <td>最大护盾数＋1，直到拥有4个。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>无暇</td>
 <td>每17次完美输入会让你的全局射速提升5%。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>释放</td>
 <td>拼写错误时，每有17次完美输入，对所有敌人造成20爆炸伤害。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>火上加油</td>
 <td>所有持续伤害类武器：<br>  +35%射速</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>枯萎</td>
 <td>所有状态效果：<br>  +35%射速</td>
 </tr>
 </tbody></table>
-<h2>稀有战利品列表</h2>
+</details>
+
+<details><summary>稀有战利品列表</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名称</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>炸裂</td>
 <td>所有爆炸类武器：<br>  攻击范围：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>引爆</td>
 <td>所有爆炸类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>撞毁</td>
 <td>所有动能类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>迸发</td>
 <td>所有动能类武器：<br>  射速：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>炙烤</td>
 <td>所有高温类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>余烬</td>
 <td>所有高温类武器：<br>  攻击范围：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冻土</td>
 <td>所有冰冻类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>寒颤</td>
 <td>所有冰冻类武器：<br>  持续时间：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>电浪</td>
 <td>所有电击类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>激涌</td>
 <td>所有电击类武器：<br>  射速：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>意识上载</td>
 <td>所有无人机类武器：<br>  持续时间：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>针刺</td>
 <td>所有无人机类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>罗网</td>
 <td>所有远程类武器：<br>  攻击范围：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>打击</td>
 <td>所有远程类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>磐石</td>
 <td>所有炮塔类武器：<br>  持续时间：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>轰炸</td>
 <td>所有炮塔类武器：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>弊病</td>
 <td>所有状态效果：<br>  伤害：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>共鸣</td>
 <td>所有状态效果：<br>  持续时间：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>主宰</td>
 <td>所有武器：<br>  伤害：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>持久</td>
 <td>所有武器：<br>  持续时间：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>映射</td>
 <td>所有武器：<br>  攻击范围：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>溅射</td>
 <td>所有爆炸类武器：<br>  攻击范围：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冲击</td>
 <td>所有爆炸类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>蒸发</td>
 <td>所有爆炸类武器：<br>  暴击系数：+75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>湮灭</td>
 <td>所有爆炸类武器：<br> 双倍伤害拾取道具：<br> 掉率几率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>中空弹</td>
 <td>所有动能类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>爆发</td>
 <td>所有动能类武器：<br>  射速：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>穿透</td>
 <td>所有动能类武器：<br>  暴击率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>死神</td>
 <td>所有动能类武器：<br>  流血几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>灼烧</td>
 <td>所有高温类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>辐热</td>
 <td>所有高温类武器：<br>  攻击范围：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>重生</td>
 <td>所有高温类武器：<br>  重随次数：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>可燃</td>
 <td>所有高温类武器：<br>  点燃几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>失温症</td>
 <td>所有冰冻类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>零度以下</td>
 <td>所有冰冻类武器：<br>  冰冻几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>偏移</td>
 <td>所有冰冻类武器：<br>  护盾几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冷却剂</td>
 <td>所有冰冻类武器：<br>  持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>潜藏充能</td>
 <td>所有电击类武器：<br>  禁锢几率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>电容器</td>
 <td>所有电击类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>调制器</td>
 <td>所有电击类武器：<br>  射速：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>集中</td>
 <td>所有电击类武器：<br>  持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>污渍</td>
 <td>所有化学类武器：<br> 疫病几率： +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>毒素</td>
 <td>所有化学类武器：<br> 伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>颤动</td>
 <td>所有化学类武器：<br> 射速：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>弥留</td>
 <td>所有化学类武器：<br> 持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>延展</td>
 <td>所有无人机类武器：<br>  持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>刺击</td>
 <td>所有无人机类武器：<br>  速度：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>自动机</td>
 <td>所有无人机类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冰冷的心</td>
 <td>所有无人机类武器：<br>  冰冻掉落几率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>信号增强</td>
 <td>所有远程类武器：<br>  攻击范围：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>无延迟</td>
 <td>所有远程类武器：<br>  速度：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>操作系统</td>
 <td>所有远程类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>主级发动机</td>
 <td>所有炮塔类武器：<br>  持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>自动大炮</td>
 <td>所有炮塔类武器：<br>  射速：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>校准</td>
 <td>所有炮塔类武器：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>强力损耗</td>
 <td>所有状态效果：<br>  伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>受灾</td>
 <td>所有状态效果：<br>  持续时间：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>大风刮来的</td>
 <td>所有战利品效果：<br> 伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>秘密</td>
 <td>所有战利品效果：<br> 暴击率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>过载</td>
 <td>所有助力效果：<br> 伤害：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>测距仪</td>
 <td>所有助力效果：<br> 范围：+15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>军备</td>
 <td>所有武器：<br>  伤害：+5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>急救包</td>
 <td>所有武器：<br>  持续时间：+5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>望远镜</td>
 <td>所有武器：<br>  攻击范围：+5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>急救包</td>
 <td>向你的仓库加入3个急救包。<br><br>急救包可使主炮塔回复至多30%的最大生命值。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>弹头</td>
 <td>向你的仓库加入2个弹头。<br><br>弹头会以主武器为中心，向外引发一系列强力爆炸。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>血清</td>
 <td>向你的仓库加入2支血清。<br><br>使用血清可在10秒内提升25%暴击率。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冰核</td>
 <td>向你的仓库加入2个冰核。<br><br>冰核会触发全局冰冻效果。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>致死药</td>
 <td>向你的仓库加入2个致死药。<br><br>觅死药会触发全局双倍伤害效果(不对敌人生效)。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>焰浪</td>
 <td>向你的仓库加入2个焰浪。<br><br>焰浪会消耗当前主炮塔10%的生命值来燃烧视野内所有可见的敌人。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>口袋炮塔</td>
 <td>向你的仓库加入1个口袋炮塔。<br><br>口袋炮塔会在敌方集群附近生成一座自动炮塔。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>原爆点</td>
 <td>当目标接近主武器时，高温类武器造成+20%伤害。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>制冷剂</td>
 <td>冰冻拾取道具：<br>  持续时间：+20%<br>  掉落几率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>脆弱</td>
 <td>双倍伤害拾取道具：<br>  持续时间：+20%<br>  掉落几率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>精准</td>
 <td>所有武器：<br>  暴击率：+1%<br>  暴击系数：+50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>医疗包</td>
 <td>回复100生命值。<br><br>当前生命值：300/300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>护盾</td>
 <td>＋1护盾。<br><br>当前护盾：0/3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>重随</td>
 <td>＋1重随次数。<br><br>当前重随次数：3/5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>苦痛者</td>
 <td>每个苦痛者提高+4%持续伤害。该效果在主炮塔附近时翻倍。</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <span>助力</span></div><h1>助力</h1>
 <p>助力是一种永久性的升级，可以通过使用硬币（§）来解锁，硬币是你在挑战中可以获得的一种游戏内货币。在每轮挑战中，玩家拥有有限的槽位来装备已经解锁的助力，不同恶兆等级下的槽位数量不同。</p>
 <p>每个助力通常有特定的条件来决定其效果。要最大程度地利用你的助力，你需要考虑不同助力组合所带来的化学反应，以及把它们和你想要采用的战术搭配起来。</p>
-<h2>法典：主武器</h2>
+<details><summary>法典：主武器</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>披甲</td>
 <td>50 §,<br>200 §</td>
 <td>主武器：<br>  生命值+50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>渴望</td>
 <td>50 §</td>
 <td>在每次试炼或无尽模式开始时，等级提升1。在无尽模式中每存活4分钟，等级提升1。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>赌徒</td>
 <td>50 §</td>
 <td>每次使用重随机会后，主武器伤害+20%，持续20秒。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>纯洁</td>
 <td>100 §</td>
 <td>每次完美输入会提升+1.5%暴击率。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>迷雾</td>
 <td>200 §,<br>500 §</td>
 <td>如果你的生命值低于50%，全局射速+50%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>奉献</td>
 <td>200 §</td>
 <td>每有1个空武器槽位，主武器伤害+25%。在升级时，至少有一个选项会获得提升。</td>
 </tr>
 </tbody></table>
-<h2>法典：无人机</h2>
+</details>
+
+<details><summary>法典：无人机</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>舰队</td>
 <td>200 §</td>
 <td>每次生成一架无人机时，有20%几率额外生成一架。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>多样性</td>
 <td>50 §</td>
 <td>当装配非无人机类型武器时，所有无人机的持续时间提升20%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>闪电战</td>
 <td>50 §</td>
 <td>无人机速度的提升同样会作用于无人机的伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>报应</td>
 <td>300 §</td>
 <td>当一面护盾被击破时，所有现存的无人机会自毁，对敌人造成爆炸伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>替罪羊</td>
 <td>100 §</td>
 <td>拼写错误会随机摧毁一架无人机，不再被视作错误。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>溺爱</td>
 <td>200 §</td>
 <td>无人机消失时会掉落拾取道具。</td>
 </tr>
 </tbody></table>
-<h2>法典：炮塔</h2>
+</details>
+
+<details><summary>法典：炮塔</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>堡垒</td>
 <td>100 §,<br>400 §</td>
 <td>每次炮塔进化会让主武器的最大生命值+50。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>互联</td>
 <td>50 §</td>
 <td>其他每座炮塔会使所有炮塔射速+10%，最多提升至+50%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>战场情报</td>
 <td>50 §</td>
 <td>激活一个拾取道具会使所有现存炮塔攻击范围+30%，该效果不可叠加。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>暗黑传递</td>
 <td>500 §</td>
 <td>生成一个会在现存炮塔之间随机弹跳的投掷物，该投掷物会造成电击伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>观察者</td>
 <td>100 §</td>
 <td>如果在3秒内你没有发动任何攻击，直至你的下一次攻击前，炮塔伤害+30%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>弱点</td>
 <td>200 §</td>
 <td>在炮塔攻击攻击范围内的敌人承受来自其他来源的伤害时，该伤害提升30%。</td>
 </tr>
 </tbody></table>
-<h2>法典：持续伤害</h2>
+</details>
+
+<details><summary>法典：持续伤害</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>腐蚀</td>
 <td>500 §</td>
 <td>持续伤害可以暴击。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>七鳃鳗</td>
 <td>200 §</td>
 <td>在主武器附近造成的持续伤害会回复主武器1点生命值。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>强韧</td>
 <td>100 §,<br>300 §</td>
 <td>所有持续伤害类武器的持续时间提升35%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>苦痛者集群</td>
 <td>50 §</td>
 <td>将苦痛者加入至战利品池。每个苦痛者+3%持续伤害，在主武器附近时该效果翻倍。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>信念</td>
 <td>100 §</td>
 <td>如果你的重随次数保持在最大值，持续伤害类武器的射速+40%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>感染者</td>
 <td>300 §,<br>500 §</td>
 <td>持续伤害类武器施加状态效果的几率+3%。</td>
 </tr>
 </tbody></table>
-<h2>法典：远程</h2>
+</details>
+
+<details><summary>法典：远程</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>近身搏斗</td>
 <td>100 §</td>
 <td>所有远程伤害被视为发生在主武器附近。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>三角钉</td>
 <td>200 §</td>
 <td>在远程武器暴击时，生成12个三角钉，对通过的敌人造成伤害，并基于该伤害提升流血几率。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>腐蚀性弹药</td>
 <td>500 §</td>
 <td>有几率掉落腐蚀性弹药－20秒内远程类武器的基础伤害增加10点化学伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>隐私</td>
 <td>50 §</td>
 <td>每触发一个战利品效果，所有远程伤害提高15%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>拯救</td>
 <td>100 §</td>
 <td>如果你的护盾面数保持在最大值，远程武器的攻击范围+40%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>狙击手</td>
 <td>200 §</td>
 <td>远程武器攻击范围的提升同样会作用于远程武器的伤害。</td>
 </tr>
 </tbody></table>
-<h2>法典：电击</h2>
+</details>
+
+<details><summary>法典：电击</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>电流爆发</td>
 <td>200 §</td>
 <td>电击的持续时间相关的升级会将其25%的数额转化为电击禁锢几率。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>风暴电池</td>
 <td>500 §</td>
 <td>主炮塔对附近敌人造成电击伤害。每装备一件电击类武器，基础伤害获得提升。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>火花</td>
 <td>300 §</td>
 <td>当电击类武器暴击时，释放6个电火花，电火花的伤害会随着暴击率与暴击系数的改变而变化。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>高效网格</td>
 <td>100 §</td>
 <td>每装备一件非电击类武器，所有电击类持续时间提升10%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>暴力放电</td>
 <td>300 §</td>
 <td>禁锢造成更高伤害，范围更大。被禁锢杀死的敌人有50%的几率将该效果传递给附近的敌人。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>电塔</td>
 <td>100 §</td>
 <td>主武器的基础电击伤害+5，所有电击类武器的伤害提升10%。</td>
 </tr>
 </tbody></table>
-<h2>法典：高温</h2>
+</details>
+
+<details><summary>法典：高温</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>火焰术</td>
 <td>200 §</td>
 <td>每有一名被点燃的敌人，高温伤害提升2%。点燃敌人时基于效果的持续时间和伤害造成额外的高温伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>灼烧</td>
 <td>200 §</td>
 <td>远程增益也会作用于主武器附近的高温武器/效果所造成的伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>熔炉核心</td>
 <td>100 §</td>
 <td>主炮塔的基础高温伤害+5，所有高温伤害提升10%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>火球术</td>
 <td>500 §</td>
 <td>主武器进行攻击时会释放出一个缓慢飞行的火球，造成高温伤害。最多存在1个火球。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>焰浪</td>
 <td>250 §</td>
 <td>向你的初始仓库加入{1}个焰浪。消耗当前主炮塔10%的生命值来燃烧视野内所有可见的敌人。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>烈焰荣光</td>
 <td>50 §</td>
 <td>主武器附近的敌人受到的高温伤害+25%，在受到高温伤害时有额外12%的几率被点燃。</td>
 </tr>
 </tbody></table>
-<h2>法典：动能</h2>
+</details>
+
+<details><summary>法典：动能</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名称</div></th>
-<th><div style="width:50px">花费</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>枪手</td>
 <td>500 §</td>
 <td>将最大打字狂潮数提升5。每个等级的打字狂潮+2.5%动能伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>渴血</td>
 <td>200 §</td>
 <td>每有1个受流血效果影响的敌人，动能类射速提升2%，攻击范围提升1%。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>附魔弹药</td>
 <td>300 §</td>
 <td>动能伤害暴击时有40%几率对命中的敌人施加一层随机状态。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>弹片</td>
 <td>500 §</td>
 <td>有几率掉落弹片－动能类武器在20秒内提升10基础动能伤害。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>合并武器</td>
 <td>100 §</td>
 <td>每有一件非动能类武器，所有动能伤害提升10.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>口袋炮塔</td>
 <td>200 §</td>
 <td>将口袋炮塔这一消耗道具加入仓库以及战利品池。口袋炮塔消失时可以被拾起并生成一座炮塔。</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>法典：化学</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名称</div></th>
+<th><div style="width:70px">花费</div></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>二次来袭</td>
+<td>500 §</td>
+<td>化学效果及武器击杀敌人时，有30%几率生成一个复活的无人机，追踪并对敌人造成化学伤害。</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>过度曝光</td>
+<td>300 §</td>
+<td>化学状态可以叠加3层，每层使疫病伤害提升（伤害×层数）</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>杂化</td>
+<td>500 §</td>
+<td>20%的作用在其他伤害类型的伤害增益，也会作用于化学伤害。</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>释放肮脏</td>
+<td>300 §</td>
+<td>每12秒，对所有靠近主武器的敌人释放一次疫病。</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>被动适应</td>
+<td>100 §</td>
+<td>装备的化学武器造成的化学伤害提升10%，持续时间提升20%。</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>有毒灼烧</td>
+<td>200 §</td>
+<td>点燃会造成化学伤害，而非高温伤害。疫病每次产生作用时有10%的几率导致点燃，该几率会随暴击率提升。</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">主菜单</a> / <span>恶兆</span></div><h1>恶兆</h1>
+<p>恶兆是在试炼或无尽模式开始时从池中随机选择的难度修改器。每个恶兆以特定方式增加挑战，更高的恶兆等级会解锁逐渐更难的修改器。</p>
+<p>恶兆分为三个等级。等级1恶兆提供中等挑战，等级2恶兆更具挑战性，等级3恶兆呈现最大难度。在特定恶兆等级通关试炼会解锁下一等级，增加游戏中同时激活的恶兆数量，最多可达6个。在恶兆激活状态下完成游戏会奖励更多硬币并解锁额外内容。</p>
+<details><summary>等级一恶兆</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">名称</div></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>健壮之敌</td>
+<td>敌人的生命值提高50%。</td>
+</tr>
+<tr>
+<td>更长的词</td>
+<td>需要拼写的词语多一个字母。</td>
+</tr>
+<tr>
+<td>无增益</td>
+<td>无双倍伤害或冰冻拾取道具。</td>
+</tr>
+<tr>
+<td>迅捷之敌</td>
+<td>敌人的速度提升5%。</td>
+</tr>
+<tr>
+<td>更少选择</td>
+<td>战利品选项减少一个。</td>
+</tr>
+<tr>
+<td>虚弱</td>
+<td>玩家造成的伤害减少20%。</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>等级二恶兆</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">名称</div></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>易碎无期</td>
+<td>主武器生命值减半。</td>
+</tr>
+<tr>
+<td>强韧之敌</td>
+<td>敌人的生命值翻倍。</td>
+</tr>
+<tr>
+<td>无重随机会</td>
+<td>无重随拾取道具。</td>
+</tr>
+<tr>
+<td>无护盾</td>
+<td>无护盾拾取道具。</td>
+</tr>
+<tr>
+<td>进击之敌</td>
+<td>敌人的速度提升10%。</td>
+</tr>
+<tr>
+<td>无暴击</td>
+<td>你的武器无法暴击。</td>
+</tr>
+<tr>
+<td>追踪者</td>
+<td>有几率生成被部分隐藏的敌人。</td>
+</tr>
+<tr>
+<td>蚯蚓</td>
+<td>有几率生成带有长串词语的敌人。</td>
+</tr>
+<tr>
+<td>致盲类型</td>
+<td>词语不显示拼写过程。</td>
+</tr>
+<tr>
+<td>快速回复</td>
+<td>作用于敌人的状态效果减退速度加倍。</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>等级三恶兆</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">名称</div></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过错惩罚</td>
+<td>每次拼写错误扣减3点生命值。</td>
+</tr>
+<tr>
+<td>战争迷雾</td>
+<td>你无法看到远处的词语。</td>
+</tr>
+<tr>
+<td>泰坦级敌人</td>
+<td>敌人的生命值提升150%。</td>
+</tr>
+<tr>
+<td>加密者</td>
+<td>部分敌人的词语被加密。</td>
+</tr>
+<tr>
+<td>双词会</td>
+<td>部分敌人的词语重复一次。</td>
+</tr>
+<tr>
+<td>精英对抗</td>
+<td>看守者和群聚者生成频率加倍。</td>
+</tr>
+<tr>
+<td>护盾加持</td>
+<td>敌人拥有可以抵挡一次攻击的护盾。</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>主菜单</span></div><h1>《指尖疾速》官方百科</h1>
 <h2>欢迎，打字大师们！</h2>
 <p>欢迎来到《指尖疾速：打字狂潮》的官方百科！在一款打字生存类游戏里测试你的打字技巧，用速度和准确作为武器保卫你自己！利用强大的工具来彻底改变你的输出方式，对抗一波又一波的敌人。快来Steam上探索更多关于这款游戏的好玩之处吧：【指尖疾速：打字狂潮】(<a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/)。">https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/)。</a></p>
 <p>本百科是包含游戏特色、机制以及抢先体验版本可玩内容的综合指引。我们希望能让信息一直保持在最新状态，向着正式版本（1.0.版本）的发布迈进。本百科以表格的方式呈现不同模块的内容，会随着游戏的开发而经常更新。</p>
 <h2>包含内容</h2>
-<a href="#main_weapons" class="portal">主武器</a><a href="#weapons" class="portal">升级武器</a><a href="#enemies" class="portal">敌人</a><a href="#loot" class="portal">战利品道具</a><a href="#loot1" class="portal">助力</a></div></div></div>
+<a href="#main_weapons" class="portal">主武器</a><a href="#weapons" class="portal">升级武器</a><a href="#enemies" class="portal">敌人</a><a href="#loot" class="portal">战利品道具</a><a href="#loot1" class="portal">助力</a><a href="#omens" class="portal">恶兆</a></div></div></div>
 </body>
 </html>

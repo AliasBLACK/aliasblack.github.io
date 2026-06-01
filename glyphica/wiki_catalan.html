@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Les armes principals son les armes inicials a <em>Glyphica</em> i tenen un paper central en el joc. Quan escrius una paraula mostrada sobre un enemic, l&#39;Arma Principal fixa aquest enemic com a objectiu. Cada Arma Principal té efectes i mecàniques úniques, que requereixen estratègies diferents per utilitzar-les amb eficàcia.</p>
 <p>Mentre que algunes armes principals posen l&#39;èmfasi en la velocitat d&#39;escriptura (PPM), d&#39;altres requereixen un plantejament més tàctic. Com qualsevol altre arma al joc, les armes principals poden ser millorades i evolucionades, potenciant-ne les habilitats i efectivitat a mesura que avances.</p>
 <h2>Llista d&#39;Armes Principals</h2>
-<a href="#repeater" class="portal">Repetidora</a><a href="#heatray" class="portal">Raig de calor</a><a href="#barrage" class="portal">Ràfega</a><a href="#splattershot" class="portal">Llençababes</a><a href="#overmind" class="portal">Ment colmena</a><a href="#wildcard" class="portal">Comodí</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Repetidora</span></div><h1>Repetidora</h1>
+<a href="#repeater" class="portal">Repetidora</a><a href="#heatray" class="portal">Raig de calor</a><a href="#barrage" class="portal">Ràfega</a><a href="#splattershot" class="portal">Llençababes</a><a href="#overmind" class="portal">Ment colmena</a><a href="#wildcard" class="portal">Comodí</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Repetidora</span></div><h1><span class="weapon-icon"></span> Repetidora</h1>
 <p>Etiquetes: Cinètic, Principal<br>Arma devastadora que dispara un seguit de bales en ràfegues curtes.</p>
 <h2>Evolucions</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Abast: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Raig de calor</span></div><h1>Raig de calor</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Raig de calor</span></div><h1><span class="weapon-icon"></span> Raig de calor</h1>
 <p>Etiquetes: Calor, Principal, D.P.<br>Dispara un raig constant de llum concentrada i increïblement precisa que causa dany al llarg del temps.</p>
 <h2>Evolucions</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Cadència de foc: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Ràfega</span></div><h1>Ràfega</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Ràfega</span></div><h1><span class="weapon-icon"></span> Ràfega</h1>
 <p>Etiquetes: Explosiu, Principal<br>Dispara una ràfega de coets explosius contra un objectiu i el seu entorn. Es recarrega amb el temps.</p>
 <h2>Evolucions</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Vel. de recàrrega: +30%<br>  (Cadència de foc)</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Llençababes</span></div><h1>Llençababes</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Llençababes</span></div><h1><span class="weapon-icon"></span> Llençababes</h1>
 <p>Etiquetes: Químic, Principal, D.P.<br>Llença unes boles de baba als teus oponents que els debiliten i fan mal.</p>
 <h2>Evolucions</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Duració: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Ment colmena</span></div><h1>Ment colmena</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Ment colmena</span></div><h1><span class="weapon-icon"></span> Ment colmena</h1>
 <p>Etiquetes: Elèctric, Dron, Principal<br>Comanda un conjunt de drons per portar destrucció als teus enemics.</p>
 <h2>Evolucions</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Camp d&#39;anul·lació</td>
-<td>Els enemics fixats per la Ment Colmena es veuen alentits i reben 50% de dany dels altres efectes i armes elèctriques.</td>
+<td>Els enemics fixats per la Ment Colmena es veuen alentits i reben +50% de dany dels altres efectes i armes elèctriques.</td>
 </tr>
 <tr>
 <td>Camp d&#39;anul·lació II</td>
@@ -682,7 +728,7 @@ th {
 <td>Cadència de foc: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Comodí</span></div><h1>Comodí</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#main_weapons">Armes Principals</a> / <span>Comodí</span></div><h1><span class="weapon-icon"></span> Comodí</h1>
 <p>Etiquetes: Cinètic, Calor, Fred, Elèctric, Principal<br>El teu proper tret es seleccionarà a l’atzar entre quatre armes possibles, així que dispara amb compte.</p>
 <h2>Evolucions</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>Les armes de nivell s’obtenen durant la partida a mesura que puges de nivell. Un cop seleccionada, l’arma s’afegeix al teu arsenal. Cada arma té un mètode d’activació únic, però la majoria es poden activar escrivint i marcant objectius amb l’Arma Principal.</p>
 <p>Pots aconseguir un màxim de quatre armes per partida. Un cop l’arma s’afegeix al teu arsenal, les seves millores poden aparèixer en el conjunt de millores disponibles en pujar de nivell, cosa que et permet millorar-ne les habilitats a mesura que avances entre les hordes d’enemics.</p>
 <h2>Llista d&#39;Armes de nivell</h2>
-<a href="#spectre" class="portal">Espectre</a><a href="#sentry" class="portal">Sentinella </a><a href="#tesla" class="portal">Mina Tesla</a><a href="#oscillator" class="portal">Oscil·lador</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Caçador</a><a href="#chopper" class="portal">Rebanyadora</a><a href="#minefield" class="portal">Camp de mines</a><a href="#blade" class="portal">Trampa de fulles</a><a href="#orbiter" class="portal">Orbitador</a><a href="#guardian" class="portal">Guardià</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Espectre</span></div><h1>Espectre</h1>
+<a href="#spectre" class="portal">Espectre</a><a href="#sentry" class="portal">Sentinella </a><a href="#tesla" class="portal">Mina Tesla</a><a href="#oscillator" class="portal">Oscil·lador</a><a href="#meteor" class="portal">Meteor</a><a href="#hunter" class="portal">Caçador</a><a href="#chopper" class="portal">Rebanyadora</a><a href="#minefield" class="portal">Camp de mines</a><a href="#blade" class="portal">Trampa de fulles</a><a href="#orbiter" class="portal">Orbitador</a><a href="#guardian" class="portal">Guardià</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Espectre</span></div><h1><span class="weapon-icon"></span> Espectre</h1>
 <p>Etiquetes: Cinètic, Dron<br>Completar paraules que continguin els glifs a, e, o Invoca un nombre de ràpids drons de combat cos a cos equivalent al nombre dels glifs superiors coincidents.</p>
 <h2>Evolucions</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>Completar una paraula de més de 7 glifs fa aparèixer un espectre addicional.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Sentinella </span></div><h1>Sentinella</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Sentinella </span></div><h1><span class="weapon-icon"></span> Sentinella</h1>
 <p>Etiquetes: Calor, Torreta<br>Desplega una torreta automàtica que dispara a qualsevol enemic que entri dins del seu abast.</p>
 <h2>Evolucions</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>Abast: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Mina Tesla</span></div><h1>Mina Tesla</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Mina Tesla</span></div><h1><span class="weapon-icon"></span> Mina Tesla</h1>
 <p>Etiquetes: Elèctric, Torreta, D.P.<br>Completar paraules que comencin amb els glifs b, c, d, e Desplega una torreta elèctrica que infligeix dany en el temps.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>Prob. d&#39;Estàtica: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Oscil·lador</span></div><h1>Oscil·lador</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Oscil·lador</span></div><h1><span class="weapon-icon"></span> Oscil·lador</h1>
 <p>Etiquetes: Calor, Remot<br>Dispara un corrent oscil·lant de partícules en la direcció del teu objectiu més recent.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Prob. Crític: +3%<br>  Mult. Crític: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Meteor</span></div><h1>Meteor</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Meteor</span></div><h1><span class="weapon-icon"></span> Meteor</h1>
 <p>Etiquetes: Explosiu, Remot<br>Genera periòdicament objectius en ubicacions aleatòries que es poden activar per iniciar un bombardeig orbital.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>Abast: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Caçador</span></div><h1>Caçador</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Caçador</span></div><h1><span class="weapon-icon"></span> Caçador</h1>
 <p>Etiquetes: Elèctric, Dron, D.P.<br>Completar paraules que continguin els glifs i, o, u Invoca un nombre de drons que disparen raigs elèctrics equivalent al nombre dels glifs superiors coincidents.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>Duració: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Rebanyadora</span></div><h1>Rebanyadora</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Rebanyadora</span></div><h1><span class="weapon-icon"></span> Rebanyadora</h1>
 <p>Etiquetes: Cinètic, Remot<br>Genera una fulla giratòria massiva al disparar l&#39;Arma Principal que avança fins a la vora de la pantalla, fent mal a tots els enemics al seu pas.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>Prob. Sagnat: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Camp de mines</span></div><h1>Camp de mines</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Camp de mines</span></div><h1><span class="weapon-icon"></span> Camp de mines</h1>
 <p>Etiquetes: Explosiu, Dron<br>Completar paraules que comencin amb els glifs f, g, h, i Invoca mines de moviment lent que exploten al entrar en contacte amb enemics.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1590,8 +1636,8 @@ th {
 <td>Mines recursives:<br>    Prob. d&#39;aparició: +30%<br>    (Cadència de foc)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Trampa de fulles</span></div><h1>Trampa de fulles</h1>
-<p>Etiquetes: Cinètic, Torreta<br>Completar paraules que comencin amb els glifs j, k, l, m Desplega una trampa giratòria de quatre fulles.</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Trampa de fulles</span></div><h1><span class="weapon-icon"></span> Trampa de fulles</h1>
+<p>Etiquetes: Cinètic, Torreta<br>Completar paraules que comencin amb els glifs j, r, l, m Desplega una trampa giratòria de quatre fulles.</p>
 <h2>Evolucions</h2>
 <table>
 <thead>
@@ -1682,7 +1728,7 @@ th {
 <td>Duració: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Orbitador</span></div><h1>Orbitador</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Orbitador</span></div><h1><span class="weapon-icon"></span> Orbitador</h1>
 <p>Etiquetes: Químic, Remot<br>Completar paraules que comencin amb els glifs n, o, p, q Desplega un orbe que orbita al voltant de l’Arma Principal, danyant tot el que troba al seu camí.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>Velocitat: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Guardià</span></div><h1>Guardià</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#weapons">Armes de nivell</a> / <span>Guardià</span></div><h1><span class="weapon-icon"></span> Guardià</h1>
 <p>Etiquetes: Calor, Dron<br>Desplega instantàniament un dron que dispara làsers als enemics. Activa les recàrregues de combustible per reabastir el Guardià, que consumirà combustible i es desactivarà quan s’esgoti.</p>
 <h2>Evolucions</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Els enemics a <em>Glyphica</em> es generen de manera procedural segons una mètrica interna anomenada <strong>amenaça</strong>, que augmenta a mesura que la partida avança. A les Proves, l’amenaça es multiplica pel nivell actual de la prova, fent que cada nivell sigui progressivament més difícil. Al mode Infinit, l’amenaça es compara amb un sistema d’escala adaptativa basat en el nivell del jugador, i el valor més alt determina la dificultat de l&#39;aparició d&#39;enemics.</p>
 <p>Els enemics també es classifiquen com a <strong>especials</strong> o <strong>èlits</strong>, cadascun amb una categoria pròpia que limita la seva taxa d’aparició dins del nivell global d’amenaça.</p>
 <h2>Llista d&#39;enemics</h2>
-<a href="#drone" class="portal">Dron</a><a href="#shielddrone" class="portal">Dron blindat</a><a href="#stalker" class="portal">Assetjador</a><a href="#shooter" class="portal">Tirador</a><a href="#splitter" class="portal">Fragmentat</a><a href="#warder" class="portal">Custodi</a><a href="#swarmer" class="portal">Eixam</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#enemies">Enemics</a> / <span>Dron</span></div><h1>Dron</h1>
+<a href="#drone" class="portal">Dron</a><a href="#shielddrone" class="portal">Dron blindat</a><a href="#stalker" class="portal">Assetjador</a><a href="#shooter" class="portal">Tirador</a><a href="#splitter" class="portal">Fragmentat</a><a href="#wurm" class="portal">Cuc</a><a href="#warder" class="portal">Custodi</a><a href="#swarmer" class="portal">Eixam</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#enemies">Enemics</a> / <span>Dron</span></div><h1>Dron</h1>
 <p>Els drons són enemics que es desplacen implacablement cap a la teva Arma Principal. De vegades poden aparèixer en dues formes millorades:<br>Engrandit: Triplica la seva vida, fent-los més difícils de derrotar.<br>Accelerat: Duplica la seva velocitat de moviment, augmentant la urgència per eliminar-los.</p>
 <h2>Llista de variants</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Salut: 240<br>Dany: 40<br></td>
+<td>Salut: 80<br>Dany: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Salut: 2400<br>Dany: 120<br></td>
+<td>Salut: 800<br>Dany: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Nombre de fragments: 6<br>Salut dels fragments: 650<br>Dany dels fragments: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#enemies">Enemics</a> / <span>Cuc</span></div><h1>Cuc</h1>
+<p>El Cuc és un enemic multi-segmentat les parts del qual han de ser destruïdes en seqüència. Cada segment està unit al següent per una barrera indestructible que bloqueja tots els atacs de projectils.</p>
+<h2>Llista de variants</h2>
+<table>
+<thead>
+<tr>
+<th>Imatge</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Nombre de segments: 2<br>Salut dels segments: 80<br>Dany dels segments: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Nombre de segments: 3<br>Salut dels segments: 200<br>Dany dels segments: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Nombre de segments: 4<br>Salut dels segments: 1000<br>Dany dels segments: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Nombre de segments: 4<br>Salut dels segments: 1800<br>Dany dels segments: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <a href="#enemies">Enemics</a> / <span>Custodi</span></div><h1>Custodi</h1>
 <p>El Custodi és un enemic d’elit que apareix a les fases avançades del joc. Disposa d’un escut giratori que bloqueja el dany procedent de la direcció cap a la qual està orientat. A més, mentre el Custodi està viu, proporciona una aura protectora als enemics propers, fent-los invulnerables fins que sigui derrotat.</p>
 <h2>Llista de variants</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <span>Objectes de botí</span></div><h1>Objectes de botí</h1>
 <p>Els objectes de botí s’obtenen durant una partida activant un cofre del tresor. Es mostrarà una selecció aleatòria d’objectes de botí, i escollir-ne un t’atorgarà un bonus passiu que es mantindrà actiu fins al final de la partida.</p>
 <p>Els objectes de botí estan categoritzats com a <strong>comuns</strong>, <strong>poc comuns</strong> i <strong>rars</strong>, la qual cosa determina la seva probabilitat d’aparèixer a la selecció de botí. Derrotar un cap a les Proves recompensa amb un cofre que conté només objectes rars.</p>
-<h2>Llista de botí rar</h2>
+<details><summary>Llista de botí rar</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nom</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Profeta</td>
-<td>Si entres a una pantalla de pujada de nivell, evolució o botí sense Reintents, en rebràs 1 automàticament.</td>
+<td>Si entres a una pantalla de pujada de nivell, evolució o botí sense Rerolls, en rebràs 1 automàticament.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Improvització</td>
 <td>Totes les Armes de drons:<br>  Prob. d&#39;aparició d&#39;un dron extra: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Saqueig</td>
 <td>+1 Opció de botí</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Multifuncions</td>
 <td>Totes les Armes remontes guanyen +1% Prob. crític per cada arma que poseeixis.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Imant Gegant</td>
 <td>Tens un 50% de probabilitat de recollir automàticament les millores quan desapareixen.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gelada</td>
 <td>Els enemics reben dany en el temps quan estan congelats.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Necrobomba</td>
 <td>Al destruir un enemic amb dany crític explosiu, s&#39;activen una sèrie d&#39;explosions al voltant de la seva posició.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Premi</td>
-<td>Al destruir un enemic amb dany crític, hi ha un 30% de probabilitat de fer aparèixer millores de Reintent, Escut o Salut.</td>
+<td>Al destruir un enemic amb dany crític, hi ha un 30% de probabilitat de fer aparèixer millores de Reroll, Escut o Salut.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rèplica</td>
 <td>El dany crític sempre infligirà un efecte d&#39;estat.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vampirisme</td>
 <td>Guanya salut igual a un 5% del dany cinètic crític.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Saviesa</td>
 <td>Al recollir un Escut, augmenta 10 baixes a totes les evolucions d&#39;armes.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bufó</td>
-<td>Al recollir un Reintent, provoca una quantitat aleatòria de dany entre 0 i 100 a tots els enemics de la pantalla.</td>
+<td>Al recollir un Reroll, provoca una quantitat aleatòria de dany entre 0 i 100 a tots els enemics de la pantalla.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Última resistència</td>
 <td>Al destruir-se un Escut, guanya Dany doble.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dany triple</td>
 <td>Totes les millores de Dany doble ara son Dany triple.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fractura</td>
 <td>Tot el dany a enemics congelats augmenta un 50%.<br><br>Aquest modificador es multiplicatiu.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Asceta</td>
-<td>Al sortir de la pantalla de botí, guanya un 10% de dany durant 20 segons per cada Reintent no utilitzat.</td>
+<td>Al sortir de la pantalla de botí, guanya un 10% de dany durant 20 segons per cada Reroll no utilitzat.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harmonitzador</td>
 <td>Totes les armes equipades guanyen un nivell d&#39;evolució.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Immortalitat</td>
 <td>Si la teva Arma Principal està a punt de ser destruïda, es reduirà a 1 de salut en comptes de trencar-se. Aquesta habilitat només es pot utilitzar una vegada cada 2 minuts.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Il·lustració</td>
 <td>Al destruir un enemic amb dany crític, guanya +1 baixa per a totes les evolucions d&#39;armes.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Proper</td>
 <td>Completar la paraula d&#39;un enemic després de destrui-lo dona +10% de dany durant 10 segons. Es pot acumular fins a 3 vegades.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Homicida</td>
 <td>Totes les Armes de drons:<br>  +50% Dany</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Executant</td>
 <td>Totes les Armes de torreta:<br>  +50% Dany</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Degeneració</td>
 <td>Totes les Armes remotes:<br>  +50% Dany</td>
 </tr>
 </tbody></table>
-<h2>Llista de botí poc comú</h2>
+</details>
+
+<details><summary>Llista de botí poc comú</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nom</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Tsunami</td>
 <td>Totes les Armes explosives:<br>  Abast: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ona de xoc</td>
 <td>Totes les Armes explosives:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Anihilació</td>
 <td>Totes les Armes explosives:<br>  Mult. crític: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Descens</td>
 <td>Totes les Armes explosives:<br>  Millores de Dany doble:<br>    Prob. d&#39;aparició: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Foc indiscriminat</td>
 <td>Totes les Armes cinètiques:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erupció</td>
 <td>Totes les Armes cinètiques:<br>  Cadència de foc: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Perforador</td>
 <td>Totes les Armes cinètiques:<br>  Prob. crític: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Herald</td>
 <td>Totes les Armes cinètiques:<br>  Prob. de sagnat: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Infern</td>
 <td>Totes les Armes de calor:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plasmador</td>
 <td>Totes les Armes de calor:<br>  Abast: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fènix</td>
-<td>Totes les Armes de calor:<br>  Prob. de reintent: +5%</td>
+<td>Totes les Armes de calor:<br>  Prob. de reroll: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Piroclast</td>
 <td>Totes les Armes de calor:<br>  Prob. de cremar: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criònica</td>
 <td>Totes les Armes de fred:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Glacera</td>
 <td>Totes les Armes de fred:<br>  Prob. de congelar: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Repulsor</td>
 <td>Totes les Armes de fred:<br>  Prob. d&#39;aparició d&#39;escut: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criogen</td>
 <td>Totes les Armes de fred:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sobrecàrrega</td>
 <td>Totes les Armes elèctriques:<br>  Prob. d&#39;estàtica: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Megatempesta</td>
 <td>Totes les Armes elèctriques:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Amplificador</td>
 <td>Totes les Armes elèctriques:<br>  Cadència de foc: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Singularitat</td>
 <td>Totes les Armes elèctriques:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Contagi</td>
 <td>Totes les Armes químiques:<br>  Prob. d&#39;infligir plaga: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sèpsia</td>
 <td>Totes les Armes químiques:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Convulsions</td>
 <td>Totes les Armes químiques:<br>  Cadència de foc: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Descomposició</td>
 <td>Totes les Armes químiques:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Infinitat</td>
 <td>Totes les Armes de drons:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hiperpropulsors</td>
 <td>Totes les Armes de drons:<br>  Velocitat: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Supercervell</td>
 <td>Totes les Armes de drons:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fatalitat gelada</td>
 <td>Totes les Armes de drons:<br>  Prob. d&#39;aparició de congelació: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Omnipotenciador</td>
 <td>Totes les Armes remotes:<br>  Abast: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Enllaç instantani</td>
 <td>Totes les Armes remotes:<br>  Velocitat: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Domini</td>
 <td>Totes les Armes remotes:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Energitzant</td>
 <td>Totes les Armes de torreta:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tempesta infernal</td>
 <td>Totes les Armes de torreta:<br>  Cadència de foc: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Exactitud</td>
 <td>Totes les Armes de torreta:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Envestida</td>
 <td>Tots els Efectes d&#39;estat:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Turment</td>
 <td>Tots els Efectes d&#39;estat:<br>  Duració: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bingo</td>
 <td>Tots els Efectes de botí:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Misteri</td>
 <td>Totes les Armes de botí:<br>  Prob. crític: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Devastació</td>
 <td>Totes els Efectes d&#39;augments:<br>  Dany: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Més Enllà</td>
 <td>Tots els Efectes d&#39;augments:<br>  Abast: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arsenal</td>
 <td>Totes les armes:<br>  Dany: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salvavides</td>
 <td>Totes les Armes:<br>  Duració: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ulls de linx</td>
 <td>Totes les Armes:<br>  Abast: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>A frec de roba</td>
 <td>Els enemics colpejats a prop de l&#39;Arma Principal reben +20% de dany.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Agreujament</td>
 <td>Totes les Armes:<br>  Prob. d&#39;efecte d&#39;estat: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Criotècnia</td>
 <td>Millores de Congelació:<br>  Prob. d&#39;aparició: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bèl·lic</td>
 <td>Millores de Dany doble:<br>  Prob. d&#39;aparició: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pinyata</td>
 <td>Efecte Global:<br>  Freqüència de botí: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Canó de vidre</td>
 <td>Totes les Armes:<br>  Dany: +30%<br><br>Arma Principal:<br>  Salut màxima: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Regeneració</td>
-<td>Et cures 5% de la salut màxima quan actives una millora de botí, congelació, dany doble, reintent o escut.</td>
+<td>Et cures 5% de la salut màxima quan actives una millora de botí, congelació, dany doble, reroll o escut.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erosió</td>
 <td>Les armes D.P. poden fer crítics.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Esmicolar</td>
 <td>Totes les Armes cinètiques guanyen +5% Prob. crític contra enemics congelats.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resiliència</td>
 <td>Activar millores d&#39;Escut augmenta la teva duració global un 10% durant 10 segons. Es pot acumular fins a 3 vegades.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Apostador</td>
-<td>Afegeix 1 Reintent i augmenta el màxim de Reintents fins a 6.</td>
+<td>Afegeix 1 Reroll i augmenta el màxim de Rerolls fins a 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Protector</td>
 <td>Afegeix un Escut i augmenta el màxim d&#39;Escuts fins a 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Impecable</td>
 <td>Cada x17 Seqüències perfectes també augmenta la teva cadència de foc global un 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Catarsi</td>
 <td>Per errada, provoca 20 de dany explosiu a tots els enemics per cada x17 Seqüències perfectes.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Debilitant</td>
 <td>Totes les Armes de D.P.:<br>  +35% Cadència de foc</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pansir</td>
 <td>Tots els Efectes d&#39;estat:<br>  +35% Cadència de foc</td>
 </tr>
 </tbody></table>
-<h2>Llista de botí comú</h2>
+</details>
+
+<details><summary>Llista de botí comú</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Nom</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Explosió</td>
 <td>Totes les Armes explosives:<br>  Abast: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Detonació</td>
 <td>Totes les Armes explosives:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Destrossa</td>
 <td>Totes les Armes cinètiques:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salva</td>
 <td>Totes les Armes cinètiques:<br>  Cadència de foc: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Socarrar</td>
 <td>Totes les Armes de calor:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Brases</td>
 <td>Totes les Armes de calor:<br>  Abast: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Permagel</td>
 <td>Totes les Armes de fred:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fredor</td>
 <td>Totes les Armes de fred:<br>  Duració: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Descàrrega</td>
 <td>Totes les Armes elèctriques:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sobretensió</td>
 <td>Totes les Armes elèctriques:<br>  Cadència de foc: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Enllaç</td>
 <td>Totes les Armes de drons:<br>  Duració: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fiblada</td>
 <td>Totes les Armes de drons:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Abast</td>
 <td>Totes les Armes remotes:<br>  Abast: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Envestida</td>
 <td>Totes les Armes remotes:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fortificació</td>
 <td>Totes les Armes de torreta:<br>  Duració: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Baluard</td>
 <td>Totes les Armes de torreta:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Malaltia</td>
 <td>Tots els Efectes d&#39;estat:<br>  Dany: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resonància</td>
 <td>Totes els Efectes d&#39;estat:<br>  Duració: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dominació</td>
 <td>Totes les Armes:<br>  Dany: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resistència</td>
 <td>Totes les Armes:<br>  Duració: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Projecció</td>
 <td>Totes les Armes:<br>  Abast: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zona d&#39;impacte</td>
 <td>Totes les Armes explosives:<br>  Abast: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Impacte</td>
 <td>Totes les Armes explosives:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vaporitzar</td>
 <td>Totes les Armes explosives:<br>  Mult. crític: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Botí mortal</td>
 <td>Totes les Armes explosives:<br>  Millora de Dany doble:<br>    Prob. d&#39;aparició: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bales buides</td>
 <td>Totes les Armes cinètiques:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ràfega</td>
 <td>Totes les Armes cinètiques:<br>  Cadència de foc: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Penetració</td>
 <td>Totes les Armes cinètiques:<br>  Prob. crític: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Segador</td>
 <td>Totes les Armes cinètiques:<br>  Prob. de sagnat: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Abrasador</td>
 <td>Totes les Armes de calor:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Radiador</td>
 <td>Totes les Armes de calor:<br>  Abast: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Renaixement</td>
-<td>Totes les Armes de calor:<br>  Prob. de reintent: +2%</td>
+<td>Totes les Armes de calor:<br>  Prob. de reroll: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Inflamable</td>
 <td>Totes les Armes de calor:<br>  Prob. de cremar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hipotèrmia</td>
 <td>Totes les Armes de fred:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sota zero</td>
 <td>Totes les Armes de fred:<br>  Prob. de congelar: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Desviació</td>
 <td>Totes les Armes de fred:<br>  Prob. d&#39;aparició d&#39;escut: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Refrigerant</td>
 <td>Totes les Armes de fred:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Càrrega latent</td>
 <td>Totes les Armes elèctriques:<br>  Prob. d&#39;estàtica: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Condensador</td>
 <td>Totes les Armes elèctriques:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Modulador</td>
 <td>Totes les Armes elèctriques:<br>  Cadència de foc: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Concentrar</td>
 <td>Totes les Armes elèctriques:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Infecció</td>
 <td>Totes les Armes químiques:<br>  Prob. d&#39;infligir plaga: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Toxines</td>
 <td>Totes les Armes químiques:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Palpitacións</td>
 <td>Totes les Armes químiques:<br>  Cadència de foc: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Residus</td>
 <td>Totes les Armes químiques:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Extensor</td>
 <td>Totes les Armes de drons:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Propulsors</td>
 <td>Totes les Armes de drons:<br>  Velocitat: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Autòmat</td>
 <td>Totes les Armes de drons:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Cors Glaçats</td>
 <td>Totes les Armes de drons:<br>  Prob. d&#39;aparició de congelació: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Amplificador de senyal</td>
 <td>Totes les Armes remotes:<br>  Abast: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sense retard</td>
 <td>Totes les Armes remotes:<br>  Velocitat: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Controls</td>
 <td>Totes les Armes remotes:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Allargador</td>
 <td>Totes les Armes de torreta:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Canó automàtic</td>
 <td>Totes les Armes de torreta:<br>  Cadència de foc: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Calibratge</td>
 <td>Totes les Armes de torreta:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Atrició</td>
 <td>Tots els Efectes d&#39;estat:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sofriment</td>
 <td>Tots els Efectes d&#39;estat:<br>  Duració: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Guany inesperat</td>
 <td>Tots els Efectes de botí:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Secret</td>
 <td>Tots els Efectes de botí:<br>  Prob. crític: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Càrrega màxima</td>
 <td>Tots els Efectes dels augments:<br>  Dany: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Telèmetre</td>
 <td>Tots els Efectes dels augments:<br>  Abast: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Armaments</td>
 <td>Totes les Armes:<br>  Dany: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kit de supervivència</td>
 <td>Totes les Armes:<br>  Duració: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Telescopi</td>
 <td>Totes les Armes:<br>  Abast: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kit de primers auxilis</td>
 <td>Afegeix 3 kits de primers auxilis al teu inventari.<br><br>Els kits de primers auxilis curen fins a 30% de la salut de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ogiva</td>
 <td>Afegeix 2 ogives al teu inventari.<br><br>Les ogives desencadenen una sèrie de potents explosions que es propaguen des de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sèrum</td>
 <td>Afegeix 2 sèrums al teu inventari.<br><br>Els Sèrums donen 25% de Prob. crític durant 10 segons.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Crio-nucli</td>
 <td>Afegeix 2 crio-nuclis al teu inventari.<br><br>Els crio-nuclis activen la millora de congelació global.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Píndola mortal</td>
 <td>Afegeix 2 píndoles mortals al teu inventari.<br><br>Les píndoles mortals activen la millora de Dany doble.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Flamarada</td>
 <td>Afegeix 2 flamarades al teu inventari.<br><br>Les flamarades cremen a tots els enemics visibles a canvi del 10% de la salut de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Torreta de butxaca</td>
 <td>Afegeix 1 Torreta de butxaca al teu inventari.<br><br>La Torreta de butxaca crea una torreta automàtica a prop de grups d&#39;enemics.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Epicentre</td>
 <td>Les Armes de calor fan +20% de dany quan l&#39;objectiu és a prop de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Refrigerant</td>
 <td>Millores de Congelació:<br>  Duració: +20%<br>  Prob. d&#39;aparició: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vulnerabilitat</td>
 <td>Millores de Dany doble:<br>  Duració: +20%<br>  Prob. d&#39;aparició: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Precisió</td>
 <td>Totes les Armes:<br>  Prob. crític: +1%<br>  Mult. crític: +50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kit mèdic</td>
 <td>Restaura 100 de salut.<br><br>Salut actual: 300 / 300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Escut</td>
 <td>Afegeix 1 Escut.<br><br>Escuts actuals: 0 / 3</td>
 </tr>
 <tr>
-<td>Reintent</td>
-<td>Afegeix 1 Reintent.<br><br>Reintents actuals: 3 / 5</td>
+<td><span class="loot-icon"></span></td>
+<td>Reroll</td>
+<td>Afegeix 1 Reroll.<br><br>Rerolls actuals: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Afligidor</td>
 <td>Cada Afligidor augmenta el dany periòdic (D.P.) en +4%. Aquest bonus es duplica quan l&#39;objectiu es troba a prop de la Torreta Principal.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <span>Augments</span></div><h1>Augments</h1>
 <p>Els augments són millores permanents que es poden desbloquejar utilitzant Monedes (§), una moneda que s’aconsegueix durant les partides. Al inici de cada partida, els jugadors disposen d’un nombre limitat de ranures per equipar els augments desbloquejats, sent aquest nombre variable segons el nivell de Presagi seleccionat.</p>
 <p>Cada augment té normalment condicions específiques que determinen els seus beneficis. Per treure’n el màxim profit, considera les sinergies entre els augments i com s’adapten a la teva estratègia preferida.</p>
-<h2>Còdex: Arma Principal</h2>
+<details><summary>Còdex: Arma Principal</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Blindat</td>
 <td>50 §,<br>200 §</td>
 <td>Arma Principal:<br>  Salut: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Apassionat</td>
 <td>50 §</td>
 <td>Al inici de cada Prova o Mode Infinit, guanya un nivell. Per cada 4 minuts sobreviscuts al Mode Infinit, guanya un nivell.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Jugador</td>
 <td>50 §</td>
-<td>Cada Reintent que fas servir dona a l&#39;Arma Principal +20% de dany durant 20 segons.</td>
+<td>Cada Reroll que fas servir dona a l&#39;Arma Principal +20% de dany durant 20 segons.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Immaculat</td>
 <td>100 §</td>
 <td>La Seqüència perfecta ara dona +1.5% Prob. crític per acumulació.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Boira baixa</td>
 <td>200 §,<br>500 §</td>
 <td>Si tens menys del 50% de salut, guanya un bonus de +50% de Cadència de foc global.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Devoció</td>
 <td>200 §</td>
 <td>L&#39;Arma Principal guanya +25% de dany per cada ranura d&#39;arma buida. Al menys una de les opcions de cada pantalla de pujada de nivell serà una millora.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Dron</h2>
+</details>
+
+<details><summary>Còdex: Dron</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Armada</td>
 <td>200 §</td>
 <td>Probabilitat del 20% d&#39;invocar un dron adicional quan s&#39;invoca un.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Diversitat</td>
 <td>50 §</td>
 <td>Per cada arma que no sigui de drons equipada, augmenta la duració de tots els Drons un 20%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Assalt llampec</td>
 <td>50 §</td>
 <td>Les millores de velocitat dels drons també milloren el seu dany.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Revenja</td>
 <td>300 §</td>
 <td>Cada vegada que perdis un Escut, tots els drons s&#39;autodestrueixen fent dany explosiu.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Cap de turc</td>
 <td>100 §</td>
 <td>Les errades destrueixen aleatoriament un Dron existent en comptes de contar com a una errada.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Saqueig</td>
 <td>200 §</td>
 <td>Els drons poden deixar millores al desaparèixer.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Torreta</h2>
+</details>
+
+<details><summary>Còdex: Torreta</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Fortalesa</td>
 <td>100 §,<br>400 §</td>
 <td>Cada evolució de torreta també atorga +50 de salut màxima a l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Xarxa</td>
 <td>50 §</td>
 <td>Per cada altra torreta que tinguis, les teves torretes guanyen 10% de cadència de foc fins a un màxim de 50%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Investigació de camp</td>
 <td>50 §</td>
 <td>Al activar una millora, reps un 30% d&#39;abast per a totes les torretes desplegades. Aquest efecte no s&#39;acumula.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Relé carregat</td>
 <td>500 §</td>
 <td>Un projectil rebota entre totes les torretes desplegades fent dany elèctric.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Vigilant</td>
 <td>100 §</td>
 <td>Si no has atacat durant 3 segons, guanya +30% de dany adicional per les torretes fins el teu següent atac.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Punt feble</td>
 <td>200 §</td>
 <td>Els enemics dins de l&#39;abast d&#39;una torreta reben un 30% més dany d&#39;altres fonts.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: D.P.</h2>
+</details>
+
+<details><summary>Còdex: D.P.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Corrosió</td>
 <td>500 §</td>
 <td>El D.P. ara pot fer crític.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Llamprea</td>
 <td>200 §</td>
 <td>El D.P. causat a prop de l&#39;Arma Principal la cura 1 punt de salut.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Tenacitat</td>
 <td>100 §,<br>300 §</td>
 <td>Augmenta la duració de totes les armes de D.P. en un 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Afligidor</td>
 <td>50 §</td>
 <td>Afegeix afligidors a la llista de botí disponible. Cadascun dóna +4% de dany D.P. L&#39;efecte es duplica a prop de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Convicció</td>
 <td>100 §</td>
-<td>Les armes D.P. guayen un +40% de cadència de foc adicional mentres tinguis el màxims de Reintents.</td>
+<td>Les armes D.P. guayen un +40% de cadència de foc adicional mentres tinguis el màxims de Rerolls.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Contaminant</td>
 <td>300 §,<br>500 §</td>
 <td>Les armes D.P. tenen +3% de probabilitat d&#39;infligir efectes d&#39;estat.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Remot</h2>
+</details>
+
+<details><summary>Còdex: Remot</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Cos a cos</td>
 <td>100 §</td>
 <td>Tot el dany que fagin les teves armes remotes es considera que està a prop de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Obriülls</td>
 <td>200 §</td>
 <td>Quan un atac amb armes remotes és crític, genera 12 Obriülls que danyen els enemics que passen, amb una probabilitat augmentada de sagnar segons el seu dany.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Munició càustica</td>
 <td>500 §</td>
 <td>Probabilitat de deixar caure munició càustica - afegeix 10 de dany químic base a les armes remotes durant 20 segons.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Pirateria</td>
 <td>50 §</td>
 <td>Per cada efecte de botí equipat, augmenta tot el dany remot un 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Salvació</td>
 <td>100 §</td>
 <td>Totes les Armes remotes guanyen +40% d&#39;abast sempre que tinguis el màxim d&#39;Escuts.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Franctirador</td>
 <td>200 §</td>
 <td>Les millores de l&#39;abast a les armes remotes també s&#39;aplica al seu dany.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Elèctric</h2>
+</details>
+
+<details><summary>Còdex: Elèctric</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Càrrega voltaica</td>
 <td>200 §</td>
 <td>Les millores a la duració de les armes elèctriques apliquen el 25% del seu valor a la probabilitat d&#39;infligir estàtica.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Tempesta vigilant</td>
 <td>500 §</td>
 <td>L&#39;Arma Principal fa dany elèctric als enemics propers. Cada arma elèctrica equipada augmenta el dany base.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Espurnes</td>
 <td>300 §</td>
 <td>Quan un arma elèctrica fa crític, allibera 6 espurnes elèctriques que escalen el seu dany segons la prob. i el mult. crític.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Xarxa eficient</td>
 <td>100 §</td>
 <td>Per cada arma no elèctrica equipada, augmenta la durada de totes les armes elèctriques en un 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Descàrrega violenta</td>
 <td>300 §</td>
 <td>L&#39;estàtica fa més mal i té més abast. Els enemics que morin a causa de l&#39;estàtica tenen un 50% de probabilitats de passar l&#39;estàtica als enemics propers.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Torreta electritzada</td>
 <td>100 §</td>
 <td>L&#39;Arma Principal guanya +5 de dany elèctric base i augmenta el dany de totes les armes elèctriques en un 10%.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Calor</h2>
+</details>
+
+<details><summary>Còdex: Calor</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Piromància</td>
 <td>200 §</td>
 <td>Augmenta el dany de calor en un 2% per cada enemic cremant-se. Al cremar a un enemic fas dany de calor adicional en base a la duració i dany del cremat.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Cauterització</td>
 <td>200 §</td>
 <td>Els bonus d&#39;abast també s&#39;apliquen al dany causat a prop de l&#39;Arma Principal amb armes o efectes de calor.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Nucli del forn</td>
 <td>100 §</td>
 <td>L&#39;Arma Principal guanya +5 de dany de calor base i augmenta tot el dany de les armes de calor en un 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Bola de foc</td>
 <td>500 §</td>
 <td>Al disparar l&#39;Arma Principal llences una bola de foc que fa dany de calor als enemics en el seu camí. Només pots tenir 1 bola de foc activa.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Flamarada</td>
 <td>250 §</td>
 <td>Afegeix el consumible Flamarada al teu inventari inicial i llista de botí. Crema a tots els enemics visibles a canvi del 10% de la salut de l&#39;Arma Principal.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Glòria abrasadora</td>
 <td>50 §</td>
 <td>Els enemics a prop de l&#39;Arma Principal reben +25% de dany de calor adicional i tenen un 12% de probabilitats de cremar-se al rebre dany de calor.</td>
 </tr>
 </tbody></table>
-<h2>Còdex: Cinètic</h2>
+</details>
+
+<details><summary>Còdex: Cinètic</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Nom</div></th>
-<th><div style="width:50px">Cost</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
 <th>Descripció</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Pistoler</td>
 <td>500 §</td>
 <td>Augmenta el màxim de Ràfega de paralues en 5. Cada rang de Ràfega de paraules dona +2.5% de dany Cinètic.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Set de sang</td>
 <td>200 §</td>
 <td>Augmenta la Cadència de foc Cinètica en 2% i l&#39;Abast en 1% per cada enemic Sagnant.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Munició imbuïda</td>
 <td>300 §</td>
 <td>Els crítics amb dany Cinètic tenen un 40% de probabilitat d&#39;infligir un Estat aleatori al enemic.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Metralla</td>
 <td>500 §</td>
 <td>Probabilitat de deixar caure Metralla - afegeix 10 al dany Cinètic base a les armes Cinètiques durant 20 segons.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Armes combinades</td>
 <td>100 §</td>
 <td>Per cada arma no Cinètica equipada, augmenta tot el dany Cinètic en un 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Torreta de butxaca</td>
 <td>200 §</td>
 <td>Afegeix un consumible Torreta de butxaca al teu inventari i a la llista de botí. La Torreta de butxaca crea una torreta que es pot recollir al expirar.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Còdex: Químic</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Nom</div></th>
+<th><div style="width:70px">Cost</div></th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Reanimació</td>
+<td>500 §</td>
+<td>Les baixes químiques tenen un 30% de probabilitat d&#39;invocar un Dron Reanimat que busca i infligeix dany químic als enemics.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Sobreexposició</td>
+<td>300 §</td>
+<td>L&#39;estat químic ara es pot acumular fins a 3 vegades, multiplicant el dany de plaga per acumulació.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Hibridació</td>
+<td>500 §</td>
+<td>El 25% de les millores de dany aplicades a altres tipus també s&#39;apliquen al químic.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Descàrrega de residus</td>
+<td>300 §</td>
+<td>Aplica plaga cada 12 segons a tots els enemics propers a l&#39;Arma principal</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Escalat reactiu</td>
+<td>100 §</td>
+<td>Cada arma química equipada augmenta el dany químic un 10% i la durada de les armes químiques un 20%</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Cremades tòxiques</td>
+<td>200 §</td>
+<td>El cremat infligeix dany químic en lloc de calor. La plaga té un 10% de probabilitat d&#39;aplicar cremat a cada instància, incrementat addicionalment per la prob. de crític</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Inici</a> / <span>Presagis</span></div><h1>Presagis</h1>
+<p>Els Presagis són modificadors de dificultat que es seleccionen aleatòriament d&#39;un grup a l&#39;inici d&#39;una partida de Proves o Infinita. Cada Presagi augmenta el desafiament d&#39;una manera específica, i els nivells de Presagi més alts desbloquegen modificadors progressivament més difícils.</p>
+<p>Els Presagis es divideixen en tres nivells. Els Presagis de Nivell 1 ofereixen un desafiament moderat, els Presagis de Nivell 2 són més exigents, i els Presagis de Nivell 3 presenten la major dificultat. Superar les Proves en un determinat nivell de Presagi desbloqueja el següent nivell, augmentant el nombre de Presagis simultanis actius durant una partida, fins a un màxim de 6. Completar partides amb Presagis actius recompensa més Monedes i desbloqueja contingut addicional.</p>
+<details><summary>Presagis Nivell 1</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nom</div></th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Enemics resistents</td>
+<td>Els enemics tenen un 50% més de vida.</td>
+</tr>
+<tr>
+<td>Paraules més llargues</td>
+<td>Les paraules tenen un caràcter més.</td>
+</tr>
+<tr>
+<td>Sense millores</td>
+<td>Sense aparició de dany doble ni congelació.</td>
+</tr>
+<tr>
+<td>Enemics àgils</td>
+<td>Els enemics son un 5% més ràpids.</td>
+</tr>
+<tr>
+<td>Menys opcions</td>
+<td>Tens una opció de botí menys.</td>
+</tr>
+<tr>
+<td>Debilitat</td>
+<td>El jugador fa un 20% menys de dany.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Presagis Nivell 2</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nom</div></th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arma fràgil</td>
+<td>La vida de l&#39;arma principal es redueix a la meitat.</td>
+</tr>
+<tr>
+<td>Enemics resilients</td>
+<td>Els enemics tenen un 100% més de vida.</td>
+</tr>
+<tr>
+<td>Sense rerolls</td>
+<td>Sense aparició de rerolls.</td>
+</tr>
+<tr>
+<td>Sense escuts</td>
+<td>Sense aparició d&#39;escuts.</td>
+</tr>
+<tr>
+<td>Enemics veloços</td>
+<td>Els enemics són un 10% més ràpids.</td>
+</tr>
+<tr>
+<td>Sense crítics</td>
+<td>Les teves armes no poder fer crítics.</td>
+</tr>
+<tr>
+<td>Assetjadors</td>
+<td>Prob. d&#39;aparició d&#39;enemics amb paraules parcialment ocultes.</td>
+</tr>
+<tr>
+<td>Cucs</td>
+<td>Prob. d&#39;aparició d&#39;enemics amb seqüència de paraules.</td>
+</tr>
+<tr>
+<td>Escriptura cega</td>
+<td>Les paraules no mostren el progrés d&#39;escriptura</td>
+</tr>
+<tr>
+<td>Recuperació ràpida</td>
+<td>Els efectes d&#39;estat als enemics expiren el doble de ràpid.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Presagis Nivell 3</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Nom</div></th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Errades penalitzants</td>
+<td>Reps 3 de dany per cada error d&#39;escriptura.</td>
+</tr>
+<tr>
+<td>Boira de guerra</td>
+<td>No pots veure les paraules llunyanes.</td>
+</tr>
+<tr>
+<td>Enemics titànics</td>
+<td>Els enemics tenen un 150% més de vida.</td>
+</tr>
+<tr>
+<td>Paraules xifrades</td>
+<td>Alguns enemics tenen paraules xifrades.</td>
+</tr>
+<tr>
+<td>Paraules dobles</td>
+<td>Alguns enemics tenen paraules dobles.</td>
+</tr>
+<tr>
+<td>Presència d&#39;elit</td>
+<td>Els Custodis i Eixams apareixen el doble.</td>
+</tr>
+<tr>
+<td>Enemics blindats</td>
+<td>Els enemics apareixen amb un escut d&#39;un cop.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Inici</span></div><h1>Wiki Oficial de Glyphica</h1>
 <h2>Benvingut, Mecanògraf</h2>
 <p>Benvingut a la wiki oficial de Glyphica: Typing Survival! Posa a prova la teva habilitat de tecleig en aquest joc de supervivència d&#39;hordes, on la velocitat i la precisió són les teves millors armes. Arma&#39;t amb potents eines per transformar la teva destresa amb el teclat en atacs devastadors contra enemics implacables. Descobreix molt més comprant el joc a Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Aquesta wiki és una guia completa de les característiques, mecàniques i contingut disponibles en la versió d’accés anticipat de Glyphica. El nostre objectiu és mantenir la informació actualitzada a mesura que avancem cap a la versió definitiva, l’1.0. La wiki està organitzada en seccions que trobaràs a la taula de continguts i s’actualitzarà regularment conforme el joc evolucioni.</p>
 <h2>Taula de continguts</h2>
-<a href="#main_weapons" class="portal">Armes Principals</a><a href="#weapons" class="portal">Armes de nivell</a><a href="#enemies" class="portal">Enemics</a><a href="#loot" class="portal">Objectes de botí</a><a href="#loot1" class="portal">Augments</a></div></div></div>
+<a href="#main_weapons" class="portal">Armes Principals</a><a href="#weapons" class="portal">Armes de nivell</a><a href="#enemies" class="portal">Enemics</a><a href="#loot" class="portal">Objectes de botí</a><a href="#loot1" class="portal">Augments</a><a href="#omens" class="portal">Presagis</a></div></div></div>
 </body>
 </html>

@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Главное оружие – это стартовое оружие в Glyphica и оно играет ключевую роль в геймплее. Когда ты вводишь слово, отображаемое над врагом, главное оружие фиксируется на этом враге как на цели. Каждое главное оружие имеет уникальные эффекты и механику, требующую разных стратегий для эффективного использования.</p>
 <p>Некоторые главные оружия делают упор на скорость печати (WPM), другие требуют более тактического подхода. Как и другие виды оружия в игре, главное оружие можно улучшать и эволюционировать, повышая его способности и эффективность по мере прогресса.</p>
 <h2>Список главного оружия</h2>
-<a href="#repeater" class="portal">Повторитель</a><a href="#heatray" class="portal">Тепловой луч</a><a href="#barrage" class="portal">Шквал</a><a href="#splattershot" class="portal">Брызгострел</a><a href="#overmind" class="portal">Сверхразум</a><a href="#wildcard" class="portal">Джокер</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Повторитель</span></div><h1>Повторитель</h1>
+<a href="#repeater" class="portal">Повторитель</a><a href="#heatray" class="portal">Тепловой луч</a><a href="#barrage" class="portal">Шквал</a><a href="#splattershot" class="portal">Брызгострел</a><a href="#overmind" class="portal">Сверхразум</a><a href="#wildcard" class="portal">Джокер</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Повторитель</span></div><h1><span class="weapon-icon"></span> Повторитель</h1>
 <p>Теги: Кинетическое, Основное<br>Опустошающее оружие, стреляющее сериями пуль короткими очередями.</p>
 <h2>Эволюции</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Дальность: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Тепловой луч</span></div><h1>Тепловой луч</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Тепловой луч</span></div><h1><span class="weapon-icon"></span> Тепловой луч</h1>
 <p>Теги: Тепловое, Основное, Урон периодического действия<br>Выпускает постоянный луч невероятно точного концентрированного света, наносящий урон периодического действия.</p>
 <h2>Эволюции</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Скорострельность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Шквал</span></div><h1>Шквал</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Шквал</span></div><h1><span class="weapon-icon"></span> Шквал</h1>
 <p>Теги: Взрывное, Основное<br>Выпускает залп взрывающихся ракет по цели и её окружению. Перезаряжается со временем.</p>
 <h2>Эволюции</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Скорость перезарядки: +30%<br> (Скорострельность)</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Брызгострел</span></div><h1>Брызгострел</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Брызгострел</span></div><h1><span class="weapon-icon"></span> Брызгострел</h1>
 <p>Теги: Химическое, Основное, Урон периодического действия<br>Стреляйте комками слизи по противникам, чтобы ослабить и повредить их.</p>
 <h2>Эволюции</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Длительность: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Сверхразум</span></div><h1>Сверхразум</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Сверхразум</span></div><h1><span class="weapon-icon"></span> Сверхразум</h1>
 <p>Теги: Электрическое, Дрон, Основное<br>Командуйте отрядом дронов, обрушивающих разрушение на ваших врагов.</p>
 <h2>Эволюции</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Нулевое поле</td>
-<td>Враги, на которых нацелен Сверхразум, замедляются и получают 50% урона от других электрических воздействий и оружия.</td>
+<td>Враги, на которых нацелен Сверхразум, замедляются и получают +50% урона от других электрических воздействий и оружия.</td>
 </tr>
 <tr>
 <td>Нулевое поле II</td>
@@ -682,7 +728,7 @@ th {
 <td>Скорострельность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Джокер</span></div><h1>Джокер</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#main_weapons">Главное оружие</a> / <span>Джокер</span></div><h1><span class="weapon-icon"></span> Джокер</h1>
 <p>Теги: Кинетическое, Тепловое, Холодное, Электрическое, Основное<br>Ваш следующий выстрел случайно выбирается из четырёх возможных видов оружия, так что стреляйте осторожно.</p>
 <h2>Эволюции</h2>
 <table>
@@ -810,8 +856,8 @@ th {
 <p>Оружие повышения уровня получается во время забега при повышении уровня. После выбора оружие добавляется в твой арсенал. Каждое оружие имеет уникальный способ активации, но большинство можно задействовать с помощью печати и наведения главным оружием.</p>
 <p>Максимум можно получить четыре таких оружия. После добавления в арсенал его улучшения становятся доступны в пуле улучшений при повышении уровня, позволяя усиливать его способности по мере прогресса.</p>
 <h2>Список оружия повышения уровня</h2>
-<a href="#spectre" class="portal">Призрак</a><a href="#sentry" class="portal">Сторож</a><a href="#tesla" class="portal">Мина Теслы</a><a href="#oscillator" class="portal">Осциллятор</a><a href="#meteor" class="portal">Метеор</a><a href="#hunter" class="portal">Охотник</a><a href="#chopper" class="portal">Дробилка</a><a href="#minefield" class="portal">Минное поле</a><a href="#blade" class="portal">Ловушка-лезвие</a><a href="#orbiter" class="portal">Орбитер</a><a href="#guardian" class="portal">Страж</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Призрак</span></div><h1>Призрак</h1>
-<p>Теги: Кинетическое, Дрон<br>Завершение слов, содержащих глифы a, e, o Порождает быстрых дронов ближнего боя в количестве, соответствующем указанному выше.</p>
+<a href="#spectre" class="portal">Призрак</a><a href="#sentry" class="portal">Сторож</a><a href="#tesla" class="portal">Мина Теслы</a><a href="#oscillator" class="portal">Осциллятор</a><a href="#meteor" class="portal">Метеор</a><a href="#hunter" class="portal">Охотник</a><a href="#chopper" class="portal">Дробилка</a><a href="#minefield" class="portal">Минное поле</a><a href="#blade" class="portal">Ловушка-лезвие</a><a href="#orbiter" class="portal">Орбитер</a><a href="#guardian" class="portal">Страж</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Призрак</span></div><h1><span class="weapon-icon"></span> Призрак</h1>
+<p>Теги: Кинетическое, Дрон<br>Завершение слов, содержащих глифы а, е, о Порождает быстрых дронов ближнего боя в количестве, соответствующем указанному выше.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -894,7 +940,7 @@ th {
 <td>Завершение слова длиной более 7 глифов создаёт дополнительного Призрака.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Сторож</span></div><h1>Сторож</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Сторож</span></div><h1><span class="weapon-icon"></span> Сторож</h1>
 <p>Теги: Тепловое, Турель<br>Разворачивает автоматическую турель, которая стреляет по любому врагу, оказавшемуся в радиусе действия.</p>
 <h2>Эволюции</h2>
 <table>
@@ -986,8 +1032,8 @@ th {
 <td>Дальность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Мина Теслы</span></div><h1>Мина Теслы</h1>
-<p>Теги: Электрическое, Турель, Урон периодического действия<br>Завершение слов, начинающихся с глифов b, c, d, e Разворачивает электрическую турель, наносящую урон периодического действия.</p>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Мина Теслы</span></div><h1><span class="weapon-icon"></span> Мина Теслы</h1>
+<p>Теги: Электрическое, Турель, Урон периодического действия<br>Завершение слов, начинающихся с глифов б, в, г, д Разворачивает электрическую турель, наносящую урон периодического действия.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -1090,7 +1136,7 @@ th {
 <td>Шанс статики: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Осциллятор</span></div><h1>Осциллятор</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Осциллятор</span></div><h1><span class="weapon-icon"></span> Осциллятор</h1>
 <p>Теги: Тепловое, Дистанционный<br>Выпускает колеблющийся поток частиц в направлении вашей последней цели.</p>
 <h2>Эволюции</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Шанс критического урона: +3%<br> Множитель критического урона: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Метеор</span></div><h1>Метеор</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Метеор</span></div><h1><span class="weapon-icon"></span> Метеор</h1>
 <p>Теги: Взрывное, Дистанционный<br>Периодически создаёт метки целей в случайных местах, которые можно активировать для начала орбитальной бомбардировки.</p>
 <h2>Эволюции</h2>
 <table>
@@ -1278,8 +1324,8 @@ th {
 <td>Дальность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Охотник</span></div><h1>Охотник</h1>
-<p>Теги: Электрическое, Дрон, Урон периодического действия<br>Завершение слов, содержащих глифы i, o, u Порождает дронов, стреляющих электрическими лучами, в количестве, соответствующем указанному выше.</p>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Охотник</span></div><h1><span class="weapon-icon"></span> Охотник</h1>
+<p>Теги: Электрическое, Дрон, Урон периодического действия<br>Завершение слов, содержащих глифы и, ы, у Порождает дронов, стреляющих электрическими лучами, в количестве, соответствующем указанному выше.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -1370,7 +1416,7 @@ th {
 <td>Длительность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Дробилка</span></div><h1>Дробилка</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Дробилка</span></div><h1><span class="weapon-icon"></span> Дробилка</h1>
 <p>Теги: Кинетическое, Дистанционный<br>При выстреле из главного оружия появляется гигантское вращающееся лезвие, которое движется к краю экрана, нанося урон всем врагам на своём пути.</p>
 <h2>Эволюции</h2>
 <table>
@@ -1486,8 +1532,8 @@ th {
 <td>Шанс кровотечения: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Минное поле</span></div><h1>Минное поле</h1>
-<p>Теги: Взрывное, Дрон<br>Завершение слов, начинающихся с глифов f, g, h, i Создаёт медленно движущиеся мины, которые взрываются при контакте с врагами.</p>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Минное поле</span></div><h1><span class="weapon-icon"></span> Минное поле</h1>
+<p>Теги: Взрывное, Дрон<br>Завершение слов, начинающихся с глифов ф, ц, х, и Создаёт медленно движущиеся мины, которые взрываются при контакте с врагами.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -1590,8 +1636,8 @@ th {
 <td>Рекурсивные мины:<br> Частота появления: +30%<br> (Скорострельность)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Ловушка-лезвие</span></div><h1>Ловушка-лезвие</h1>
-<p>Теги: Кинетическое, Турель<br>Завершение слов, начинающихся с глифов j, k, l, m Разворачивает вращающуюся четырёхлопастную ловушку-лезвие.</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Ловушка-лезвие</span></div><h1><span class="weapon-icon"></span> Ловушка-лезвие</h1>
+<p>Теги: Кинетическое, Турель<br>Завершение слов, начинающихся с глифов ж, к, л, м Разворачивает вращающуюся четырёхлопастную ловушку-лезвие.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -1682,8 +1728,8 @@ th {
 <td>Длительность: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Орбитер</span></div><h1>Орбитер</h1>
-<p>Теги: Химическое, Дистанционный<br>Завершение слов, начинающихся с глифов n, o, p, q Разворачивает сферу, вращающуюся вокруг Главного оружия, нанося урон всему на своём пути.</p>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Орбитер</span></div><h1><span class="weapon-icon"></span> Орбитер</h1>
+<p>Теги: Химическое, Дистанционный<br>Завершение слов, начинающихся с глифов н, о, п, к Разворачивает сферу, вращающуюся вокруг Главного оружия, нанося урон всему на своём пути.</p>
 <h2>Эволюции</h2>
 <table>
 <thead>
@@ -1786,7 +1832,7 @@ th {
 <td>Скорость: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Страж</span></div><h1>Страж</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#weapons">Оружие повышения уровня</a> / <span>Страж</span></div><h1><span class="weapon-icon"></span> Страж</h1>
 <p>Теги: Тепловое, Дрон<br>Мгновенно разворачивает Дрона, стреляющего лазерами по врагам. Активируйте топливные контейнеры, чтобы пополнить запас Стража, который расходует топливо и деактивируется, когда оно заканчивается.</p>
 <h2>Эволюции</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Враги в Glyphica появляются процедурно на основе внутренней метрики под названием угроза, которая увеличивается по мере прогресса забега. В режиме Испытания угроза умножается на текущий уровень Испытания, делая каждый уровень всё сложнее. В Бесконечном режиме угроза сравнивается с адаптивной системой масштабирования, основанной на уровне игрока, и более высокое значение определяет сложность появления врагов.</p>
 <p>Враги также делятся на особых и элитных, каждый с собственным лимитом класса, ограничивающим их частоту появления в пределах общего уровня угрозы.</p>
 <h2>Список врагов</h2>
-<a href="#drone" class="portal">Дрон</a><a href="#shielddrone" class="portal">Дрон-щит</a><a href="#stalker" class="portal">Сталкер</a><a href="#shooter" class="portal">Стрелок</a><a href="#splitter" class="portal">Разделитель</a><a href="#warder" class="portal">Хранитель</a><a href="#swarmer" class="portal">Роевой</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#enemies">Враги</a> / <span>Дрон</span></div><h1>Дрон</h1>
+<a href="#drone" class="portal">Дрон</a><a href="#shielddrone" class="portal">Дрон-щит</a><a href="#stalker" class="portal">Сталкер</a><a href="#shooter" class="portal">Стрелок</a><a href="#splitter" class="portal">Разделитель</a><a href="#wurm" class="portal">Червь</a><a href="#warder" class="portal">Хранитель</a><a href="#swarmer" class="portal">Роевой</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#enemies">Враги</a> / <span>Дрон</span></div><h1>Дрон</h1>
 <p>Дроны – это враги, которые неустанно движутся к вашему основному оружию. Иногда они могут появляться в двух усиленных формах:<br>Увеличенные: их здоровье утроено, что делает их сложнее для уничтожения.<br>Ускоренные: их скорость движения удвоена, что повышает срочность их ликвидации.</p>
 <h2>Список вариантов</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Здоровье: 240<br>Урон: 40<br></td>
+<td>Здоровье: 80<br>Урон: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Здоровье: 2400<br>Урон: 120<br></td>
+<td>Здоровье: 800<br>Урон: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Количество осколков: 6<br>Здоровье осколка: 650<br>Урон осколка: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#enemies">Враги</a> / <span>Червь</span></div><h1>Червь</h1>
+<p>Червь — это многосегментный враг, части которого должны быть уничтожены последовательно. Каждый сегмент связан со следующим неразрушимым барьером, который блокирует все снарядные атаки.</p>
+<h2>Список вариантов</h2>
+<table>
+<thead>
+<tr>
+<th>Изображение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Количество сегментов: 2<br>Здоровье сегмента: 80<br>Урон сегмента: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Количество сегментов: 3<br>Здоровье сегмента: 200<br>Урон сегмента: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Количество сегментов: 4<br>Здоровье сегмента: 1000<br>Урон сегмента: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Количество сегментов: 4<br>Здоровье сегмента: 1800<br>Урон сегмента: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <a href="#enemies">Враги</a> / <span>Хранитель</span></div><h1>Хранитель</h1>
 <p>Хранитель — это элитный враг, появляющийся на поздних этапах игры. У него есть вращающийся щит, блокирующий урон с той стороны, куда он повернут. Кроме того, пока Хранитель жив, он создаёт защитную ауру для ближайших врагов, делая их неуязвимыми, пока Хранитель не будет повержен.</p>
 <h2>Список вариантов</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <span>Предметы лута</span></div><h1>Предметы лута</h1>
 <p>Предметы лута получают во время забега при активации сундука с сокровищами. Отображается случайный выбор предметов лута, и выбор одного даёт пассивный бонус, который остаётся активным до конца забега.</p>
 <p>Предметы лута делятся на обычные, необычные и редкие, что определяет вероятность их появления в списке выбора лута. Победа над боссом в режиме Испытания даёт сундук с сокровищами, содержащий только редкие предметы.</p>
-<h2>Список редкого лута</h2>
+<details><summary>Список редкого лута</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Название</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Провидец</td>
 <td>Если у вас 0 перебросов при входе на экран повышения уровня, эволюции или лута, вы получите 1 переброс.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Импровизированное решение</td>
 <td>Все Дрон-оружия:<br> Шанс дополнительного дрона: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Грабеж</td>
 <td>+1 вариант лута</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мульти-наведение</td>
 <td>Все Дистанционные орудия получают +1% шанса критического урона за каждое оружие, которым вы владеете.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гигантский магнит</td>
 <td>У вас есть 50% шанс автоматически собрать усиления, когда они истекают.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Обморожение</td>
 <td>Враги получают урон периодического действия, будучи замороженными.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Некробомба</td>
 <td>При уничтожении врага взрывным критическим уроном вызывается серия взрывов вокруг позиции павшего врага.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Трофей</td>
 <td>При уничтожении врага критическим уроном — 30% шанс появления подбора Переброса, Щита или Здоровья.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Афтершок</td>
 <td>Критический урон всегда накладывает статус-эффект.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вампиризм</td>
 <td>Восстанавливает здоровье, равное 5% от кинетического критического урона.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мудрость</td>
 <td>При поднятии Щита даёт +10 убийств ко всем эволюциям оружия.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Шут</td>
 <td>При поднятии Переброса наносит случайное количество урона от 0 до 100 всем врагам на экране.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Последний рубеж</td>
 <td>При уничтожении Щита получаете Двойной урон.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Тройной урон</td>
 <td>Все усиления Двойного урона теперь становятся Тройным уроном.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Перелом</td>
 <td>Весь урон по замороженным врагам увеличен на 50%.<br><br>Модификатор является мультипликативным.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Аскет</td>
 <td>При выходе с экрана лута получаете +10% урона за каждый неиспользованный Переброс на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гармонизатор</td>
 <td>Все экипированные оружия получают один уровень Эволюции.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бессмертие</td>
 <td>Если ваше основное оружие должно быть уничтожено, его здоровье будет уменьшено до 1 единицы вместо уничтожения. Эта способность может срабатывать только один раз каждые 2 минуты.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Просветление</td>
 <td>При уничтожении врага критическим уроном даёт +1 убийство ко всем эволюциям оружия.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ближе</td>
 <td>Завершение слова врага после его уничтожения даёт +10% урона на 10 секунд. Суммируется до 3 раз.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Убийственный</td>
 <td>Все Дрон-оружия:<br>  +50% урон</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Палач</td>
 <td>Все Турельные орудия:<br>  +50% урон</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Деградация</td>
 <td>Все Дистанционные орудия:<br>  +50% урон</td>
 </tr>
 </tbody></table>
-<h2>Список необычного лута</h2>
+</details>
+
+<details><summary>Список необычного лута</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Название</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Цунами</td>
 <td>Все Взрывные орудия:<br> Дальность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ударная волна</td>
 <td>Все Взрывные орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Уничтожение</td>
 <td>Все Взрывные орудия:<br> Множитель критического урона: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Падение</td>
 <td>Все Взрывные орудия:<br> Шанс 2x урона: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Дробящий выстрел</td>
 <td>Все Кинетические орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Извержение</td>
 <td>Все Кинетические орудия:<br> Скорострельность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пронзатель</td>
 <td>Все Кинетические орудия:<br> Шанс критического урона: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Предвестник</td>
 <td>Все Кинетические орудия:<br> Шанс эффекта кровотечения: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Инферно</td>
 <td>Все Тепловые орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Плазматор</td>
 <td>Все Тепловые орудия:<br> Дальность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Феникс</td>
 <td>Все Тепловые орудия:<br> Шанс появления переброса: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пироклизм</td>
 <td>Все Тепловые орудия:<br> Шанс эффекта поджога: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Криостаз</td>
 <td>Все Холодные орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ледник</td>
 <td>Все Холодные орудия:<br> Шанс эффекта заморозки: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Репульсор</td>
 <td>Все Холодные орудия:<br> Шанс щита: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Криоген</td>
 <td>Все Холодные орудия:<br> Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Перегрузка</td>
 <td>Все Электрические орудия:<br> Шанс эффекта статики: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мегашторм</td>
 <td>Все Электрические орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Усилитель</td>
 <td>Все Электрические орудия:<br> Скорострельность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сингулярность</td>
 <td>Все Электрические орудия:<br> Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Заражение</td>
 <td>Все Химические Оружия:<br>  Шанс эффекта Порчи: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сепсис</td>
 <td>Все Химические Оружия:<br>  Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Судорога</td>
 <td>Все Химические Оружия:<br>  Скорострельность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Распад</td>
 <td>Все Химические Оружия:<br>  Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бесконечность</td>
 <td>Все Дрон-оружия:<br> Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гипердвигатели</td>
 <td>Все Дрон-оружия:<br> Скорость: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сверхразум</td>
 <td>Все Дрон-оружия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Морозная погибель</td>
 <td>Все Дрон-оружия:<br> Шанс выпадения заморозки: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Универсальное усиление</td>
 <td>Все Дистанционные орудия:<br> Дальность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Инсталинк</td>
 <td>Все Дистанционные орудия:<br> Скорость: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Команда</td>
 <td>Все Дистанционные орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Энерджайзер</td>
 <td>Все Турельные орудия:<br> Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Адский шторм</td>
 <td>Все Турельные орудия:<br> Скорострельность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Точность</td>
 <td>Все Турельные орудия:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Натиск</td>
 <td>Все Эффекты статуса:<br> Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Мучение</td>
 <td>Все Эффекты статуса:<br> Длительность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Джекпот</td>
 <td>Все Эффекты Лута:<br>  Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Тайна</td>
 <td>Всё Оружие из Лута:<br>  Шанс критического урона: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бунт</td>
 <td>Все Эффекты Улучшений:<br>  Урон: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>За гранью</td>
 <td>Все Эффекты Улучшений:<br>  Дальность: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Арсенал</td>
 <td>Все Орудия:<br> Урон: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Спасатель</td>
 <td>Все Орудия:<br> Длительность: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Звёздный обзор</td>
 <td>Все Орудия:<br> Дальность: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>В упор</td>
 <td>Враги, поражённые рядом с Главным оружием, получают +20% урона.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Раздражение</td>
 <td>Все Орудия:<br> Шанс эффекта статуса: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Криотехника</td>
 <td>Усиления заморозки:<br> Шанс выпадения: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Воинственность</td>
 <td>Усиления двойного урона:<br> Шанс выпадения: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пиньята</td>
 <td>Глобальный эффект:<br>  Частота появления добычи: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Стеклянная пушка</td>
 <td>Всё Оружие:<br>  Урон: +30%<br><br>Главное Оружие:<br>  Макс. здоровье: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Регенерация</td>
 <td>Вы восстанавливаете 5% от макс. здоровья при активации усиления Лута, Заморозки, Двойного урона, Переброса или Щита.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Эрозия</td>
 <td>Оружие периодического урона может наносить критический урон.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Раздробление</td>
 <td>Все Кинетические Оружия получают +5% к шансу критического урона против замороженных врагов.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Стойкость</td>
 <td>Активация усилений Щита увеличивает вашу глобальную Длительность на 10% на 10 секунд. Суммируется до 3 раз.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Азартный игрок</td>
 <td>Добавляет 1 Переброс и увеличивает макс. перебросы до 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Защитник</td>
 <td>Добавляет 1 Щит и увеличивает макс. щиты до 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Безупречность</td>
 <td>Каждые x17 Идеальных Ввода также увеличивают вашу глобальную Скорострельность на 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Разряд</td>
 <td>При ошибке нанесите 20 Взрывного урона всем врагам за каждые x17 Идеальных Ввода.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пустые траты</td>
 <td>Все Орудия периодического урона:<br> +35% Скорострельность</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Увядание</td>
 <td>Все Эффекты статуса:<br> +35% Скорострельность</td>
 </tr>
 </tbody></table>
-<h2>Список обычного лута</h2>
+</details>
+
+<details><summary>Список обычного лута</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Название</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Взрыв</td>
 <td>Все Взрывные орудия:<br> Дальность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Детонация</td>
 <td>Все Взрывные орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сокрушение</td>
 <td>Все Кинетические орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Залп</td>
 <td>Все Кинетические орудия:<br> Скорострельность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ожог</td>
 <td>Все Тепловые орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Тлеющие угли</td>
 <td>Все Тепловые орудия:<br> Дальность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вечная мерзлота</td>
 <td>Все Холодные орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Холод</td>
 <td>Все Холодные орудия:<br> Длительность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Шок</td>
 <td>Все Электрические орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Всплеск</td>
 <td>Все Электрические орудия:<br> Скорострельность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Связь</td>
 <td>Все Дрон-оружия:<br> Длительность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Жало</td>
 <td>Все Дрон-оружия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Досягаемость</td>
 <td>Все Дистанционные орудия:<br> Дальность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удар</td>
 <td>Все Дистанционные орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Укрепление</td>
 <td>Все Турельные орудия:<br> Длительность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Бастион</td>
 <td>Все Турельные орудия:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Хворь</td>
 <td>Все Эффекты статуса:<br> Урон: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Резонанс</td>
 <td>Все Эффекты статуса:<br> Длительность: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Доминирование</td>
 <td>Все Орудия:<br> Урон: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Выносливость</td>
 <td>Все Орудия:<br> Длительность: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Проекция</td>
 <td>Все Орудия:<br> Дальность: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Всплеск</td>
 <td>Все Взрывные орудия:<br> Дальность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Импульс</td>
 <td>Все Взрывные орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Испарение</td>
 <td>Все Взрывные орудия:<br> Множитель критического урона: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Смертельный сброс</td>
 <td>Все Взрывные орудия:<br> Шанс 2х урона: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Полая пуля</td>
 <td>Все Кинетические орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Очередь</td>
 <td>Все Кинетические орудия:<br> Скорострельность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пробитие</td>
 <td>Все Кинетические орудия:<br> Шанс критического урона: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Жнец</td>
 <td>Все Кинетические орудия:<br> Шанс эффекта кровотечения: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Опаление</td>
 <td>Все Тепловые орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Радиатор</td>
 <td>Все Тепловые орудия:<br> Дальность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Перерождение</td>
 <td>Все Тепловые орудия:<br> Шанс появления переброса: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Воспламеняемость</td>
 <td>Все Тепловые орудия:<br> Шанс эффекта поджога: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Гипотермия</td>
 <td>Все Холодные орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ниже нуля</td>
 <td>Все Холодные орудия:<br> Шанс эффекта заморозки: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Отклонение</td>
 <td>Все Холодные орудия:<br> Шанс щита: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Охлаждение</td>
 <td>Все Холодные орудия:<br> Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Скрытый заряд</td>
 <td>Все Электрические орудия:<br> Шанс эффекта статики: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Конденсатор</td>
 <td>Все Электрические орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Модулятор</td>
 <td>Все Электрические орудия:<br> Скорострельность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Концентратор</td>
 <td>Все Электрические орудия:<br> Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Порча</td>
 <td>Все Химические Оружия:<br>  Шанс эффекта Порчи: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Токсин</td>
 <td>Все Химические Оружия:<br>  Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Пульсация</td>
 <td>Все Химические Оружия:<br>  Скорострельность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Задержка</td>
 <td>Все Химические Оружия:<br>  Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Удлинитель</td>
 <td>Все Дрон-оружия:<br> Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Двигатели</td>
 <td>Все Дрон-оружия:<br> Скорость: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Автоматы</td>
 <td>Все Дрон-оружия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Холодные сердца</td>
 <td>Все Дрон-оружия:<br> Шанс выпадения заморозки: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Усиление сигнала</td>
 <td>Все Дистанционные орудия:<br> Дальность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Нулевая задержка</td>
 <td>Все Дистанционные орудия:<br> Скорость: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Управление</td>
 <td>Все Дистанционные орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Стабилизатор</td>
 <td>Все Турельные орудия:<br> Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Автопушка</td>
 <td>Все Турельные орудия:<br> Скорострельность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Калибровка</td>
 <td>Все Турельные орудия:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Истощение</td>
 <td>Все Эффекты статуса:<br> Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Страдание</td>
 <td>Все Эффекты статуса:<br> Длительность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Находка</td>
 <td>Все Эффекты Лута:<br>  Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Секрет</td>
 <td>Все Эффекты Лута:<br>  Шанс Крита: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Перегрузка</td>
 <td>Все Эффекты Улучшений:<br>  Урон: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Дальномер</td>
 <td>Все Эффекты Улучшений:<br>  Дальность: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Вооружение</td>
 <td>Все Орудия:<br> Урон: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Набор выживания</td>
 <td>Все Орудия:<br> Длительность: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Телескоп</td>
 <td>Все Орудия:<br> Дальность: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Аптечка</td>
 <td>Добавляет 3 аптечек в ваш инвентарь.<br><br>Аптечки восстанавливают до 30% макс. здоровья Главной турели.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Боеголовка</td>
 <td>Добавляет 2 боеголовок в ваш инвентарь.<br><br>Боеголовки высвобождают серию мощных взрывов, расходящихся от главного оружия.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Сыворотка</td>
 <td>Добавляет 2 сывороток в ваш инвентарь.<br><br>Сыворотки дают 25% шанса критического урона на 10 секунд.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Криоядро</td>
 <td>Добавляет 2 криоядер в ваш инвентарь.<br><br>Криоядра активируют глобальный эффект Заморозки.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Убийственная таблетка</td>
 <td>Добавляет 2 убийственных таблеток в ваш инвентарь.<br><br>Убийственные таблетки активируют глобальный эффект Двойного урона.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Огненная Волна</td>
 <td>Добавляет 2 Огненных Волн в ваш инвентарь.<br><br>Огненные Волны поджигают всех видимых врагов ценой 10% текущего здоровья Главной Турели.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Карманная турель</td>
 <td>Добавляет 1 карманную турель в ваш инвентарь.<br><br>Карманная турель создает автоматическую турель рядом с группами врагов.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Эпицентр</td>
 <td>Тепловое оружие наносит +20% урона, если цель находится близко к Главному оружию.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Охладитель</td>
 <td>Заморозить усиления:<br> Длительность: +20%<br> Шанс выпадения: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Уязвимость</td>
 <td>Усиления двойного урона:<br> Длительность: +20%<br> Шанс выпадения: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Точность</td>
 <td>Все Орудия:<br> Шанс критического урона: +1%<br> Множитель критического урона: +50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Аптечка</td>
 <td>Восстановить 100 здоровья.<br><br>Текущее здоровье: 300 / 300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Щит</td>
 <td>Добавить 1 щит.<br><br>Текущие щиты: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Переброс</td>
 <td>Добавить 1 переброс.<br><br>Текущие перебросы: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Поражающий</td>
 <td>Каждый Поражающий увеличивает урон периодического действия на +4%. Этот бонус удваивается, если близко к Главной турели.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <span>Улучшения</span></div><h1>Улучшения</h1>
 <p>Улучшения – это постоянные бонусы, которые можно разблокировать за Монеты (§), зарабатываемые во время забега. В начале каждого забега у игроков есть ограниченное количество слотов для экипировки разблокированных улучшений, количество доступных слотов зависит от выбранного уровня Знамения.</p>
 <p>Каждое улучшение обычно имеет определённые условия, которые определяют его пользу. Чтобы получить максимум от улучшений, учитывай их синергию и подстраивай под свой стиль игры.</p>
-<h2>Кодекс: Главное оружие</h2>
+<details><summary>Кодекс: Главное оружие</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Бронированный</td>
 <td>50 §,<br>200 §</td>
 <td>Главное оружие:<br>  Здоровье: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Рвущийся в бой</td>
 <td>50 §</td>
 <td>В начале каждого Испытания или «Режима бесконечности» вы получаете уровень, а затем — ещё один за каждые 4 минуты выживания.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Азартный игрок</td>
 <td>50 §</td>
 <td>Каждый Переброс, который вы используете, даёт вашему Главному оружию +20% урона на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Безупречный</td>
 <td>100 §</td>
 <td>Идеальный ввод даёт +1.5% шанса критического урона за стек вместо этого.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Мгла</td>
 <td>200 §,<br>500 §</td>
 <td>Если у вас меньше 50% здоровья, получаете +50% бонуса к глобальной скорострельности.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Преданность</td>
 <td>200 §</td>
 <td>Основное оружие получает +25% урона за каждый пустой слот оружия.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Дроны</h2>
+</details>
+
+<details><summary>Кодекс: Дроны</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Армада</td>
 <td>200 §</td>
 <td>20% шанс призвать дополнительного дрона при каждом его появлении.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Разнообразие</td>
 <td>50 §</td>
 <td>За каждое не-Дрон-оружие увеличивается длительность всех Дронов на 20%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Блицкриг</td>
 <td>50 §</td>
 <td>Улучшения скорости Дронов также увеличивают урон Дронов.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Возмездие</td>
 <td>300 §</td>
 <td>Когда Щит уничтожен, все существующие Дроны самоуничтожаются, нанося взрывной урон.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Козёл отпущения</td>
 <td>100 §</td>
 <td>Ошибки набора случайным образом уничтожают существующего Дрона вместо того, чтобы считаться ошибкой.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Трофеи</td>
 <td>200 §</td>
 <td>Дроны могут оставлять усиления по истечении времени.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Турель</h2>
+</details>
+
+<details><summary>Кодекс: Турель</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Крепость</td>
 <td>100 §,<br>400 §</td>
 <td>Каждая Эволюция Турели также даёт +50 макс. здоровья Главному оружию.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Сеть</td>
 <td>50 §</td>
 <td>Каждая дополнительная турель увеличивает скорострельность всех турелей на 10%, максимум до 50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Полевое досье</td>
 <td>50 §</td>
 <td>Активация усиления даёт +30% дальности всем существующим Турелям. Этот эффект не суммируется.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Тёмный ретранслятор</td>
 <td>500 §</td>
 <td>Снаряд случайным образом отскакивает между существующими Турелями, нанося электрический урон.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Наблюдатель</td>
 <td>100 §</td>
 <td>Если вы не атаковали 3 секунды, получаете +30% урона Турелей до вашей следующей атаки.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Слабость</td>
 <td>200 §</td>
 <td>Враги в радиусе Турели получают на 30% больше урона из других источников.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Урон периодического действия</h2>
+</details>
+
+<details><summary>Кодекс: Урон периодического действия</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Коррозия</td>
 <td>500 §</td>
 <td>Урон периодического действия теперь может наносить критический урон.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Минога</td>
 <td>200 §</td>
 <td>Урон периодического действия, нанесённый рядом с Главным оружием, лечит Главное оружие на 1 здоровье.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Упорство</td>
 <td>100 §,<br>300 §</td>
 <td>Увеличивает длительность всех орудий периодического урона на 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Заражатели</td>
 <td>50 §</td>
 <td>Добавляет Заражатели в пул лута. Каждый даёт +4% урона периодического действия. Двойной эффект рядом с Главным оружием.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Убеждённость</td>
 <td>100 §</td>
 <td>Орудия периодического урона получают +40% скорострельности, пока у вас максимальное количество перебросов.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Инфектор</td>
 <td>300 §,<br>500 §</td>
 <td>Орудия периодического урона имеют +3% шанса эффекта статуса.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Дистанционный</h2>
+</details>
+
+<details><summary>Кодекс: Дистанционный</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Ближний бой</td>
 <td>100 §</td>
 <td>Весь дистанционный урон считается ближним к Главному оружию.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Кальтропы</td>
 <td>200 §</td>
 <td>При критическом ударе дистанционного оружия выйдет 12 кальтропов, атакуя проходящих врагов и повышая шанс кровотечения зависимо от урона.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ядовитые боеприпасы</td>
 <td>500 §</td>
 <td>Шанс выпадения Ядовитых боеприпасов – добавляют 10 базового химического урона к дистанционному оружию на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Пиратство</td>
 <td>50 §</td>
 <td>За каждое экипированное оружие лута увеличивается весь дистанционный урон на 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Избавление</td>
 <td>100 §</td>
 <td>Все дистанционные орудия получают +40% дальности, пока у вас максимальное количество щитов.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Снайпер</td>
 <td>200 §</td>
 <td>Улучшения дальности дистанционного оружия также увеличивают дистанционный урон.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Электричество</h2>
+</details>
+
+<details><summary>Кодекс: Электричество</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Вольтовый Взрыв</td>
 <td>200 §</td>
 <td>Улучшения длительности Электричества также применяют 25% своего значения к шансу наложения Статического эффекта.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Штормовая батарея</td>
 <td>500 §</td>
 <td>Главная турель наносит электрический урон ближайшим врагам. Каждый экипированный Электрический вид оружия увеличивает базовый урон.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Искры</td>
 <td>300 §</td>
 <td>При критическом ударе электро оружием выходит 6 искр - урон зависит от шанса критического урона и мультипликатора критического урона.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Эффективная Сеть</td>
 <td>100 §</td>
 <td>За каждое неэлектрическое оружие в снаряжении длительность всех Электрических эффектов увеличивается на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Жесткий Разряд</td>
 <td>300 §</td>
 <td>Статик наносит больше урона и имеет больший радиус действия. Враги, убитые Статиком, имеют 50% шанс распространить его на ближайших противников.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Электрифицированная Турель</td>
 <td>100 §</td>
 <td>Главное оружие получает +5 базового электрического урона и увеличивает урон всего Электрического оружия на 10%.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Огонь</h2>
+</details>
+
+<details><summary>Кодекс: Огонь</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Пиромантия</td>
 <td>200 §</td>
 <td>+2% урона Огнём за каждого горящего врага. Поджог наносит дополнительный урон в зависимости от своей длительности и силы.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Прижигание</td>
 <td>200 §</td>
 <td>Бонусы к дальности также применяются к урону, наносимому оружием/эффектами Огня вблизи Главного Оружия.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ядро Печи</td>
 <td>100 §</td>
 <td>Главное оружие получает +5 базового урона Огнем. Весь урон Огнем увеличен на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Огненный Шар</td>
 <td>500 §</td>
 <td>Выстрел выпускает медленный огненный шар, наносящий урон Огнём. Одновременно активен только 1 шар.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Огненная Волна</td>
 <td>250 §</td>
 <td>Добавляет Огненную Волну в стартовый инвентарь и пул добычи. Поджигает всех видимых врагов и расходует 10% текущего здоровья Главной Турели.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Пылающая Слава</td>
 <td>50 §</td>
 <td>Враги рядом с Главным Оружием получают на 25% больше урона Огнем и имеют дополнительный 12% шанс быть подожженными от урона Огнем.</td>
 </tr>
 </tbody></table>
-<h2>Кодекс: Кинетическое оружие</h2>
+</details>
+
+<details><summary>Кодекс: Кинетическое оружие</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Название</div></th>
-<th><div style="width:50px">Стоимость</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Стрелок</td>
 <td>500 §</td>
 <td>Увеличивает максимальный Словесный рывок на 5. Каждый ранг словесного рывка дает +2,5% к кинетическому урону.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Кровожадность</td>
 <td>200 §</td>
 <td>Увеличивает кинетическую скорость стрельбы на 2% и дальность на 1% за каждого истекающего кровью врага.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Заряженные патроны</td>
 <td>300 §</td>
 <td>Критические удары с кинетическим уроном имеют 40% шанс наложить на врага случайный статус.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Шрапнель</td>
 <td>500 §</td>
 <td>Шанс выпадения шрапнели — добавляет 10 базового кинетического урона к кинетическому оружию на 20 секунд.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Комбинированное оружие</td>
 <td>100 §</td>
 <td>За каждое некинетическое оружие в экипировке увеличивает весь кинетический урон на 10%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Карманная турель</td>
 <td>200 §</td>
 <td>Добавляет расходный предмет «Карманная турель» в инвентарь и пул добычи. Карманная турель создает турель и может быть взята по истечении срока действия.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Кодекс: Химическое оружие</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Название</div></th>
+<th><div style="width:70px">Стоимость</div></th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Реанимация</td>
+<td>500 §</td>
+<td>При убийстве химическим оружием с вероятностью 30 % появляется Реанимированный дрон, который находит врагов и наносит им химический урон.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Чрезмерное воздействие</td>
+<td>300 §</td>
+<td>Химический статус теперь может накапливаться до 3 раз, умножая урон от Порчи за каждый накопленный уровень.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Гибридизация</td>
+<td>500 §</td>
+<td>25 % баффов урона, применяемых к другим типам урона, также применяются к химическому урону.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Сброс отходов</td>
+<td>300 §</td>
+<td>Каждые 12 секунд причиняет всем врагам, находящимся рядом с основным оружием, эффект «Порча».</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Реактивный рост</td>
+<td>100 §</td>
+<td>Каждое оснащенное химическое оружие усиливает химический урон на 10% и продолжительность действия такого оружия на 20%.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Токсические ожоги</td>
+<td>200 §</td>
+<td>Поджог даёт химический урон, а не тепловой. У порчи 10% шанс применять поджог при каждом тике, дополнительно увеличивающемся за счет шанса критического урона.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Главная</a> / <span>Знамения</span></div><h1>Знамения</h1>
+<p>Знамения — это модификаторы сложности, которые случайным образом выбираются из пула в начале Испытания или Бесконечного режима. Каждое Знамение увеличивает сложность определённым образом, а более высокие уровни Знамений открывают постепенно более сложные модификаторы.</p>
+<p>Знамения делятся на три уровня. Знамения 1 уровня обеспечивают умеренную сложность, Знамения 2 уровня более требовательны, а Знамения 3 уровня представляют наибольшую сложность. Прохождение Испытаний на определённом уровне Знамения открывает следующий уровень, увеличивая количество одновременно активных Знамений во время игры до максимума в 6. Завершение игр с активными Знамениями награждает большим количеством Монет и открывает дополнительный контент.</p>
+<details><summary>Знамения 1 уровня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Название</div></th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Сильные враги</td>
+<td>У врагов на 50 % больше здоровья.</td>
+</tr>
+<tr>
+<td>Более длинные слова</td>
+<td>Слова на один символ длиннее.</td>
+</tr>
+<tr>
+<td>Без баффов</td>
+<td>Нет двойного урона и заморозки.</td>
+</tr>
+<tr>
+<td>Быстрые враги</td>
+<td>Враги на 5 % быстрее.</td>
+</tr>
+<tr>
+<td>Меньше вариантов</td>
+<td>На один вариант добычи меньше.</td>
+</tr>
+<tr>
+<td>Ослабленный</td>
+<td>Игрок наносит на 20% меньше урона.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Знамения 2 уровня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Название</div></th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Хрупкое оружие</td>
+<td>Здоровье основного оружия уменьшено вдвое.</td>
+</tr>
+<tr>
+<td>Выносливые враги</td>
+<td>У врагов на 100% больше здоровья.</td>
+</tr>
+<tr>
+<td>Без перебросов</td>
+<td>Нет выпадения перебросов.</td>
+</tr>
+<tr>
+<td>Без щитов</td>
+<td>Нет выпадения щитов.</td>
+</tr>
+<tr>
+<td>Более быстрые враги</td>
+<td>Враги на 10% быстрее.</td>
+</tr>
+<tr>
+<td>Без критических ударов</td>
+<td>Ваше оружие не может наносить критические удары.</td>
+</tr>
+<tr>
+<td>Сталкеры</td>
+<td>Шанс появления врагов с частично скрытыми словами.</td>
+</tr>
+<tr>
+<td>Черви</td>
+<td>Шанс появления врагов с цепочкой слов.</td>
+</tr>
+<tr>
+<td>Слепой набор</td>
+<td>При наборе слов не отображается прогресс.</td>
+</tr>
+<tr>
+<td>Быстрое восстановление</td>
+<td>Эффекты статуса на врагах исчезают в два раза быстрее.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Знамения 3 уровня</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Название</div></th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Наказание за опечатки</td>
+<td>Получаете 3 ед. урона за каждую опечатку.</td>
+</tr>
+<tr>
+<td>Туман войны</td>
+<td>Вы не видите слова, расположенные на большом расстоянии.</td>
+</tr>
+<tr>
+<td>Враги-титаны</td>
+<td>У врагов на 150 % больше здоровья.</td>
+</tr>
+<tr>
+<td>Зашифрованные слова</td>
+<td>У некоторых врагов слова зашифрованы.</td>
+</tr>
+<tr>
+<td>Двойные слова</td>
+<td>У некоторых врагов слова двойные.</td>
+</tr>
+<tr>
+<td>Присутствие элиты</td>
+<td>Стражи и Рой появляются в два раза чаще.</td>
+</tr>
+<tr>
+<td>Враги с щитом</td>
+<td>Враги появляются с щитом, защищающим от одного удара.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Главная</span></div><h1>Официальная страница вики Glyphica</h1>
 <h2>Добро пожаловать, машинист</h2>
 <p>Добро пожаловать на официальную страницу вики про Glyphica: Typing Survival! Проверь свои навыки печати в этой игре на выживание против орд врагов, где скорость и точность – твое главное оружие. Оснащайся мощными инструментами, превращающими твое мастерство набора текста в разрушительные атаки против неумолимых противников. Узнай больше и получи игру в Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Эта страница вики служит всеобъемлющим руководством по функциям, механикам и контенту, доступному в версии Раннего доступа Glyphica. Наша цель – поддерживать информацию в актуальном состоянии по мере продвижения к полноценному релизу версии 1.0. Вики организована по разделам, перечисленным в оглавлении, и будет регулярно обновляться по мере развития игры.</p>
 <h2>Оглавление</h2>
-<a href="#main_weapons" class="portal">Главное оружие</a><a href="#weapons" class="portal">Оружие повышения уровня</a><a href="#enemies" class="portal">Враги</a><a href="#loot" class="portal">Предметы лута</a><a href="#loot1" class="portal">Улучшения</a></div></div></div>
+<a href="#main_weapons" class="portal">Главное оружие</a><a href="#weapons" class="portal">Оружие повышения уровня</a><a href="#enemies" class="portal">Враги</a><a href="#loot" class="portal">Предметы лута</a><a href="#loot1" class="portal">Улучшения</a><a href="#omens" class="portal">Знамения</a></div></div></div>
 </body>
 </html>

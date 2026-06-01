@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>メインウェポンは、Glyphicaのゲームプレイの基本となる重要な武器です。敵の上に表示された単語をタイピングすることで、その敵をターゲットとしてロックオンします。メインウェポンごとに独自の効果や特徴があり、それぞれを上手く活用するためには異なる戦略が必要です。</p>
 <p>一部のメインウェポンはタイピング速度（WPM）を重視しますが、もっと戦略的な使い方が求められる武器もあります。ゲーム内の他の武器と同じように、メインウェポンもアップグレードや進化ができ、進めるごとにその性能が向上します。</p>
 <h2>メインウェポン一覧</h2>
-<a href="#repeater" class="portal">リピーター</a><a href="#heatray" class="portal">ヒートビーム</a><a href="#barrage" class="portal">アサルトロケット</a><a href="#splattershot" class="portal">スプラッターショット</a><a href="#overmind" class="portal">オーバーマインド</a><a href="#wildcard" class="portal">ワイルドカード</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>リピーター</span></div><h1>リピーター</h1>
+<a href="#repeater" class="portal">リピーター</a><a href="#heatray" class="portal">ヒートビーム</a><a href="#barrage" class="portal">アサルトロケット</a><a href="#splattershot" class="portal">スプラッターショット</a><a href="#overmind" class="portal">オーバーマインド</a><a href="#wildcard" class="portal">ワイルドカード</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>リピーター</span></div><h1><span class="weapon-icon"></span> リピーター</h1>
 <p>タグ: キネティック, メイン<br>瞬時に多数の弾薬を放つ、強力なウェポン。</p>
 <h2>進化</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>範囲: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>ヒートビーム</span></div><h1>ヒートビーム</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>ヒートビーム</span></div><h1><span class="weapon-icon"></span> ヒートビーム</h1>
 <p>タグ: 熱, メイン, D.O.T.<br>正確性が極めて高い光線を一点に向けて放ち、継続的にダメージを与える。</p>
 <h2>進化</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>連射速度: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>アサルトロケット</span></div><h1>アサルトロケット</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>アサルトロケット</span></div><h1><span class="weapon-icon"></span> アサルトロケット</h1>
 <p>タグ: 爆破, メイン<br>爆発性のロケットをターゲットとその周囲に向けて多数発射する。再装填には時間を要する。</p>
 <h2>進化</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>リロード速度: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>スプラッターショット</span></div><h1>スプラッターショット</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>スプラッターショット</span></div><h1><span class="weapon-icon"></span> スプラッターショット</h1>
 <p>タグ: ケミカル, メイン, D.O.T.<br>ねばねばとした物体を敵に向けて放ち、動きを封じてダメージを与える。</p>
 <h2>進化</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>持続時間: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>オーバーマインド</span></div><h1>オーバーマインド</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>オーバーマインド</span></div><h1><span class="weapon-icon"></span> オーバーマインド</h1>
 <p>タグ: 電気, ドローン, メイン<br>多数のドローンを操り、敵にエナジーダメージを与える。</p>
 <h2>進化</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>ナルフィールド</td>
-<td>オーバーマインドに狙われた敵は移動速度が低下し、他の電撃効果や武器から受けるダメージが50%増加する。</td>
+<td>オーバーマインドに狙われた敵は移動速度が低下し、他の電撃効果や武器から受けるダメージが+50%増加する。</td>
 </tr>
 <tr>
 <td>ナルフィールドII</td>
@@ -682,7 +728,7 @@ th {
 <td>連射速度：+30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>ワイルドカード</span></div><h1>ワイルドカード</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#main_weapons">メインウェポン</a> / <span>ワイルドカード</span></div><h1><span class="weapon-icon"></span> ワイルドカード</h1>
 <p>タグ: キネティック, 熱, 冷気, 電気, メイン<br>次の射撃は4種類のウェポンからランダムに選択されるため、慎重に撃つ必要がある。</p>
 <h2>進化</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>レベルアップ武器は、プレイ中にレベルアップすることで入手できます。一度選択すると、その武器がアーセナルに追加されます。各武器には独自の発動方法がありますが、ほとんどはタイピングとメインウェポンでターゲットを定めることで発動できます。</p>
 <p>最大で4つの武器をこの方法で入手することができます。武器がアーセナルに追加されると、そのアップグレードがレベルアップの選択肢に加わり、進行するごとにその能力を強化できます。</p>
 <h2>レベルアップ武器のリスト</h2>
-<a href="#spectre" class="portal">スペクター</a><a href="#sentry" class="portal">セントリー</a><a href="#tesla" class="portal">テスラマイン</a><a href="#oscillator" class="portal">オシレーター</a><a href="#meteor" class="portal">メテオ</a><a href="#hunter" class="portal">ハンター</a><a href="#chopper" class="portal">チョッパー</a><a href="#minefield" class="portal">マインフィールド</a><a href="#blade" class="portal">ブレードトラップ</a><a href="#orbiter" class="portal">オービター</a><a href="#guardian" class="portal">ガーディアン</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>スペクター</span></div><h1>スペクター</h1>
+<a href="#spectre" class="portal">スペクター</a><a href="#sentry" class="portal">セントリー</a><a href="#tesla" class="portal">テスラマイン</a><a href="#oscillator" class="portal">オシレーター</a><a href="#meteor" class="portal">メテオ</a><a href="#hunter" class="portal">ハンター</a><a href="#chopper" class="portal">チョッパー</a><a href="#minefield" class="portal">マインフィールド</a><a href="#blade" class="portal">ブレードトラップ</a><a href="#orbiter" class="portal">オービター</a><a href="#guardian" class="portal">ガーディアン</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>スペクター</span></div><h1><span class="weapon-icon"></span> スペクター</h1>
 <p>タグ: キネティック, ドローン<br>条件: 以下の指定文字を含むワードをタイプ a, e, o 単語に含まれる上記の文字の数だけ、接近戦を行う高速ドローンを放つ。</p>
 <h2>進化</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>文字数が7を上回るワードをタイプすると、スペクターが追加で生成される。</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>セントリー</span></div><h1>セントリー</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>セントリー</span></div><h1><span class="weapon-icon"></span> セントリー</h1>
 <p>タグ: 熱, タレット<br>射程内に入った敵を攻撃する自動タレットを設置する。</p>
 <h2>進化</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>射程: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>テスラマイン</span></div><h1>テスラマイン</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>テスラマイン</span></div><h1><span class="weapon-icon"></span> テスラマイン</h1>
 <p>タグ: 電気, タレット, D.O.T.<br>条件: 以下の指定文字から始まるワードをタイプ b, c, d, e 継続的にダメージを与える電子タレットを設置する。</p>
 <h2>進化</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>スタティック・チャンス: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>オシレーター</span></div><h1>オシレーター</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>オシレーター</span></div><h1><span class="weapon-icon"></span> オシレーター</h1>
 <p>タグ: 熱, リモート<br>直近のターゲットに向けて、波打つ粒子砲を放つ。</p>
 <h2>進化</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>クリティカル率: +3%<br>  クリティカル倍率: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>メテオ</span></div><h1>メテオ</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>メテオ</span></div><h1><span class="weapon-icon"></span> メテオ</h1>
 <p>タグ: 爆破, リモート<br>定期的にランダムな場所にターゲットマーカーが出現し、それを起動することで複数の隕石を落とすことができる。</p>
 <h2>進化</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>範囲: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ハンター</span></div><h1>ハンター</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ハンター</span></div><h1><span class="weapon-icon"></span> ハンター</h1>
 <p>タグ: 電気, ドローン, D.O.T.<br>条件: 以下の指定文字を含むワードをタイプ i, o, u 単語に含まれる上記の文字の数だけ、電子光線を放つドローンを生み出す。</p>
 <h2>進化</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>持続時間: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>チョッパー</span></div><h1>チョッパー</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>チョッパー</span></div><h1><span class="weapon-icon"></span> チョッパー</h1>
 <p>タグ: キネティック, リモート<br>メインウェポンを発射すると、巨大な回転するブレードが現れ、画面の端まで移動しながら通過する敵にダメージを与える。</p>
 <h2>進化</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>出血確率: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>マインフィールド</span></div><h1>マインフィールド</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>マインフィールド</span></div><h1><span class="weapon-icon"></span> マインフィールド</h1>
 <p>タグ: 爆破, ドローン<br>条件: 以下の指定文字から始まるワードをタイプ f, g, h, i 低速で移動し、敵に触れると爆発する爆弾を発射する。</p>
 <h2>進化</h2>
 <table>
@@ -1590,7 +1636,7 @@ th {
 <td>リカーシブマイン:<br>    出現率：+30%<br>    （発射速度）</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ブレードトラップ</span></div><h1>ブレードトラップ</h1>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ブレードトラップ</span></div><h1><span class="weapon-icon"></span> ブレードトラップ</h1>
 <p>タグ: キネティック, タレット<br>条件: 以下の指定文字から始まるワードをタイプ j, k, l, m 回転する4枚刃のトラップを放つ。</p>
 <h2>進化</h2>
 <table>
@@ -1682,7 +1728,7 @@ th {
 <td>持続時間: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>オービター</span></div><h1>オービター</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>オービター</span></div><h1><span class="weapon-icon"></span> オービター</h1>
 <p>タグ: ケミカル, リモート<br>条件: 以下の指定文字から始まるワードをタイプ n, o, p, q メインウェポンの周りを回るオーブを展開し、接触する敵すべてにダメージを与えます。</p>
 <h2>進化</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>スピード: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ガーディアン</span></div><h1>ガーディアン</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#weapons">レベルアップ武器</a> / <span>ガーディアン</span></div><h1><span class="weapon-icon"></span> ガーディアン</h1>
 <p>タグ: 熱, ドローン<br>敵にレーザーを発射するドローンを瞬時に展開する。ガーディアンを起動するにはエネルギーを要する。</p>
 <h2>進化</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Glyphicaの敵は、「脅威」という内部の指標に基づいて自動的に出現します。この脅威はランが進むにつれて増加します。トライアルモードでは、脅威は現在のトライアルレベルによって増加し、レベルが進むごとに難易度が上がります。エンドレスモードでは、脅威はプレイヤーのレベルに合わせて調整され、より高い脅威値が出現難易度に影響を与えます。</p>
 <p>敵は「スペシャル」と「エリート」に分類され、それぞれに出現制限があり、全体の脅威レベルに応じて出現率が制限されています。</p>
 <h2>敵一覧</h2>
-<a href="#drone" class="portal">ドローン</a><a href="#shielddrone" class="portal">シールドドローン</a><a href="#stalker" class="portal">ストーカー</a><a href="#shooter" class="portal">シューター</a><a href="#splitter" class="portal">スプリッター</a><a href="#warder" class="portal">ウォーダー</a><a href="#swarmer" class="portal">スウォーマー</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#enemies">敵</a> / <span>ドローン</span></div><h1>ドローン</h1>
+<a href="#drone" class="portal">ドローン</a><a href="#shielddrone" class="portal">シールドドローン</a><a href="#stalker" class="portal">ストーカー</a><a href="#shooter" class="portal">シューター</a><a href="#splitter" class="portal">スプリッター</a><a href="#wurm" class="portal">ワーム</a><a href="#warder" class="portal">ウォーダー</a><a href="#swarmer" class="portal">スウォーマー</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#enemies">敵</a> / <span>ドローン</span></div><h1>ドローン</h1>
 <p>ドローンはメインウェポンに向かって執拗に接近してくる敵です。時折、次の2つの強化形態で出現することがあります：<br>巨大化：体力が3倍になり、倒すのが困難になります。<br>加速化：移動速度が2倍になり、早急に排除する必要があります。</p>
 <h2>バリアント一覧</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>回復: 240<br>ダメージ: 40<br></td>
+<td>回復: 80<br>ダメージ: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>回復: 2400<br>ダメージ: 120<br></td>
+<td>回復: 800<br>ダメージ: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>シャード数: 6<br>シャード体力: 650<br>シャードダメージ: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#enemies">敵</a> / <span>ワーム</span></div><h1>ワーム</h1>
+<p>ワームは複数のセグメントで構成された敵で、各部位を順番に破壊する必要があります。各セグメントは破壊不可能なバリアで次のセグメントと繋がっており、すべての弾丸攻撃をブロックします。</p>
+<h2>バリアント一覧</h2>
+<table>
+<thead>
+<tr>
+<th>イメージ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>セグメント数: 2<br>セグメント体力: 80<br>セグメントダメージ: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>セグメント数: 3<br>セグメント体力: 200<br>セグメントダメージ: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>セグメント数: 4<br>セグメント体力: 1000<br>セグメントダメージ: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>セグメント数: 4<br>セグメント体力: 1800<br>セグメントダメージ: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <a href="#enemies">敵</a> / <span>ウォーダー</span></div><h1>ウォーダー</h1>
 <p>ウォーダーはゲーム後半に登場するエリート敵です。回転するシールドを備えており、シールドが向いている方向からのダメージを防ぎます。さらに、ウォーダーが生存している間は、周囲の敵に保護オーラを与え、それらを無敵状態にします。この効果はウォーダーが倒されるまで続きます。</p>
 <h2>バリアント一覧</h2>
@@ -2078,905 +2151,1133 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <span>戦利品アイテム</span></div><h1>戦利品アイテム</h1>
 <p>戦利品アイテムは、プレイ中に宝箱を拾うことで入手します。ランダムで選ばれたアイテムが表示され、その中から1つを選ぶと、プレイの残りの間、有効なパッシブボーナスが付与されます。</p>
 <p>戦利品アイテムは、「コモン」、「アンコモン」と「レア」の3つに分類されており、それぞれのカテゴリーによって出現する確率が異なります。トライアルモードでボスを倒すと、レアアイテムのみが入った宝箱が報酬として手に入ります。</p>
-<h2>レア戦利品一覧</h2>
+<details><summary>レア戦利品一覧</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名前</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>シーア</td>
 <td>レベルアップ、進化、または戦利品画面に入る際にリロールがない場合、リロールが1つ与えられる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>メイクシフト</td>
 <td>全「ドローン」ウェポン:<br>  追加ドローンのチャンス: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>略奪</td>
 <td>戦利品の選択肢: +1</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>マルチターゲット</td>
 <td>所持ウェポン1つごとに、全「リモート」ウェポンのクリティカル率が+1%になる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ジャイアントマグネット</td>
 <td>アイテムが消失すると、自動的に収集する可能性が 50% %となる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フロストバイト</td>
 <td>フリーズ状態になった敵が継続ダメージを受ける。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ネクロ爆弾</td>
 <td>爆発クリティカルダメージで敵を倒すと、倒れた敵の周囲で一連の爆発が起こる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>賞品</td>
 <td>クリティカルダメージで敵を倒すと、30%の確率でリロール、シールド、または体力のピックアップアイテムが出現するようになる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アフターショック</td>
 <td>クリティカルダメージは必ずステータス効果を与える。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ヴァンピリズム</td>
 <td>キネティックウェポンがクリティカルヒットを起こすと、そのダメージの5%に相当する体力を吸収する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>知恵</td>
 <td>シールドを取得すると、すべてのウェポン進化に10キルが追加される。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ジェスター</td>
 <td>リロールを取得すると、画面上のすべての敵に対して0から100のランダムなダメージを与える。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ラストスタンド</td>
 <td>シールドが破壊されると、ダブルダメージを獲得する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>トリプルダメージ</td>
 <td>すべてのダブルダメージピックアップが、3倍のダメージをあたえるようになる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フラクチャー</td>
 <td>凍結した敵へのすべてのダメージは50%増加する。修正は乗算として現れる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アセティック</td>
 <td>戦利品画面を終了すると、未使用のリロールごとに20秒間ダメージが+10%増加する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ハーモナイザー</td>
 <td>装備中のすべての武器が1つ進化レベルを獲得する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>イモータリティ</td>
 <td>メインウェポンが破壊されるときに、体力を1ポイントだけ残し破壊を免れる。この能力は2分ごとに1回だけ使用できる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>エンライトメント</td>
 <td>クリティカルダメージで敵を倒すと、すべての武器の進化に+1キルが加算される。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>クロージャ－</td>
 <td>敵を撃破した後、その単語を完成させると、10秒間ダメージが+10%増加する。最大で3回まで重複する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>殺意</td>
 <td>全「ドローン」ウェポン: +50% ダメージ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>処刑人</td>
 <td>全「タレット」ウェポン: +50% ダメージ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ディジェネレーション</td>
 <td>全「リモート」ウェポン: +50% ダメージ</td>
 </tr>
 </tbody></table>
-<h2>アンコモン戦利品一覧</h2>
+</details>
+
+<details><summary>アンコモン戦利品一覧</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名前</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>津波</td>
 <td>全「爆発」ウェポン:<br>  範囲: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ショックウェーブ</td>
 <td>全「爆発」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>殲滅</td>
 <td>全「爆発」ウェポン:<br>  クリティカルマルチ: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ディセント</td>
 <td>全「爆発」ウェポン:<br> ダブルダメージピックアップ:<br>　ドロップ率：+2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>シャッターショット</td>
 <td>全「キネティック」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>噴出</td>
 <td>全「キネティック」ウェポン:<br>  連射力: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ピアサー</td>
 <td>全「キネティック」ウェポン:<br>  クリティカルチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ハービンジャー</td>
 <td>全「キネティック」ウェポン:<br>  出血効果チャンス: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>インフェルノ</td>
 <td>全「熱」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>プラズメイター</td>
 <td>全「熱」ウェポン:<br>  範囲: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フェニックス</td>
 <td>全「熱」ウェポン:<br>  リロールチャンス: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>パイロクリズム</td>
 <td>全「熱」ウェポン:<br>  発火効果チャンス: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>クライオスタシス</td>
 <td>全「冷気」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>氷河</td>
 <td>全「冷気」ウェポン:<br>  凍結効果チャンス: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リパルサー</td>
 <td>全「冷気」ウェポン:<br>  シールドチャンス: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>クライオジェン</td>
 <td>全「冷気」ウェポン:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オーバーロード</td>
 <td>全「電気」ウェポン:<br>  静的効果チャンス: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>メガストーム</td>
 <td>全「電気」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アンプライファー</td>
 <td>全「電気」ウェポン:<br>  連射力: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>シンギュラリティ</td>
 <td>全「電気」ウェポン:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コンテイジョン</td>
 <td>全「ケミカル」ウェポン:<br>  ブライト効果チャンス: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>セプシス</td>
 <td>全「ケミカル」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コンヴァルス</td>
 <td>全「ケミカル」ウェポン:<br>  連射力: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ディケイ</td>
 <td>全「ケミカル」ウェポン:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>インフィニティ</td>
 <td>全「ドローン」ウェポン:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ハイパージェット</td>
 <td>全「ドローン」ウェポン:<br>  スピード: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オーバーマインド</td>
 <td>全「ドローン」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フロストベイン</td>
 <td>全「ドローン」ウェポン:<br>  凍結ドロップチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オムニブースト</td>
 <td>全「リモート」ウェポン:<br>  範囲: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>インスタリンク</td>
 <td>全「リモート」ウェポン:<br>  スピード: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コマンド</td>
 <td>全「リモート」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>エナジャイザー</td>
 <td>全「タレット」ウェポン:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ヘルストーム</td>
 <td>全「タレット」ウェポン:<br>  連射力: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>エグザクティチュード</td>
 <td>全「タレット」ウェポン:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オンスロット</td>
 <td>全「ステータス効果」:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>トーメント</td>
 <td>全「ステータス効果」:<br>  持続時間: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ジャックポット</td>
 <td>全「戦利品効果」:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ミステリー</td>
 <td>全「戦利品」ウェポン:<br>  クリティカルチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ランページ</td>
 <td>全「オーグメント効果」:<br>  ダメージ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ビヨンド</td>
 <td>全「オーグメント効果」:<br>  範囲: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アーセナル</td>
 <td>全「ウェポン」:<br>  ダメージ: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ライフセーバー</td>
 <td>全「ウェポン」:<br>  持続時間: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>スタービュー</td>
 <td>全「ウェポン」:<br>  範囲: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>真っ向勝負</td>
 <td>メインウェポンの近くでダメージを受けた敵は+20%の追加ダメージを受ける。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>悪化</td>
 <td>全「ウェポン」:<br> ステータスチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>低温戦術</td>
 <td>フリーズ:<br>   ドロップ率: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>徹底抗戦</td>
 <td>ダブルダメージ:<br>   ドロップ率: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ピニャータ</td>
 <td>グローバル効果：<br>  戦利品の出現頻度：+20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ガラスキャノン</td>
 <td>全「ウェポン」:<br>  ダメージ: +30%<br><br>メインウェポン:<br>  最大体力: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リジェネ</td>
 <td>戦利品、凍結、ダブルダメージ、リロール、またはシールドのピックアップを取得すると、最大体力の5%分回復するようになる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>イロージョン</td>
 <td>「D.O.T.」ウェポンでクリティカルが発生するようになる。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>粉砕</td>
 <td>全「キネティック」ウェポンは、凍結した敵に対して+5%のクリティカルチャンスを得る。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>レジリエンス</td>
 <td>シールドアイテムを使用すると、グローバル持続性が10秒間10%増加する。最大で3回まで重複する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ギャンブラー</td>
 <td>1回のリロールを追加し、最大リロール数を6回にする。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>プロテクター</td>
 <td>1枚のシールドを追加し、最大シールド数を4枚にする。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>完璧</td>
 <td>x17のパーフェクト入力ごとに、全体の発射レートが5%増加する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リリース</td>
 <td>入力ミスが発生すると、x17のパーフェクト入力ごとにすべての敵に対して20の爆発ダメージを与える。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ウェイスティング</td>
 <td>すべてのD.O.T.ウェポン: 連射力+35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ウィザー</td>
 <td>すべてのステータス効果: 連射力+35%</td>
 </tr>
 </tbody></table>
-<h2>コモンの戦利品一覧</h2>
+</details>
+
+<details><summary>コモンの戦利品一覧</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">名前</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>大爆発</td>
 <td>全「爆破」ウェポン:<br>   射程: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>異常燃焼</td>
 <td>全「爆破」ウェポン:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>破壊</td>
 <td>全「キネティック」ウェポン:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>一斉射撃</td>
 <td>全「キネティック」ウェポン:<br>   連射力: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>スコーチ</td>
 <td>全「熱」ウェポン:<br>ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>焦土</td>
 <td>全「熱」ウェポン:<br>  範囲: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>永久凍土</td>
 <td>全「冷気」ウェポン:<br>  ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冷気</td>
 <td>全「冷気」ウェポン:<br>  期間: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>衝撃</td>
 <td>全「電気」ウェポン:<br>  ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>波動</td>
 <td>全「電気」ウェポン:<br>  発射速度: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アップリンク</td>
 <td>全「ドローン」ウェポン:<br>   持続時間: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>針の猛攻</td>
 <td>全「ドローン」ウェポン:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リーチ</td>
 <td>全「リモート」ウェポン:<br>   射程: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ストライク</td>
 <td>全「リモート」ウェポン:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>要塞化</td>
 <td>全「タレット」ウェポン:<br>   持続時間: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>要塞</td>
 <td>全「タレット」ウェポン:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>病気</td>
 <td>全「ステータス効果」:<br>   ダメージ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>共振</td>
 <td>全「ステータス効果」:<br>   持続時間: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>支配</td>
 <td>全「ウェポン」<br>   ダメージ: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>持続力</td>
 <td>全「ウェポン」<br>   持続時間: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>射影</td>
 <td>全「ウェポン」<br>   範囲: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>スプラッシュ</td>
 <td>全「爆破」ウェポン:<br>   射程: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>インパクト</td>
 <td>全「爆破」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ザップ</td>
 <td>全「爆破」ウェポン:<br> クリティカルマルチ: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>デッドドロップ</td>
 <td>すべての爆発武器:<br> ダブルダメージピックアップ:<br> ドロップ率：+1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ホローポイント</td>
 <td>全「キネティック」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>バースト</td>
 <td>全「キネティック」ウェポン:<br>   連射力: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>貫通</td>
 <td>全「キネティック」ウェポン:<br>   クリティカルチャンス: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リーパー</td>
 <td>全「キネティック」ウェポン:<br>   ブリードエフェクトチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>シアー</td>
 <td>全「熱」ウェポン:<br>ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ラジエーター</td>
 <td>全「熱」ウェポン:<br>  範囲: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リバース</td>
 <td>全「熱」ウェポン:<br>  リロールチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フレイム</td>
 <td>全「熱」ウェポン:<br>  イグナイトエフェクトチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>低体温症</td>
 <td>全ての冷気ウェポン:<br>  ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>絶対零度</td>
 <td>全「冷気」ウェポン:<br>  凍結効果のチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>反射</td>
 <td>全「冷気」ウェポン:<br>  シールドチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>クーラント</td>
 <td>全「冷気」ウェポン:<br>  期間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>潜在電荷</td>
 <td>全「電気」ウェポン:<br>  静的効果のチャンス: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コンデンサー</td>
 <td>全「電気」ウェポン:<br>  ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>モジュレーター</td>
 <td>全「電気」ウェポン:<br>  連射速度: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コンセントレイト</td>
 <td>全「電気」ウェポン:<br>  持続時間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>テイント</td>
 <td>全「ケミカル」ウェポン:<br>  ブライト効果発生確率: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>トキシン</td>
 <td>全「ケミカル」ウェポン:<br>  ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>スロブ</td>
 <td>全「ケミカル」ウェポン:<br>  連射速度: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リンガー</td>
 <td>全「ケミカル」ウェポン:<br> 持続時間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>エクステンド</td>
 <td>全「ドローン」ウェポン:<br>   持続時間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>スラスター</td>
 <td>全「ドローン」ウェポン:<br>   スピード: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オートマタ</td>
 <td>全「ドローン」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コールドハート</td>
 <td>全「ドローン」ウェポン:<br>  フリーズドロップチャンス: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>信号増幅</td>
 <td>全「リモート」ウェポン:<br>   射程: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>遅延除去</td>
 <td>全「リモート」ウェポン:<br>   スピード: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>コントロール</td>
 <td>全「リモート」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>サステナブル</td>
 <td>全「タレット」ウェポン:<br>   持続時間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オートキャノン</td>
 <td>全「タレット」ウェポン:<br>   連射力: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>キャリブレート</td>
 <td>全「タレット」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>消耗</td>
 <td>全「リモート」ウェポン:<br>   ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ダメージ</td>
 <td>全「リモート」ウェポン:<br>   持続時間: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ウィンドフォール</td>
 <td>全戦利品効果:<br>  ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>シークレット</td>
 <td>全戦利品効果:<br>  クリティカルチャンス: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>オーバードライブ</td>
 <td>全オーグメント効果:<br>  ダメージ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>レンジファインダー</td>
 <td>全オーグメント効果:<br>  範囲: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>武装</td>
 <td>全「ウェポン」<br>   ダメージ: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>サバイバルキット</td>
 <td>全「ウェポン」<br>   持続時間: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>テレスコープ</td>
 <td>全「ウェポン」<br>   範囲: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>医療パック</td>
 <td>インベントリに医療パックを3個追加します。<br><br>医療パックはメインタレットの最大体力の30%まで回復します。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>弾頭</td>
 <td>インベントリに弾頭を2個追加します。.<br><br>弾頭はメインウェポンを中心に、外側へ放射状に強力な爆発を引き起こします。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>セラム</td>
 <td>インベントリにセラムを2個追加します。<br><br>セラムは10秒間、クリティカル率を25%上昇させます。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>クライオコア</td>
 <td>インベントリにクライオコアを2個追加します。<br><br>クライオコアは全体フリーズ効果を発動します。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>キル・ピル</td>
 <td>インベントリにキルピルを2個追加します。<br><br>キルピルは全体効果「ダブルダメージ」を発動します。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>フレイムウェーブ</td>
 <td>フレイムウェーブ2をインベントリに追加します。<br><br>フレイムウェーブは、メインタレットの現在の体力の10%を消費して、視界内のすべての敵に着火させます。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ポケットタレット</td>
 <td>ポケットタレットをインベントリに1個追加します。<br><br>ポケットタレットは、敵のグループの近くに自動タレットを生成します。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>震源地</td>
 <td>熱ウェポンは、ターゲットがメインウェポンに近いときに+20%のダメージを与えます。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>冷却材</td>
 <td>フリーズ:<br>   持続時間: +20%<br>   ドロップ率: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>急所への一撃</td>
 <td>ダブルダメージ:<br>   持続時間: +20%<br>   ドロップ率: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>精密射撃</td>
 <td>全「ウェポン」:<br>   クリティカル率: +1%<br>   クリティカル倍率: +50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>回復キット</td>
 <td>ヘルスが100回復する。</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>シールド</td>
 <td>シールドを 1 つ追加する。<br><br>現在のシールド: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>リロール</td>
 <td>リロールを1つ追加する。<br><br>現在のリロール数: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>アフリクター</td>
 <td>各アフリクターはD.O.T.ダメージを+4%増加する。 また、メインタレットの近くにいると、このボーナスは2倍になる。</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">ホーム</a> / <span>特殊能力</span></div><h1>特殊能力</h1>
 <p>特殊能力は、プレイ中に入手できる通貨「コイン（§）」を使ってアンロックできる永続的なアップグレードです。プレイ開始時に、プレイヤーはアンロックした特殊能力を使用するためのスロット数が限られており、その数は選択したオーメンレベルに応じて変動します。</p>
 <p>各特殊能力には、その効果を発揮するための特定の条件があります。特殊能力を最大限に活かすためには、特殊能力同士の相性を考えて、自分の戦略に合ったものを選ぶことが重要です。</p>
-<h2>コーデックス：メインウェポン</h2>
+<details><summary>コーデックス：メインウェポン</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>装甲</td>
 <td>50 §,<br>200 §</td>
 <td>メインウェポン:<br>  体力：+50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>意欲的</td>
 <td>50 §</td>
 <td>各トライアルまたはエンドレスゲームの開始時にレベルを1つ獲得します。エンドレスモードで4分間生存するごとにレベルを1つ獲得します。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ギャンブラー</td>
 <td>50 §</td>
 <td>リロールを1回使うごとに、メインウェポンのダメージが20秒間+20%アップする。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>イマキュレート</td>
 <td>100 §</td>
 <td>完璧なタイピングは、スタックごとにクリティカルチャンスを+1.5%増加させる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ヘイズ</td>
 <td>200 §,<br>500 §</td>
 <td>体力が50%未満の場合、全体の発射レートが+50%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>デボーション</td>
 <td>200 §</td>
 <td>メインウェポンは空き武器スロットごとに+25%のダメージを獲得する。レベルアップ時には最低1つのオプションがアップグレードになる。</td>
 </tr>
 </tbody></table>
-<h2>コーデックス：ドローン</h2>
+</details>
+
+<details><summary>コーデックス：ドローン</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>アルマダ</td>
 <td>200 §</td>
 <td>ドローンが出現するたびに、20%の確率で追加のドローンが出現する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ダイバーシティ</td>
 <td>50 §</td>
 <td>ドローン以外の武器を装備するごとに、すべてのドローンの持続時間が20%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ブリッツクリーク</td>
 <td>50 §</td>
 <td>ドローンの速度アップグレードは、ドローンのダメージにも適用されるようになる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>レトリビューション</td>
 <td>300 §</td>
 <td>シールドが破壊されるたびに、すべてのドローンが自己破壊し、爆発ダメージを与えるようになる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>スケープゴート</td>
 <td>100 §</td>
 <td>タイプミスはカウントされる代わりに既存のドローンをランダムに破壊する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>スポイルズ</td>
 <td>200 §</td>
 <td>ドローンは、効果が切れるときにアイテムをドロップする可能性がある。</td>
 </tr>
 </tbody></table>
-<h2>コーデックス：タレット</h2>
+</details>
+
+<details><summary>コーデックス：タレット</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>フォートレス</td>
 <td>100 §,<br>400 §</td>
 <td>すべてのタレット進化は、メインウェポンの最大体力に+50を付与する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ネットワーク</td>
 <td>50 §</td>
 <td>追加タレット1基ごとに、すべてのタレットの発射速度が10%増加する（最大で50%まで）。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>フィールドインテル</td>
 <td>50 §</td>
 <td>ピックアップを起動すると、すべてのタレットに+30%の射程が付与される。この効果は重複しません。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ダークリレー</td>
 <td>500 §</td>
 <td>発射物がタレット間をランダムに跳ね返り、電撃ダメージを与える。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>オブザーバー</td>
 <td>100 §</td>
 <td>3秒間攻撃をしていない場合、次の攻撃までタレットのダメージが+30%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ウィークネス</td>
 <td>200 §</td>
 <td>タレットの射程内にいる敵は、他の攻撃源からの30%多くダメージを受ける。</td>
 </tr>
 </tbody></table>
-<h2>コーデックス：D.O.T.</h2>
+</details>
+
+<details><summary>コーデックス：D.O.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>腐食</td>
 <td>500 §</td>
 <td>D.O.T.ダメージにもクリティカルヒットが発生する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ランプレイ</td>
 <td>200 §</td>
 <td>メインウェポンの近くで与えたD.O.T.ダメージは、メインウェポンのHPを1回復させる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>テナシティ</td>
 <td>100 §,<br>300 §</td>
 <td>すべてのD.O.T.ウェポンの持続時間が35%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>アフリクターズ</td>
 <td>50 §</td>
 <td>アフリクターをルートプールに追加する。各アフリクターはD.O.T.ダメージを+4%増加させる。メインウェポンの近くでは2倍の効果をあたえる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>信念</td>
 <td>100 §</td>
 <td>リロールが最大の間、D.O.T.ウェポンの連射速度が40%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>インフェクター</td>
 <td>300 §,<br>500 §</td>
 <td>D.O.T.ウェポンは、ステータス効果の発生確率が3%増加する。</td>
 </tr>
 </tbody></table>
-<h2>コーデックス：リモート</h2>
+</details>
+
+<details><summary>コーデックス：リモート</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>接近戦</td>
 <td>100 §</td>
 <td>すべてのリモートダメージは、メインウェポンに近いものとみなされる。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>カルトロップ</td>
 <td>200 §</td>
 <td>遠隔武器でクリティカルヒット時、通過する敵にダメージを与える12個のカルトロプを出現する。ダメージに応じて出血の発生率が上昇。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>腐食性弾薬</td>
 <td>500 §</td>
 <td>腐食性弾薬がドロップする確率がある。 - リモートウェポンに20秒間、ケミカルダメージ+10を追加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>パイラシー</td>
 <td>50 §</td>
 <td>装備している戦利品効果1つにつき、遠隔ダメージが15％アップします。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>デリヴァランス</td>
 <td>100 §</td>
 <td>シールドが最大の間、すべてのリモートウェポンの射程が40%増加する。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>スナイパー</td>
 <td>200 §</td>
 <td>リモート武器の射程のアップグレードは、リモートダメージにも適用される。</td>
 </tr>
 </tbody></table>
-<h2>コーデックス：電撃</h2>
+</details>
+
+<details><summary>コーデックス：電撃</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">名前</div></th>
-<th><div style="width:50px">コスト</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">名前</div></th>
+<th><div style="width:70px">コスト</div></th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>ヴォルティック・バースト</td>
 <td>200 §</td>
 <td>電撃の持続時間アップグレードは、その効果値の25％が電撃スタティック確率にも適用されます。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ストーム・バッテリー</td>
 <td>500 §</td>
 <td>メインタレットは近くの敵に電撃ダメージを与えます。装備している電撃の武器の数に応じて基本ダメージが上昇します。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>スパーク</td>
 <td>300 §</td>
 <td>電撃武器でクリティカルヒット時、クリティカル率とクリティカル倍率に応じてダメージがスケーリングする「ライトニングスパーク」を6つ放つ。</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>エフィシエント・グリッド</td>
 <td></td>
 <td></td>

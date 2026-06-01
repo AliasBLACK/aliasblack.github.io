@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>อาวุธหลักเป็นอาวุธเริ่มต้นใน Glyphica และมีบทบาทสำคัญในเกม เมื่อคุณพิมพ์คำที่แสดงเหนือศัตรู อาวุธหลักจะล็อกเป้าหมายไปที่ศัตรูนั้น อาวุธหลักแต่ละชนิดมีเอฟเฟกต์และกลไกเฉพาะตัว ต้องใช้กลยุทธ์ต่าง ๆ เพื่อใช้งานอย่างมีประสิทธิภาพ</p>
 <p>แม้อาวุธหลักบางชนิดเน้นความเร็วในการพิมพ์ (WPM) แต่บางชนิดต้องใช้กลยุทธ์ที่รอบคอบ เช่นเดียวกับอาวุธอื่น ๆ ในเกม อาวุธหลักสามารถอัปเกรดและวิวัฒนาการได้ เพิ่มพูนความสามารถและประสิทธิภาพขณะที่คุณก้าวหน้าในเกม</p>
 <h2>รายการอาวุธหลัก</h2>
-<a href="#repeater" class="portal">รีพีตเตอร์</a><a href="#heatray" class="portal">ฮัทเรย์</a><a href="#barrage" class="portal">บาร์ราจ</a><a href="#splattershot" class="portal">สเปลตเตอร์ช็อต</a><a href="#overmind" class="portal">โอเวอร์มายด์</a><a href="#wildcard" class="portal">ไวลด์การ์ด</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>รีพีตเตอร์</span></div><h1>รีพีตเตอร์</h1>
+<a href="#repeater" class="portal">รีพีตเตอร์</a><a href="#heatray" class="portal">ฮัทเรย์</a><a href="#barrage" class="portal">บาร์ราจ</a><a href="#splattershot" class="portal">สเปลตเตอร์ช็อต</a><a href="#overmind" class="portal">โอเวอร์มายด์</a><a href="#wildcard" class="portal">ไวลด์การ์ด</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>รีพีตเตอร์</span></div><h1><span class="weapon-icon"></span> รีพีตเตอร์</h1>
 <p>แท็ก: คิเนติก, หลัก<br>อาวุธทรงพลังที่ยิงกระสุนจำนวนมากเป็นชุดสั้น ๆ</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>ระยะ: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>ฮัทเรย์</span></div><h1>ฮัทเรย์</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>ฮัทเรย์</span></div><h1><span class="weapon-icon"></span> ฮัทเรย์</h1>
 <p>แท็ก: ความร้อน, หลัก, ความเสียหายต่อเนื่อง<br>ยิงลำแสงต่อเนื่องที่มีความแม่นยำสูงมาก สร้างความเสียหายต่อเนื่อง</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>อัตราการยิง: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>บาร์ราจ</span></div><h1>บาร์ราจ</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>บาร์ราจ</span></div><h1><span class="weapon-icon"></span> บาร์ราจ</h1>
 <p>แท็ก: ระเบิด, หลัก<br>ยิงจรวดระเบิดเป็นชุดไปยังเป้าหมายและพื้นที่โดยรอบ ชาร์จใหม่เมื่อเวลาผ่านไป</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>ความเร็วรีโหลด: +30%<br> (อัตราการยิง)</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>สเปลตเตอร์ช็อต</span></div><h1>สเปลตเตอร์ช็อต</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>สเปลตเตอร์ช็อต</span></div><h1><span class="weapon-icon"></span> สเปลตเตอร์ช็อต</h1>
 <p>แท็ก: เคมี, หลัก, ความเสียหายต่อเนื่อง<br>ยิงก้อนสารเหนียวใส่ศัตรูเพื่อทำให้พวกมันอ่อนแอและสร้างความเสียหาย</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>ระยะเวลา: 30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>โอเวอร์มายด์</span></div><h1>โอเวอร์มายด์</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>โอเวอร์มายด์</span></div><h1><span class="weapon-icon"></span> โอเวอร์มายด์</h1>
 <p>แท็ก: ไฟฟ้า, โดรน, หลัก<br>สั่งการโดรนหลากหลายชนิดให้ถล่มศัตรูของคุณ</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>สนามว่าง</td>
-<td>ศัตรูที่ถูกโจมตีด้วยโอเวอร์ไมน์จะถูกชะลอและรับดาเมจ 50% จากเอฟเฟกต์และอาวุธไฟฟ้าอื่น</td>
+<td>ศัตรูที่ถูกโจมตีด้วยโอเวอร์ไมน์จะถูกชะลอและรับดาเมจ +50% จากเอฟเฟกต์และอาวุธไฟฟ้าอื่น</td>
 </tr>
 <tr>
 <td>สนามว่าง II</td>
@@ -682,7 +728,7 @@ th {
 <td>อัตราการยิง: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>ไวลด์การ์ด</span></div><h1>ไวลด์การ์ด</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#main_weapons">อาวุธหลัก</a> / <span>ไวลด์การ์ด</span></div><h1><span class="weapon-icon"></span> ไวลด์การ์ด</h1>
 <p>แท็ก: คิเนติก, ความร้อน, ความเย็น, ไฟฟ้า, หลัก<br>การยิงครั้งถัดไปจะถูกสุ่มจากอาวุธที่เป็นไปได้สี่ชนิด ดังนั้นควรเล็งให้ดี</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -810,8 +856,8 @@ th {
 <p>อาวุธเลเวลอัปจะได้รับระหว่างการเล่นเมื่อคุณเลเวลอัป เมื่อเลือกแล้ว อาวุธจะถูกเพิ่มเข้าคลังอาวุธของคุณ อาวุธแต่ละชนิดมีวิธีการใช้งานเฉพาะ แต่ส่วนใหญ่สามารถใช้งานได้ผ่านการพิมพ์และล็อกเป้าหมายด้วยอาวุธหลัก</p>
 <p>สามารถได้รับอาวุธได้สูงสุดสี่ชิ้นด้วยวิธีนี้ เมื่ออาวุธถูกเพิ่มเข้าคลังแล้ว การอัปเกรดของมันจะสามารถใช้งานได้ในกลุ่มอัปเกรดเลเวลอัป ทำให้คุณสามารถเพิ่มความสามารถของมันได้เมื่อเกมดำเนินต่อไป</p>
 <h2>รายการอาวุธเลเวลอัป</h2>
-<a href="#spectre" class="portal">สเปกเตอร์</a><a href="#sentry" class="portal">ป้อมปืน</a><a href="#tesla" class="portal">ทุ่นระเบิดเทสลา</a><a href="#oscillator" class="portal">ออสซิลเลเตอร์</a><a href="#meteor" class="portal">มีทีออร์</a><a href="#hunter" class="portal">ฮันเตอร์</a><a href="#chopper" class="portal">ชอปเปอร์</a><a href="#minefield" class="portal">มายด์ฟิลด์</a><a href="#blade" class="portal">เบลดแทร็ป</a><a href="#orbiter" class="portal">ออร์บิเตอร์</a><a href="#guardian" class="portal">การ์ดเดียน</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>สเปกเตอร์</span></div><h1>สเปกเตอร์</h1>
-<p>แท็ก: คิเนติก, โดรน<br>ทำคำที่มีสัญลักษณ์นี้สำเร็จ a, e, o สร้างโดรนระยะประชิดความเร็วสูงตามจำนวนที่จับคู่ได้ด้านบน</p>
+<a href="#spectre" class="portal">สเปกเตอร์</a><a href="#sentry" class="portal">ป้อมปืน</a><a href="#tesla" class="portal">ทุ่นระเบิดเทสลา</a><a href="#oscillator" class="portal">ออสซิลเลเตอร์</a><a href="#meteor" class="portal">มีทีออร์</a><a href="#hunter" class="portal">ฮันเตอร์</a><a href="#chopper" class="portal">ชอปเปอร์</a><a href="#minefield" class="portal">มายด์ฟิลด์</a><a href="#blade" class="portal">เบลดแทร็ป</a><a href="#orbiter" class="portal">ออร์บิเตอร์</a><a href="#guardian" class="portal">การ์ดเดียน</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>สเปกเตอร์</span></div><h1><span class="weapon-icon"></span> สเปกเตอร์</h1>
+<p>แท็ก: คิเนติก, โดรน<br>ทำคำที่มีสัญลักษณ์นี้สำเร็จ ส, ท, ห สร้างโดรนระยะประชิดความเร็วสูงตามจำนวนที่จับคู่ได้ด้านบน</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -894,7 +940,7 @@ th {
 <td>เมื่อทำคำที่มีความยาวมากกว่า 7 สัญลักษณ์ จะสร้างสเปกเตอร์เพิ่มอีก 1 ตัว</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ป้อมปืน</span></div><h1>ป้อมปืน</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ป้อมปืน</span></div><h1><span class="weapon-icon"></span> ป้อมปืน</h1>
 <p>แท็ก: ความร้อน, ป้อมปืน<br>วางป้อมปืนอัตโนมัติที่ยิงใส่ศัตรูทุกตัวที่เข้ามาในระยะ</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -986,8 +1032,8 @@ th {
 <td>ระยะ: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ทุ่นระเบิดเทสลา</span></div><h1>ทุ่นระเบิดเทสลา</h1>
-<p>แท็ก: ไฟฟ้า, ป้อมปืน, ความเสียหายต่อเนื่อง<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ b, c, d, e วางป้อมปืนไฟฟ้าที่สร้างความเสียหายต่อเนื่อง</p>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ทุ่นระเบิดเทสลา</span></div><h1><span class="weapon-icon"></span> ทุ่นระเบิดเทสลา</h1>
+<p>แท็ก: ไฟฟ้า, ป้อมปืน, ความเสียหายต่อเนื่อง<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ น, ค, ร, ป วางป้อมปืนไฟฟ้าที่สร้างความเสียหายต่อเนื่อง</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -1090,7 +1136,7 @@ th {
 <td>โอกาสไฟฟ้า: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ออสซิลเลเตอร์</span></div><h1>ออสซิลเลเตอร์</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ออสซิลเลเตอร์</span></div><h1><span class="weapon-icon"></span> ออสซิลเลเตอร์</h1>
 <p>แท็ก: ความร้อน, ควบคุมระยะไกล<br>ยิงกระแสอนุภาคแบบสั่นไปในทิศทางของเป้าหมายล่าสุด</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>อัตราคริติคอล: +3%<br> ตัวคูณคริติคอล: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>มีทีออร์</span></div><h1>มีทีออร์</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>มีทีออร์</span></div><h1><span class="weapon-icon"></span> มีทีออร์</h1>
 <p>แท็ก: ระเบิด, ควบคุมระยะไกล<br>สร้างเครื่องหมายเป้าหมายแบบสุ่มเป็นระยะ ซึ่งสามารถเปิดใช้งานเพื่อเริ่มการโจมตีจากวงโคจร</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -1278,8 +1324,8 @@ th {
 <td>ระยะ: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ฮันเตอร์</span></div><h1>ฮันเตอร์</h1>
-<p>แท็ก: ไฟฟ้า, โดรน, ความเสียหายต่อเนื่อง<br>ทำคำที่มีสัญลักษณ์นี้สำเร็จ i, o, u สร้างโดรนยิงลำแสงไฟฟ้าตามจำนวนที่จับคู่ได้ด้านบน</p>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ฮันเตอร์</span></div><h1><span class="weapon-icon"></span> ฮันเตอร์</h1>
+<p>แท็ก: ไฟฟ้า, โดรน, ความเสียหายต่อเนื่อง<br>ทำคำที่มีสัญลักษณ์นี้สำเร็จ ก, อ, ต สร้างโดรนยิงลำแสงไฟฟ้าตามจำนวนที่จับคู่ได้ด้านบน</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -1370,7 +1416,7 @@ th {
 <td>ระยะเวลา: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ชอปเปอร์</span></div><h1>ชอปเปอร์</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ชอปเปอร์</span></div><h1><span class="weapon-icon"></span> ชอปเปอร์</h1>
 <p>แท็ก: คิเนติก, ควบคุมระยะไกล<br>เมื่อยิงอาวุธหลัก จะสร้างใบมีดหมุนขนาดใหญ่ที่เคลื่อนที่ไปจนสุดหน้าจอ สร้างความเสียหายแก่ศัตรูทั้งหมดในเส้นทาง</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -1486,8 +1532,8 @@ th {
 <td>โอกาสเลือดไหล: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>มายด์ฟิลด์</span></div><h1>มายด์ฟิลด์</h1>
-<p>แท็ก: ระเบิด, โดรน<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ f, g, h, i สร้างทุ่นระเบิดที่เคลื่อนที่ช้าและระเบิดเมื่อสัมผัสศัตรู</p>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>มายด์ฟิลด์</span></div><h1><span class="weapon-icon"></span> มายด์ฟิลด์</h1>
+<p>แท็ก: ระเบิด, โดรน<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ ล, บ, ว, ผ สร้างทุ่นระเบิดที่เคลื่อนที่ช้าและระเบิดเมื่อสัมผัสศัตรู</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -1590,8 +1636,8 @@ th {
 <td>กับระเบิดลูกโซ่:<br> อัตราการเกิด: +30%<br> (อัตราการยิง)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>เบลดแทร็ป</span></div><h1>เบลดแทร็ป</h1>
-<p>แท็ก: คิเนติก, ป้อมปืน<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ j, k, l, m วางกับดักใบมีดสี่แฉกที่หมุนได้</p>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>เบลดแทร็ป</span></div><h1><span class="weapon-icon"></span> เบลดแทร็ป</h1>
+<p>แท็ก: คิเนติก, ป้อมปืน<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ ข, ม, พ, ช วางกับดักใบมีดสี่แฉกที่หมุนได้</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -1682,8 +1728,8 @@ th {
 <td>ระยะเวลา: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ออร์บิเตอร์</span></div><h1>ออร์บิเตอร์</h1>
-<p>แท็ก: เคมี, ควบคุมระยะไกล<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ n, o, p, q วางออร์บที่โคจรรอบอาวุธหลัก สร้างความเสียหายแก่ทุกสิ่งในเส้นทาง</p>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>ออร์บิเตอร์</span></div><h1><span class="weapon-icon"></span> ออร์บิเตอร์</h1>
+<p>แท็ก: เคมี, ควบคุมระยะไกล<br>ทำคำที่ขึ้นต้นด้วยสัญลักษณ์สำเร็จ ย, จ, ต, ซ วางออร์บที่โคจรรอบอาวุธหลัก สร้างความเสียหายแก่ทุกสิ่งในเส้นทาง</p>
 <h2>วิวัฒนาการ</h2>
 <table>
 <thead>
@@ -1709,11 +1755,11 @@ th {
 <td>สร้างออร์บิเตอร์เพิ่มอีกหนึ่งตัวไปในทิศทางตรงข้าม</td>
 </tr>
 <tr>
-<td>Tether</td>
+<td>เทเธอร์</td>
 <td>ออร์บิเตอร์ตอนนี้มีสายยึดเชื่อมไปยังป้อมหลักที่ทำความเสียหาย 30% ของออร์บิเตอร์กับศัตรูที่สัมผัส</td>
 </tr>
 <tr>
-<td>Tether II</td>
+<td>เทเธอร์ II</td>
 <td>สายยึดตอนนี้ทำความเสียหาย 50% ของออร์บิเตอร์กับศัตรูที่สัมผัส</td>
 </tr>
 </tbody></table>
@@ -1786,7 +1832,7 @@ th {
 <td>ความเร็ว: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>การ์ดเดียน</span></div><h1>การ์ดเดียน</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#weapons">อาวุธเลเวลอัป</a> / <span>การ์ดเดียน</span></div><h1><span class="weapon-icon"></span> การ์ดเดียน</h1>
 <p>แท็ก: ความร้อน, โดรน<br>ปล่อยโดรนที่ยิงเลเซอร์ใส่ศัตรูได้ทันที เปิดใช้งานไอเทมเติมเชื้อเพลิงเพื่อเติมพลังให้การ์ดเดียน ซึ่งจะใช้เชื้อเพลิงและจะหยุดทำงานเมื่อหมด</p>
 <h2>วิวัฒนาการ</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>ศัตรูใน <em>Glyphica</em> จะเกิดแบบสุ่มตามมาตรวัดภายในที่เรียกว่า <strong>ภัยคุกคาม</strong> ซึ่งเพิ่มขึ้นเมื่อการเล่นดำเนินต่อไป ในโหมดทดลอง ภัยคุกคามจะคูณกับระดับการทดลองปัจจุบัน ทำให้แต่ละระดับยากขึ้นเรื่อย ๆ ในโหมดไม่มีที่สิ้นสุด ภัยคุกคามจะเปรียบเทียบกับระบบปรับขนาดตามระดับผู้เล่น โดยใช้ค่าที่สูงกว่าเพื่อกำหนดความยากในการเกิด</p>
 <p>ศัตรูยังถูกจัดประเภทเป็น <strong>พิเศษ</strong> และ <strong>ยอดฝีมือ</strong> แต่ละประเภทมีขีดจำกัดชั้นของตัวเองที่จำกัดอัตราการเกิดภายในระดับภัยคุกคามโดยรวม</p>
 <h2>รายการศัตรู</h2>
-<a href="#drone" class="portal">โดรน</a><a href="#shielddrone" class="portal">โดรนโล่</a><a href="#stalker" class="portal">สตอล์กเกอร์</a><a href="#shooter" class="portal">ชูตเตอร์</a><a href="#splitter" class="portal">สปลิตเตอร์</a><a href="#warder" class="portal">วอร์เดอร์</a><a href="#swarmer" class="portal">สวอร์มเมอร์</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#enemies">ศัตรู</a> / <span>โดรน</span></div><h1>โดรน</h1>
+<a href="#drone" class="portal">โดรน</a><a href="#shielddrone" class="portal">โดรนโล่</a><a href="#stalker" class="portal">สตอล์กเกอร์</a><a href="#shooter" class="portal">ชูตเตอร์</a><a href="#splitter" class="portal">สปลิตเตอร์</a><a href="#wurm" class="portal">เวิร์ม</a><a href="#warder" class="portal">วอร์เดอร์</a><a href="#swarmer" class="portal">สวอร์มเมอร์</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#enemies">ศัตรู</a> / <span>โดรน</span></div><h1>โดรน</h1>
 <p>โดรนเป็นศัตรูที่เคลื่อนที่เข้าหาอาวุธหลักของคุณอย่างไม่หยุดยั้ง และบางครั้งจะปรากฏในรูปแบบเสริมพลัง 2 แบบ: ขนาดใหญ่: พลังชีวิตเพิ่มขึ้น 3 เท่า ทำให้กำจัดได้ยากขึ้น เร่งความเร็ว: ความเร็วเคลื่อนที่เพิ่มเป็น 2 เท่า ทำให้ต้องกำจัดอย่างเร่งด่วน</p>
 <h2>รายการตัวแปร</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>พลังชีวิต: 240<br>ความเสียหาย: 40<br></td>
+<td>พลังชีวิต: 80<br>ความเสียหาย: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>พลังชีวิต: 2400<br>ความเสียหาย: 120<br></td>
+<td>พลังชีวิต: 800<br>ความเสียหาย: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>จำนวนชาร์ด: 6<br>พลังชีวิตชาร์ด: 650<br>ดาเมจชาร์ด: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#enemies">ศัตรู</a> / <span>เวิร์ม</span></div><h1>เวิร์ม</h1>
+<p>เวิร์มเป็นศัตรูที่มีหลายส่วนซึ่งต้องทำลายตามลำดับ แต่ละส่วนเชื่อมต่อกับส่วนถัดไปด้วยกำแพงที่ทำลายไม่ได้ซึ่งจะบล็อกการโจมตีด้วยกระสุนทั้งหมด</p>
+<h2>รายการตัวแปร</h2>
+<table>
+<thead>
+<tr>
+<th>รูปภาพ</th>
+<th>คำอธิบาย</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>จำนวนเซกเมนต์: 2<br>พลังชีวิตเซกเมนต์: 80<br>ดาเมจเซกเมนต์: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>จำนวนเซกเมนต์: 3<br>พลังชีวิตเซกเมนต์: 200<br>ดาเมจเซกเมนต์: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>จำนวนเซกเมนต์: 4<br>พลังชีวิตเซกเมนต์: 1000<br>ดาเมจเซกเมนต์: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>จำนวนเซกเมนต์: 4<br>พลังชีวิตเซกเมนต์: 1800<br>ดาเมจเซกเมนต์: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <a href="#enemies">ศัตรู</a> / <span>วอร์เดอร์</span></div><h1>วอร์เดอร์</h1>
 <p>วอร์เดอร์เป็นศัตรูระดับสูงที่ปรากฏในช่วงท้ายเกม มีโล่หมุนที่ป้องกันความเสียหายจากทิศทางที่โล่หันไป และขณะยังมีชีวิต จะสร้างออร่าป้องกันให้ศัตรูใกล้เคียงเป็นอมตะจนกว่าจะถูกกำจัด</p>
 <h2>รายการตัวแปร</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <span>ไอเท็มของตก</span></div><h1>ไอเท็มของตก</h1>
 <p>ไอเท็มของตกจะได้รับระหว่างการเล่นโดยการเก็บของจากหีบสมบัติ การสุ่มเลือกไอเท็มของตกจะปรากฏขึ้น และการเลือกหนึ่งชิ้นจะให้โบนัสพาสซีฟที่คงอยู่ตลอดการเล่นครั้งนั้น</p>
 <p>ไอเท็มของตกถูกจัดประเภทเป็น <strong>ธรรมดา</strong>, <strong>ไม่ธรรมดา</strong>, และ <strong>หายาก</strong> ซึ่งกำหนดโอกาสปรากฏในตัวเลือกของตก การเอาชนะบอสในโหมดทดลองจะให้รางวัลหีบสมบัติที่มีไอเท็มหายากเท่านั้น</p>
-<h2>รายการไอเท็มหายาก</h2>
+<details><summary>รายการไอเท็มหายาก</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">ชื่อ</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>เซียร์</td>
 <td>หากคุณมีรีโรล 0 เมื่อเข้าสู่หน้าการเลเวลอัป, วิวัฒนาการ หรือของตก คุณจะได้รับรีโรล 1 แทน</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เมกซ์ชิฟต์</td>
 <td>อาวุธโดรนทั้งหมด:<br> โอกาสได้รับโดรนเพิ่ม: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>พลันเดอร์</td>
 <td>=+1 ตัวเลือกของตก</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>มัลติ-ทาร์เก็ตติ้ง</td>
 <td>อาวุธระยะไกลทั้งหมดได้รับ +1% โอกาสคริติคอลสำหรับทุกอาวุธที่คุณถือ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไจแอนท์แม็กเน็ต</td>
 <td>คุณมีโอกาส 50% ในการเก็บของตกโดยอัตโนมัติเมื่อหมดเวลา</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฟรอสต์ไบต์</td>
 <td>ศัตรูได้รับดาเมจต่อเนื่องเมื่อถูกแช่แข็ง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เนโครบอมบ์</td>
 <td>เมื่อทำลายศัตรูด้วยดาเมจคริติคอลระเบิด กระตุ้นระเบิดต่อเนื่องรอบตำแหน่งศัตรูที่ล้มลง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไพรซ์</td>
 <td>เมื่อทำลายศัตรูด้วยดาเมจคริติคอล มีโอกาส 30% ในการเกิด รีโรล, เกราะ หรือไอเท็มฟื้นพลังชีวิต</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอฟเตอร์ช็อก</td>
 <td>ดาเมจคริติคอลจะทำให้เกิดสถานะเสมอ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แวมไพริซึ่ม</td>
 <td>ฟื้นฟูพลังชีวิตเท่ากับ 5%% ของดาเมจคริติคอลคิเนติก</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>วิสดอม</td>
 <td>เมื่อเก็บเกราะ เพิ่ม 10 การสังหารให้กับการวิวัฒนาการอาวุธทั้งหมด</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เจสเตอร์</td>
 <td>เมื่อเก็บรีโรล ทำดาเมจสุ่ม 0–100 ต่อศัตรูทั้งหมดบนหน้าจอ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ลาสท์สแตนด์</td>
 <td>เมื่อเกราะถูกทำลาย จะได้รับดาเมจสองเท่า</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ดาเมจสามเท่า</td>
 <td>ของสะสมดาเมจสองเท่าทั้งหมดจะกลายเป็นดาเมจสามเท่าแทน</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รอยแตก</td>
 <td>ดาเมจทั้งหมดกับศัตรูแช่แข็งเพิ่มขึ้น 50%.<br><br>ตัวคูณแบบทวีคูณ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอสเซติก</td>
 <td>เมื่อออกจากหน้าของตก, เพิ่มดาเมจ +10% สำหรับทุกรีโรลที่ไม่ถูกใช้ เป็นเวลา 20 วินาที</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฮาร์โมไนเซอร์</td>
 <td>อาวุธที่ติดตั้งทั้งหมดได้รับระดับวิวัฒนาการเพิ่ม 1</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อิมมอร์ทัลลิตี้</td>
 <td>ถ้าอาวุธหลักใกล้ถูกทำลาย, จะเหลือพลังชีวิต 1 แทน ความสามารถนี้ใช้ได้ครั้งละ 2 นาที</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอนไลเทนเมนต์</td>
 <td>เมื่อทำลายศัตรูด้วยดาเมจคริติคอล จะได้รับ +1 การสังหารต่อการวิวัฒนาการของอาวุธทั้งหมด</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โคลเซอร์</td>
 <td>สร้างคำของศัตรูหลังจากถูกทำลาย เพิ่ม +10% ดาเมจเป็นเวลา 10 วินาที ซ้อนกันได้สูงสุด 3 ครั้ง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เมอร์เดอรัส</td>
 <td>อาวุธโดรนทั้งหมด:<br> +50% ดาเมจ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอกซีคิวชันเนอร์</td>
 <td>อาวุธป้อมทั้งหมด:<br> +50% ดาเมจ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ดีเจเนอเรชัน</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> +50% ดาเมจ</td>
 </tr>
 </tbody></table>
-<h2>รายการไอเท็มไม่ธรรมดา</h2>
+</details>
+
+<details><summary>รายการไอเท็มไม่ธรรมดา</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">ชื่อ</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>สึนามิ</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ระยะ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ช็อกเวฟ</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอนิฮิเลชั่น</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ตัวคูณคริติคอล: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เดเซนต์</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ของตกดาเมจสองเท่า:<br> โอกาสตก: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แช็ตเตอร์ช็อต</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เออร์ัปชั่น</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> อัตราการยิง: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เพียร์เซอร์</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> โอกาสคริติคอล: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฮาร์บิงเจอร์</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์เลือด: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อินเฟอร์โน</td>
 <td>อาวุธความร้อนทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>พลาสมาเตอร์</td>
 <td>อาวุธความร้อนทั้งหมด:<br> ระยะ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฟีนิกซ์</td>
 <td>อาวุธความร้อนทั้งหมด:<br> โอกาสรีโรล: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไพโรกไลซึ่ม</td>
 <td>อาวุธความร้อนทั้งหมด:<br> โอกาสติดไฟ: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไครโอสเตซิส</td>
 <td>อาวุธเย็นทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>กลิเซียร์</td>
 <td>อาวุธเย็นทั้งหมด:<br> โอกาสแช่แข็ง: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีพลัลเซอร์</td>
 <td>อาวุธเย็นทั้งหมด:<br> โอกาสบล็อค: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไครโอเจน</td>
 <td>อาวุธเย็นทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โอเวอร์โหลด</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์ไฟฟ้าสถิต: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เมกาสตอร์ม</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอมพลิไฟเออร์</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> อัตราการยิง: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซิงกูลาริตี้</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คอนทาจิออน</td>
 <td>อาวุธเคมีทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์ติดเน่าเปื่อย: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เซพซิส</td>
 <td>อาวุธเคมีทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คอนวัลส์</td>
 <td>อาวุธเคมีทั้งหมด:<br> อัตราการยิง: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ดีเคย์</td>
 <td>อาวุธเคมีทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อินฟินิตี้</td>
 <td>อาวุธโดรนทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไฮเปอร์เจ็ต</td>
 <td>อาวุธโดรนทั้งหมด:<br> ความเร็ว: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โอเวอร์มายด์</td>
 <td>อาวุธโดรนทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฟรอสท์เบน</td>
 <td>อาวุธโดรนทั้งหมด:<br> โอกาสหยุดแช่แข็งของของตก: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ออมนีบูสต์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ระยะ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อินสตาลิงค์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ความเร็ว: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คอมมานด์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอนเนอร์ไจเซอร์</td>
 <td>อาวุธป้อมทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เฮลสตอร์ม</td>
 <td>อาวุธป้อมทั้งหมด:<br> อัตราการยิง: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอ็กแซ็กทิจูด</td>
 <td>อาวุธป้อมทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ออนสลอท</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ทอร์เมนต์</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ระยะเวลา: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แจ็คพอต</td>
 <td>เอฟเฟกต์ของตกทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>มิสทรี</td>
 <td>อาวุธของตกทั้งหมด:<br> โอกาสคริติคอล: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แรมเพจ</td>
 <td>เอฟเฟกต์อัปเกรดทั้งหมด:<br> ดาเมจ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>บียอนด์</td>
 <td>เอฟเฟกต์อัปเกรดทั้งหมด:<br> ระยะ: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อาร์เซนอล</td>
 <td>อาวุธทั้งหมด:<br> ดาเมจ: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไลฟ์เซฟเวอร์</td>
 <td>อาวุธทั้งหมด:<br> ระยะเวลา: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>สตาร์วิว</td>
 <td>อาวุธทั้งหมด:<br> ระยะ: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>พอยต์แบลงค์</td>
 <td>ศัตรูที่โดนโจมตีใกล้อาวุธหลักจะได้รับดาเมจ +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอ็กกราเวชัน</td>
 <td>อาวุธทั้งหมด:<br> โอกาสเกิดสถานะ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไครโอเทคนิกส์</td>
 <td>ของตกแช่แข็ง:<br> โอกาสตก: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>วอร์ไลค์</td>
 <td>ของตกทำดาเมจสองเท่า:<br> โอกาสตก: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>พินาตา</td>
 <td>เอฟเฟกต์ครอบคลุม:<br> ความถี่ของของตก: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>กลาสแคนนอน</td>
 <td>อาวุธทั้งหมด:<br> ดาเมจ: +30%<br><br>อาวุธหลัก:<br> พลังชีวิตสูงสุด: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีเจเนอเรชัน</td>
 <td>คุณฟื้นฟูพลังชีวิต 5%% ของพลังชีวิตสูงสุดเมื่อเก็บของตก, แช่แข็ง, ดาเมจสองเท่า, รีโรล หรือเกราะ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อีโรชัน</td>
 <td>อาวุธ D.O.T. สามารถเกิดคริติคอลได้</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แช็ตเตอร์</td>
 <td>อาวุธคิเนติกทั้งหมดได้รับโอกาสคริติคอล +5% กับศัตรูแช่แข็ง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีซิลเลียนซ์</td>
-<td>การเก็บ Shield เพิ่มระยะเวลาเอฟเฟกต์ครอบคลุม 10% เป็นเวลา 10 วินาที ซ้อนกันได้สูงสุด 3 ครั้ง</td>
+<td>การเก็บโล่จะเพิ่มระยะเวลาเอฟเฟกต์ครอบคลุม 10% เป็นเวลา 10 วินาที ซ้อนกันได้สูงสุด 3 ครั้ง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แกมเบลอร์</td>
 <td>เพิ่ม 1 รีโรลและเพิ่มรีโรลสูงสุดเป็น 6</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โพรเทคเตอร์</td>
 <td>เพิ่ม 1 Shield และเพิ่ม Shield สูงสุดเป็น 4</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฟลอว์เลส</td>
 <td>ทุกๆ x17 การพิมพ์ได้สมบูรณ์แบบ จะเพิ่มอัตราการยิงครอบคลุม 5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีลีส</td>
 <td>เมื่อพิมพ์ผิด ทำดาเมจระเบิด 20 กับศัตรูทั้งหมด สำหรับทุก x17 พิมพ์ได้สมบูรณ์แบบ</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เวสติง</td>
 <td>อาวุธ D.O.T. ทั้งหมด:<br> +35% อัตราการยิง</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>วิทเธอร์</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> +35% อัตราการยิง</td>
 </tr>
 </tbody></table>
-<h2>รายการไอเท็มธรรมดา</h2>
+</details>
+
+<details><summary>รายการไอเท็มธรรมดา</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">ชื่อ</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>ระเบิด</td>
 <td>อาวุธระเบิดทั้งหมด:<br>  ระยะ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>จุดชนวน</td>
 <td>อาวุธระเบิดทั้งหมด:<br>  ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>บด</td>
 <td>อาวุธคิเนติกทั้งหมด:<br>  ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ยิงเป็นชุด</td>
 <td>อาวุธคิเนติกทั้งหมด:<br>  อัตราการยิง: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เผาไหม้</td>
 <td>อาวุธความร้อนทั้งหมด:<br>  ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เถ้า</td>
 <td>อาวุธความร้อนทั้งหมด:<br>  ระยะ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>น้ำแข็งถาวร</td>
 <td>อาวุธเย็นทั้งหมด:<br>  ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เย็น</td>
 <td>อาวุธเย็นทั้งหมด:<br>  ระยะเวลา: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ช็อก</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br>  ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>กระแส</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br>  อัตราการยิง: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อัปลิงค์</td>
 <td>อาวุธโดรนทั้งหมด:<br>  ระยะเวลา: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>สติง</td>
 <td>อาวุธโดรนทั้งหมด:<br> ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีช</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ระยะ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>สไตรก์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เสริมกำลัง</td>
 <td>อาวุธป้อมทั้งหมด:<br> ระยะเวลา: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ป้อมปราการ</td>
 <td>อาวุธป้อมทั้งหมด:<br> ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>มาลาดี</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ดาเมจ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เรโซแนนซ์</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ระยะเวลา: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ครอบงำ</td>
 <td>อาวุธทั้งหมด:<br> ดาเมจ: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ความทนทาน</td>
 <td>อาวุธทั้งหมด:<br> ระยะเวลา: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โพรเจกชัน</td>
 <td>อาวุธทั้งหมด:<br> ระยะ: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>สแพลช</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ระยะ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อิมแพคท์</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เวเปอร์ไรซ์</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ตัวคูณคริติคอล: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เดดดรอป</td>
 <td>อาวุธระเบิดทั้งหมด:<br> ดรอปไอเท็มดาเมจคู่:<br> โอกาสดรอป: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ฮอลโลว์-พอยท์</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เบิร์สท์</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> อัตราการยิง: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เจาะทะลุ</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> โอกาสคริติคอล: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีปเปอร์</td>
 <td>อาวุธคิเนติกทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์เลือด: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เซียร์</td>
 <td>อาวุธความร้อนทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เรเดียเตอร์</td>
 <td>อาวุธความร้อนทั้งหมด:<br> ระยะ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีเบิร์ธ</td>
 <td>อาวุธความร้อนทั้งหมด:<br> โอกาสรีโรล: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แฟลมาเบิล</td>
 <td>อาวุธความร้อนทั้งหมด:<br> โอกาสติดไฟ: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ไฮโปเธอร์เมีย</td>
 <td>อาวุธเย็นทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซับซีโร่</td>
 <td>อาวุธเย็นทั้งหมด:<br> โอกาสแช่แข็ง: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ดีเฟลกชั่น</td>
 <td>อาวุธเย็นทั้งหมด:<br> โอกาสบล็อค: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คูลแลนท์</td>
 <td>อาวุธเย็นทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ลาเทนท์ชาร์จ</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์ไฟฟ้าสถิต: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คาปาซิเตอร์</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>มอดูเลเตอร์</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> อัตราการยิง: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รวมศูนย์</td>
 <td>อาวุธไฟฟ้าทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เทนท์</td>
 <td>อาวุธเคมีทั้งหมด:<br> โอกาสเกิดเอฟเฟกต์ติดเน่าเปื่อย: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ท็อกซิน</td>
 <td>อาวุธเคมีทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ธร็อบ</td>
 <td>อาวุธเคมีทั้งหมด:<br> อัตราการยิง: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ลิงเกอร์</td>
 <td>อาวุธเคมีทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอ็กซ์เทนเดอร์</td>
 <td>อาวุธโดรนทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ธรัสเตอร์</td>
 <td>อาวุธโดรนทั้งหมด:<br> ความเร็ว: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ออโตมาตา</td>
 <td>อาวุธโดรนทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โคลด์ฮาร์ต</td>
 <td>อาวุธโดรนทั้งหมด:<br> โอกาสหยุดแช่แข็งของของตก: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซิกนัลบูสต์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ระยะ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซีโร่ดีเลย์</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ความเร็ว: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คอนโทรล</td>
 <td>อาวุธระยะไกลทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซัสเทนเนอร์</td>
 <td>อาวุธป้อมทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ออโต้แคนนอน</td>
 <td>อาวุธป้อมทั้งหมด:<br> อัตราการยิง: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คาลิเบรชั่น</td>
 <td>อาวุธป้อมทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอทริชัน</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซัฟเฟอริง</td>
 <td>เอฟเฟกต์สถานะทั้งหมด:<br> ระยะเวลา: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>วินด์ฟอล</td>
 <td>เอฟเฟกต์ของตกทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ซีเคร็ต</td>
 <td>เอฟเฟกต์ของตกทั้งหมด:<br> โอกาสคริติคอล: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>โอเวอร์ไดรฟ์</td>
 <td>เอฟเฟกต์อัปเกรดทั้งหมด:<br> ดาเมจ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เรนจ์ไฟน์เดอร์</td>
 <td>เอฟเฟกต์อัปเกรดทั้งหมด:<br> ระยะ: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>อาร์มาเมนต์</td>
 <td>อาวุธทั้งหมด:<br> ดาเมจ: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เซอร์ไววัลคิท</td>
 <td>อาวุธทั้งหมด:<br> ระยะเวลา: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เทเลสโคป</td>
 <td>อาวุธทั้งหมด:<br> ระยะ: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เมดแพ็ค</td>
 <td>เพิ่ม 3 เมดแพ็คในคลังของคุณ.<br><br>เมดแพ็คฟื้นฟูพลังชีวิตสูงสุด 30% ของป้อมหลัก</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>วอร์เฮด</td>
 <td>เพิ่ม 2 วอร์เฮดในคลังของคุณ.<br><br>วอร์เฮดปล่อยระเบิดรุนแรงจากอาวุธหลัก</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เซรั่ม</td>
 <td>เพิ่ม 2 เซรั่มในคลังของคุณ.<br><br>เซรั่มเพิ่มโอกาสคริติคอล 25% เป็นเวลา 10 วินาที</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คราโยคอร์</td>
 <td>เพิ่ม 2 คราโยคอร์ในคลังของคุณ.<br><br>คราโยคอร์กระตุ้นเอฟเฟกต์แช่แข็งครอบคลุม</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>คิลล์พิลล์</td>
 <td>เพิ่ม 2 คิลล์พิลล์ในคลังของคุณ.<br><br>คิลล์พิลล์กระตุ้นเอฟเฟกต์ทำดาเมจสองเท่าครอบคลุม</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เฟลมเวฟ</td>
 <td>เพิ่ม 2 เฟลมเวฟในคลังของคุณ.<br><br>เฟลมเวฟจุดไฟศัตรูที่มองเห็นทั้งหมด โดยใช้พลังชีวิตปัจจุบันของป้อมหลัก 10%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>พ็อกเก็ตทูเร็ต</td>
 <td>เพิ่ม 1 พ็อกเก็ตทาเร็ตในคลังของคุณ.<br><br>พ็อกเก็ตทาเร็ตจะสร้างป้อมอัตโนมัติใกล้กลุ่มศัตรู</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เอพิเซ็นเตอร์</td>
 <td>อาวุธความร้อนทำดาเมจ +20% เมื่อเป้าหมายอยู่ใกล้อาวุธหลัก</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รีฟริเจอแรนท์</td>
 <td>แช่แข็งของตก:<br> ระยะเวลา: +20%<br> โอกาสตก: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เวลเนอราบิลิตี้</td>
 <td>ของตกทำดาเมจสองเท่า:<br> ระยะเวลา: +20%<br> โอกาสตก: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เพรซิชัน</td>
 <td>อาวุธทั้งหมด:<br> โอกาสคริติคอล: +1%<br> ตัวคูณคริติคอล: +50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>เมดคิท</td>
 <td>ฟื้นฟูพลังชีวิต 100.<br><br>พลังชีวิตปัจจุบัน: 300 / 300</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>ชิลด์</td>
 <td>เพิ่ม 1 เกราะ.<br><br>เกราะปัจจุบัน: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>รี-โรล</td>
 <td>เพิ่ม 1 รีโรล.<br><br>รี-โรลปัจจุบัน: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>แอฟลิคเตอร์</td>
 <td>แอฟลิคเตอร์แต่ละอันเพิ่มดาเมจ D.O.T. +4%. โบนัสนี้จะเพิ่มเป็นสองเท่าเมื่ออยู่ใกล้ป้อมหลัก</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <span>อัปเกรดเสริม</span></div><h1>อัปเกรดเสริม</h1>
 <p>อัปเกรดเสริมเป็นการอัปเกรดถาวรที่สามารถปลดล็อกโดยใช้เหรียญ (§) ซึ่งเป็นสกุลเงินที่ได้รับระหว่างการเล่น ในการเริ่มต้นแต่ละครั้ง ผู้เล่นมีจำนวนช่องจำกัดสำหรับติดตั้งอัปเกรดเสริมที่ปลดล็อกแล้ว จำนวนช่องที่มีอยู่ขึ้นอยู่กับระดับโอมันที่เลือก</p>
 <p>อัปเกรดเสริมแต่ละชิ้นมักมีเงื่อนไขเฉพาะที่กำหนดประโยชน์ของมัน เพื่อให้ได้ประโยชน์สูงสุดจากอัปเกรดเสริม ลองพิจารณาการประสานกันระหว่างอัปเกรดและปรับให้สอดคล้องกับกลยุทธ์ที่คุณชื่นชอบ</p>
-<h2>โคเด็กซ์: อาวุธหลัก</h2>
+<details><summary>โคเด็กซ์: อาวุธหลัก</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>อาร์มอร์ด</td>
 <td>50 §,<br>200 §</td>
 <td>อาวุธหลัก:<br> พลังชีวิต: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>อีเกอร์</td>
 <td>50 §</td>
-<td>ในแต่ละครั้งที่เริ่มเล่นโหมดทดลอง หรือโหมดไร้การสิ้นสุด จะเลเวลอัปหนึ้งครั้ง ทุกๆ 4 นาทีที่รอดในโหมดไร้การสิ้นสุด เลเวลจะอัปหนึ่งรอบ</td>
+<td>ในแต่ละครั้งที่เริ่มเล่น จะเลเวลอัปหนึ้งรอบ ทุกๆ 4 นาทีที่รอดในโหมดไร้การสิ้นสุด เลเวลจะอัปหนึ่งรอบ</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>แกมเบลอร์</td>
 <td>50 §</td>
 <td>ทุก ๆ ครั้งที่ใช้รีโรล เพิ่มดาเมจอาวุธหลัก +20% เป็นเวลา 20 วินาที</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>อิมแมคคิวเลต</td>
 <td>100 §</td>
 <td>พิมพ์ได้สมบูรณ์แบบจะให้ +1.5% โอกาสคริติคอลต่อหนึ่งสแตก</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เฮซ</td>
 <td>200 §,<br>500 §</td>
 <td>ถ้าพลังชีวิตต่ำกว่า 50%, เพิ่ม +50% โบนัสอัตราการยิงครอบคลุม</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ดีโวชัน</td>
 <td>200 §</td>
 <td>อาวุธหลักได้ +25% ดาเมจสำหรับช่องอาวุธว่างแต่ละช่อง</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: โดรน</h2>
+</details>
+
+<details><summary>โคเด็กซ์: โดรน</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>อาร์มาดา</td>
 <td>200 §</td>
 <td>มีโอกาส 20% ในการสร้างโดรนเพิ่มทุกครั้งที่สร้างโดรน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ไดเวอร์ซิตี้</td>
 <td>50 §</td>
 <td>สำหรับทุกอาวุธที่ไม่ใช่โดรน, เพิ่มระยะเวลาโดรนทั้งหมด 20%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>บลิตซ์ครีก</td>
 <td>50 §</td>
 <td>การอัปเกรดความเร็วโดรนยังส่งผลต่อดาเมจโดรน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>รีทริบิวชัน</td>
 <td>300 §</td>
 <td>เมื่อ Shield ถูกทำลาย, โดรนทั้งหมดที่มีอยู่จะทำลายตัวเอง ทำดาเมจระเบิด</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>สเคปโก้ท</td>
 <td>100 §</td>
 <td>การพิมพ์ผิดทำลายโดรนที่มีอยู่แทนที่จะนับเป็นการพิมพ์ผิด</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>สปอยล์ส</td>
 <td>200 §</td>
 <td>โดรนสามารถทิ้งของตกเมื่อหมดอายุ</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: ป้อม</h2>
+</details>
+
+<details><summary>โคเด็กซ์: ป้อม</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>ฟอร์ทเรส</td>
 <td>100 §,<br>400 §</td>
 <td>ทุกการวิวัฒนาการป้อมเพิ่มพลังชีวิตสูงสุดอาวุธหลัก +50</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เน็ตเวิร์ค</td>
 <td>50 §</td>
 <td>ป้อมแต่ละอันเพิ่มอัตราการยิง +10% ให้กับป้อมทั้งหมด สูงสุด +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ฟีลด์อินเทล</td>
 <td>50 §</td>
 <td>เมื่อเก็บของตก, เพิ่มระยะ +30% ให้กับป้อมทั้งหมดที่มีอยู่ เอฟเฟกต์นี้ไม่ซ้อนกัน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ดาร์กรีเลย์</td>
 <td>500 §</td>
 <td>กระสุนสะท้อนระหว่างป้อมที่มีอยู่แบบสุ่ม ทำดาเมจไฟฟ้า</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ออบเซอร์เวอร์</td>
 <td>100 §</td>
 <td>ถ้าคุณไม่โจมตี 3 วินาที, เพิ่มดาเมจป้อม +30% จนกว่าจะโจมตีครั้งถัดไป</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>วีคเนส</td>
 <td>200 §</td>
 <td>ศัตรูในระยะป้อมได้รับดาเมจจากแหล่งอื่นเพิ่ม 30%</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: D.O.T.</h2>
+</details>
+
+<details><summary>โคเด็กซ์: D.O.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>คอร์โรชัน</td>
 <td>500 §</td>
 <td>ดาเมจ D.O.T. สามารถเกิดคริติคอลได้</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>แลมเพรย์</td>
 <td>200 §</td>
 <td>ดาเมจ D.O.T. ใกล้อาวุธหลัก ฟื้นฟูอาวุธหลัก 1 พลังชีวิต</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เทนาซิตี้</td>
 <td>100 §,<br>300 §</td>
 <td>เพิ่มระยะเวลาอาวุธ D.O.T. ทั้งหมด 35%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>แอฟลิคเตอร์</td>
 <td>50 §</td>
 <td>เพิ่มแอฟลิคเตอร์ในกลุ่มของตก แต่ละอันให้ +4% ดาเมจ D.O.T. เอฟเฟกต์สองเท่าใกล้อาวุธหลัก</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>คอนวิคชัน</td>
 <td>100 §</td>
 <td>อาวุธ D.O.T. ได้ +40% อัตราการยิง ตราบใดที่คุณมีรีโรลสูงสุด</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>อินเฟคเตอร์</td>
 <td>300 §,<br>500 §</td>
 <td>อาวุธ D.O.T. มีโอกาสเกิดสถานะ +3%</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: ระยะไกล</h2>
+</details>
+
+<details><summary>โคเด็กซ์: ระยะไกล</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>โคลสคอมแบท</td>
 <td>100 §</td>
 <td>ดาเมจระยะไกลทั้งหมดถือว่าใกล้อาวุธหลัก</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>แคลโทรปส์</td>
 <td>200 §</td>
 <td>เมื่อโจมตีคริติคอลด้วยอาวุธระยะไกล, สร้างแคลโทรปส์ 12 อัน ทำดาเมจศัตรูที่ผ่าน, เพิ่มโอกาสเลือดตามดาเมจ</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>คอสติกแอมโม</td>
 <td>500 §</td>
 <td>โอกาสดรอปคอสติกแอมโม - เพิ่มดาเมจเคมีพื้นฐาน 10 ให้กับอาวุธระยะไกล 20 วินาที</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ไพรารี</td>
 <td>50 §</td>
 <td>สำหรับทุกเอฟเฟกต์ของตกที่ติดตั้ง, เพิ่มดาเมจระยะไกลทั้งหมด 15%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ดีลีเวอแรนซ์</td>
 <td>100 §</td>
 <td>อาวุธระยะไกลทั้งหมดจะได้รับระยะเพิ่ม +40% ตราบใดที่คุณมีเกราะเต็มจำนวน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>สไนเปอร์</td>
 <td>200 §</td>
 <td>อัปเกรดระยะอาวุธระยะไกลยังส่งผลต่อดาเมจระยะไกล</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: ไฟฟ้า</h2>
+</details>
+
+<details><summary>โคเด็กซ์: ไฟฟ้า</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>โวลเทอิกเบิร์สท์</td>
 <td>200 §</td>
 <td>การอัปเกรดระยะไฟฟ้าเพิ่มค่า +25% ของโอกาสไฟฟ้าสถิต</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>สตอร์มแบตเตอรี่</td>
 <td>500 §</td>
 <td>ป้อมหลักทำดาเมจไฟฟ้ากับศัตรูใกล้เคียง อาวุธไฟฟ้าที่ติดตั้งแต่ละอันเพิ่มดาเมจพื้นฐาน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>สปาร์กส์</td>
 <td>300 §</td>
 <td>เมื่อโจมตีคริติคอลด้วยอาวุธไฟฟ้า, ปล่อยสปาร์กส์สายฟ้า 6 อัน ทำดาเมจตามโอกาสคริติคอลและตัวคูณคริติคอล</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เอฟฟิชเชียนท์กริด</td>
 <td>100 §</td>
 <td>สำหรับทุกอาวุธที่ไม่ใช่ไฟฟ้า, เพิ่มระยะเวลาไฟฟ้าทั้งหมด 10%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ไวโอเลนต์ดิสชาร์จ</td>
 <td>300 §</td>
 <td>ไฟฟ้าสถิตทำดาเมจมากขึ้นและมีระยะไกล ศัตรูที่ถูกฆ่าด้วยไฟฟ้าสถิตมีโอกาส 50% กระจายไฟฟ้าสถิตไปยังศัตรูใกล้เคียง</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>อิเล็กทริฟายด์ทาเร็ต</td>
 <td>100 §</td>
 <td>อาวุธหลักได้รับ +5 ดาเมจไฟฟ้าพื้นฐาน และเพิ่มดาเมจอาวุธไฟฟ้าทั้งหมด 10%</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: ความร้อน</h2>
+</details>
+
+<details><summary>โคเด็กซ์: ความร้อน</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>ไพโรแมนซี่</td>
 <td>200 §</td>
 <td>เพิ่มดาเมจความร้อน +2% สำหรับศัตรูที่ติดไฟ การจุดไฟเพิ่มดาเมจความร้อนโบนัสตามระยะเวลาและดาเมจของ Ignite</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>คอทเทอไรเซชัน</td>
 <td>200 §</td>
 <td>โบนัสระยะยังส่งผลต่อดาเมจใกล้อาวุธหลักจากอาวุธ/เอฟเฟกต์ความร้อน</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เฟอร์เนซคอร์</td>
 <td>100 §</td>
 <td>ป้อมหลักได้รับ +5 ดาเมจความร้อนพื้นฐาน ดาเมจความร้อนทั้งหมดเพิ่ม 10%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>ไฟร์บอล</td>
 <td>500 §</td>
 <td>การยิงอาวุธหลักปล่อยไฟร์บอลช้า ทำดาเมจความร้อนกับศัตรูบนเส้นทาง จำกัดไฟร์บอลแอคทีฟสูงสุด 1</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เฟลมเวฟ</td>
 <td>250 §</td>
 <td>เพิ่มของตกเฟลมเวฟในคลังเริ่มต้นและกลุ่มของตก จุดไฟศัตรูทั้งหมดที่มองเห็น และใช้พลังชีวิตปัจจุบันของป้อมหลัก 10%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>เบลซซิงโกลอรี่</td>
 <td>50 §</td>
 <td>ศัตรูใกล้อาวุธหลักได้รับ +25% ดาเมจความร้อน และมีโอกาส 12% เพิ่มในการถูกจุดไฟจากดาเมจความร้อน</td>
 </tr>
 </tbody></table>
-<h2>โคเด็กซ์: คิเนติก</h2>
+</details>
+
+<details><summary>โคเด็กซ์: คิเนติก</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">ชื่อ</div></th>
-<th><div style="width:50px">ค่าใช้จ่าย</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
 <th>คำอธิบาย</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>กันสลิงเกอร์</td>
 <td>500 §</td>
 <td>เพิ่มเวิร์ดรัชสูงสุด +5 แต่ละระดับของเวิร์ดรัชจะให้ดาเมจคิเนติก +2.5%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>บลัดลัสต์</td>
 <td>200 §</td>
 <td>เพิ่มอัตราการยิงคิเนติก +2% และระยะ +1% สำหรับศัตรูที่เลือดไหล</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>อินฟิวส์แอมโม</td>
 <td>300 §</td>
 <td>คริติคอลด้วยดาเมจคิเนติกมีโอกาส 40% ในการสร้างสถานะสุ่มกับศัตรู</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>แชร็พเนล</td>
 <td>500 §</td>
 <td>โอกาสดรอปสะเก็ดกระสุน - เพิ่มดาเมจคิเนติกพื้นฐาน 10 ให้กับอาวุธคิเนติก 20 วินาที</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>คอมไบน์อาร์มส์</td>
 <td>100 §</td>
 <td>สำหรับทุกอาวุธที่ไม่ใช่คิเนติก, เพิ่มดาเมจคิเนติกทั้งหมด 10%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>พ็อกเก็ตทูเร็ต</td>
 <td>200 §</td>
 <td>เพิ่มของตกป้อมพกพาในคลังและกลุ่มของตก พ็อกเก็ตทูเร็ตสร้างป้อมและสามารถเก็บได้เมื่อหมดเวลา</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>โคเด็กซ์: สารเคมี</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">ชื่อ</div></th>
+<th><div style="width:70px">ค่าใช้จ่าย</div></th>
+<th>คำอธิบาย</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>ฝื้นคืนชีพ</td>
+<td>500 §</td>
+<td>การสังหารด้วยสารเคมีมีโอกาส 30% ที่จะสร้างโดรนคืนชีพขึ้นมา ซึ่งจะไล่ล่าและโจมตีศัตรูด้วยความเสียหายจากสารเคมี</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>สารเคมีเกินตัว</td>
+<td>300 §</td>
+<td>สถานะสารเคมีสามารถสะสมได้สูงสุด 3 ครั้ง โดยจะเพิ่มความเสียหายของอาวุธที่มีโรคเพลก ต่อการสะสมแต่ละครั้ง</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>การผสมผสาน</td>
+<td>500 §</td>
+<td>25% ของบัฟความเสียหายที่ใช้กับความเสียหายประเภทอื่น จะถูกนำไปใช้กับความเสียหายจากสารเคมีด้วย</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>ปล่อยของเสีย</td>
+<td>300 §</td>
+<td>กระจายโรคระบาดเพลกทุกๆ 12 วินาทีกับศัตรูทั้งหมดที่อยู่ใกล้กับอาวุธหลัก</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>ปรับขนาดปฏิกิริยา</td>
+<td>100 §</td>
+<td>อาวุธสารเคมีแต่ละชิ้นที่ติดตั้งจะเพิ่มความเสียหายจากสารเคมี 10% และระยะเวลาของอาวุธสารเคมี 20%</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>พิษเผาไหม้</td>
+<td>200 §</td>
+<td>การติดไฟจะสร้างความเสียหายเป็นสารเคมีแทนไฟ เพลกมีโอกาสติดไฟ 10% ต่อการโจมตี โอกาสติดจะเพิ่มตามคริติคอล</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">โฮม</a> / <span>ลางร้าย</span></div><h1>ลางร้าย</h1>
+<p>ลางร้ายคือตัวปรับความยากที่ถูกสุ่มเลือกจากกลุ่มตอนเริ่มการทดสอบหรือโหมดไม่มีที่สิ้นสุด ลางร้ายแต่ละอันจะเพิ่มความท้าทายในรูปแบบเฉพาะ และระดับลางร้ายที่สูงขึ้นจะปลดล็อกตัวปรับที่ยากขึ้นเรื่อยๆ</p>
+<p>ลางร้ายแบ่งออกเป็นสามระดับ ลางร้ายระดับ 1 ให้ความท้าทายปานกลาง ลางร้ายระดับ 2 มีความต้องการมากขึ้น และลางร้ายระดับ 3 นำเสนอความยากสูงสุด การผ่านการทดสอบในระดับลางร้ายที่กำหนดจะปลดล็อกระดับถัดไป เพิ่มจำนวนลางร้ายที่ทำงานพร้อมกันระหว่างเล่น สูงสุด 6 อัน การเล่นจบด้วยลางร้ายที่เปิดใช้งานจะให้รางวัลเหรียญมากขึ้นและปลดล็อกเนื้อหาเพิ่มเติม</p>
+<details><summary>ลางร้ายระดับ 1</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">ชื่อ</div></th>
+<th>คำอธิบาย</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ศัตรูแข็งแรง</td>
+<td>ศัตรูมีพลังชีวิตเพิ่มขึ้น 50%</td>
+</tr>
+<tr>
+<td>คำที่ยาวขึ้น</td>
+<td>คำทุกคำจะยาวขึ้นหนึ่งตัวอักษร</td>
+</tr>
+<tr>
+<td>ไม่มีบัฟ</td>
+<td>ไม่มีความเสียหายสองเท่าหรือแช่แข็งศัตรู</td>
+</tr>
+<tr>
+<td>ศัตรูเร็็ว</td>
+<td>ศัตรูจะขยับเร็วขึ้น 5%</td>
+</tr>
+<tr>
+<td>ตัวเลือกน้อยลง</td>
+<td>ตัวเลือกในการเก็บไอเทมลดลงไปหนึ่งอย่าง</td>
+</tr>
+<tr>
+<td>อ่อนแอลง</td>
+<td>ผู้เล่นสร้างความเสียหายได้น้อยลง 20%</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>ลางร้ายระดับ 2</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">ชื่อ</div></th>
+<th>คำอธิบาย</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>อาวุธเปราะบาง</td>
+<td>พลังชีวิตของอาวุธหลักลดลงครึ่งหนึ่ง</td>
+</tr>
+<tr>
+<td>ศัตรูแข็งแกร่ง</td>
+<td>ศัตรูมีพลังชีวิตเพิ่มขึ้น 100%</td>
+</tr>
+<tr>
+<td>ไม่มีรีโรล</td>
+<td>จะไม่มีรีโรลดรอปให้</td>
+</tr>
+<tr>
+<td>ไม่มีโล่ป้องกัน</td>
+<td>จะไม่มีโล่ป้องกันดรอปให้</td>
+</tr>
+<tr>
+<td>ศัตรูรวดเร็ว</td>
+<td>ศัตรูจะขยับเร็วขึ้น 10%</td>
+</tr>
+<tr>
+<td>ไม่สามารถโจมตีแบบคริติคอลได้</td>
+<td>อาวุธของคุณไม่สามารถโจมตีแบบคริติคอลได้</td>
+</tr>
+<tr>
+<td>สตอล์กเกอร์</td>
+<td>มีโอกาสที่ศัตรูจะปรากฏตัวโดยมีคำถูกซ่อนไว้บางส่วน</td>
+</tr>
+<tr>
+<td>หนอน</td>
+<td>โอกาสที่จะสร้างศัตรูที่มีหลายคำตามเป็นลำดับ</td>
+</tr>
+<tr>
+<td>ซ่อนพิมพ์</td>
+<td>คำต่างๆ จะไม่แสดงความคืบหน้าในการพิมพ์</td>
+</tr>
+<tr>
+<td>ฟื้นตัวเร็ว</td>
+<td>สถานะผิดปกติของศัตรูจะหมดฤทธิ์เร็วขึ้นสองเท่า</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>ลางร้ายระดับ 3</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">ชื่อ</div></th>
+<th>คำอธิบาย</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ลงโทษการพิมพ์ผิด</td>
+<td>รับความเสียหาย 3 หน่วยต่อการพิมพ์ผิดแต่ละครั้ง</td>
+</tr>
+<tr>
+<td>ฟ็อก ออฟ วอร์</td>
+<td>คุณจะมองไม่เห็นคำที่อยู่ไกลออกไป</td>
+</tr>
+<tr>
+<td>ศัตรูใหญ่ยักษ์</td>
+<td>ศัตรูจะมีพลังชีวิตเพิ่มขึ้น 150%</td>
+</tr>
+<tr>
+<td>คำเข้ารหัส</td>
+<td>ศัตรูบางตัวจะมีการเข้ารหัสคำ</td>
+</tr>
+<tr>
+<td>สองแง่สองง่าม</td>
+<td>ศัตรูบางตัวจะมีคำเพิ่มเป็นสองคำ</td>
+</tr>
+<tr>
+<td>ศัตรูอันตราย</td>
+<td>วอร์ดเดอร์และสวอร์มเมอร์จะเกิดบ่อยขึ้นเป็นสองเท่า</td>
+</tr>
+<tr>
+<td>ศัตรูมีโล่ป้องกัน</td>
+<td>ศัตรูจะเกิดมาพร้อมโล่ที่จะป้องกันการโจมตี 1 ครั้ง</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>โฮม</span></div><h1>Wiki ทางการของกลิฟิกา</h1>
 <h2>ยินดีต้อนรับเหล่านักพิมพ์</h2>
 <p>ยินดีต้อนรับสู่เว็บ Wiki ทางการของ Glyphica: Typing Survival! ทดสอบทักษะการพิมพ์ของคุณในเกมเอาชีวิตรอดจากฝูงศัตรูที่ความเร็วและความแม่นยำคืออาวุธสูงสุด อุปกรณ์ทรงพลังจะเปลี่ยนความสามารถการพิมพ์ของคุณให้กลายเป็นการโจมตีทำลายล้างต่อศัตรูที่ไม่หยุดยั้ง ค้นหาข้อมูลเพิ่มเติมและดาวน์โหลดเกมได้ที่ Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>โดยใน Wiki นี้เป็นคู่มือครอบคลุมสำหรับฟีเจอร์ ระบบเกม และเนื้อหาที่มีอยู่ในเวอร์ชัน Early Access ของ Glyphica เป้าหมายของเราคือการอัปเดตข้อมูลให้ทันสมัยอย่างต่อเนื่องเมื่อเกมพัฒนาไปสู่การวางจำหน่ายเต็มรูปแบบ เวอร์ชัน 1.0 วิกิถูกจัดเป็นหมวดหมู่ตามสารบัญและจะได้รับการอัปเดตอย่างสม่ำเสมอตามการพัฒนาเกม</p>
 <h2>สารบัญ</h2>
-<a href="#main_weapons" class="portal">อาวุธหลัก</a><a href="#weapons" class="portal">อาวุธเลเวลอัป</a><a href="#enemies" class="portal">ศัตรู</a><a href="#loot" class="portal">ไอเท็มของตก</a><a href="#loot1" class="portal">อัปเกรดเสริม</a></div></div></div>
+<a href="#main_weapons" class="portal">อาวุธหลัก</a><a href="#weapons" class="portal">อาวุธเลเวลอัป</a><a href="#enemies" class="portal">ศัตรู</a><a href="#loot" class="portal">ไอเท็มของตก</a><a href="#loot1" class="portal">อัปเกรดเสริม</a><a href="#omens" class="portal">ลางร้าย</a></div></div></div>
 </body>
 </html>

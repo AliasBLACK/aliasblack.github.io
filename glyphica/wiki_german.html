@@ -71,6 +71,33 @@
     src: url("fonts/NTF-Grand-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Title-Icons-Glyphica";
+    src: url("fonts/Title-Icons-Glyphica.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Loot-Icons-Glyphica";
+    src: url("fonts/Loot-Icons-Glyphica.ttf") format("truetype");
+}
+
+.weapon-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 1.4em;
+	vertical-align: 0.1em;
+	color: var(--imml-accent);
+}
+
+.loot-icon {
+    font-family: "Loot-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
+.augment-icon {
+    font-family: "Title-Icons-Glyphica", sans-serif;
+    font-size: 3.2em;
+}
+
 body,
 html {
 	height: 100%;
@@ -179,6 +206,25 @@ td,
 th {
 	padding: 4px;
 }
+
+details {
+	margin: 1em 0;
+}
+
+summary {
+	cursor: pointer;
+	font-family: "Grand-Regular";
+	font-size: 24pt;
+	padding: 0.5em 0;
+}
+
+summary:hover {
+	color: var(--imml-accent);
+}
+
+details[open] summary {
+	margin-bottom: 0.5em;
+}
 </style>
 </head>
 <body>
@@ -186,7 +232,7 @@ th {
 <p>Hauptwaffen sind die Startwaffen in <em>Glyphica</em> und spielen eine zentrale Rolle im Gameplay. Wenn Sie ein Wort eingeben, das über einem Feind angezeigt wird, wird die Hauptwaffe auf diesen Feind als Ziel ausgerichtet. Jede Hauptwaffe hat einzigartige Effekte und Mechaniken und erfordert unterschiedliche Strategien, um sie effektiv einzusetzen.</p>
 <p>Während bei einigen Hauptwaffen die Tippgeschwindigkeit (WPM) im Vordergrund steht, erfordern andere ein eher taktisches Vorgehen. Wie andere Waffen im Spiel können auch Hauptwaffen aufgerüstet und weiterentwickelt werden, um ihre Fähigkeiten und Effektivität im Laufe des Spiels zu verbessern.</p>
 <h2>Liste der Hauptwaffen</h2>
-<a href="#repeater" class="portal">Repeater</a><a href="#heatray" class="portal">Heat Ray</a><a href="#barrage" class="portal">Barrage</a><a href="#splattershot" class="portal">Splatter Shot</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Joker</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Repeater</span></div><h1>Repeater</h1>
+<a href="#repeater" class="portal">Repeater</a><a href="#heatray" class="portal">Heat Ray</a><a href="#barrage" class="portal">Barrage</a><a href="#splattershot" class="portal">Splatter Shot</a><a href="#overmind" class="portal">Overmind</a><a href="#wildcard" class="portal">Joker</a></div><div id="repeater" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Repeater</span></div><h1><span class="weapon-icon"></span> Repeater</h1>
 <p>Tags: Kinetisch , Hauptwaffe<br>Verheerende Waffe, die eine Reihe von Kugeln in kurzen Stößen abfeuert.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -278,7 +324,7 @@ th {
 <td>Reichweite: +25%</td>
 </tr>
 </tbody></table>
-</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Heat Ray</span></div><h1>Heat Ray</h1>
+</div><div id="heatray" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Heat Ray</span></div><h1><span class="weapon-icon"></span> Heat Ray</h1>
 <p>Tags: Hitze, Hauptwaffe, Schäden über die Zeit<br>Feuert einen konstanten Strahl aus unglaublich präzisem, konzentriertem Licht ab, der mit der Zeit Schaden anrichtet.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -378,7 +424,7 @@ th {
 <td>Feuerrate: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Barrage</span></div><h1>Barrage</h1>
+</div><div id="barrage" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Barrage</span></div><h1><span class="weapon-icon"></span> Barrage</h1>
 <p>Tags: Explosiv , Hauptwaffe<br>Feuert eine Reihe von explosiven Raketen auf ein Ziel und dessen Umgebung. Lädt sich mit der Zeit wieder auf.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -474,7 +520,7 @@ th {
 <td>Geschwindigkeit des Nachladens: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Splatter Shot</span></div><h1>Splatter Shot</h1>
+</div><div id="splattershot" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Splatter Shot</span></div><h1><span class="weapon-icon"></span> Splatter Shot</h1>
 <p>Tags: Chemisch , Hauptwaffe, Schäden über die Zeit<br>Feuern Sie Glibberkugeln auf Ihre Gegner, um sie zu verkrüppeln und zu schädigen.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -574,7 +620,7 @@ th {
 <td>Dauer: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Overmind</span></div><h1>Overmind</h1>
+</div><div id="overmind" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Overmind</span></div><h1><span class="weapon-icon"></span> Overmind</h1>
 <p>Tags: Elektrisch, Drohne, Hauptwaffe<br>Befehle eine Reihe von Drohnen, um deinen Feinden Energieschaden zuzufügen.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -610,7 +656,7 @@ th {
 </tr>
 <tr>
 <td>Nullfeld</td>
-<td>Von Overmind anvisierte Gegner werden verlangsamt und erleiden 50% Schaden durch andere elektrische Effekte und Waffen.</td>
+<td>Von Overmind anvisierte Gegner werden verlangsamt und erleiden +50% Schaden durch andere elektrische Effekte und Waffen.</td>
 </tr>
 <tr>
 <td>Nullfeld II</td>
@@ -682,7 +728,7 @@ th {
 <td>Feuerrate: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Joker</span></div><h1>Joker</h1>
+</div><div id="wildcard" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#main_weapons">Hauptwaffen</a> / <span>Joker</span></div><h1><span class="weapon-icon"></span> Joker</h1>
 <p>Tags: Kinetisch , Hitze, Kälte , Elektrisch, Hauptwaffe<br>Dein nächster Schuss wird zufällig aus vier möglichen Waffen ausgewählt, also schieße vorsichtig.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -810,7 +856,7 @@ th {
 <p>Level-Up-Waffen erhält man während eines Laufs, wenn man aufsteigt. Sobald die Waffe ausgewählt ist, wird sie zu deinem Arsenal hinzugefügt. Jede Waffe hat eine eigene Aktivierungsmethode, aber die meisten können durch Tippen und Zielen mit der Hauptwaffe ausgelöst werden.</p>
 <p>Maximal vier Waffen können auf diese Weise erworben werden. Sobald Sie eine Waffe zu Ihrem Arsenal hinzugefügt haben, werden ihre Upgrades im Level-Up-Up-Pool verfügbar, so dass Sie ihre Fähigkeiten im Laufe des Spiels verbessern können.</p>
 <h2>Liste der Level-Up-Waffen</h2>
-<a href="#spectre" class="portal">Gespenst</a><a href="#sentry" class="portal">Wache</a><a href="#tesla" class="portal">Tesla-Mine</a><a href="#oscillator" class="portal">Oszillator</a><a href="#meteor" class="portal">Meteorit</a><a href="#hunter" class="portal">Jäger</a><a href="#chopper" class="portal">Häcksler</a><a href="#minefield" class="portal">Minenfeld</a><a href="#blade" class="portal">Klingenfalle</a><a href="#orbiter" class="portal">Raumgleiter</a><a href="#guardian" class="portal">Wächter</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Gespenst</span></div><h1>Gespenst</h1>
+<a href="#spectre" class="portal">Gespenst</a><a href="#sentry" class="portal">Wache</a><a href="#tesla" class="portal">Tesla-Mine</a><a href="#oscillator" class="portal">Oszillator</a><a href="#meteor" class="portal">Meteorit</a><a href="#hunter" class="portal">Jäger</a><a href="#chopper" class="portal">Häcksler</a><a href="#minefield" class="portal">Minenfeld</a><a href="#blade" class="portal">Klingenfalle</a><a href="#orbiter" class="portal">Raumgleiter</a><a href="#guardian" class="portal">Wächter</a></div><div id="spectre" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Gespenst</span></div><h1><span class="weapon-icon"></span> Gespenst</h1>
 <p>Tags: Kinetisch , Drohne<br>Vervollständigung von Wörtern, die die Glyphen enthalten a, e, o Bringt schnelle Nahkampfdrohnen hervor, die der Anzahl der oben genannten entsprechen.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -894,7 +940,7 @@ th {
 <td>Wenn du ein Wort mit einer Länge von mehr als 7 Glyphen vervollständigst, wird ein zusätzliches Gespenst erzeugt.</td>
 </tr>
 </tbody></table>
-</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Wache</span></div><h1>Wache</h1>
+</div><div id="sentry" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Wache</span></div><h1><span class="weapon-icon"></span> Wache</h1>
 <p>Tags: Hitze, Turm<br>Setze einen automatischen Geschützturm ein, der auf jeden Feind feuert, der in Reichweite kommt.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -986,7 +1032,7 @@ th {
 <td>Reichweite: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Tesla-Mine</span></div><h1>Tesla-Mine</h1>
+</div><div id="tesla" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Tesla-Mine</span></div><h1><span class="weapon-icon"></span> Tesla-Mine</h1>
 <p>Tags: Elektrisch, Turm, Schäden über die Zeit<br>Vervollständigung von Wörtern, die mit Glyphen beginnen b, c, d, e Setzt einen elektrischen Geschützturm ein, der mit der Zeit Schaden verursacht.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1090,7 +1136,7 @@ th {
 <td>Chance auf Statik: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Oszillator</span></div><h1>Oszillator</h1>
+</div><div id="oscillator" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Oszillator</span></div><h1><span class="weapon-icon"></span> Oszillator</h1>
 <p>Tags: Hitze, Ferngesteuert<br>Feuere einen oszillierenden Partikelstrom in Richtung deines letzten Ziels.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1182,7 +1228,7 @@ th {
 <td>Kritische Chance: +3%<br> Kritischer Mult: +200%</td>
 </tr>
 </tbody></table>
-</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Meteorit</span></div><h1>Meteorit</h1>
+</div><div id="meteor" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Meteorit</span></div><h1><span class="weapon-icon"></span> Meteorit</h1>
 <p>Tags: Explosiv , Ferngesteuert<br>Bringt in regelmäßigen Abständen Zielmarkierungen an zufälligen Orten hervor, die aktiviert werden können, um ein orbitales Bombardement zu starten.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1278,7 +1324,7 @@ th {
 <td>Reichweite: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Jäger</span></div><h1>Jäger</h1>
+</div><div id="hunter" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Jäger</span></div><h1><span class="weapon-icon"></span> Jäger</h1>
 <p>Tags: Elektrisch, Drohne, Schäden über die Zeit<br>Vervollständigung von Wörtern, die die Glyphen enthalten i, o, u Bringt elektrische Strahlen feuernde Drohnen hervor, die der Anzahl der oben genannten entsprechen.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1370,7 +1416,7 @@ th {
 <td>Dauer: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Häcksler</span></div><h1>Häcksler</h1>
+</div><div id="chopper" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Häcksler</span></div><h1><span class="weapon-icon"></span> Häcksler</h1>
 <p>Tags: Kinetisch , Ferngesteuert<br>Erzeugt beim Abfeuern der Hauptwaffe eine massive, sich drehende Klinge, die sich bis zum Bildschirmrand bewegt und alle Gegner in ihrem Weg beschädigt.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1486,7 +1532,7 @@ th {
 <td>Chance, Blutung zu verursachen: +5%</td>
 </tr>
 </tbody></table>
-</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Minenfeld</span></div><h1>Minenfeld</h1>
+</div><div id="minefield" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Minenfeld</span></div><h1><span class="weapon-icon"></span> Minenfeld</h1>
 <p>Tags: Explosiv , Drohne<br>Vervollständigung von Wörtern, die mit Glyphen beginnen f, g, h, i Bringt langsam bewegte Minen hervor, die bei Kontakt mit Feinden explodieren.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1590,7 +1636,7 @@ th {
 <td>Rekursive Minen:<br>    Spawn-Rate: +30%<br>    (Feuerrate)</td>
 </tr>
 </tbody></table>
-</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Klingenfalle</span></div><h1>Klingenfalle</h1>
+</div><div id="blade" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Klingenfalle</span></div><h1><span class="weapon-icon"></span> Klingenfalle</h1>
 <p>Tags: Kinetisch , Turm<br>Vervollständigung von Wörtern, die mit Glyphen beginnen j, k, l, m Setzt eine sich drehende vierspeichige Klingenfalle ein.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1682,7 +1728,7 @@ th {
 <td>Dauer: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Raumgleiter</span></div><h1>Raumgleiter</h1>
+</div><div id="orbiter" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Raumgleiter</span></div><h1><span class="weapon-icon"></span> Raumgleiter</h1>
 <p>Tags: Chemisch , Ferngesteuert<br>Vervollständigung von Wörtern, die mit Glyphen beginnen n, o, p, q Setzt ein Orb ein, welches die Hauptwaffe umkreist und alles in seinem Weg beschädigt</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1786,7 +1832,7 @@ th {
 <td>Geschwindigkeit: +30%</td>
 </tr>
 </tbody></table>
-</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Wächter</span></div><h1>Wächter</h1>
+</div><div id="guardian" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#weapons">Level-Up-Waffen</a> / <span>Wächter</span></div><h1><span class="weapon-icon"></span> Wächter</h1>
 <p>Tags: Hitze, Drohne<br>Sofortige Entsendung einer Drohne, die Laser auf Feinde abfeuert. Aktiviere Treibstoffpakete, um den Guardian aufzutanken, der Treibstoff verbraucht und sich deaktiviert, wenn er leer ist.</p>
 <h2>Weiterentwicklungen</h2>
 <table>
@@ -1894,7 +1940,7 @@ th {
 <p>Die Feinde in <em>Glyphica</em> werden prozedural auf der Grundlage einer internen Metrik namens <strong>Bedrohung</strong> erzeugt, die mit dem Fortschreiten des Laufs zunimmt. Im Versuchsmodus wird die Bedrohung mit der aktuellen Versuchsstufe multipliziert, wodurch jede Stufe zunehmend schwieriger wird. Im Endlosmodus wird die Bedrohung mit einem adaptiven Skalierungssystem verglichen, das auf der Stufe des Spielers basiert, wobei der höhere Wert die Schwierigkeit des Spawnens bestimmt.</p>
 <p>Feinde werden außerdem in <strong>Spezialisten</strong> und <strong>Eliten</strong> eingeteilt, die jeweils eine eigene Klassenobergrenze haben, die ihre Spawn-Rate innerhalb der Gesamtbedrohungsstufe begrenzt.</p>
 <h2>Liste der Feinde</h2>
-<a href="#drone" class="portal">Drohne</a><a href="#shielddrone" class="portal">Schild-Drohne</a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Schütze</a><a href="#splitter" class="portal">Splitter</a><a href="#warder" class="portal">Wächter</a><a href="#swarmer" class="portal">Schwärmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#enemies">Feinde</a> / <span>Drohne</span></div><h1>Drohne</h1>
+<a href="#drone" class="portal">Drohne</a><a href="#shielddrone" class="portal">Schild-Drohne</a><a href="#stalker" class="portal">Stalker</a><a href="#shooter" class="portal">Schütze</a><a href="#splitter" class="portal">Splitter</a><a href="#wurm" class="portal">Wurm</a><a href="#warder" class="portal">Wächter</a><a href="#swarmer" class="portal">Schwärmer</a></div><div id="drone" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#enemies">Feinde</a> / <span>Drohne</span></div><h1>Drohne</h1>
 <p>Drohnen sind Feinde, die sich unerbittlich auf deine Hauptwaffe zubewegen. Sie können gelegentlich in zwei erweiterten Formen auftreten:<br>Vergrößert: Verdreifacht ihre Gesundheit, wodurch sie schwerer zu besiegen sind.<br>Eilig: Verdoppelt ihre Bewegungsgeschwindigkeit und erhöht die Dringlichkeit, sie zu eliminieren.</p>
 <h2>Liste der Varianten</h2>
 <table>
@@ -1906,7 +1952,7 @@ th {
 </thead>
 <tbody><tr>
 <td><img src="img/Drone.png"></td>
-<td>Leben: 240<br>Schaden: 40<br></td>
+<td>Leben: 80<br>Schaden: 40<br></td>
 </tr>
 <tr>
 <td><img src="img/Drone2.png"></td>
@@ -1980,7 +2026,7 @@ th {
 </tr>
 <tr>
 <td><img src="img/Stalker2.png"></td>
-<td>Leben: 2400<br>Schaden: 120<br></td>
+<td>Leben: 800<br>Schaden: 120<br></td>
 </tr>
 <tr>
 <td><img src="img/Stalker3.png"></td>
@@ -2045,6 +2091,33 @@ th {
 <td>Anzahl der Scherben: 6<br>Scherben-Gesundheit: 650<br>Scherben-Schaden: 40<br></td>
 </tr>
 </tbody></table>
+</div><div id="wurm" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#enemies">Feinde</a> / <span>Wurm</span></div><h1>Wurm</h1>
+<p>Der Wurm ist ein mehrteiliger Gegner, dessen Teile der Reihe nach zerstört werden müssen. Jedes Segment ist durch eine unzerstörbare Barriere mit dem nächsten verbunden, die alle Projektil-Angriffe blockiert.</p>
+<h2>Liste der Varianten</h2>
+<table>
+<thead>
+<tr>
+<th>Bild</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="img/Wurm.png"></td>
+<td>Anzahl der Segmente: 2<br>Segment-Gesundheit: 80<br>Segment-Schaden: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm2.png"></td>
+<td>Anzahl der Segmente: 3<br>Segment-Gesundheit: 200<br>Segment-Schaden: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm3.png"></td>
+<td>Anzahl der Segmente: 4<br>Segment-Gesundheit: 1000<br>Segment-Schaden: 50<br></td>
+</tr>
+<tr>
+<td><img src="img/Wurm4.png"></td>
+<td>Anzahl der Segmente: 4<br>Segment-Gesundheit: 1800<br>Segment-Schaden: 50<br></td>
+</tr>
+</tbody></table>
 </div><div id="warder" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <a href="#enemies">Feinde</a> / <span>Wächter</span></div><h1>Wächter</h1>
 <p>Der Wächter ist ein Elite-Gegner, der im späten Spiel erscheint. Er verfügt über einen sich drehenden Schild, der Schaden aus der Richtung blockiert, in die der Schild gerade gerichtet ist. Solange der Wächter am Leben ist, umgibt er außerdem Feinde in der Nähe mit einer schützenden Aura, die sie unverwundbar macht, bis der Wächter besiegt ist.</p>
 <h2>Liste der Varianten</h2>
@@ -2078,1005 +2151,1437 @@ th {
 </div><div id="loot" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <span>Beutegegenstände</span></div><h1>Beutegegenstände</h1>
 <p>Beutegegenstände erhält man während eines Laufs, indem man eine Schatztruhe aktiviert. Es wird eine zufällige Auswahl an Beutegegenständen angezeigt, und die Auswahl eines davon gewährt einen passiven Bonus, der für den Rest des Laufs aktiv bleibt.</p>
 <p>Beutegegenstände werden in die Kategorien <strong>Gewöhnlich</strong>, <strong>Ungewöhnlich</strong> und <strong>Selten</strong> eingeteilt, die die Wahrscheinlichkeit bestimmen, dass sie in der Beuteauswahl auftauchen. Das Besiegen eines Bosses im Probe-Modus belohnt mit einer Schatztruhe, die nur seltene Gegenstände enthält.</p>
-<h2>Liste der seltenen Beute</h2>
+<details><summary>Liste der seltenen Beute</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Name</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Seher</td>
 <td>Wenn du beim Betreten eines Level-Up-, Evolutions- oder Beutebildschirms 0x &quot;Neu Würfeln&quot; hast, hast du stattdessen 1x &quot;Neu Würfeln&quot;.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Behelfsmäßig</td>
 <td>Alle Drohnenwaffen:<br> Chance auf zusätzliche Drohne: 35%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plündern</td>
 <td>1 Beute Option</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mehrfachzieleinrichtung</td>
 <td>Alle Fernkampfwaffen erhalten +1% kritische Chance für jede Waffe, die du besitzt.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Riesiger Magnet</td>
 <td>Du sammelst automatisch Pickups ein, wenn sie ablaufen.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Einfrieren</td>
 <td>Feinde erleiden Schaden über Zeit, wenn sie eingefroren sind.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Nekrobombe</td>
 <td>Wenn du einen Feind mit explosivem Krit-Schaden vernichtest, löst du eine Reihe von Explosionen um die Position des gefallenen Feindes herum aus.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Preis</td>
 <td>Bei der Zerstörung eines Gegners mit kritischem Schaden besteht eine Chance von 30%, dass Wiederholungsrollen, Schilde oder Lebenspunkte aufgesammelt werden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Nachbeben</td>
 <td>Kritischer Schaden führt immer zu einem Statuseffekt.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vampirismus</td>
 <td>Erhalte Gesundheit in Höhe von 5% des kinetischen Kritischen Schadens.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Weisheit</td>
 <td>Wenn du Schild aufnimmst, erhältst du 10 Kills auf alle Waffenentwicklungen.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Narr</td>
 <td>Wenn du „Neu würfeln“ aufnimmst, fügst du allen Gegnern auf dem Bildschirm eine zufällige Menge Schaden zwischen 0 und 100 zu.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Letzter Stand</td>
 <td>Wenn ein Schild zerstört wird, erleidet er doppelten Schaden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dreifacher Schaden</td>
 <td>Alle Treffer mit doppeltem Schaden sind jetzt stattdessen dreifacher Schaden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Fraktur</td>
 <td>Alle Schäden an gefrorenen Feinden werden um 50% erhöht. Der Modifikator ist multiplikativ.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Asket</td>
 <td>Wenn ihr den Beutebildschirm verlasst, erhaltet ihr 20 Sekunden lang +10% Schaden für jede ungenutzte Wiederholungsrolle.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Harmonisierer</td>
 <td>Alle ausgerüsteten Waffen erhalten eine Evolutionsstufe.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unsterblichkeit</td>
 <td>Wenn deine Hauptwaffe kurz davor ist, zerstört zu werden, wird sie stattdessen auf 1 Lebenspunkt reduziert. Diese Fähigkeit kann nur einmal alle 2 Minuten eingesetzt werden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erleuchtung</td>
 <td>Wenn du einen Gegner mit kritischem Schaden zerstörst, erhältst du +1 Kills für alle Waffenentwicklungen.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Näher</td>
 <td>Das Vervollständigen eines gegnerischen Wortes, nachdem es zerstört wurde, gibt +10% Schaden für 10 Sekunden. Stacks bis zu 3 mal.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Mörderisch</td>
 <td>All Drohnenwaffen: +50% Schaden</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Scharfrichter</td>
 <td>Alle Turmwaffen: +50% Schaden</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Degenerierung</td>
 <td>Alle Fernwaffen: +50% Schaden</td>
 </tr>
 </tbody></table>
-<h2>Liste der nicht-gewöhnlichen Beute</h2>
+</details>
+
+<details><summary>Liste der nicht-gewöhnlichen Beute</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Name</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Tsunami</td>
 <td>Alle Explosivwaffen:<br> Reichweite: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schockwelle</td>
 <td>Alle Explosivwaffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vernichtung</td>
 <td>Alle Explosivwaffen:<br> Kritische Mult: +100%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Abstieg</td>
 <td>Alle Explosivwaffen:<br> Doppelter Schaden Pickup:<br> Abwurf-Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zerschmetternder Schuss</td>
 <td>Alle kinetischen Waffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Eruption</td>
 <td>Alle kinetischen Waffen:<br> Feuerrate: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Durchbohrer</td>
 <td>Alle kinetischen Waffen:<br> Kritische Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vorbote</td>
 <td>Alle kinetischen Waffen:<br> Chance auf Blutungseffekt: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Höllenfeuer</td>
 <td>Alle Hitzewaffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Plasminator</td>
 <td>Alle Hitzewaffen:<br> Reichweite: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Phönix</td>
 <td>Alle Hitzewaffen:<br> Wiederholungswurf-Chance: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Feuersturm</td>
 <td>Alle Hitzewaffen:<br> Chance auf Zündeffekt: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kältestarre</td>
 <td>Alle Kälte-Waffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Gletscher</td>
 <td>Alle Kältewaffen:<br> Chance auf Gefriereffekt: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Rückstoß</td>
 <td>Alle Kältewaffen:<br> Schild Chance: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kältestrahl</td>
 <td>Alle Kaltwaffen:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Überlastung</td>
 <td>Alle Elektro-Waffen:<br> Chance auf statischen Effekt: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Megasturm</td>
 <td>Alle elektrischen Waffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verstärker</td>
 <td>Alle elektrischen Waffen:<br> Feuerrate: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Singularität</td>
 <td>Alle elektrischen Waffen:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ansteckung</td>
 <td>Alle chemischen Waffen:<br> Chance auf Brandeffekt: +4%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sepsis</td>
 <td>Alle chemischen Waffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Impuls</td>
 <td>Alle chemischen Waffen:<br> Feuerrate: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verfall</td>
 <td>Alle chemischen Waffen:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unendlichkeit</td>
 <td>Alle Drohnenwaffen:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hyperflugzeuge</td>
 <td>Alle Drohnenwaffen:<br> Geschwindigkeit: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Übermensch</td>
 <td>Alle Drohnenwaffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Frostbrand</td>
 <td>Alle Drohnenwaffen:<br> Gefriertropfen-Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Großer Schub</td>
 <td>Alle Fernwaffen:<br> Reichweite: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Instalink</td>
 <td>Alle Fernkampfwaffen:<br> Geschwindigkeit: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Befehl</td>
 <td>Alle Fernkampfwaffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Energiequelle</td>
 <td>Alle Revolverwaffen:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Höllensturm</td>
 <td>Alle Turmwaffen:<br> Feuerrate: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Exaktheit</td>
 <td>Alle Geschützturmwaffen:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ansturm</td>
 <td>Alle Statuseffekte:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Quälerei</td>
 <td>Alle Statuseffekte:<br> Dauer: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Jackpot</td>
 <td>Alle Beute-Effekte:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Geheimnisvoll</td>
 <td>Alle Beutewaffen:<br> Kritische Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Wutanfall</td>
 <td>Alle Erweiterungseffekte:<br> Schaden: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Darüber hinaus</td>
 <td>Alle Erweiterungseffekte:<br> Reichweite: +25%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arsenal</td>
 <td>Alle Waffen:<br> Schaden: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Lebensretter</td>
 <td>Alle Waffen:<br> Dauer: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sternenblick</td>
 <td>Alle Waffen:<br> Reichweite: +12.5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Scharfschützen</td>
 <td>Feinde, die in der Nähe der Hauptwaffe getroffen werden, erleiden +20% Schaden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verschlimmerung</td>
 <td>Alle Waffen:<br> Status Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kryotechnik</td>
 <td>Eingefrorene Pickups:<br> Abwurf-Chance: +2%<br><br>Pickups mit doppeltem Schaden:<br> -100% Abwurfchance</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kriegerisch</td>
 <td>Doppelte Schaden-Pickups:<br> Abwurfchance: +4%<br><br>Eingefrorene Pickups:<br> -100% Abwurfchance</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Pinata</td>
 <td>Globaler Effekt:<br> Beutehäufigkeit: +20%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Glaskanone</td>
 <td>Alle Waffen:<br> Schaden: +30%<br><br>Hauptwaffe:<br> Maximale Leben: -50%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Regeneration</td>
 <td>Du heilst 5% deiner maximalen Gesundheit, wenn du eine Beute-, Einfrier-, Doppelschadens-, Wiederholungsrolle oder Schild-Aufnahme aktivierst.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Erosion</td>
 <td>D.O.T.-Waffen können kritisch sein.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zerschmettern</td>
 <td>Alle kinetischen Waffen erhalten +5% kritische Trefferchance gegen gefrorene Gegner.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unverwüstlichkeit</td>
 <td>Das Aktivieren von Schildaufsammlungen erhöht deine globale Dauer 10 Sekunden lang um 10%. Kann bis zu 3 Mal gestapelt werden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Glücksspieler</td>
 <td>Fügt 1 Wiederholungswurf hinzu und erhöht den maximalen Wiederholungswurf auf insgesamt 6.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Beschützer</td>
 <td>Fügt 1 Schild hinzu und erhöht die maximalen Schilde auf insgesamt 4.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Makellos</td>
 <td>Jede x17 perfekte Eingabe erhöht auch deine globale Feuerrate um 5%.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Loslassen</td>
 <td>Fügt bei einem Fehltritt 20 Explosionsschaden an allen Feinden für je x17 perfekte Eingabe.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Vergeuden</td>
 <td>Alle D.O.T.-Waffen: +35% Feuerrate</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verdorren</td>
 <td>Alle Status-Effekte: +35% Feuerrate</td>
 </tr>
 </tbody></table>
-<h2>Liste der gewöhnlichen Beute</h2>
+</details>
+
+<details><summary>Liste der gewöhnlichen Beute</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:160px">Name</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="loot-icon"></span></td>
 <td>Explosion</td>
 <td>Alle Explosivwaffen:<br> Reichweite: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sprengung</td>
 <td>Alle Explosivwaffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zerquetschen</td>
 <td>Alle kinetischen Waffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Salve</td>
 <td>Alle kinetischen Waffen:<br> Feuerrate: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verbrennung</td>
 <td>Alle Hitzewaffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Glut</td>
 <td>Alle Hitzewaffen:<br> Reichweite: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Permafrost</td>
 <td>Alle Kälte-Waffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kühlung</td>
 <td>Alle Kaltwaffen:<br> Dauer: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schock</td>
 <td>Alle Elektro-Waffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Überspannung</td>
 <td>Alle elektrischen Waffen:<br> Feuerrate: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Uplink</td>
 <td>Alle Drohnenwaffen:<br> Dauer: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Stachel</td>
 <td>Alle Drohnenwaffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Reichweite</td>
 <td>Alle Fernwaffen:<br> Reichweite: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schlag</td>
 <td>Alle Fernwaffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Befestigen</td>
 <td>Alle Revolverwaffen:<br> Dauer: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bastion</td>
 <td>Alle Turmwaffen:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unwohlsein</td>
 <td>Alle Status-Effekte:<br> Schaden: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Resonanz</td>
 <td>Alle Status-Effekte:<br> Dauer: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Dominanz</td>
 <td>Alle Waffen:<br> Schaden: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ausdauer</td>
 <td>Alle Waffen:<br> Dauer: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Projektion</td>
 <td>Alle Waffen:<br> Reichweite: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Spritzer</td>
 <td>Alle Explosivwaffen:<br> Reichweite: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Aufprall</td>
 <td>Alle Explosivwaffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verdampfen</td>
 <td>Alle Explosivwaffen:<br> kritische Mult: +75%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Toter Fall</td>
 <td>Alle Explosivwaffen:<br> Doppelter Schaden Pickup:<br> Abwurf-Chance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Hohlspitz</td>
 <td>Alle kinetischen Waffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Stoß</td>
 <td>Alle kinetischen Waffen:<br> Feuerrate: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Durchschlagskraft</td>
 <td>Alle kinetischen Waffen:<br> Kritische Chance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sensenmann</td>
 <td>Alle kinetischen Waffen:<br> Chance auf Blutungseffekt: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verbrennung</td>
 <td>Alle Hitzewaffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Strahler</td>
 <td>Alle Hitzewaffen:<br> Reichweite: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Wiedergeburt</td>
 <td>Alle Hitzewaffen:<br> Wiederholungswurf-Chance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Entflammbar</td>
 <td>Alle Hitzewaffen:<br> Chance auf Verbrennungseffekt: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unterkühlung</td>
 <td>Alle Kälte-Waffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unter Null</td>
 <td>Alle Kälte-Waffen:<br> Chance auf Einfrieren: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Ablenkung</td>
 <td>Alle kalten Waffen:<br> Schildchance: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kühlmittel</td>
 <td>Alle Kaltwaffen:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Latente Ladung</td>
 <td>Alle elektrischen Waffen:<br> Chance auf statischen Effekt: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kondensator</td>
 <td>Alle Elektro-Waffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Modulator</td>
 <td>Alle elektrischen Waffen:<br> Feuerrate: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Konzentrieren</td>
 <td>Alle elektrischen Waffen:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Flecken</td>
 <td>Alle chemischen Waffen:<br> Chance auf Brandeffekt: +2%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Toxin</td>
 <td>Alle chemischen Waffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schlag</td>
 <td>Alle chemischen Waffen:<br> Feuerrate: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verweilen</td>
 <td>Alle chemischen Waffen:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verlängern</td>
 <td>Alle Drohnenwaffen:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schubdüsen</td>
 <td>Alle Drohnenwaffen:<br> Geschwindigkeit: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Automatik</td>
 <td>Alle Drohnenwaffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kalte Herzen</td>
 <td>Alle Drohnenwaffen:<br> Chance auf Gefrierabwurf: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Signalverstärkung</td>
 <td>Alle Fernwaffen:<br> Reichweite: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Nullverzögerung</td>
 <td>Alle Fernwaffen:<br> Geschwindigkeit: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Steuert</td>
 <td>Alle Fernwaffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Unterstützer</td>
 <td>Alle Revolverwaffen:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Auto-Kanone</td>
 <td>Alle Geschützturmwaffen:<br> Feuerrate: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kalibrierung</td>
 <td>Alle Turmwaffen:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Zermürbung</td>
 <td>Alle Status-Effekte:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Leiden</td>
 <td>Alle Status-Effekte:<br> Dauer: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Windschnittigkeit</td>
 <td>Alle Beute-Effekte:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Geheimnis</td>
 <td>Alle Beute-Effekte:<br> Kritische Chance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Übersteuerung</td>
 <td>Alle Erweiterungseffekte:<br> Schaden: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Entfernungsmesser</td>
 <td>Alle Erweiterungseffekte:<br> Reichweite: +15%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Bewaffnung</td>
 <td>Alle Waffen:<br> Schaden: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Überlebensausrüstung</td>
 <td>Alle Waffen:<br> Dauer: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Teleskop</td>
 <td>Alle Waffen:<br> Reichweite: +5%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Medikit</td>
 <td>Fügt 3 Medikits deinem Inventar zu. Medikits heilen bis zu 30% der maximalen Gesundheit des Hauptturms.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Sprengkörper</td>
 <td>Fügt 2 Sprengkörper deinem Inventar zu.<br><br>Sprengkörper lösen eine Reihe mächtiger Explosionen aus, die von der Hauptwaffe ausgehen.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Serum</td>
 <td>Fügt 2 Seren deinem Inventar zu.<br><br>Seren geben 25% Krit-Chance für 10 Sekunden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kryokern</td>
 <td>Fügt 2 Kryokerne deinem Inventar zu.<br><br>Kryokerne lösen den globalen Effekt Einfrieren aus.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Tötungspille</td>
 <td>Fügt 2 Tötungspillen deinem Inventar zu.<br><br>Tötungspillen lösen den globalen Effekt „Doppelter Schaden“ aus.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Flammenwelle</td>
 <td>Fügt 2 Flammenwellen zu deinem Inventar.<br><br>Flammenwellen entzündet alle sichtbaren Feinde auf Kosten von 10 % der aktuellen Gesundheit des Hauptturms.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Taschenturm</td>
 <td>Fügt 1 Taschenturm zu deinem Inventar hinzu.<br><br>Taschenturm spawnt einen automatischen Turm in der Nähe von Gruppen von Feinden.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Epizentrum</td>
 <td>Hitzewaffen verursachen +20% Schaden, wenn sich das Ziel in der Nähe der Hauptwaffe befindet.</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Kühlmittel</td>
 <td>Einfrieren von Pickups:<br> Dauer: +20%<br> Abwurf-Chance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Verwundbarkeit</td>
 <td>Doppelter Schaden Pickups:<br> Dauer: +20%<br> Abwurf-Chance: +1%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Präzision</td>
 <td>Alle Waffen:<br> Kritische Chance: +1%<br> Kritische Mult: +50%<br><br>Chance auf:<br> Längeres Wort: +10%</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Arzneikasten</td>
 <td>100 Leben wiederherstellen</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Schild</td>
 <td>1 Schild hinzufügen.<br><br>Aktuelle Schilde: 0 / 3</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Neu rollen</td>
 <td>Füge 1 Wiederholungswurf hinzu.<br><br>Aktuelle Wiederholungswürfe: 3 / 5</td>
 </tr>
 <tr>
+<td><span class="loot-icon"></span></td>
 <td>Betroffener</td>
 <td>Jeder Betroffene erhöht den D.O.T.-Schaden um +4%. Dieser Bonus wird verdoppelt, wenn er sich in der Nähe des Hauptturms befindet.</td>
 </tr>
 </tbody></table>
+</details>
 </div><div id="loot1" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <span>Upgrades</span></div><h1>Upgrades</h1>
 <p>Erweiterungen sind permanente Upgrades, die mit Münzen (§), einer Währung, die während eines Laufs verdient wird, freigeschaltet werden können. Zu Beginn eines jeden Laufs haben die Spieler eine begrenzte Anzahl von Slots, um freigeschaltete Augments auszurüsten, wobei die Anzahl der verfügbaren Slots von der gewählten Omen-Stufe abhängt.</p>
 <p>Jedes Upgrade hat in der Regel bestimmte Bedingungen, die seine Vorteile bestimmen. Um das Beste aus Ihren Augmentierungen herauszuholen, sollten Sie die Synergien zwischen ihnen berücksichtigen und sie auf Ihre bevorzugte Strategie abstimmen.</p>
-<h2>Kodex: Hauptwaffe</h2>
+<details><summary>Kodex: Hauptwaffe</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Gepanzert</td>
 <td>50 §,<br>200 §</td>
 <td>Hauptwaffe:<br>Leben: +50%</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Eifrig</td>
 <td>50 §</td>
 <td>Zu Beginn eines jeden Trial- oder Endlos-Spiels erhältst du eine Stufe. Für alle 4 Minuten, die du im Endlosmodus überlebst, erhältst du eine Stufe.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Zocker</td>
 <td>50 §</td>
 <td>Erneutes Würfeln verleiht deiner Hauptwaffe für 20 Sekunden +20% Schaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Unbefleckt</td>
 <td>100 §</td>
 <td>Perfekte Eingabe gibt +1,5% kritische Chance pro Stapel.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Dunst</td>
 <td>200 §,<br>500 §</td>
 <td>Wenn du weniger als 50% Leben hast, erhältst du einen globalen Bonus von +50% auf die Feuerrate.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Hingabe</td>
 <td>200 §</td>
 <td>Die Hauptwaffe erhält +25% Schaden für jeden leeren Waffenslot. Mindestens eine Option während des Stufenaufstiegs wird ein Upgrade sein.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Drohnen</h2>
+</details>
+
+<details><summary>Kodex: Drohnen</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Armee</td>
 <td>200 §</td>
 <td>20% Chance, eine zusätzliche Drohne zu spawnen, wenn eine gespawnt wird.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Vielfältigkeit</td>
 <td>50 §</td>
 <td>Für jede ausgerüstete Nicht-Drohnenwaffe wird die Dauer aller Drohnen um 20% erhöht.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Blitzkrieg</td>
 <td>50 §</td>
 <td>Verbesserung der Drohnengeschwindigkeit verbessert auch Drohnenschaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Vergeltung</td>
 <td>300 §</td>
 <td>Immer wenn ein Schild zerstört wird, zerstören sich alle vorhandenen Drohnen selbst und verursachen explosiven Schaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Sündenbock</td>
 <td>100 §</td>
 <td>Fehleingaben zerstören zufällig eine vorhandene Drohne, anstatt als Tippfehler zu zählen.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Beute</td>
 <td>200 §</td>
 <td>Drohnen können bei Ablauf Pickups abwerfen.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Geschützturm</h2>
+</details>
+
+<details><summary>Kodex: Geschützturm</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Festung</td>
 <td>100 §,<br>400 §</td>
 <td>Jede Geschützturm-Evolution gewährt außerdem +50 maximales Leben für die Hauptwaffe.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Vernetzt</td>
 <td>50 §</td>
 <td>Jeder weitere Geschützturm gewährt allen Geschütztürmen +10% Feuerrate, bis zu einem Maximum von +50%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Feld-Information</td>
 <td>50 §</td>
 <td>Das Aktivieren eines Pickups gewährt +30% Reichweite für alle vorhandenen Geschütztürme. Dieser Effekt ist nicht stapelbar.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Dunkle Staffel</td>
 <td>500 §</td>
 <td>Ein Projektil springt zufällig zwischen den vorhandenen Türmen hin und her und verursacht elektrischen Schaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Beobachter</td>
 <td>100 §</td>
 <td>Wenn du 3 Sekunden lang nicht angegriffen hast, erhältst du bis zu deinem nächsten Angriff +30% Turmschaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Schwäche</td>
 <td>200 §</td>
 <td>Feinde in der Reichweite eines Geschützturms erleiden 30% mehr Schaden aus anderen Quellen.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: D.O.T.</h2>
+</details>
+
+<details><summary>Kodex: D.O.T.</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Korrosion</td>
 <td>500 §</td>
 <td>D.O.T.-Schaden kann jetzt kritisch sein.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Neunauge</td>
 <td>200 §</td>
 <td>D.O.T.-Schaden, der in der Nähe der Hauptwaffe verursacht wird, heilt die Hauptwaffe um 1 Lebenspunkt.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Zähigkeit</td>
 <td>100 §,<br>300 §</td>
 <td>Erhöht die Dauer aller D.O.T.-Waffen um 35%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Betroffener</td>
 <td>50 §</td>
 <td>Fügt Betroffene zum Beutetopf hinzu. Jeder gibt +4% D.O.T.-Schaden. Doppelte Wirkung in der Nähe der Hauptwaffe.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Verurteilung</td>
 <td>100 §</td>
 <td>D.O.T.-Waffen erhalten +40% Feuerrate, solange du maximale Wiederholungswürfe hast.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Infizierung</td>
 <td>300 §,<br>500 §</td>
 <td>D.O.T.-Waffen haben eine Chance von +3% auf Statuseffekte.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Fernwaffen</h2>
+</details>
+
+<details><summary>Kodex: Fernwaffen</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Nahkampf</td>
 <td>100 §</td>
 <td>Der gesamte Fernwaffenschaden wird als nahe an der Hauptwaffe betrachtet.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Krähenfüße</td>
 <td>200 §</td>
 <td>Bei einem kritischen Treffer durch Fernwaffen werden 12 Krähenfüße gespawnt, die mit erhöhter Blutungschance Gegnern Schaden zufügen.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Ätzende Munition</td>
 <td>500 §</td>
 <td>Chance, ätzende Munition fallen zu lassen - fügt Fernwaffen 20 Sekunden lang 10 Basis-Chemieschaden zu.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Piraterie</td>
 <td>50 §</td>
 <td>Erhöht für jeden Beuteeffekt, der ausgerüstet wird, den gesamten Fernschaden um 15%.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Erlösung</td>
 <td>100 §</td>
 <td>Alle Fernwaffen erhalten +40% Reichweite, solange du maximale Schilde hast.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Scharfschütze</td>
 <td>200 §</td>
 <td>Verbesserungen der Reichweite von Fernwaffen gilt auch für den Fernwaffenschaden.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Elektrisch</h2>
+</details>
+
+<details><summary>Kodex: Elektrisch</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Voltaischer Ausbruch</td>
 <td>200 §</td>
 <td>Aufwertungen der elektrischen Dauer wenden ebenfalls 25% ihres Wertes auf die elektrische statische Chance an.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Sturmbatterie</td>
 <td>500 §</td>
 <td>Der Hauptturm fügt Gegnern in der Nähe elektrischen Schaden zu. Jede ausgerüstete Elektro-Waffe erhöht den Basisschaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Funken</td>
 <td>300 §</td>
 <td>Bei einem kritischen Treffer durch elektrische Waffen werden 6 Funken freigesetzt, die ihren Schaden mit der Kritischen Chance und dem Kritischen Multiplikator skalieren.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Effizientes Raster</td>
 <td>100 §</td>
 <td>Für jede nicht-elektrische Waffe, die ausgerüstet wird, wird die Dauer aller elektrischen Waffen um 10% erhöht.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Gewaltsame Entladung</td>
 <td>300 §</td>
 <td>Statik verursacht mehr Schaden und hat eine größere Reichweite. Feinde, die von Statik getötet werden, haben eine Chance von 50%, Statik auf Feinde in der Nähe zu übertragen.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Elektrifizierter Turm</td>
 <td>100 §</td>
 <td>Die Hauptwaffe erhält +5 Basis-Elektroschaden und erhöht den gesamten Elektrowaffenschaden um 10%.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Hitze</h2>
+</details>
+
+<details><summary>Kodex: Hitze</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Pyromantie</td>
 <td>200 §</td>
 <td>Erhöht den Hitzeschaden um 2% für jeden brennenden Gegner. Entzünden verursacht zusätzlichen Hitzeschaden, in Höhe von Dauer und Schaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kauterisieren</td>
 <td>200 §</td>
 <td>Reichweitenboni gelten bei Hitzewaffen/Effekten auch für Schaden, der in der Nähe der Hauptwaffe zugefügt wird.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kern des Ofens</td>
 <td>100 §</td>
 <td>Der Hauptturm erhält +5 Basis-Hitzeschaden. Der gesamte Hitzeschaden wird um 10% erhöht.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Feuerball</td>
 <td>500 §</td>
 <td>Beim Abfeuern der Hauptwaffe wird ein sich langsam bewegender Feuerball freigesetzt, der an Feinden in seinem Weg Hitzeschaden verursacht. Maximal 1 Feuerball aktiv.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Flammenwelle</td>
 <td>250 §</td>
 <td>Fügt das Verbrauchsmaterial Flammenwelle hinzu. Entzündet alle sichtbaren Feinde und verbraucht 10 % der aktuellen Gesundheit des Hauptturms.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Lodernder Ruhm</td>
 <td>50 §</td>
 <td>Feinde in der Nähe der Hauptwaffe erleiden +25% Hitzeschaden und haben eine zusätzliche Chance von 12%, durch Hitzeschaden entzündet zu werden.</td>
 </tr>
 </tbody></table>
-<h2>Kodex: Kinetisch</h2>
+</details>
+
+<details><summary>Kodex: Kinetisch</summary>
+
 <table>
 <thead>
 <tr>
-<th><div style="width:120px">Name</div></th>
-<th><div style="width:50px">Kosten</div></th>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><span class="augment-icon"></span></td>
 <td>Revolverheld</td>
 <td>500 §</td>
 <td>Erhöhe maximales Wörterrausch um 5. Jeder Rang von Wörterrausch gewährt +2,5 % kinetischen Schaden.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Blutlust</td>
 <td>200 §</td>
 <td>Erhöht die kinetische Feuerrate um 2 % und die Reichweite um 1 % für jeden blutenden Gegner.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Angereicherte Munition</td>
 <td>300 §</td>
 <td>Kritische Treffer mit kinetischem Schaden haben eine Chance von 40 %, dem Gegner einen zufälligen Status zuzufügen.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Schrapnell</td>
 <td>500 §</td>
 <td>Chance, Granatsplitter fallen zu lassen – fügt kinetischen Waffen 20 Sekunden lang 10 Basiskinetikschaden hinzu.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Kombinierte Waffen</td>
 <td>100 §</td>
 <td>Für jede nicht-kinetische Waffe, die ausgerüstet ist, wird der gesamte kinetische Schaden um 10 % erhöht.</td>
 </tr>
 <tr>
+<td><span class="augment-icon"></span></td>
 <td>Taschenturm</td>
 <td>200 §</td>
 <td>Fügt einen Taschenturm zum Inventar und zur Beuteliste hinzu. Taschenturm spawnt einen Turm und kann nach Ablauf der Dauer aufgehoben werden.</td>
 </tr>
 </tbody></table>
+</details>
+
+<details><summary>Kodex: Chemisch</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:90px"></div></th>
+<th><div style="width:170px">Name</div></th>
+<th><div style="width:70px">Kosten</div></th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="augment-icon"></span></td>
+<td>Wiederbelebung</td>
+<td>500 §</td>
+<td>Chemische Tötungen haben eine 30% Chance eine wiederbelebte Drohne erscheinen zu lassen, die Gegner sucht und chemischen Schaden verursacht.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Überbelichtung</td>
+<td>300 §</td>
+<td>Chemischer Status kann bis zu 3x stapeln, was den Brandschaden multipliziert pro Stapel.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Hybridisierung</td>
+<td>500 §</td>
+<td>25% der Schadenserhöhung von anderen Schadenstypen werden auch auf chemischen Schaden angewandt.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Abfallentsorgung</td>
+<td>300 §</td>
+<td>Fügt alle 12 Sekunden allen Genger in der Nähe der Hauptwaffe Brandschaden zu.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Reaktive Skalierung</td>
+<td>100 §</td>
+<td>Jede ausgerüstete chemische Waffe erhöht den chemischen Schaden um 10 % und die Wirkungsdauer chemischer Waffen um 20 %.</td>
+</tr>
+<tr>
+<td><span class="augment-icon"></span></td>
+<td>Verätzungen</td>
+<td>200 §</td>
+<td>Entzünden verursacht nun chemischen Schaden. Verbrennung hat bei jedem Tick eine 10% Chance, Entzünden zu verursachen; die Chance wird mit der krit. Trefferchance erhöht.</td>
+</tr>
+</tbody></table>
+</details>
+</div><div id="omens" class="page"><div class="breadcrumbs"><a href="#">Startseite</a> / <span>Omen</span></div><h1>Omen</h1>
+<p>Omen sind Schwierigkeitsmodifikatoren, die zu Beginn eines Prüfungs- oder Endlos-Laufs zufällig aus einem Pool ausgewählt werden. Jedes Omen erhöht die Herausforderung auf eine bestimmte Weise, und höhere Omen-Stufen schalten progressiv schwierigere Modifikatoren frei.</p>
+<p>Omen sind in drei Stufen unterteilt. Omen der Stufe 1 bieten eine moderate Herausforderung, Omen der Stufe 2 sind anspruchsvoller, und Omen der Stufe 3 stellen die größte Schwierigkeit dar. Das Bestehen von Prüfungen auf einer bestimmten Omen-Stufe schaltet die nächste Stufe frei und erhöht die Anzahl der gleichzeitig aktiven Omen während eines Laufs auf maximal 6. Das Abschließen von Läufen mit aktiven Omen belohnt mehr Münzen und schaltet zusätzliche Inhalte frei.</p>
+<details><summary>Omen Stufe 1</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Name</div></th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Harte Gegner</td>
+<td>Gegner haben 50 % mehr Leben.</td>
+</tr>
+<tr>
+<td>Längere Worte</td>
+<td>Wörter sind um einen Buchstaben länger.</td>
+</tr>
+<tr>
+<td>Keine Verstärkungen</td>
+<td>Kein doppelter Schaden und kein Einfrieren.</td>
+</tr>
+<tr>
+<td>Schnelle Gegner</td>
+<td>Gegner sind 5% schneller.</td>
+</tr>
+<tr>
+<td>Weniger Optionen</td>
+<td>Eine Beuteoption weniger.</td>
+</tr>
+<tr>
+<td>Geschwächt</td>
+<td>Deine Waffen machen 20% weniger Schaden.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Omen Stufe 2</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Name</div></th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Zerbrechliche Waffe</td>
+<td>Leben der Hauptwaffe ist halbiert.</td>
+</tr>
+<tr>
+<td>Zähe Gegner</td>
+<td>Gegner haben 100% mehr Leben.</td>
+</tr>
+<tr>
+<td>Keine Wiederholungen</td>
+<td>Keine Wiederholungswurf-Beute.</td>
+</tr>
+<tr>
+<td>Keine Schilde</td>
+<td>Keine Schild-Beute.</td>
+</tr>
+<tr>
+<td>Noch schnellere Gegner</td>
+<td>Gegner sind 10% schneller.</td>
+</tr>
+<tr>
+<td>Keine kritischen Treffer</td>
+<td>Deine Waffen können keine kritischen Treffer verursachen.</td>
+</tr>
+<tr>
+<td>Stalker</td>
+<td>Chance Gegner mit teils versteckten Wörtern erscheinen zu lassen.</td>
+</tr>
+<tr>
+<td>Würmer</td>
+<td>Chance Gegner mit einer Kette von Wörtern erscheinen zu lassen.</td>
+</tr>
+<tr>
+<td>Blindes Tippen</td>
+<td>Wörter zeigen nicht, was bereits getippt wurde.</td>
+</tr>
+<tr>
+<td>Schnelle Erholung</td>
+<td>Gegner verlieren Statuseffekte doppelt so schnell.</td>
+</tr>
+</tbody></table>
+</details>
+
+<details><summary>Omen Stufe 3</summary>
+
+<table>
+<thead>
+<tr>
+<th><div style="width:200px">Name</div></th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bestrafende Fehler</td>
+<td>Für jeden Fehler nimmst du 3 Schaden.</td>
+</tr>
+<tr>
+<td>Nebel des Krieges</td>
+<td>Du kannst entfernte Wörter nicht sehen.</td>
+</tr>
+<tr>
+<td>Titan-Gegner</td>
+<td>Gegner haben 150% mehr Leben.</td>
+</tr>
+<tr>
+<td>Verschlüsselte Worte</td>
+<td>Manche Gegner haben verschlüsselte Wörter.</td>
+</tr>
+<tr>
+<td>Doppelte Worte</td>
+<td>Manche Gegner haben doppelte Wörter.</td>
+</tr>
+<tr>
+<td>Präsenz der Elite</td>
+<td>Wächter und Schwärmer erscheinen doppelt so oft.</td>
+</tr>
+<tr>
+<td>Geschützte Gegner</td>
+<td>Gegner erscheinen mit einem einmaligen Schild.</td>
+</tr>
+</tbody></table>
+</details>
+
 </div><div id="home" class="page"><div class="breadcrumbs"><span>Startseite</span></div><h1>Glyphica Offizielles Wiki</h1>
 <h2>Willkommen Tipper</h2>
 <p>Willkommen auf dem offiziellen Wiki für Glyphica: Typing Survival! Teste deine Tippfähigkeiten in diesem Horden-Survival-Spiel, in dem Geschwindigkeit und Genauigkeit deine ultimativen Waffen sind. Rüste mächtige Werkzeuge aus, die deine Tippfähigkeiten in verheerende Angriffe gegen unerbittliche Feinde verwandeln. Entdecken Sie mehr und holen Sie sich das Spiel auf Steam: <a class="external" target="_blank" href="https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/">Glyphica: Typing Survival</a>.</p>
 <p>Dieses Wiki dient als umfassender Leitfaden zu den Funktionen, Mechaniken und Inhalten, die in der Early-Access-Version von Glyphica verfügbar sind. Unser Ziel ist es, die Informationen auf dem neuesten Stand zu halten, während wir uns der Vollversion 1.0 nähern. Das Wiki ist in die im Inhaltsverzeichnis aufgeführten Abschnitte gegliedert und wird regelmäßig aktualisiert, wenn sich das Spiel weiterentwickelt.</p>
 <h2>Inhaltsübersicht</h2>
-<a href="#main_weapons" class="portal">Hauptwaffen</a><a href="#weapons" class="portal">Level-Up-Waffen</a><a href="#enemies" class="portal">Feinde</a><a href="#loot" class="portal">Beutegegenstände</a><a href="#loot1" class="portal">Upgrades</a></div></div></div>
+<a href="#main_weapons" class="portal">Hauptwaffen</a><a href="#weapons" class="portal">Level-Up-Waffen</a><a href="#enemies" class="portal">Feinde</a><a href="#loot" class="portal">Beutegegenstände</a><a href="#loot1" class="portal">Upgrades</a><a href="#omens" class="portal">Omen</a></div></div></div>
 </body>
 </html>
